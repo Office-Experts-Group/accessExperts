@@ -1,0 +1,34 @@
+@import "./globals.scss";
+
+.footerLogo {
+  padding: 1rem;
+  p {
+    color: $grayText;
+    line-height: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  h3 {
+    color: $offWhite;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 0.5rem;
+
+  svg {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    stroke: $theme;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 1s ease;
+    }
+  }
+}

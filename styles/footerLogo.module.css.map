@@ -1,0 +1,1 @@
+{"version":3,"sources":["footerLogo.module.scss","footerLogo.module.css","globals.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;ACDF;ADEE;EACE,cEEO;EFDP,iBAAA;EACA,4BAAA;ACAJ;ADGE;EACE,cEPO;EFQP,mBAAA;EACA,mBAAA;EACA,mBAAA;ACDJ;;ADKA;EACE,aAAA;EACA,WAAA;EACA,mBAAA;ACFF;ADIE;EACE,eAAA;EACA,yBAAA;EACA,eExBI;ADsBR;ADII;EACE,qBAAA;EACA,uBAAA;ACFN","file":"footerLogo.module.css"}

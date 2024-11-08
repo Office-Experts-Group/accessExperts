@@ -1,0 +1,141 @@
+.pageSegment {
+  scroll-margin-top: 100px;
+  padding: 0 10vw 2rem 10vw;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+.pageSegment img {
+  flex: 0 0 600px;
+  height: auto;
+  filter: grayscale(0%);
+  transition: all 0.3s ease;
+}
+.pageSegment img:hover {
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.pageSegmentCenter {
+  scroll-margin-top: 100px;
+  padding: 0 10vw 2rem 10vw;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+}
+.pageSegmentCenter img {
+  flex: 0 0 600px;
+  height: auto;
+  filter: grayscale(0%);
+  transition: all 0.3s ease;
+}
+.pageSegmentCenter img:hover {
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.content {
+  flex: 1;
+}
+.content p {
+  color: #777a7e;
+  line-height: 2rem;
+}
+.content a {
+  color: #ff403f;
+  font-weight: 500;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+
+.underline {
+  border-bottom: 6px solid #ff403f;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+.underline h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: -0.5rem;
+}
+
+.points {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.point p {
+  color: #777a7e;
+  margin: 0 !important;
+}
+
+.tick {
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  border: 1px solid #ff403f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.tick svg {
+  stroke: #ff403f;
+  color: #ff403f;
+}
+.tick:hover {
+  transition: all 0.5s ease;
+  background-color: #ff403f;
+}
+.tick:hover svg {
+  stroke: #f8f8f8;
+  color: #f8f8f8;
+}
+
+.checks {
+  margin-top: 2rem;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cross {
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  background-color: #ff403f;
+  border: 1px solid #ff403f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.cross svg {
+  stroke: #f8f8f8;
+  color: #f8f8f8;
+}
+.cross:hover {
+  transition: all 0.5s ease;
+  background-color: #f8f8f8;
+}
+.cross:hover svg {
+  stroke: #ff403f;
+  color: #ff403f;
+}/*# sourceMappingURL=pageSegment4.module.css.map */
