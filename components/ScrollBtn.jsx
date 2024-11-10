@@ -1,54 +1,57 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import styles from "../styles/scrollBtn.module.css";
 
 const ScrollBtn = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
+  const handleScroll = useCallback(() => {
+    if (typeof window === "undefined") return;
+
+    const currentScrollPos = window.scrollY;
+    const scrollingDown = currentScrollPos > (window.lastScrollPosition || 0);
+    window.lastScrollPosition = currentScrollPos;
+
+    if (scrollingDown) {
+      setIsVisible(currentScrollPos > 100);
+    } else {
+      setIsVisible(false);
+    }
+  }, []);
+
   useEffect(() => {
     setIsClient(true);
-    let ticking = false;
 
-    const handleScroll = () => {
-      if (!ticking && typeof window !== "undefined") {
-        window.requestAnimationFrame(() => {
-          const currentScrollPos = window.scrollY;
-          // Check if scrolling down
-          if (currentScrollPos > scrollPosition) {
-            setIsVisible(currentScrollPos > 100);
-          } else {
-            // Scrolling up
-            setIsVisible(false);
-          }
-          setScrollPosition(currentScrollPos);
-          ticking = false;
-        });
-        ticking = true;
+    if (typeof window === "undefined") return;
+
+    let timeoutId = null;
+    const debouncedScroll = () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
       }
+      timeoutId = setTimeout(handleScroll, 10);
     };
 
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", handleScroll);
-      // Initial check
-      handleScroll();
-    }
+    window.addEventListener("scroll", debouncedScroll);
+    // Initial check
+    handleScroll();
 
     return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("scroll", handleScroll);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
       }
+      window.removeEventListener("scroll", debouncedScroll);
     };
-  }, [scrollPosition]);
+  }, [handleScroll]);
 
   const scrollToTop = () => {
-    if (typeof window !== "undefined") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
+    if (typeof window === "undefined") return;
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   // Don't render during SSR
