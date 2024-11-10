@@ -1,7 +1,7 @@
 import React from "react";
 
 import Contact from "../../components/Contact";
-import TestimonialPage from "../../components/TestimonialPage";
+import TestimonialPage from "./(components)/TestimonialPage";
 import ServiceHero from "../../components/ServiceHero";
 
 const schema = {
