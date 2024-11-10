@@ -1,16 +1,16 @@
-import solarWiseLogo from "../../public/logos/Solar-Wise.webp";
-import queenslandRailLogo from "../../public/logos/Queensland-Rail.webp";
-import estimatingSolutionsLogo from "../../public/logos/Electrical-Estimating-Solutions.webp";
-import tracksparesLogo from "../../public/logos/Trackspares.webp";
-import ast from "../../public/logos/ast.webp";
-import arrow from "../../public/logos/Arrow-Energy.webp";
-import burp from "../../public/logos/burpengary.webp";
-import davey from "../../public/logos/Davey.webp";
-import metro from "../../public/logos/metro.webp";
-import build from "../../public/logos/buildcorp.webp";
-import dulux from "../../public/logos/Dulux-Group.webp";
-import herron from "../../public/logos/herron.webp";
-import eps from "../../public/logos/eps.webp";
+import solarWiseLogo from "./public/logos/Solar-Wise.webp";
+import queenslandRailLogo from "./public/logos/Queensland-Rail.webp";
+import estimatingSolutionsLogo from "./public/logos/Electrical-Estimating-Solutions.webp";
+import tracksparesLogo from "./public/logos/Trackspares.webp";
+import ast from "./public/logos/ast.webp";
+import arrow from "./public/logos/Arrow-Energy.webp";
+import burp from "./public/logos/burpengary.webp";
+import davey from "./public/logos/Davey.webp";
+import metro from "./public/logos/metro.webp";
+import build from "./public/logos/buildcorp.webp";
+import dulux from "./public/logos/Dulux-Group.webp";
+import herron from "./public/logos/herron.webp";
+import eps from "./public/logos/eps.webp";
 
 export const testimonials = [
   {
