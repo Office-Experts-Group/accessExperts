@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-import styles from "../../../../styles/solutions.module.css";
+import styles from "../../styles/solutions.module.css";
 
-import project1 from "../../../../public/project-img-1.webp";
-import project2 from "../../../../public/project-img-2.webp";
-import project3 from "../../../../public/project-img-3.webp";
-import project4 from "../../../../public/project-img-4.webp";
+import project1 from "../../public/project-img-1.webp";
+import project2 from "../../public/project-img-2.webp";
+import project3 from "../../public/project-img-3.webp";
+import project4 from "../../public/project-img-4.webp";
 
 const Solutions = () => {
   const solutionsData = [

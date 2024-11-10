@@ -3,10 +3,11 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../../../../styles/header.module.css";
 import MobileNav from "./MobileNav";
 
-import logo from "../../../../public/logo300x130.webp";
+import styles from "../../styles/header.module.css";
+
+import logo from "../../public/logo300x130.webp";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);

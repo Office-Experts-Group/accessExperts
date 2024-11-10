@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "../../../../styles/testimonialsSection.module.css";
+import styles from "../../styles/testimonialsSection.module.css";
 
-import TestimonialCard from "../../../../components/TestimonialCard";
+import TestimonialCard from "../../components/TestimonialCard";
 
 import { testimonials } from "../../testimonials";
 

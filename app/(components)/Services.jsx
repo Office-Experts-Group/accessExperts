@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
 
-import ServicesCard from "../../../../components/ServicesCard";
-import AnimateOnScroll from "../../../../components/AnimateOnScroll";
+import ServicesCard from "../../components/ServicesCard";
+import AnimateOnScroll from "../../components/AnimateOnScroll";
 
-import styles from "../../../../styles/services.module.css";
+import styles from "../../styles/services.module.css";
 
-import dataSol from "../../../../public/microsoft/dataSolNoBG.webp";
-import azure from "../../../../public/microsoft/azureNoBG.webp";
-import integrate from "../../../../public/microsoft/integrateNoBG.webp";
-import upgrades from "../../../../public/microsoft/upgradesNoBG.webp";
-import scott from "../../../../public/scott.webp";
-import signature from "../../../../public/signature.webp";
+import dataSol from "../../public/microsoft/dataSolNoBG.webp";
+import azure from "../../public/microsoft/azureNoBG.webp";
+import integrate from "../../public/microsoft/integrateNoBG.webp";
+import upgrades from "../../public/microsoft/upgradesNoBG.webp";
+import scott from "../../public/scott.webp";
+import signature from "../../public/signature.webp";
 
 const Services = () => {
   return (
