@@ -7,9 +7,9 @@ import IsRight from "./(components)/IsRight";
 import Solutions from "./(components)/Solutions";
 import CTAFull from "./(components)/CTAFull";
 import Testimonials from "./(components)/Testimonials";
-import Brands from "../../../components/Brands";
-import Promo from "../../../components/Promo";
-import Contact from "../../../components/Contact";
+import Brands from "../components/Brands";
+import Promo from "../components/Promo";
+import Contact from "../components/Contact";
 
 const schema = {
   "@context": "https://schema.org",

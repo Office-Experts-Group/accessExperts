@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-import AnimateOnScroll from "../../../../../components/AnimateOnScroll";
+import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
-import styles from "../../../../../styles/expertsAwait.module.css";
+import styles from "../../../styles/expertsAwait.module.css";
 
-import bg from "../../../../../public/service-bg.webp";
-import stuckIcon from "../../../../../public/icons/computerRed.png";
-import issuesIcon from "../../../../../public/icons/support.png";
+import bg from "../../../public/service-bg.webp";
+import stuckIcon from "../../../public/icons/computerRed.png";
+import issuesIcon from "../../../public/icons/support.png";
 
 const BlackSegment = () => {
   return (

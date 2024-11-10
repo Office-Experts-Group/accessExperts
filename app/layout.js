@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 import { Roboto } from "next/font/google";
 
-import HeadTop from "../../../components/HeadTop";
+import HeadTop from "../components/HeadTop";
 import Header from "./(components)/Header";
-import CookieConsent from "../../../components/CookieConsent";
+import CookieConsent from "../components/CookieConsent";
 import Footer from "./(components)/Footer";
-import Copyright from "../../../components/Copyright";
-import ScrollBtn from "../../../components/ScrollBtn";
+import Copyright from "../components/Copyright";
+import ScrollBtn from "../components/ScrollBtn";
 
 import "./global.css";
 

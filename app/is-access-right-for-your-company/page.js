@@ -1,12 +1,12 @@
 import React from "react";
 
-import ServiceHero from "../../../../components/ServiceHero";
+import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain2 from "./(components)/PageSegmentMain2";
-import Promo from "../../../../components/Promo";
+import Promo from "../../components/Promo";
 import MiniTicks from "./(components)/MiniTicks";
-import ExpertsAwait from "../../../../components/ExpertsAwait";
-import FAQSection from "../../../../components/FAQSection";
-import Contact from "../../../../components/Contact";
+import ExpertsAwait from "../../components/ExpertsAwait";
+import FAQSection from "../../components/FAQSection";
+import Contact from "../../components/Contact";
 
 import faqs from "../../faqs/is-access-right-for-you";
 

@@ -1,16 +1,16 @@
 import React from "react";
 
-import ServiceHero from "../../../../components/ServiceHero";
+import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain2 from "./(components)/PageSegmentMain2";
 import PageSegment3 from "./(components)/PageSegment3";
 import PageSegment4New from "./(components)/PageSegment4New";
 import PageSegment5 from "./(components)/PageSegment5";
 import PageSegment6 from "./(components)/PageSegment6";
-import ExpertsAwait from "../../../../components/ExpertsAwait";
+import ExpertsAwait from "../../components/ExpertsAwait";
 import PageSegment7 from "./(components)/PageSegment7";
 import PageSegment8 from "./(components)/PageSegment8";
-import Contact from "../../../../components/Contact";
-import Promo from "../../../../components/Promo";
+import Contact from "../../components/Contact";
+import Promo from "../../components/Promo";
 
 const schema = {
   "@context": "https://schema.org",

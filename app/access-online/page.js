@@ -1,13 +1,13 @@
 import React from "react";
 
-import ServiceHero from "../../../../components/ServiceHero";
+import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 import PageSegmentSmall from "./(components)/PageSegmentSmall";
 import PageSegment4 from "./(components)/PageSegment4";
-import ExpertsAwait from "../../../../components/ExpertsAwait";
-import Contact from "../../../../components/Contact";
-import Promo from "../../../../components/Promo";
-import FAQSection from "../../../../components/FAQSection";
+import ExpertsAwait from "../../components/ExpertsAwait";
+import Contact from "../../components/Contact";
+import Promo from "../../components/Promo";
+import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/access-online.js";
 

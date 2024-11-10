@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import styles from "../../../../../styles/pageSegment.module.css";
+import styles from "../../styles/pageSegment.module.css";
 
-import dreadLady from "../../../../../public/dreadLady.webp";
+import dreadLady from "../../public/dreadLady.webp";
 
 const PageSegmentMain = () => {
   return (

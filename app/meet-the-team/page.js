@@ -1,8 +1,8 @@
 import React from "react";
 
-import ServiceHero from "../../../../components/ServiceHero";
-import MeetTheTeam from "../../../../components/MeetTheTeam";
-import Contact from "../../../../components/Contact";
+import ServiceHero from "../../components/ServiceHero";
+import MeetTheTeam from "../../components/MeetTheTeam";
+import Contact from "../../components/Contact";
 
 const schema = {
   "@context": "https://schema.org",
