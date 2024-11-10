@@ -28,4 +28,7 @@
 .helpSection a:hover {
   color: #ff403f;
   transition: color 0.5s ease;
+}
+.helpSection img {
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=footerHelp.module.css.map */

@@ -15,19 +15,19 @@ const HeadTop = () => {
 
       <div className={styles.topContacts}>
         <div>
-          <Image src={maps} alt="Location" width={9} height={9} />
+          <Image src={maps} alt="Location" width={12} height={12} />
           <span>Australia Wide</span>
         </div>
         <div>
           <Link href="mailto:consult@wordexperts.com.au">
-            <Image src={emailSlide} alt="email" width={9} height={9} />
+            <Image src={emailSlide} alt="email" width={15} height={9} />
             consult@accessexperts.com.au
           </Link>
         </div>
 
         <div>
           <Link href="tel:+61-1300-12-20-38">
-            <Image src={msg} alt="email" width={9} height={9} />
+            <Image src={msg} alt="email" width={12} height={12} />
             +61 1300 122 038
           </Link>
         </div>

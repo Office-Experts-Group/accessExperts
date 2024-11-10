@@ -20,6 +20,9 @@
 .topContacts img {
   margin-right: 0.5rem;
 }
+.topContacts div:last-of-type {
+  margin-bottom: -0.1rem;
+}
 
 .header {
   position: fixed;
@@ -194,18 +197,7 @@
   margin-left: 0.8rem;
 }
 
-.socials {
-  display: flex;
-  gap: 0.8rem;
-  padding-right: 0.8rem;
-  margin-right: 0.8rem;
-  height: 100%;
+.socialLinks {
   border-right: 1px solid rgba(255, 255, 255, 0.275);
-}
-.socials svg {
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.socials svg:hover {
-  color: #ff403f;
+  margin-right: 0.8rem;
 }/*# sourceMappingURL=header.module.css.map */

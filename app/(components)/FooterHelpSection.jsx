@@ -24,11 +24,11 @@ const FooterHelpSection = () => {
       </Link>
       <h3>Contact Us</h3>
       <Link href={"tel:+61-1300-10-28-10"}>
-        <Image src={msg} alt="msg" width={20} height={20} />
+        <Image src={msg} alt="msg" width={18} height={18} />
         1300 10 28 10
       </Link>
       <Link href={"mailto:consult@accessexperts.com.au"}>
-        <Image src={emailSlide} alt="msg" width={20} height={20} />
+        <Image src={emailSlide} alt="msg" width={22} height={13} />
         consult@accessexperts.com.au
       </Link>
       <h3>Search Our Website</h3>
