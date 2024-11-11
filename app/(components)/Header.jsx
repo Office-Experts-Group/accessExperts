@@ -90,7 +90,9 @@ const Header = () => {
       </nav>
 
       <div className={styles.headerContacts}>
-        <SocialLinks />
+        <div className={styles.socialLinks}>
+          <SocialLinks />
+        </div>
         <svg
           style={{ cursor: "pointer" }}
           stroke="#f8f8f8"
