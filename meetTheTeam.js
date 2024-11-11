@@ -19,6 +19,10 @@ import nae from "./public/team/nae.webp";
 import ross from "./public/team/ross.webp";
 import damien from "./public/team/damien.webp";
 import lani from "./public/team/lani.webp";
+import james from "./public/team/james.webp";
+import deva from "./public/team/deva.webp";
+import ganesh from "./public/team/ganesh.webp";
+import jamie from "./public/team/jamie.webp";
 
 export const teamMembers = [
   {
@@ -45,6 +49,21 @@ export const teamMembers = [
     image: rochelle,
   },
   {
+    name: "Joshua",
+    role: "OPERATIONS MANAGER",
+    skills: [
+      "Power Apps",
+      "Power Automate",
+      "Power BI",
+      "Excel",
+      "Access",
+      "SQL Server",
+      "Azure",
+      "Office Script",
+    ],
+    image: joshua,
+  },
+  {
     name: "David",
     role: "SENIOR ANALYST PROGRAMMER",
     skills: [
@@ -65,22 +84,6 @@ export const teamMembers = [
       "HTML/Java Script",
     ],
     image: david,
-  },
-  {
-    name: "Yuriy",
-    role: "SENIOR ACCOUNTANT AND ANALYST PROGRAMMER",
-    skills: [
-      "Accounting",
-      "Excel",
-      "Access",
-      "Outlook",
-      "VBA",
-      "Power BI",
-      "SharePoint",
-      "SQL Server",
-      "Dynamics NAV",
-    ],
-    image: yuriy,
   },
   {
     name: "Paul",
@@ -113,48 +116,10 @@ export const teamMembers = [
     image: marcello,
   },
   {
-    name: "Grant",
-    role: "SENIOR ANALYST PROGRAMMER",
-    skills: [
-      "Excel",
-      "VBA",
-      "SQL Server",
-      "MySQL",
-      "PHP",
-      "HTML/Java Script",
-      "WordPress",
-      "Word",
-      "Apache/HTTP",
-      "Java/JSP",
-    ],
-    image: grant,
-  },
-  {
-    name: "Paul",
-    role: "SENIOR DEVELOPER",
-    skills: [
-      "Dynamics 365",
-      "Power Apps",
-      "Power Automate",
-      "Power BI",
-      "Office Client",
-      "Office 365",
-      "SharePoint",
-      "Azure",
-    ],
-    image: paulD,
-  },
-  {
-    name: "Renee",
+    name: "Damien",
     role: "SENIOR WORD/POWERPOINT DESIGNER",
     skills: ["Word", "PowerPoint"],
-    image: renee,
-  },
-  {
-    name: "Martin",
-    role: "SENIOR ANALYST PROGRAMMER",
-    skills: ["Excel", "Word", "Access", "Outlook", "PowerPoint", "VBA"],
-    image: martin,
+    image: damien,
   },
   {
     name: "Stephen",
@@ -173,6 +138,66 @@ export const teamMembers = [
     image: stephen,
   },
   {
+    name: "Grant",
+    role: "SENIOR ANALYST PROGRAMMER",
+    skills: [
+      "Excel",
+      "VBA",
+      "SQL Server",
+      "MySQL",
+      "PHP",
+      "HTML/Java Script",
+      "WordPress",
+      "Word",
+      "Apache/HTTP",
+      "Java/JSP",
+    ],
+    image: grant,
+  },
+  {
+    name: "Yuriy",
+    role: "SENIOR ACCOUNTANT AND ANALYST PROGRAMMER",
+    skills: [
+      "Accounting",
+      "Excel",
+      "Access",
+      "Outlook",
+      "VBA",
+      "Power BI",
+      "SharePoint",
+      "SQL Server",
+      "Dynamics NAV",
+    ],
+    image: yuriy,
+  },
+  {
+    name: "Martin",
+    role: "SENIOR ANALYST PROGRAMMER",
+    skills: ["Excel", "Word", "Access", "Outlook", "PowerPoint", "VBA"],
+    image: martin,
+  },
+  {
+    name: "Paul",
+    role: "SENIOR DEVELOPER",
+    skills: [
+      "Dynamics 365",
+      "Power Apps",
+      "Power Automate",
+      "Power BI",
+      "Office Client",
+      "Office 365",
+      "SharePoint",
+      "Azure",
+    ],
+    image: paulD,
+  },
+  {
+    name: "Aleisha",
+    role: "SENIOR WORD/POWERPOINT DESIGNER",
+    skills: ["Word", "PowerPoint", "InDesign"],
+    image: aleisha,
+  },
+  {
     name: "Andreas",
     role: "SENIOR ANALYST PROGRAMMER",
     skills: [
@@ -185,59 +210,6 @@ export const teamMembers = [
       "Azure",
     ],
     image: andreas,
-  },
-  {
-    name: "Joshua",
-    role: "SENIOR ANALYST PROGRAMMER",
-    skills: [
-      "Power Apps",
-      "Power Automate",
-      "Power BI",
-      "Excel",
-      "Access",
-      "SQL Server",
-      "Azure",
-      "Office Script",
-    ],
-    image: joshua,
-  },
-  {
-    name: "Penny",
-    role: "SENIOR ANALYST PROGRAMMER",
-    skills: ["Excel", "Word", "Access", "PowerPoint", "VBA", "VSTO"],
-    image: penny,
-  },
-  {
-    name: "Linda",
-    role: "SENIOR ANALYST PROGRAMMER",
-    skills: ["Excel", "VBA", "Power BI"],
-    image: linda,
-  },
-  {
-    name: "Jason",
-    role: "SENIOR ANALYST PROGRAMMER",
-    skills: [
-      "Excel",
-      "Word",
-      "Access",
-      "Outlook",
-      "VBA",
-      "SQL Server",
-      "Azure",
-    ],
-    image: jason,
-  },
-  {
-    name: "Aleisha",
-    role: "SENIOR WORD/POWERPOINT DESIGNER",
-    skills: ["Word", "PowerPoint", "InDesign"],
-    image: aleisha,
-  },
-  {
-    name: "Nae",
-    role: "SENIOR WORD/POWERPOINT DESIGNER",
-    skills: ["Word", "PowerPoint", "Photoshop", "Illustrator", "Indesign"],
-    image: nae,
   },
   {
     name: "Ross",
@@ -255,16 +227,84 @@ export const teamMembers = [
     image: ross,
   },
   {
-    name: "Damien",
+    name: "James",
+    role: "SENIOR ANALYST PROGRAMMER",
+    skills: ["Access", "Excel", "VBA", "Visio", "Word"],
+    image: james,
+  },
+  {
+    name: "Deva",
+    role: "SENIOR ANALYST PROGRAMMER",
+    skills: [
+      "Lead Power Platform SME / Developer",
+      "MBusIT",
+      "PMP",
+      "Prince2Prac",
+    ],
+    image: deva,
+  },
+  {
+    name: "Jason",
+    role: "SENIOR ANALYST PROGRAMMER",
+    skills: [
+      "Excel",
+      "Word",
+      "Access",
+      "Outlook",
+      "VBA",
+      "SQL Server",
+      "Azure",
+    ],
+    image: jason,
+  },
+  {
+    name: "Nae",
+    role: "SENIOR WORD/POWERPOINT DESIGNER",
+    skills: ["Word", "PowerPoint", "Photoshop", "Illustrator", "Indesign"],
+    image: nae,
+  },
+  {
+    name: "Renee",
     role: "SENIOR WORD/POWERPOINT DESIGNER",
     skills: ["Word", "PowerPoint"],
-    image: damien,
+    image: renee,
   },
+  {
+    name: "Linda",
+    role: "SENIOR ANALYST PROGRAMMER",
+    skills: ["Excel", "VBA", "Power BI"],
+    image: linda,
+  },
+  {
+    name: "Ganesh",
+    role: "SENIOR ANALYST PROGRAMMER",
+    skills: [
+      "SharePoint",
+      ".NET",
+      "SQL Server",
+      "Microsoft Dynamics 365",
+      "Excel",
+    ],
+    image: ganesh,
+  },
+  {
+    name: "Penny",
+    role: "SENIOR ANALYST PROGRAMMER",
+    skills: ["Excel", "Word", "Access", "PowerPoint", "VBA", "VSTO"],
+    image: penny,
+  },
+
   {
     name: "Lani",
     role: "SENIOR WORD/POWERPOINT DESIGNER",
     skills: ["Word", "PowerPoint"],
     image: lani,
+  },
+  {
+    name: "Jamie",
+    role: "ADMINISTRATION",
+    skills: [],
+    image: jamie,
   },
 ];
 
