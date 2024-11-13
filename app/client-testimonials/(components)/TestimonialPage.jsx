@@ -29,11 +29,7 @@ const TestimonialPage = () => {
 
           // Animate remaining testimonials
           return (
-            <AnimateOnScroll
-              key={testimonial.contact}
-              animation="fade-up"
-              delay={(index - 6) * 0.1} // Reset delay counting from first animated item
-            >
+            <AnimateOnScroll key={testimonial.contact} animation="fade-up">
               <TestimonialCard
                 content={testimonial.content}
                 name={testimonial.name}

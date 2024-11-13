@@ -128,7 +128,7 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Meet Our Team" />
+      <ServiceHero title="Meet The Team" />
       <MeetTheTeam />
       <Contact />
     </>
