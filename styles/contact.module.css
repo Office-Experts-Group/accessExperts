@@ -42,11 +42,10 @@
 .option h2 {
   text-align: center;
   padding: 1.5rem 2rem;
-  background: #ff403f;
+  background: #046999;
   transition: all 1s ease;
   color: #f8f8f8;
   font-size: 1rem;
-  text-transform: uppercase;
   width: 220px;
   position: relative;
   overflow: hidden;
@@ -65,8 +64,8 @@
   z-index: -1;
 }
 .option:not(.active) h2:hover {
-  color: #ff403f;
-  border-color: #ff403f;
+  color: #046999;
+  border-color: #046999;
 }
 .option:not(.active) h2:hover::before {
   left: 0;
@@ -186,7 +185,6 @@
   padding: 0.5rem 0;
 }
 .formField label {
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -198,7 +196,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(183, 183, 183, 0.9647058824);
-  outline: #ff403f;
+  outline: #046999;
   font-size: 1.125rem;
   color: #a0a2a6;
 }
@@ -228,7 +226,6 @@
 
 .radioField .groupLabel {
   font-weight: 500;
-  text-transform: uppercase;
   display: block;
   margin-bottom: 1rem;
 }
@@ -255,7 +252,7 @@
   position: relative;
 }
 .radioField .radioOptions .radioOption input[type=radio]:checked {
-  border-color: #ff403f;
+  border-color: #046999;
 }
 .radioField .radioOptions .radioOption input[type=radio]:checked::after {
   content: "";
@@ -265,11 +262,11 @@
   transform: translate(-50%, -50%);
   width: 0.75rem;
   height: 0.75rem;
-  background-color: #ff403f;
+  background-color: #046999;
   border-radius: 50%;
 }
 .radioField .radioOptions .radioOption input[type=radio]:hover:not(:checked) {
-  border-color: #ff0d0c;
+  border-color: #034767;
 }
 .radioField .radioOptions .radioOption label {
   font-weight: 400;
@@ -279,7 +276,6 @@
 }
 
 .uploadField label {
-  text-transform: uppercase;
   font-weight: 500;
 }
 .uploadField label span {
@@ -317,8 +313,8 @@
   flex-shrink: 0;
 }
 .termsField .checkboxLabel input[type=checkbox]:checked {
-  border-color: #ff403f;
-  background-color: #ff403f;
+  border-color: #046999;
+  background-color: #046999;
 }
 .termsField .checkboxLabel input[type=checkbox]:checked::after {
   content: "";
@@ -332,13 +328,13 @@
   transform: rotate(45deg);
 }
 .termsField .checkboxLabel input[type=checkbox]:hover:not(:checked) {
-  border-color: #ff0d0c;
+  border-color: #034767;
 }
 .termsField .checkboxLabel .checkboxText {
   line-height: 1.4;
 }
 .termsField a {
-  color: #ff403f;
+  color: #046999;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -347,7 +343,7 @@
 }
 
 .errorMessage {
-  color: #ff403f;
+  color: #046999;
   font-size: 0.8rem;
   font-style: italic;
   margin: 0.5rem 0 0 0.5rem;
@@ -360,5 +356,5 @@
   margin-left: auto;
 }
 .submitBtn:hover {
-  border: 1px solid #ff403f;
+  border: 1px solid #046999;
 }/*# sourceMappingURL=contact.module.css.map */

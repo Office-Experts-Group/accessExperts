@@ -1,7 +1,7 @@
 .contact {
   display: flex;
   align-items: center;
-  background-color: #ff403f;
+  background-color: #046999;
   border-radius: 0.2rem;
   height: 25vh;
   width: 80%;
@@ -39,7 +39,7 @@
   border-radius: 50%;
   padding: 0.1rem;
   stroke: #f8f8f8;
-  background-color: #ff403f;
+  background-color: #046999;
 }
 .svgImg svg:nth-child(1) {
   top: -2.5rem;
@@ -90,7 +90,6 @@
 }
 .phone p {
   color: #f8f8f8;
-  text-transform: uppercase;
   font-size: 0.8rem;
 }
 .phone h3 {
@@ -125,7 +124,6 @@
   margin-bottom: 0;
   padding: 1.5rem 3rem;
   text-align: center;
-  text-transform: uppercase;
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
@@ -145,7 +143,7 @@
   z-index: -1;
 }
 .link:hover {
-  color: #ff403f;
+  color: #046999;
 }
 .link:hover::before {
   left: 0;

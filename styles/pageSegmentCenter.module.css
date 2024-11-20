@@ -43,13 +43,12 @@
 }
 
 .underline {
-  border-bottom: 6px solid #ff403f;
+  border-bottom: 6px solid #046999;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 2rem;
 }
 .underline h2 {
-  text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: -0.5rem;
@@ -75,7 +74,7 @@
   flex: 0 1 auto;
 }
 .benefitItem .tick {
-  color: #ff403f;
+  color: #046999;
   font-size: 1.2rem;
   font-weight: bold;
   flex-shrink: 0;
@@ -85,6 +84,6 @@
   color: #777a7e;
 }
 .benefitItem a:hover {
-  color: #ff403f;
+  color: #046999;
   font-weight: 700;
 }/*# sourceMappingURL=pageSegmentCenter.module.css.map */

@@ -68,12 +68,11 @@
   margin: 0;
   cursor: pointer;
   color: #f8f8f8;
-  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
 .navItem p:hover {
-  color: #ff403f;
+  color: #046999;
 }
 .navItem::after {
   content: "";
@@ -87,7 +86,6 @@
 
 .navLink {
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #f8f8f8;
@@ -95,7 +93,7 @@
   display: block;
 }
 .navLink:hover {
-  color: #ff403f;
+  color: #046999;
 }
 
 .dropdown {
@@ -103,7 +101,7 @@
   top: calc(100% + 1.9rem);
   left: 1rem;
   background-color: #f8f8f8;
-  border-top: 4px solid #ff403f;
+  border-top: 4px solid #046999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
   padding: 1rem 0.5rem;
@@ -115,7 +113,6 @@
 }
 .dropdown li {
   list-style-type: none;
-  text-transform: uppercase;
   font-weight: 500;
   position: relative;
   width: -moz-fit-content;
@@ -138,13 +135,13 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background: #ff403f;
+  background: #046999;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 .dropdown li a:hover {
-  color: #ff403f;
+  color: #046999;
 }
 .dropdown li a:hover::after {
   transform: scaleX(1);
@@ -164,7 +161,7 @@
   position: absolute;
   top: 0;
   left: calc(100% + 0.6rem);
-  border-top: 4px solid #ff403f;
+  border-top: 4px solid #046999;
   background-color: #f8f8f8;
   padding: 1rem 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);

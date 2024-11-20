@@ -9,7 +9,7 @@
 .imgWrapper {
   z-index: 2;
   flex: 1;
-  border-bottom: 15px solid #ff403f;
+  border-bottom: 15px solid #046999;
 }
 .imgWrapper img {
   width: 100%;
@@ -34,16 +34,14 @@
   color: #1e1e1e;
   font-size: 2.5rem;
   margin: 2rem 0 2rem 0;
-  text-transform: uppercase;
   font-weight: 900;
 }
 .content a {
-  color: #ff403f;
+  color: #046999;
   font-weight: 700;
 }
 .content p:first-child {
-  color: #ff403f;
-  text-transform: uppercase;
+  color: #046999;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -88,7 +86,7 @@
 .tick {
   height: 30px;
   width: 30px;
-  border: 1px solid #ff403f;
+  border: 1px solid #046999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +94,7 @@
 }
 .tick:hover {
   transition: all 0.5s ease;
-  background-color: #ff403f;
+  background-color: #046999;
 }
 .tick:hover svg {
   stroke: #f8f8f8;

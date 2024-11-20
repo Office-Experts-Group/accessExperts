@@ -31,6 +31,25 @@ dd {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-garamond), serif;
+}
+
+p,
+li,
+a,
+span,
+button,
+input,
+textarea {
+  font-family: var(--font-aptos), sans-serif;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -83,7 +102,7 @@ button {
 
 .btn {
   -moz-user-select: none;
-  background: #ff403f;
+  background: #046999;
   border: medium none;
   border-radius: 0.1rem;
   color: #fff;
@@ -115,7 +134,7 @@ button {
   }
 
   &:hover {
-    color: #ff403f;
+    color: #046999;
 
     &::before {
       left: 0;

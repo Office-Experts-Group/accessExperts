@@ -1,14 +1,12 @@
 // TestimonialPage.jsx
 import React from "react";
 
-import { testimonials } from "../../../testimonials";
-
 import TestimonialCard from "../../../components/TestimonialCard";
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/testimonialPage.module.css";
 
-const TestimonialPage = () => {
+const TestimonialPage = ({ testimonials }) => {
   return (
     <section className={styles.testimonialPage}>
       <div className={styles.testimonialGrid}>

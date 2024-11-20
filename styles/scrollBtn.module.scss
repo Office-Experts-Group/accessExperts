@@ -3,7 +3,7 @@
   position: fixed;
   bottom: 1.5rem;
   right: 2rem;
-  background-color: #ff403f;
+  background-color: #046999;
   border: none;
   border-radius: 50%;
   width: 48px;
@@ -21,7 +21,7 @@
   will-change: transform, opacity; // Optimize for animation performance
 
   &:hover {
-    background-color: darken(#ff403f, 10%);
+    background-color: darken(#046999, 10%);
   }
 
   &.visible {

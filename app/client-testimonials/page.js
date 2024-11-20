@@ -4,9 +4,13 @@ import Contact from "../../components/Contact";
 import TestimonialPage from "./(components)/TestimonialPage";
 import ServiceHero from "../../components/ServiceHero";
 
+import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
+import { testimonials } from "../../testimonials";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    ...getTestimonialsPageSchema(testimonials),
     {
       "@type": "WebPage",
       "@id": "https://accessexperts.com.au/client-testimonials/",
@@ -112,11 +116,6 @@ const schema = {
       image: {
         "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -129,7 +128,7 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <ServiceHero title="Client Testimonials" />
-      <TestimonialPage />
+      <TestimonialPage testimonials={testimonials} />
       <Contact />
     </>
   );

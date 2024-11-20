@@ -13,6 +13,22 @@
   margin-bottom: 1rem;
 }
 
+.contact {
+  margin: 2rem 0;
+}
+.contact a {
+  color: #a0a2a6;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.contact a:hover {
+  color: #046999;
+  transition: color 0.5s ease;
+}
+
 .socials {
   display: flex;
   gap: 0.8rem;
@@ -21,7 +37,7 @@
 .socials svg {
   cursor: pointer;
   transition: all 0.3s ease;
-  stroke: #ff403f;
+  stroke: #046999;
 }
 .socials svg:hover {
   transform: scale(1.2);
@@ -29,5 +45,5 @@
 }
 
 .facebook {
-  fill: #ff403f;
+  fill: #046999;
 }/*# sourceMappingURL=footerLogo.module.css.map */

@@ -17,7 +17,7 @@
   min-width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #ff403f;
+  background-color: #046999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,6 @@
 
 .text h2 {
   color: #1e1e1e;
-  text-transform: uppercase;
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 1rem;
@@ -36,7 +35,7 @@
   max-width: 80%;
 }
 .text a {
-  color: #ff403f;
+  color: #046999;
   font-weight: 500;
 }
 .text a:hover {
@@ -44,13 +43,13 @@
 }
 
 .bar {
-  background-color: #ff403f;
+  background-color: #046999;
   width: 10px;
   height: 60px;
 }
 
 .barLarge {
-  background-color: #ff403f;
+  background-color: #046999;
   width: 10px;
   height: 120px;
 }

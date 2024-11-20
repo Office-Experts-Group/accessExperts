@@ -173,7 +173,7 @@ const Page = () => {
       <ServiceHero title="Is Microsoft Access the Right Technology for your Company?" />
       <PageSegmentMain2 />
       <Promo
-        h2="Just Ask The Accesss Experts"
+        h2="Just Ask The Access Experts"
         p="Whether your solution is online and/or offline, we can help point you in the right direction to keep your business ahead of the rest."
       />
       <MiniTicks />

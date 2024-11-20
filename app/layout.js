@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Roboto } from "next/font/google";
+import localFont from "next/font/local";
+import { EB_Garamond } from "next/font/google";
 
 import HeadTop from "../components/HeadTop";
 import Header from "./(components)/Header";
@@ -12,10 +13,48 @@ import ScrollBtn from "../components/ScrollBtn";
 
 import "./global.css";
 
-const roboto = Roboto({
-  weight: ["400", "500", "700", "900"],
+const aptos = localFont({
+  src: [
+    {
+      path: "../public/fonts/aptos/Aptos.ttf",
+
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/aptos/Aptos-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/aptos/Aptos-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/aptos/Aptos-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/aptos/Aptos-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/aptos/Aptos-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-aptos",
+});
+
+const garamond = EB_Garamond({
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "700"],
+  variable: "--font-garamond",
 });
 
 export const metadata = {
@@ -124,7 +163,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en-AU">
-      <body className={roboto.className}>
+      <body className={`${aptos.variable} ${garamond.variable}`}>
         <HeadTop />
         <Header />
         {children}
