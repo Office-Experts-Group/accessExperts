@@ -7,8 +7,8 @@ import SocialLinks from "./SocialLinks";
 import styles from "../styles/footerLogo.module.css";
 
 import logo from "../public/logo200x86.webp";
-import msg from "../public/icons/msg.png";
-import emailSlide from "../public/icons/emailSlide.png";
+import msg from "../public/icons/msgBlue.webp";
+import emailSlide from "../public/icons/emailSlideBlue.webp";
 
 const FooterLogoSection = () => {
   return (

@@ -9,7 +9,17 @@ import thirdParty from "../public/pageHeros/3rdParty.webp";
 const ServiceHero = ({ title }) => {
   return (
     <section className={styles.serviceHero}>
-      <Image src={thirdParty} alt="A person helping somebody" fill="true" />
+      <div className={styles.imageContainer}>
+        <Image
+          src={thirdParty}
+          alt="A person helping somebody"
+          fill={true}
+          className={styles.heroImage}
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center" }}
+        />
+      </div>
       <h1>{title}</h1>
     </section>
   );

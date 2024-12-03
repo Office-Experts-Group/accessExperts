@@ -20,7 +20,7 @@ const Contact = ({ isQuote }) => {
   }, []);
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <div className={styles.sidebar}>
         <div className={styles.optionsWrapper}>
           <div

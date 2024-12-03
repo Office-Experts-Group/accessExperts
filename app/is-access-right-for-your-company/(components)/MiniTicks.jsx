@@ -50,17 +50,13 @@ const MiniTicks = () => {
 
   return (
     <section
-      className={styles.pageSegment}
+      className={`${styles.pageSegment} ${styles.gap}`}
       style={{
-        gridTemplateColumns: "1fr 40%",
-        gap: "0rem",
-        marginBottom: "4rem",
+        margin: "4rem 0 0 0",
       }}
     >
       <div className={styles.pageSegmentCenter}>
-        <div className={styles.underline}>
-          <h2>Access Help and Support</h2>
-        </div>
+        <h2>Access Help and Support</h2>
 
         <p className={styles.tickText}>
           In addition to creating Access databases, our experienced consultants
@@ -69,13 +65,25 @@ const MiniTicks = () => {
         <div className={styles.benefitsList}>
           {benefits.map((benefit, index) => (
             <AnimateOnScroll
-              key={benefit.text}
+              key={benefit.index}
               animation="slide-left"
               delay={index * 0.1}
             >
-              <div className={styles.benefitItem}>
-                <div className={styles.tick}>✓</div>
-                {renderBenefitContent(benefit)}
+              <div className={styles.point}>
+                <div className={styles.tick}>
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    strokeWidth="1"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+                  </svg>
+                </div>
+                <p>{renderBenefitContent(benefit)}</p>
               </div>
             </AnimateOnScroll>
           ))}
@@ -88,7 +96,7 @@ const MiniTicks = () => {
           alt="person pointing at a computer screen"
           width={600}
           height={400}
-          style={{ marginLeft: "-4rem" }}
+          className={styles.marginLeft}
         />
       </AnimateOnScroll>
     </section>

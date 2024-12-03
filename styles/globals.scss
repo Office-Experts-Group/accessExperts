@@ -1,5 +1,6 @@
 // colors
 $body: #333;
+// $theme: #046999;
 $theme: #046999;
 $background: #f6f6f6;
 $offWhite: #f8f8f8;
@@ -10,6 +11,7 @@ $grayBGC: #f2f3f5;
 $darkGrayText: #777a7e;
 $cardBGC: #1a1c1e;
 $footerBGC: #252629;
+
 // breakpoints
 @mixin smallPhone {
   @media (max-width: 359px) {
@@ -36,7 +38,13 @@ $footerBGC: #252629;
 }
 
 @mixin desktop {
-  @media (min-width: 1025px) {
+  @media (min-width: 1025px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin deskL {
+  @media (min-width: 1200px) {
     @content;
   }
 }

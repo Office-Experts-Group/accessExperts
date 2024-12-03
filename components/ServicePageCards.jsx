@@ -4,8 +4,8 @@ import Image from "next/image";
 import styles from "../styles/servicePageCards.module.css";
 
 // Import icons
-import stuckIcon from "../public/icons/computerRed.png";
-import issuesIcon from "../public/icons/support.png";
+import stuckIcon from "../public/icons/computerBlue.webp";
+import issuesIcon from "../public/icons/supportBlue.webp";
 import expertsIcon from "../public/icons/deal.png";
 import migrateIcon from "../public/icons/idea.png";
 

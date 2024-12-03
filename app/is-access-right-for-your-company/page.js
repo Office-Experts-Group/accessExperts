@@ -9,6 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import Contact from "../../components/Contact";
 
 import faqs from "../../faqs/is-access-right-for-you";
+import Contents from "./(components)/Contents";
 
 const schema = {
   "@context": "https://schema.org",
@@ -170,6 +171,7 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <Contents />
       <ServiceHero title="Is Microsoft Access the Right Technology for your Company?" />
       <PageSegmentMain2 />
       <Promo

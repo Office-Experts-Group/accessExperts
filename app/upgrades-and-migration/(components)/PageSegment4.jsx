@@ -13,9 +13,7 @@ const PageSegment4 = () => {
       <div className={styles.pageSegment}>
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <div className={styles.content}>
-            <div className={styles.underline}>
-              <h2>Upgrades and Migration</h2>
-            </div>
+            <h2 style={{ marginBottom: "2rem" }}>Upgrades and Migration</h2>
             <p>
               The extensive experience of our team of Access database experts is
               available to ensure your upgrades and migrations go smoothly, by

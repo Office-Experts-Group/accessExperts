@@ -7,7 +7,7 @@ import styles from "../../styles/header.module.css";
 
 import { navigationData } from "../../navigationData";
 
-import MobileNav from "./MobileNav";
+import MobileNav from "../../components/MobileNavigation/MobileNav";
 import HomeDropdown from "../../components/HomeDropdown";
 import ServicesDropdown from "../../components/ServicesDropdown";
 import SocialLinks from "../../components/SocialLinks";
@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div
-        className={styles.logo}
+        className={isScrolled ? `${styles.scrolledLogo}` : `${styles.logo}`}
         style={
           isScrolled
             ? {

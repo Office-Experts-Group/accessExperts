@@ -232,11 +232,6 @@ const schema = {
         "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
       sameAs: ["https://www.facebook.com/MSOfficeExperts"],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };

@@ -3,7 +3,6 @@ import React from "react";
 import Contact from "../../components/Contact";
 import ServiceHero from "../../components/ServiceHero";
 import CTAMain from "./(components)/CTAMain";
-import ContactDetails from "../../components/ContactDetails";
 
 const schema = {
   "@context": "https://schema.org",
@@ -108,11 +107,6 @@ const schema = {
         "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
       sameAs: ["https://www.facebook.com/MSOfficeExperts"],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -127,7 +121,6 @@ const Page = () => {
       <ServiceHero title="Contact Us" />
       <CTAMain />
       <Contact />
-      <ContactDetails />
     </>
   );
 };

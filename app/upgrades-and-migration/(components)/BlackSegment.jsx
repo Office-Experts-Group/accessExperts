@@ -6,8 +6,8 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/expertsAwait.module.css";
 
 import bg from "../../../public/service-bg.webp";
-import stuckIcon from "../../../public/icons/computerRed.png";
-import issuesIcon from "../../../public/icons/support.png";
+import stuckIcon from "../../../public/icons/ideaBlue.webp";
+import issuesIcon from "../../../public/icons/supportBlue.webp";
 
 const BlackSegment = () => {
   return (
@@ -45,9 +45,9 @@ const BlackSegment = () => {
               alt="Access issues icon"
               width={60}
               height={60}
-              className={styles.icon}
+              className={`${styles.icon} ${styles.hidden}`}
             />
-            <p>
+            <p className={styles.centerText}>
               If your database has been designed poorly then our experts might
               be able to fix the major issues, increase the speed, resolve
               errors or rewrite/upgrade your database.
@@ -60,9 +60,9 @@ const BlackSegment = () => {
               alt="Old version icon"
               width={60}
               height={60}
-              className={styles.icon}
+              className={`${styles.icon} ${styles.hidden}`}
             />
-            <p>
+            <p className={styles.centerText}>
               If your database is slow our experts could migrate the backend of
               your database to SQL Server to speed up the database.
             </p>

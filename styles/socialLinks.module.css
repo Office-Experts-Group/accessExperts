@@ -1,8 +1,6 @@
 .socials {
   display: flex;
   gap: 0.8rem;
-  padding-right: 0.8rem;
-  margin-right: 0.8rem;
   height: 100%;
 }
 .socials svg {
@@ -11,4 +9,13 @@
 }
 .socials svg:hover {
   color: #046999;
-} /*# sourceMappingURL=socialLinks.module.css.map */
+}
+
+.socialLinkNav {
+  background-color: #393f53;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=socialLinks.module.css.map */

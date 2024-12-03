@@ -8,6 +8,18 @@
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
+@media (max-width: 449px) {
+  .copyright {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .copyright {
+    padding: 1rem;
+    text-align: center;
+  }
+}
 
 .link {
   display: flex;
@@ -16,4 +28,4 @@
 }
 .link a:hover {
   color: #046999;
-} /*# sourceMappingURL=copyright.module.css.map */
+}/*# sourceMappingURL=copyright.module.css.map */
