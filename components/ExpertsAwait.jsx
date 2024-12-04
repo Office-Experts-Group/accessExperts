@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "./AnimateOnScroll";
 
@@ -10,12 +11,20 @@ import computer from "../public/icons/computerBlue.webp";
 import training from "../public/icons/ideaBlue.webp";
 import support from "../public/icons/supportBlue.webp";
 import handShake from "../public/icons/handShakeBlue.webp";
-import Link from "next/link";
 
 const ExpertsAwait = () => {
   return (
     <section className={styles.expertsAwait}>
-      <Image className={styles.bgImg} src={bg} alt="shape icon" fill="true" />
+      <div className={styles.bgImgWrapper}>
+        <Image
+          className={styles.bgImg}
+          src={bg}
+          alt="shape icon"
+          width={1920}
+          height={1080}
+          sizes="100vw"
+        />
+      </div>
 
       <AnimateOnScroll animation="slide-left" delay={0.1} duration={1.2}>
         <div className={styles.content}>

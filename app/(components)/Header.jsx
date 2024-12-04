@@ -8,7 +8,6 @@ import styles from "../../styles/header.module.css";
 import { navigationData } from "../../navigationData";
 
 import MobileNav from "../../components/MobileNavigation/MobileNav";
-import HomeDropdown from "../../components/HomeDropdown";
 import ServicesDropdown from "../../components/ServicesDropdown";
 import SocialLinks from "../../components/SocialLinks";
 
@@ -70,7 +69,6 @@ const Header = () => {
             <Link href="/">
               <p className={styles.navLink}>Home</p>
             </Link>
-            {activeDropdown === "home" && <HomeDropdown />}
           </li>
 
           {/* Services dropdown */}
