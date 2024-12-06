@@ -6,8 +6,8 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/expertsAwait.module.css";
 
 import bg from "../../../public/service-bg.webp";
-import stuckIcon from "../../../public/icons/ideaBlue.webp";
-import issuesIcon from "../../../public/icons/supportBlue.webp";
+import connect from "../../../public/icons/connectBlue.webp";
+import issuesIcon from "../../../public/icons/fileBlue.webp";
 
 const BlackSegment = () => {
   return (
@@ -56,7 +56,7 @@ const BlackSegment = () => {
 
           <div className={styles.point}>
             <Image
-              src={stuckIcon}
+              src={connect}
               alt="Old version icon"
               width={60}
               height={60}

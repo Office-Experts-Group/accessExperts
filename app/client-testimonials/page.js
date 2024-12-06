@@ -7,6 +7,9 @@ import ServiceHero from "../../components/ServiceHero";
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../testimonials";
 
+import thirdParty from "../../public/pageHeros/3rdParty.webp";
+import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -127,7 +130,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Client Testimonials" />
+      <ServiceHero
+        title="Client Testimonials"
+        desktopImage={thirdParty}
+        mobileImage={coffeeMob}
+        altDesk={"Person in an office environment"}
+        altMob={"Glasses on a table"}
+      />
       <TestimonialPage testimonials={testimonials} />
       <Contact />
     </>

@@ -258,4 +258,9 @@ a:hover .contentLink p::after {
   .customMargin {
     margin: 0;
   }
+}
+
+.specialGrid {
+  grid-row-gap: 4rem;
+  margin-top: 4em;
 }/*# sourceMappingURL=pageSegment2.module.css.map */

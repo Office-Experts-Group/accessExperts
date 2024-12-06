@@ -13,6 +13,9 @@ import Contact from "../../components/Contact";
 import Promo from "../../components/Promo";
 import Contents from "./(components)/Contents";
 
+import marker from "../../public/pageHeros/marker.webp";
+import codeMob from "../../public/pageHeros/mob/codeMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -156,7 +159,13 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Contents />
-      <ServiceHero title="Azure Cloud Based Solutions" />
+      <ServiceHero
+        title="Azure Cloud Based Solutions"
+        desktopImage={marker}
+        mobileImage={codeMob}
+        altDesk={"Futuristic white board marker"}
+        altMob={"indiscriminate code on a screen"}
+      />
       <PageSegmentMain2 />
       <PageSegment3 />
       <PageSegment4New />

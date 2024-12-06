@@ -11,6 +11,9 @@ import Contact from "../../components/Contact";
 
 import faqs from "../../faqs/access-support";
 
+import twoComputers from "../../public/pageHeros/twoComputers.webp";
+import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -152,11 +155,6 @@ const schema = {
       image: {
         "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -168,7 +166,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Help and Training" />
+      <ServiceHero
+        title="Help and Training"
+        desktopImage={twoComputers}
+        mobileImage={glassesMob}
+        altDesk={"Two computers on a desk"}
+        altMob={"Glasses on a table"}
+      />
       <PageSegmentMain />
       <PageSegment4 />
       <PageSegmentCenter />

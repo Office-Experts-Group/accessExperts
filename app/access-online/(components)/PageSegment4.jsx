@@ -9,8 +9,11 @@ import cloudSolution from "../../../public/cloudSolution600x400.webp";
 
 const PageSegment4 = () => {
   return (
-    <div className="animate-wrapper" style={{ marginBottom: "2rem" }}>
-      <div className={styles.pageSegment} id="web-apps">
+    <div className="animate-wrapper">
+      <div
+        className={`${styles.pageSegment} ${styles.onlineMargin}`}
+        id="web-apps"
+      >
         <AnimateOnScroll animation="slide-right" duration={1} delay={0.2}>
           <div className={styles.content}>
             <div className={styles.underline}>

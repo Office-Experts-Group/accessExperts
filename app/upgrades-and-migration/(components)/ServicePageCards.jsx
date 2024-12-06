@@ -4,16 +4,16 @@ import Image from "next/image";
 import styles from "../../../styles/servicePageCards.module.css";
 
 // Import icons
-import stuckIcon from "../../../public/icons/computerBlue.webp";
-import issuesIcon from "../../../public/icons/supportBlue.webp";
+import stuckIcon from "../../../public/icons/graphBlue.webp";
+import issuesIcon from "../../../public/icons/connectBlue.webp";
 import expertsIcon from "../../../public/icons/handShakeBlue.webp";
-import migrateIcon from "../../../public/icons/ideaBlue.webp";
+import migrateIcon from "../../../public/icons/fileBlue.webp";
 
 // Import main images
-import stuckImage from "../../../public/service-img-1350x201.webp";
-import issuesImage from "../../../public/service-img-2350x201.webp";
-import expertsImage from "../../../public/service-img-3350x201.webp";
-import migrateImage from "../../../public/service-img-4350x201.webp";
+import stuckImage from "../../../public/cowork250x200.webp";
+import issuesImage from "../../../public/access250x200.webp";
+import expertsImage from "../../../public/desk250x200.webp";
+import migrateImage from "../../../public/graph250x200.webp";
 
 const ServicePageCards = () => {
   return (

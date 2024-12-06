@@ -11,6 +11,9 @@ import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/access-online.js";
 
+import pen from "../../public/pageHeros/pen.webp";
+import seatMob from "../../public/pageHeros/mob/seatMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -156,11 +159,6 @@ const schema = {
       image: {
         "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -172,7 +170,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Online Access Database Solutions" />
+      <ServiceHero
+        title="Online Access Database Solutions"
+        desktopImage={pen}
+        mobileImage={seatMob}
+        altDesk={"Pen held infront of graphs"}
+        altMob={"office environment"}
+      />
       <PageSegmentMain />
       <PageSegmentSmall />
       <PageSegment4 />

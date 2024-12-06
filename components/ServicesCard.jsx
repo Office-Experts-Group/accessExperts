@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import PropTypes from "prop-types";
 
-import styles from "../styles/servicesCard.module.css";
+import styles from "../styles/servicesCard.module.scss"; // Change to .scss
 
 const ServicesCard = ({ src, alt, h3, li, link }) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.cardImage}>
+    <div className={styles.card} data-card="true" data-testid="service-card">
+      <div className={`${styles.cardImage}`}>
         <Image
           src={src}
           alt={alt}
@@ -19,7 +19,7 @@ const ServicesCard = ({ src, alt, h3, li, link }) => {
         <h3>{h3}</h3>
       </div>
 
-      <div className={styles.cardContent}>
+      <div className={`${styles.cardContent}`}>
         <h4>{h3}</h4>
         <ul>
           {li.map((item, index) => (

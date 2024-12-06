@@ -16,7 +16,7 @@ const PageSegment3 = () => {
           src={eyes}
           alt="person clicking a computer mouse"
           width={400}
-          height={267}
+          height={263}
         />
       </AnimateOnScroll>
 

@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import remoteSupport from "../../../public/remoteSupport600x400.webp";
+import remoteSupport from "../../../public/meetDesk600x450.webp";
 
 const PageSegment4 = () => {
   return (
@@ -29,8 +29,8 @@ const PageSegment4 = () => {
             <Image
               src={remoteSupport}
               alt="person clicking a computer mouse"
-              width={600}
-              height={400}
+              width={450}
+              height={300}
             />
           </div>
         </AnimateOnScroll>

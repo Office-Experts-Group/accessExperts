@@ -7,9 +7,12 @@ import MiniTicks from "./(components)/MiniTicks";
 import ExpertsAwait from "../../components/ExpertsAwait";
 import FAQSection from "../../components/FAQSection";
 import Contact from "../../components/Contact";
+import Contents from "./(components)/Contents";
 
 import faqs from "../../faqs/is-access-right-for-you";
-import Contents from "./(components)/Contents";
+
+import desk from "../../public/pageHeros/desk.webp";
+import codeScreen from "../../public/pageHeros/mob/codeScreenMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -155,11 +158,6 @@ const schema = {
       image: {
         "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -172,7 +170,13 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Contents />
-      <ServiceHero title="Is Microsoft Access the Right Technology for your Company?" />
+      <ServiceHero
+        title="Is Microsoft Access the Right Technology for your Company?"
+        desktopImage={desk}
+        mobileImage={codeScreen}
+        altMob={"Computer code on a screen"}
+        altDesk={"Desktop in an office environment"}
+      />
       <PageSegmentMain2 />
       <Promo
         h2="Just Ask The Access Experts"
@@ -180,7 +184,7 @@ const Page = () => {
       />
       <MiniTicks />
       <ExpertsAwait />
-      <div style={{ marginTop: "4rem" }}>
+      <div style={{ marginTop: "6rem" }}>
         <FAQSection faqs={faqs} />
       </div>
       <Contact />

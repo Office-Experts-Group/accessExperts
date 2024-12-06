@@ -3,17 +3,17 @@ import Image from "next/image";
 
 import styles from "../../../styles/pageSegment.module.css";
 
-import dreadLady from "../../../public/dreadLady.webp";
+import board from "../../../public/board600x450.webp";
 
 const PageSegmentMain = () => {
   return (
     <section className={styles.pageSegment}>
       <div className={styles.imgWrapper}>
         <Image
-          src={dreadLady}
-          alt="lady in an office environment"
-          width={540}
-          height={480}
+          src={board}
+          alt="lady with a futuristic tablet device"
+          width={600}
+          height={450}
         />
       </div>
 

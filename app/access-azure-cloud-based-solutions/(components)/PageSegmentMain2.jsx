@@ -3,13 +3,13 @@ import React from "react";
 
 import styles from "../../../styles/pageSegment2.module.css";
 
-import lady from "../../../public/service-img-1.webp";
+import office from "../../../public/office770x430.webp";
 
 const PageSegmentMain2 = () => {
   return (
     <section className={styles.pageSegment}>
       <Image
-        src={lady}
+        src={office}
         alt="lady in an office environment"
         width={770}
         height={424}

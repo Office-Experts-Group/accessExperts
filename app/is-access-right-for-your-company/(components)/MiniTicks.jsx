@@ -6,7 +6,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegmentCenter.module.css";
 
-import success from "../../../public/success600x400.webp";
+import access from "../../../public/access600x400.webp";
 
 const MiniTicks = () => {
   const benefits = [
@@ -50,10 +50,7 @@ const MiniTicks = () => {
 
   return (
     <section
-      className={`${styles.pageSegment} ${styles.gap}`}
-      style={{
-        margin: "4rem 0 0 0",
-      }}
+      className={`${styles.pageSegment} ${styles.gap} ${styles.btmMargin}`}
     >
       <div className={styles.pageSegmentCenter}>
         <h2>Access Help and Support</h2>
@@ -92,7 +89,7 @@ const MiniTicks = () => {
 
       <AnimateOnScroll animation="slide-right" duration={1} delay={0}>
         <Image
-          src={success}
+          src={access}
           alt="person pointing at a computer screen"
           width={600}
           height={400}

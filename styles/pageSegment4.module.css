@@ -456,4 +456,14 @@
   .btmMargin {
     margin-bottom: 6rem;
   }
+}
+
+@media screen and (min-width: 800px) {
+  .extraPad {
+    padding: 3rem 10vw;
+  }
+}
+
+.onlineMargin {
+  padding: 0 10vw 6rem 10vw;
 }/*# sourceMappingURL=pageSegment4.module.css.map */

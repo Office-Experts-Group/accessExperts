@@ -279,4 +279,13 @@
   .gap {
     gap: 2rem;
   }
+}
+
+.btmMargin {
+  margin: 6rem 0;
+}
+@media screen and (max-width: 800px) {
+  .btmMargin {
+    margin: 0 0 2rem 0;
+  }
 }/*# sourceMappingURL=pageSegmentCenter.module.css.map */

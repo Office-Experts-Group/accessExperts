@@ -282,3 +282,10 @@
     gap: 2rem;
   }
 }
+
+.btmMargin {
+  margin: 6rem 0;
+  @media screen and (max-width: 800px) {
+    margin: 0 0 2rem 0;
+  }
+}

@@ -5,13 +5,13 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import chain from "../../../public/chain600x400.webp";
+import desk from "../../../public/desk600x450.webp";
 
 const PageSegment4New = () => {
   return (
     <div className="animate-wrapper">
       <section
-        className={`${styles.pageSegment} ${styles.reversed}`}
+        className={`${styles.pageSegment} ${styles.reversed} ${styles.extraPad}`}
         id="web-apps"
       >
         <AnimateOnScroll animation="slide-right" duration={1} delay={0.2}>
@@ -33,10 +33,10 @@ const PageSegment4New = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0}>
           <div className="image-wrapper">
             <Image
-              src={chain}
+              src={desk}
               alt="person clicking a computer mouse"
-              width={600}
-              height={400}
+              width={400}
+              height={300}
             />
           </div>
         </AnimateOnScroll>

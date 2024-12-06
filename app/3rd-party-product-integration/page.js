@@ -9,6 +9,9 @@ import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/3rd-party-product-integration.js";
 
+import graphic from "../../public/pageHeros/graphic.webp";
+import graph from "../../public/pageHeros/mob/graph.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -243,7 +246,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title={"Third Party Product Integration"} />
+      <ServiceHero
+        title={"Third Party Product Integration"}
+        desktopImage={graphic}
+        mobileImage={graph}
+        altMob={"Graphs"}
+        altDesk={"Graphs on a table"}
+      />
       <PageSegmentMain />
       <ExpertsAwait />
       <Promo

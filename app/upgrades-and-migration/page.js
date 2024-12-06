@@ -11,6 +11,9 @@ import Segment4Repeat from "./(components)/Segment4Repeat";
 import ExpertsAwait from "../../components/ExpertsAwait";
 import Contents from "./(components)/Contents";
 
+import graphic from "../../public/pageHeros/tableGraph.webp";
+import graph from "../../public/pageHeros/mob/graph.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -106,7 +109,6 @@ const schema = {
       priceRange: "$50-$5000",
       paymentAccepted: "Credit Card, Cheque, Direct Debit",
       currenciesAccepted: "AUD",
-      openingHours: "Mo-Fr 09:00-17:00",
       description:
         "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs, our experts excel in Microsoft technology services from database creation to maintenance, troubleshooting, integration, data manipulation, programming, conversions, upgrades, training and support.",
       hasOfferCatalog: {
@@ -156,11 +158,6 @@ const schema = {
       image: {
         "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -173,7 +170,13 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Contents />
-      <ServiceHero title="Upgrades and Migration" />
+      <ServiceHero
+        title="Upgrades and Migration"
+        desktopImage={graphic}
+        mobileImage={graph}
+        altDesk={"Graphs on a table"}
+        altMob={"Graphs"}
+      />
       <ServicePageCards />
       <PageSegmentMain />
       <PageSegment4 />

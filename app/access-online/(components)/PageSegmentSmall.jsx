@@ -19,16 +19,40 @@ const PageSegmentSmall = () => {
 
       <AnimateOnScroll animation="scale-up" delay={0.2}>
         <div className={styles.point}>
-          <div className={styles.pointItem}>
-            <div className={styles.tick}>✓</div>
+          <div className={styles.points}>
+            <div className={styles.tick}>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="1"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+              </svg>
+            </div>
             <p>
               Using SharePoint or Office 365, you can set up your own or
               Microsoft hosted solution. These allow us to rapidly setup a basic
               database for your users.
             </p>
           </div>
-          <div className={styles.pointItem}>
-            <div className={styles.tick}>✓</div>
+          <div className={styles.points}>
+            <div className={styles.tick}>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="1"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+              </svg>
+            </div>
             <p>
               We can host a database with Microsoft using native Access to link
               to your online data.
