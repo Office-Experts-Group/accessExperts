@@ -4,6 +4,9 @@ import ServiceHero from "../../components/ServiceHero";
 import MeetTheTeam from "../../components/MeetTheTeam";
 import Contact from "../../components/Contact";
 
+import handShake from "../../public/pageHeros/handShake.webp";
+import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -128,7 +131,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Meet The Team" />
+      <ServiceHero
+        title="Meet The Team"
+        desktopImage={handShake}
+        mobileImage={handShakeMob}
+        altDesk={"Hand shaking"}
+        altMob={"Hand shaking"}
+      />
       <MeetTheTeam />
       <Contact />
     </>

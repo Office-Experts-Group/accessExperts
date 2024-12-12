@@ -77,9 +77,7 @@ export const metadata = {
     title: "Microsoft Access Integration Solutions | Access Experts Australia",
     description:
       "Professional Microsoft Access integration services connecting your databases with CRMs, accounting software, and third-party applications. Competitive pricing and expert consultation.",
-    images: [
-      "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+    images: ["https://www.accessexperts.com.au/logo.jpg"],
   },
 
   // Additional tags

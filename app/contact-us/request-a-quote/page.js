@@ -3,7 +3,9 @@ import React from "react";
 import Contact from "../../../components/Contact";
 import ServiceHero from "../../../components/ServiceHero";
 import CTAMain from "../(components)/CTAMain";
-import ContactDetails from "../../../components/ContactDetails";
+
+import calculator from "../../../public/pageHeros/calculator.webp";
+import calcMob from "../../../public/pageHeros/mob/calcMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -145,20 +147,15 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://accessexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 326,
-        height: 107,
-        caption: "Access Experts",
+        "@id": "https://www.accessexperts.com.au/logo.jpg",
+        url: "/logo.jpg",
+        contentUrl: "/logo.jpg",
+        width: 1200,
+        height: 630,
+        caption: "Office Experts Group",
       },
       image: {
-        "@id": "https://accessexperts.com.au/#/schema/logo/image/",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
+        "@id": "https://www.accessexperts.com.au/logo.jpg",
       },
     },
   ],
@@ -171,10 +168,15 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Request a Quote" />
+      <ServiceHero
+        title="Request a Quote"
+        desktopImage={calculator}
+        mobileImage={calcMob}
+        altDesk={"calculator on a desk"}
+        altMob={"calculator on a desk"}
+      />
       <CTAMain />
       <Contact isQuote={true} />
-      <ContactDetails />
     </>
   );
 };

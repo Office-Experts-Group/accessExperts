@@ -128,15 +128,15 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://www.accessexperts.com.au/#/schema/logo/image/",
-        url: "/logo200x86.webp",
-        contentUrl: "/logo200x86.webp",
-        width: 200,
-        height: 86,
-        caption: "Access Experts",
+        "@id": "https://www.accessexperts.com.au/logo.jpg",
+        url: "/logo.jpg",
+        contentUrl: "/logo.jpg",
+        width: 1200,
+        height: 620,
+        caption: "Office Experts Group",
       },
       image: {
-        "@id": "https://www.accessexperts.com.au/#/schema/logo/image/",
+        "@id": "https://www.accessexperts.com.au/logo.jpg",
       },
       sameAs: ["https://www.facebook.com/MSOfficeExperts"],
     },
@@ -160,7 +160,7 @@ const Page = () => {
       <CTAFull />
       <Promo
         h2="We Deliver the Best Quality"
-        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, perferendis nisi enim perspiciatis voluptatem voluptatum!"
+        p="The Access experts specialist team is part of the Office experts Group, leaders in Microsoft technologies for over 25yrs"
       />
       <Contact />
     </>

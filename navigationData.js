@@ -11,10 +11,6 @@ export const navigationData = {
         href: "",
         items: [
           {
-            label: "Access Experts Home",
-            href: "/",
-          },
-          {
             label: "Cloud-based and Online Database Solutions",
             href: "/access-online/",
           },
@@ -28,6 +24,10 @@ export const navigationData = {
         label: "Excel",
         href: "",
         items: [
+          {
+            label: "Excel Experts Home",
+            href: "https://excelexperts.com.au/",
+          },
           {
             label: "Data analysis and reporting",
             href: "https://excelexperts.com.au/data-manipulation/",

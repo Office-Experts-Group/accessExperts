@@ -7,8 +7,8 @@ import ServiceHero from "../../components/ServiceHero";
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../testimonials";
 
-import thirdParty from "../../public/pageHeros/3rdParty.webp";
-import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
+import testimonialsPic from "../../public/pageHeros/testimonials.webp";
+import testimonialsMob from "../../public/pageHeros/mob/testimonialsMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -132,10 +132,10 @@ const Page = () => {
       />
       <ServiceHero
         title="Client Testimonials"
-        desktopImage={thirdParty}
-        mobileImage={coffeeMob}
-        altDesk={"Person in an office environment"}
-        altMob={"Glasses on a table"}
+        desktopImage={testimonialsPic}
+        mobileImage={testimonialsMob}
+        altDesk={"Smiley face on a wooden block"}
+        altMob={"5 stars"}
       />
       <TestimonialPage testimonials={testimonials} />
       <Contact />

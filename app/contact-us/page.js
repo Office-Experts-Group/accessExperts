@@ -4,6 +4,9 @@ import Contact from "../../components/Contact";
 import ServiceHero from "../../components/ServiceHero";
 import CTAMain from "./(components)/CTAMain";
 
+import contactUs from "../../public/pageHeros/contactUs.webp";
+import contactUsMob from "../../public/pageHeros/mob/contactUsMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -118,7 +121,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Contact Us" />
+      <ServiceHero
+        title="Contact Us"
+        desktopImage={contactUs}
+        mobileImage={contactUsMob}
+        altDesk={"contact method icons on wooden blocks"}
+        altMob={"contact method icons on wooden blocks"}
+      />
       <CTAMain />
       <Contact />
     </>
