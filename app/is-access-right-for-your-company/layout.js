@@ -15,17 +15,6 @@ export const metadata = {
     description:
       "Professional consultation on Microsoft Access database solutions for business. Expert analysis of data management needs, user requirements, and system compatibility.",
     url: "https://www.accessexperts.com.au/is-access-right-for-your-company/",
-    siteName: "Access Experts",
-    images: [
-      {
-        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Access Experts Logo",
-      },
-    ],
-    locale: "en-AU",
-    type: "article",
   },
 
   // Additional metadata
@@ -66,37 +55,8 @@ export const metadata = {
     "Access CRM database solutions",
     "Access workflow automation systems",
   ],
-
-  // Twitter Card
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Is Microsoft Access Right for Your Business? | Access Database Solutions",
-    description:
-      "Professional consultation on Microsoft Access database solutions for business. Expert analysis of data management needs, user requirements, and system compatibility.",
-    images: [
-      "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
-  },
-
-  // Additional tags
-
   canonical:
     "https://www.accessexperts.com.au/is-access-right-for-your-company/",
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {
