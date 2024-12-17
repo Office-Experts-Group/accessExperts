@@ -15,6 +15,7 @@ const SolutionsCarousel = () => {
       title: "Online",
       link: "/access-online",
       image: magnify,
+      alt: "magnifying glass",
       description: [
         "Need an Access database setup to use with Office 365, SharePoint or Azure?",
         "Our experts have several techniques and clever solutions to achieve this.",
@@ -24,6 +25,7 @@ const SolutionsCarousel = () => {
       title: "Help and Training",
       link: "/access-support",
       image: handShake,
+      alt: "handshake",
       description: [
         "Have a database but nobody to support it?",
         "Do you need experts to help with changes or additions?",
@@ -34,6 +36,7 @@ const SolutionsCarousel = () => {
       title: "Upgrades and Conversions",
       link: "/upgrades-and-migration",
       image: graph,
+      alt: "graph",
       description: [
         "Have a database that needs upgrading or is failing after upgrading?",
         "Have a database that needs to be converted from or to another format?",
@@ -43,6 +46,7 @@ const SolutionsCarousel = () => {
       title: "is it right for you?",
       link: "/is-access-right-for-your-company",
       image: desk,
+      alt: "desk",
       description: [
         "Need a database solution with Access, SQL Server, Visual Studio (C#, VB, ASP), Office 365, SharePoint and/or Azure?",
       ],
@@ -80,7 +84,7 @@ const SolutionsCarousel = () => {
                   <div className={styles.imageWrapper}>
                     <Image
                       src={solution.image}
-                      alt={solution.title}
+                      alt={solution.alt}
                       fill
                       sizes="(max-width: 768px) 100vw, 350px"
                       className={styles.carouselImage}
@@ -88,7 +92,7 @@ const SolutionsCarousel = () => {
                   </div>
                   <div className={styles.popIn}>
                     <h3>
-                      <span>Excel</span>
+                      <span>Word Experts</span>
                       <br />
                       {solution.title}
                     </h3>

@@ -29,10 +29,6 @@ const schema = {
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
         "Professional Microsoft Access database upgrade and migration services. Expert assistance in modernizing your database systems and ensuring smooth transitions.",
-      breadcrumb: {
-        "@id":
-          "https://accessexperts.com.au/upgrades-and-migration/#breadcrumb",
-      },
       inLanguage: "en-AU",
     },
     {
@@ -54,63 +50,6 @@ const schema = {
     },
     {
       "@type": "Organization",
-      "@id": "https://accessexperts.com.au/#organization",
-      name: "Access Experts",
-      url: "https://accessexperts.com.au/",
-      email: "access@officeexperts.com.au",
-      telephone: "1300 10 28 10",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 10 28 10",
-          contactType: "customer service",
-          email: "consult@accessexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-        },
-      ],
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      priceRange: "$50-$5000",
-      paymentAccepted: "Credit Card, Cheque, Direct Debit",
-      currenciesAccepted: "AUD",
-      description:
-        "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs, our experts excel in Microsoft technology services from database creation to maintenance, troubleshooting, integration, data manipulation, programming, conversions, upgrades, training and support.",
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Microsoft Access Upgrade and Migration Services",
@@ -144,19 +83,6 @@ const schema = {
             },
           },
         ],
-      },
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://accessexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 326,
-        height: 107,
-        caption: "Access Experts",
-      },
-      image: {
-        "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
     },
   ],
