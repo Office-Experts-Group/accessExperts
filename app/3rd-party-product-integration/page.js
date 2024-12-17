@@ -60,61 +60,6 @@ const schema = {
     },
     {
       "@type": "Organization",
-      "@id": "https://accessexperts.com.au/#organization",
-      additionalType: ["https://en.wikipedia.org/wiki/Microsoft_Access"],
-      name: "Access Experts",
-      url: "https://accessexperts.com.au/",
-      email: "access@officeexperts.com.au",
-      telephone: "1300 10 28 10",
-      legalName: "Access Experts",
-      alternateName: ["Office Experts", "Excel Experts"],
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 10 28 10",
-          contactType: "customer service",
-          email: "consult@accessexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-        },
-      ],
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
       description:
         "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs, our experts excel in Microsoft technology services from database creation to maintenance, troubleshooting, integration, data manipulation, programming, conversions, upgrades, training and support.",
       brand: {
@@ -134,10 +79,6 @@ const schema = {
           "Microsoft Office 365",
         ],
       },
-      paymentAccepted: "Credit Card, Cheque, Direct Debit",
-      currenciesAccepted: "AUD",
-      priceRange: "$50-$5000",
-      isAccessibleForFree: false,
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Microsoft Access Design, Development and Consulting Services",
@@ -221,20 +162,6 @@ const schema = {
           },
         ],
       },
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://www.accessexperts.com.au/logo.jpg",
-        url: "/logo.jpg",
-        contentUrl: "/logo.jpg",
-        width: 1200,
-        height: 620,
-        caption: "Office Experts Group",
-      },
-      image: {
-        "@id": "https://www.accessexperts.com.au/logo.jpg",
-      },
-      sameAs: ["https://www.facebook.com/MSOfficeExperts"],
     },
   ],
 };

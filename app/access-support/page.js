@@ -53,16 +53,6 @@ const schema = {
     },
     {
       "@type": "Organization",
-      "@id": "https://accessexperts.com.au/#organization",
-      name: "Access Experts",
-      alternateName: ["Office Experts", "Excel Experts"],
-      url: "https://accessexperts.com.au/",
-      email: "consult@officeexperts.com.au",
-      telephone: "1300 10 28 10",
-      priceRange: "$50-$5000",
-      paymentAccepted: "Credit Card, Cheque, Direct Debit",
-      currenciesAccepted: "AUD",
-      openingHours: "Mo-Fr 09:00-17:00",
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Microsoft Access Support Services",
@@ -103,57 +93,6 @@ const schema = {
             },
           },
         ],
-      },
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://accessexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 326,
-        height: 107,
-        caption: "Access Experts",
-      },
-      image: {
-        "@id": "https://accessexperts.com.au/#/schema/logo/image/",
       },
     },
   ],

@@ -55,23 +55,6 @@ const schema = {
     {
       "@type": "Organization",
       "@id": "https://accessexperts.com.au/#organization",
-      name: "Access Experts",
-      url: "https://accessexperts.com.au/",
-      email: "access@officeexperts.com.au",
-      telephone: "1300 10 28 10",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 10 28 10",
-          contactType: "customer service",
-          email: "consult@accessexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-        },
-      ],
-      priceRange: "$50-$5000",
-      paymentAccepted: "Credit Card, Cheque, Direct Debit",
-      currenciesAccepted: "AUD",
-      openingHours: "Mo-Fr 09:00-17:00",
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Microsoft Access Design, Development and Consulting Services",
@@ -105,57 +88,6 @@ const schema = {
             },
           },
         ],
-      },
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://www.accessexperts.com.au/logo.jpg",
-        url: "/logo.jpg",
-        contentUrl: "/logo.jpg",
-        width: 1200,
-        height: 630,
-        caption: "Office Experts Group",
-      },
-      image: {
-        "@id": "https://www.accessexperts.com.au/logo.jpg",
       },
     },
   ],
