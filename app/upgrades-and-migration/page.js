@@ -1,15 +1,52 @@
 import React from "react";
+import dynamic from "next/dynamic";
+
+import ResponsivePlaceholder from "../../components/ResponsivePlaceholder";
 
 import ServiceHero from "../../components/ServiceHero";
 import ServicePageCards from "./(components)/ServicePageCards";
-import Contact from "../../components/Contact";
-import PageSegment4 from "./(components)/PageSegment4";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import BlackSegment from "./(components)/BlackSegment";
-import Promo from "./(components)/Promo";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import ExpertsAwait from "../../components/ExpertsAwait";
 import Contents from "./(components)/Contents";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={373} mobileHeight={625} />
+  ),
+});
+
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={727} mobileHeight={805} />
+  ),
+});
+
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={374} mobileHeight={1084} />
+  ),
+});
+
+const Promo = dynamic(() => import("../../components/Promo"), {
+  loading: () => (
+    <ResponsivePlaceholder
+      desktopHeight={130}
+      mobileHeight={100}
+      showSpinner={false}
+    />
+  ),
+});
+
+const Contact = dynamic(() => import("../../components/Contact"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={600} mobileHeight={500} />
+  ),
+});
+
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={1023} mobileHeight={1564} />
+  ),
+});
 
 import graphic from "../../public/pageHeros/tableGraph.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";

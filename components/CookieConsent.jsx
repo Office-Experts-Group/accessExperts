@@ -5,7 +5,7 @@ import styles from "../styles/cookieConsent.module.css";
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isClient, setIsClient] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const [hasTriggered, setHasTriggered] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -14,22 +14,35 @@ const CookieConsent = () => {
     const consentChoice = localStorage.getItem("cookieConsent");
     if (consentChoice === "accepted") {
       initializeAnalytics();
-      return; // Exit early if consent already given
+      return;
     }
+
+    // Set a minimum time before showing (3 seconds)
+    const timeoutId = setTimeout(() => {
+      const initialScroll = window.scrollY > 100;
+      if (initialScroll && !hasTriggered) {
+        setHasTriggered(true);
+        setIsVisible(true);
+      }
+    }, 3000);
 
     // Add scroll listener
     const handleScroll = () => {
-      if (!hasScrolled && window.scrollY > 100) {
-        // Show after 100px scroll
-        setHasScrolled(true);
+      if (!hasTriggered && window.scrollY > 100) {
+        setHasTriggered(true);
         setIsVisible(true);
-        window.removeEventListener("scroll", handleScroll); // Clean up listener
+        window.removeEventListener("scroll", handleScroll);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [hasScrolled]);
+
+    // Cleanup
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [hasTriggered]);
 
   const initializeAnalytics = () => {
     if (typeof window === "undefined" || window.GA_INITIALIZED) return;

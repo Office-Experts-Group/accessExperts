@@ -1,17 +1,71 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
+import ResponsivePlaceholder from "../../components/ResponsivePlaceholder";
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain2 from "./(components)/PageSegmentMain2";
-import PageSegment3 from "./(components)/PageSegment3";
-import PageSegment4New from "./(components)/PageSegment4New";
-import PageSegment5 from "./(components)/PageSegment5";
-import PageSegment6 from "./(components)/PageSegment6";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import PageSegment7 from "./(components)/PageSegment7";
-import PageSegment8 from "./(components)/PageSegment8";
-import Contact from "../../components/Contact";
-import Promo from "../../components/Promo";
 import Contents from "./(components)/Contents";
+
+const PageSegment3 = dynamic(() => import("./(components)/PageSegment3"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={415} mobileHeight={718} />
+  ),
+});
+
+const PageSegment4New = dynamic(
+  () => import("./(components)/PageSegment4New"),
+  {
+    loading: () => (
+      <ResponsivePlaceholder desktopHeight={400} mobileHeight={674} />
+    ),
+  }
+);
+
+const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={810} mobileHeight={511} />
+  ),
+});
+
+const PageSegment6 = dynamic(() => import("./(components)/PageSegment6"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={656} mobileHeight={1087} />
+  ),
+});
+
+const PageSegment7 = dynamic(() => import("./(components)/PageSegment7"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={415} mobileHeight={718} />
+  ),
+});
+
+const PageSegment8 = dynamic(() => import("./(components)/PageSegment8"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={436} mobileHeight={367} />
+  ),
+});
+
+const Promo = dynamic(() => import("../../components/Promo"), {
+  loading: () => (
+    <ResponsivePlaceholder
+      desktopHeight={130}
+      mobileHeight={100}
+      showSpinner={false}
+    />
+  ),
+});
+
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={1023} mobileHeight={1564} />
+  ),
+});
+
+const Contact = dynamic(() => import("../../components/Contact"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={600} mobileHeight={500} />
+  ),
+});
 
 import marker from "../../public/pageHeros/marker.webp";
 import codeMob from "../../public/pageHeros/mob/codeMob.webp";

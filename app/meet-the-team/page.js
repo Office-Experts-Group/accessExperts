@@ -1,7 +1,14 @@
 import React from "react";
+import dynamic from "next/dynamic";
+import ResponsivePlaceholder from "../../components/ResponsivePlaceholder";
+
+const MeetTheTeam = dynamic(() => import("../../components/MeetTheTeam"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={4235} mobileHeight={11257} />
+  ),
+});
 
 import ServiceHero from "../../components/ServiceHero";
-import MeetTheTeam from "../../components/MeetTheTeam";
 import Contact from "../../components/Contact";
 
 import handShake from "../../public/pageHeros/handShake.webp";
