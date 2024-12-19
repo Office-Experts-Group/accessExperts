@@ -1,48 +1,13 @@
 import React from "react";
-import dynamic from "next/dynamic";
 
-import ResponsivePlaceholder from "../../components/ResponsivePlaceholder";
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-
-const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"), {
-  loading: () => (
-    <ResponsivePlaceholder desktopHeight={436} mobileHeight={677} />
-  ),
-});
-
-const PageSegmentCenter = dynamic(
-  () => import("./(components)/PageSegmentCenter"),
-  {
-    loading: () => (
-      <ResponsivePlaceholder desktopHeight={491} mobileHeight={895} />
-    ),
-  }
-);
-
-const MiniTicks = dynamic(() => import("./(components)/MiniTicks"), {
-  loading: () => (
-    <ResponsivePlaceholder desktopHeight={340} mobileHeight={642} />
-  ),
-});
-
-const Contact = dynamic(() => import("../../components/Contact"), {
-  loading: () => (
-    <ResponsivePlaceholder desktopHeight={600} mobileHeight={500} />
-  ),
-});
-
-const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"), {
-  loading: () => (
-    <ResponsivePlaceholder desktopHeight={1023} mobileHeight={1564} />
-  ),
-});
-
-const FAQSection = dynamic(() => import("../../components/FAQSection"), {
-  loading: () => (
-    <ResponsivePlaceholder desktopHeight={630} mobileHeight={840} />
-  ),
-});
+import PageSegment4 from "./(components)/PageSegment4";
+import PageSegmentCenter from "./(components)/PageSegmentCenter";
+import MiniTicks from "./(components)/MiniTicks";
+import Contact from "../../components/Contact";
+import ExpertsAwait from "../../components/ExpertsAwait";
+import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/access-support";
 
