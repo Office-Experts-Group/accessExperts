@@ -13,16 +13,7 @@ const CookieConsent = dynamic(() => import("../components/CookieConsent"), {
   ssr: false, // Client-side only
 });
 
-const Footer = dynamic(() => import("./(components)/Footer"), {
-  loading: () => (
-    <ResponsivePlaceholder
-      desktopHeight={600}
-      mobileHeight={600}
-      showSpinner={true}
-    />
-  ),
-  ssr: true,
-});
+import Footer from "./(components)/Footer";
 
 const Copyright = dynamic(() => import("../components/Copyright"), {
   loading: () => (
@@ -50,11 +41,6 @@ const aptos = localFont({
       style: "normal",
     },
     {
-      path: "../public/fonts/aptos/Aptos-SemiBold.ttf",
-      weight: "600",
-      style: "normal",
-    },
-    {
       path: "../public/fonts/aptos/Aptos-Bold.ttf",
       weight: "700",
       style: "normal",
@@ -65,11 +51,14 @@ const aptos = localFont({
       style: "normal",
     },
   ],
+  preload: true,
+  display: "swap",
   variable: "--font-aptos",
 });
 
 const garamond = EB_Garamond({
   subsets: ["latin"],
+  preload: true,
   display: "swap",
   weight: ["400", "500", "700"],
   variable: "--font-garamond",

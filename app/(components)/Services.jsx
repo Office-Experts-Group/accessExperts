@@ -60,6 +60,7 @@ const Services = () => {
               link={
                 "https://www.officeexperts.com.au/services/by-business-solution/database-development-and-solutions"
               }
+              linkText={"Database Solutions"}
             />
           </CardIntersectionWrapper>
           <CardIntersectionWrapper>
@@ -72,6 +73,7 @@ const Services = () => {
                 "Using Azure in combination with Access we can setup a custom, cost effective cloud database to suit your needs.",
               ]}
               link={"/access-azure-cloud-based-solutions"}
+              linkText={"Cloud Solutions"}
             />
           </CardIntersectionWrapper>
           <CardIntersectionWrapper>
@@ -84,6 +86,7 @@ const Services = () => {
                 "Want to extend 3rd party product functionality with Access?",
               ]}
               link={"/3rd-party-product-integration"}
+              linkText={"Integration"}
             />
           </CardIntersectionWrapper>
           <CardIntersectionWrapper>
@@ -96,6 +99,7 @@ const Services = () => {
                 "Have a database that needs to be converted from or to another format?",
               ]}
               link={"/upgrades-and-migration"}
+              linkText={"Upgrades"}
             />
           </CardIntersectionWrapper>
         </div>

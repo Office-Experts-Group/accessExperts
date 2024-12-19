@@ -277,14 +277,12 @@
 }
 .formField textarea::-moz-placeholder, .formField input::-moz-placeholder {
   color: #a0a2a6;
-  opacity: 0.7;
   font-style: italic;
   font-size: 0.8rem;
 }
 .formField textarea::placeholder,
 .formField input::placeholder {
   color: #a0a2a6;
-  opacity: 0.7;
   font-style: italic;
   font-size: 0.8rem;
 }
