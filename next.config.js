@@ -3,6 +3,15 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  optimizeFonts: true,
+
+  experimental: {
+    optimizeCss: {
+      critters: {
+        ssrMode: "strict",
+      },
+    },
+  },
 
   images: {
     formats: ["image/webp"],

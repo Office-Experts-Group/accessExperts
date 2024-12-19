@@ -1,11 +1,37 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
+import ResponsivePlaceholder from "../../components/ResponsivePlaceholder";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 import ServiceHero from "../../components/ServiceHero";
-import Promo from "../../components/Promo";
-import Contact from "../../components/Contact";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import FAQSection from "../../components/FAQSection";
+
+const Promo = dynamic(() => import("../../components/Promo"), {
+  loading: () => (
+    <ResponsivePlaceholder
+      desktopHeight={130}
+      mobileHeight={100}
+      showSpinner={false}
+    />
+  ),
+});
+
+const Contact = dynamic(() => import("../../components/Contact"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={600} mobileHeight={500} />
+  ),
+});
+
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={1023} mobileHeight={1564} />
+  ),
+});
+
+const FAQSection = dynamic(() => import("../../components/FAQSection"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={630} mobileHeight={840} />
+  ),
+});
 
 import faqs from "../../faqs/3rd-party-product-integration.js";
 
