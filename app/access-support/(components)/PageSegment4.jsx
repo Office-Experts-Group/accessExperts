@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import handsIn from "../../../public/handsIn600x400.webp";
+import remoteSupport from "../../../public/remoteSupport600x400.webp";
 
 const PageSegment4 = () => {
   return (
@@ -36,8 +36,8 @@ const PageSegment4 = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
           <div className="image-wrapper">
             <Image
-              src={handsIn}
-              alt="people joining hands in celebration"
+              src={remoteSupport}
+              alt="person clicking a computer mouse"
               width={600}
               height={400}
             />

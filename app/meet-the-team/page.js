@@ -1,8 +1,7 @@
 import React from "react";
 
-import MeetTheTeam from "../../components/MeetTheTeam"
-
 import ServiceHero from "../../components/ServiceHero";
+import MeetTheTeam from "../../components/MeetTheTeam";
 import Contact from "../../components/Contact";
 
 import handShake from "../../public/pageHeros/handShake.webp";

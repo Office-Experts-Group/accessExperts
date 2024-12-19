@@ -5,9 +5,9 @@ import PageSegmentMain from "./(components)/PageSegmentMain";
 import PageSegment4 from "./(components)/PageSegment4";
 import PageSegmentCenter from "./(components)/PageSegmentCenter";
 import MiniTicks from "./(components)/MiniTicks";
-import Contact from "../../components/Contact";
 import ExpertsAwait from "../../components/ExpertsAwait";
 import FAQSection from "../../components/FAQSection";
+import Contact from "../../components/Contact";
 
 import faqs from "../../faqs/access-support";
 

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
+
 import styles from "../styles/animate.module.css";
 
 const AnimateOnScroll = ({
@@ -15,7 +16,6 @@ const AnimateOnScroll = ({
   const lastScrollY = useRef(0);
   const wasAboveViewport = useRef(false);
   const wasBelowViewport = useRef(false);
-  const ticking = useRef(false);
 
   const checkVisibility = () => {
     if (!elementRef.current || typeof window === "undefined") return;
@@ -62,21 +62,15 @@ const AnimateOnScroll = ({
     }
 
     lastScrollY.current = currentScrollY;
-    ticking.current = false;
   };
 
   useEffect(() => {
     // Initial check on mount
     checkVisibility();
 
-    // Handle scroll events with requestAnimationFrame
+    // Handle scroll events
     const handleScroll = () => {
-      if (!ticking.current) {
-        window.requestAnimationFrame(() => {
-          checkVisibility();
-        });
-        ticking.current = true;
-      }
+      checkVisibility();
     };
 
     // Handle back/forward navigation and initial load
@@ -97,9 +91,10 @@ const AnimateOnScroll = ({
     }
   }, []);
 
-  const classes = `${styles.animate} ${styles[animation]} ${
-    isVisible ? styles.visible : ""
-  }`;
+  const baseClass = styles.animate;
+  const animationClass = styles[animation];
+  const visibilityClass = isVisible ? styles.visible : "";
+  const classes = `${baseClass} ${animationClass} ${visibilityClass}`;
 
   return (
     <div

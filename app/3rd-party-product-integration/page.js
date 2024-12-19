@@ -1,11 +1,11 @@
 import React from "react";
 
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import ServiceHero from "../../components/ServiceHero";
 import Promo from "../../components/Promo";
 import Contact from "../../components/Contact";
 import ExpertsAwait from "../../components/ExpertsAwait";
 import FAQSection from "../../components/FAQSection";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import ServiceHero from "../../components/ServiceHero";
 
 import faqs from "../../faqs/3rd-party-product-integration.js";
 

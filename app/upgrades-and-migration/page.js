@@ -2,14 +2,14 @@ import React from "react";
 
 import ServiceHero from "../../components/ServiceHero";
 import ServicePageCards from "./(components)/ServicePageCards";
-import Contents from "./(components)/Contents";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import PageSegment4 from "./(components)/PageSegment4";
-import BlackSegment from "./(components)/BlackSegment";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import Promo from "../../components/Promo";
 import Contact from "../../components/Contact";
+import PageSegment4 from "./(components)/PageSegment4";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import BlackSegment from "./(components)/BlackSegment";
+import Promo from "./(components)/Promo";
+import Segment4Repeat from "./(components)/Segment4Repeat";
 import ExpertsAwait from "../../components/ExpertsAwait";
+import Contents from "./(components)/Contents";
 
 import graphic from "../../public/pageHeros/tableGraph.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";

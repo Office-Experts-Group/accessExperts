@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 import styles from "../styles/servicesCard.module.scss"; // Change to .scss
 
-const ServicesCard = ({ src, alt, h3, li, link, linkText }) => {
+const ServicesCard = ({ src, alt, h3, li, link }) => {
   return (
     <div className={styles.card} data-card="true" data-testid="service-card">
       <div className={`${styles.cardImage}`}>
@@ -27,7 +27,7 @@ const ServicesCard = ({ src, alt, h3, li, link, linkText }) => {
           ))}
         </ul>
         <Link href={link}>
-          <span>{linkText}</span>
+          Learn more
           <svg
             stroke="currentColor"
             fill="currentColor"
