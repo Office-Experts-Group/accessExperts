@@ -7,16 +7,34 @@ import { EB_Garamond } from "next/font/google";
 
 import HeadTop from "../components/HeadTop";
 import Header from "./(components)/Header";
+import ResponsivePlaceholder from "../components/ResponsivePlaceholder";
 
 const CookieConsent = dynamic(() => import("../components/CookieConsent"), {
   ssr: false, // Client-side only
 });
 
 const Footer = dynamic(() => import("./(components)/Footer"), {
-  ssr: true, // We want this server rendered but loaded dynamically
+  loading: () => (
+    <ResponsivePlaceholder
+      desktopHeight={600}
+      mobileHeight={600}
+      showSpinner={true}
+    />
+  ),
+  ssr: true,
 });
 
-const Copyright = dynamic(() => import("../components/Copyright"));
+const Copyright = dynamic(() => import("../components/Copyright"), {
+  loading: () => (
+    <ResponsivePlaceholder
+      desktopHeight={112}
+      mobileHeight={80}
+      showSpinner={false}
+    />
+  ),
+  ssr: true,
+});
+
 const ScrollBtn = dynamic(() => import("../components/ScrollBtn"), {
   ssr: false, // Client-side only as it depends on scroll
 });
@@ -32,11 +50,6 @@ const aptos = localFont({
       style: "normal",
     },
     {
-      path: "../public/fonts/aptos/Aptos-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
       path: "../public/fonts/aptos/Aptos-SemiBold.ttf",
       weight: "600",
       style: "normal",
@@ -49,11 +62,6 @@ const aptos = localFont({
     {
       path: "../public/fonts/aptos/Aptos-ExtraBold.ttf",
       weight: "800",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/aptos/Aptos-Black.ttf",
-      weight: "900",
       style: "normal",
     },
   ],
@@ -79,7 +87,7 @@ export const metadata = {
     title:
       "Access Experts | Microsoft Access Database Consulting & Development",
     description:
-      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. Specialized in data management, reporting, and system optimization.",
+      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. Specialised in data management, reporting, and system optimisation.",
     url: "https://www.accessexperts.com.au/",
     siteName: "Access Experts",
     images: [
@@ -96,47 +104,16 @@ export const metadata = {
 
   // Additional metadata
   keywords: [
-    // Core Access Services
-    "Microsoft Access database consulting",
-    "Custom Access database development",
-    "Access database integration services",
-    "Access database maintenance support",
-
-    // Specific Solutions
-    "Access Azure cloud database migration",
-    "Access SQL Server integration",
-    "Access SharePoint connectivity",
-    "Access database version upgrades",
-    "Access VBA macro development",
-    "Access database corruption repair",
-
-    // Specialized Features
-    "Access multi-user database setup",
-    "Access cloud-based solutions",
-    "Access database performance optimization",
-    "Access data migration services",
-    "Access database security implementation",
-
-    // Integration Specific
-    "Access financial system integration",
-    "Access CRM database integration",
-    "Access accounting package integration",
-    "Access Office 365 integration",
-    "Access cloud backup solutions",
-
-    // Location Based
-    "Access database consultants Sydney",
-    "Access database experts Melbourne",
-    "Access developers Brisbane",
-    "Access consulting Perth",
-    "Access database services Gold Coast",
-
-    // Industry Solutions
-    "Access inventory management systems",
-    "Access customer database solutions",
-    "Access reporting automation",
-    "Access data analysis tools",
-    "Access business process automation",
+    "access consultant",
+    "access consulting",
+    "access contractor",
+    "access developer",
+    "access expert",
+    "access professional",
+    "access programmer",
+    "access specialist",
+    "access support",
+    "database consultant",
   ],
 
   // Twitter Card
@@ -145,10 +122,8 @@ export const metadata = {
     title:
       "Access Experts | Microsoft Access Database Consulting & Development",
     description:
-      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. Specialized in data management, reporting, and system optimization.",
-    images: [
-      "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. Specialised in data management, reporting, and system optimization.",
+    images: ["https://www.accessexperts.com.au/logo.webp"],
   },
 
   // Additional tags

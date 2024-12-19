@@ -4,19 +4,64 @@ import dynamic from "next/dynamic";
 
 // Keep Hero static as it's above fold
 import Hero from "./(components)/Hero";
+import Services from "./(components)/Services"; // above fold on mobile
+import ResponsivePlaceholder from "../components/ResponsivePlaceholder";
 
 // Dynamically import everything else
-const Services = dynamic(() => import("./(components)/Services"));
-const CTAMain = dynamic(() => import("./(components)/CTAMain"));
-const IsRight = dynamic(() => import("./(components)/IsRight"));
-const SolutionsCarousel = dynamic(() =>
-  import("./(components)/SolutionsCarousel")
+const CTAMain = dynamic(() => import("./(components)/CTAMain"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={210} mobileHeight={325} />
+  ),
+});
+
+const IsRight = dynamic(() => import("./(components)/IsRight"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={1000} mobileHeight={700} />
+  ),
+});
+
+const SolutionsCarousel = dynamic(
+  () => import("./(components)/SolutionsCarousel"),
+  {
+    loading: () => (
+      <ResponsivePlaceholder desktopHeight={450} mobileHeight={300} />
+    ),
+  }
 );
-const CTAFull = dynamic(() => import("./(components)/CTAFull"));
-const Testimonials = dynamic(() => import("./(components)/Testimonials"));
-const Brands = dynamic(() => import("../components/Brands"));
-const Promo = dynamic(() => import("../components/Promo"));
-const Contact = dynamic(() => import("../components/Contact"));
+
+const Testimonials = dynamic(() => import("./(components)/Testimonials"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={600} mobileHeight={400} />
+  ),
+});
+
+const Brands = dynamic(() => import("../components/Brands"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={263} mobileHeight={200} />
+  ),
+});
+
+const CTAFull = dynamic(() => import("./(components)/CTAFull"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={485} mobileHeight={350} />
+  ),
+});
+
+const Promo = dynamic(() => import("../components/Promo"), {
+  loading: () => (
+    <ResponsivePlaceholder
+      desktopHeight={130}
+      mobileHeight={100}
+      showSpinner={false}
+    />
+  ),
+});
+
+const Contact = dynamic(() => import("../components/Contact"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={600} mobileHeight={500} />
+  ),
+});
 
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 import { testimonials } from "../testimonials";
@@ -135,15 +180,15 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://www.accessexperts.com.au/logo.jpg",
-        url: "/logo.jpg",
-        contentUrl: "/logo.jpg",
+        "@id": "https://www.accessexperts.com.au/logo.webp",
+        url: "/logo.webp",
+        contentUrl: "/logo.webp",
         width: 1200,
         height: 620,
         caption: "Office Experts Group",
       },
       image: {
-        "@id": "https://www.accessexperts.com.au/logo.jpg",
+        "@id": "https://www.accessexperts.com.au/logo.webp",
       },
       sameAs: ["https://www.facebook.com/MSOfficeExperts"],
     },
