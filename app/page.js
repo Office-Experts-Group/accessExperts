@@ -1,15 +1,67 @@
 import React from "react";
 
+import dynamic from "next/dynamic";
+
+// Keep Hero static as it's above fold
 import Hero from "./(components)/Hero";
-import Services from "./(components)/Services";
-import CTAMain from "./(components)/CTAMain";
-import IsRight from "./(components)/IsRight";
-import SolutionsCarousel from "./(components)/SolutionsCarousel";
-import Testimonials from "./(components)/Testimonials";
-import Brands from "../components/Brands";
-import CTAFull from "./(components)/CTAFull";
-import Promo from "../components/Promo";
-import Contact from "../components/Contact";
+import Services from "./(components)/Services"; // above fold on mobile
+import ResponsivePlaceholder from "../components/ResponsivePlaceholder";
+
+// Dynamically import everything else
+const CTAMain = dynamic(() => import("./(components)/CTAMain"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={210} mobileHeight={325} />
+  ),
+});
+
+const IsRight = dynamic(() => import("./(components)/IsRight"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={1000} mobileHeight={700} />
+  ),
+});
+
+const SolutionsCarousel = dynamic(
+  () => import("./(components)/SolutionsCarousel"),
+  {
+    loading: () => (
+      <ResponsivePlaceholder desktopHeight={450} mobileHeight={300} />
+    ),
+  }
+);
+
+const Testimonials = dynamic(() => import("./(components)/Testimonials"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={600} mobileHeight={400} />
+  ),
+});
+
+const Brands = dynamic(() => import("../components/Brands"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={263} mobileHeight={200} />
+  ),
+});
+
+const CTAFull = dynamic(() => import("./(components)/CTAFull"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={485} mobileHeight={350} />
+  ),
+});
+
+const Promo = dynamic(() => import("../components/Promo"), {
+  loading: () => (
+    <ResponsivePlaceholder
+      desktopHeight={130}
+      mobileHeight={100}
+      showSpinner={false}
+    />
+  ),
+});
+
+const Contact = dynamic(() => import("../components/Contact"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={600} mobileHeight={500} />
+  ),
+});
 
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 import { testimonials } from "../testimonials";

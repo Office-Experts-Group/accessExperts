@@ -1,6 +1,12 @@
 import React from "react";
+import dynamic from "next/dynamic";
+import ResponsivePlaceholder from "../../components/ResponsivePlaceholder";
 
-import MeetTheTeam from "../../components/MeetTheTeam"
+const MeetTheTeam = dynamic(() => import("../../components/MeetTheTeam"), {
+  loading: () => (
+    <ResponsivePlaceholder desktopHeight={4235} mobileHeight={11257} />
+  ),
+});
 
 import ServiceHero from "../../components/ServiceHero";
 import Contact from "../../components/Contact";
