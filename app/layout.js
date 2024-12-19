@@ -128,21 +128,9 @@ export const metadata = {
 
   // Icons
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
-      { url: "/favicon.ico", sizes: "16x16" },
-    ],
+    icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",
     apple: "/apple-touch-icon.png",
-  },
-  other: {
-    link: [
-      {
-        rel: "preload",
-        href: "/hero/handShake.webp",
-        as: "image",
-      },
-    ],
   },
 };
 
