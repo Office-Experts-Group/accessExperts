@@ -135,15 +135,6 @@ export const metadata = {
     shortcut: "/favicon-32x32.png",
     apple: "/apple-touch-icon.png",
   },
-  other: {
-    link: [
-      {
-        rel: "preload",
-        href: "/hero/handShake.webp",
-        as: "image",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({ children }) {

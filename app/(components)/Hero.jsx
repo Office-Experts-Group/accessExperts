@@ -22,6 +22,7 @@ const Hero = () => {
             quality={75}
             priority
             placeholder="blur"
+            blurDataURL={handShake.blurDataURL}
             width={1920}
             height={1080}
           />
@@ -34,6 +35,7 @@ const Hero = () => {
             sizes="(max-width: 640px) 640px, (max-width: 1080px) 1080px, 1920px"
             quality={75}
             placeholder="blur"
+            blurDataURL={graph.blurDataURL}
             width={1920}
             height={1080}
           />
