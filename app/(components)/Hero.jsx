@@ -18,13 +18,8 @@ const Hero = () => {
             src={handShake}
             alt="Office environment"
             className={styles.slideImage}
-            sizes="(max-width: 640px) 640px, (max-width: 1080px) 1080px, 1920px"
-            quality={75}
+            sizes="(max-width: 768px) 640px, (max-width: 1200px) 1080px, 1920px"
             priority
-            placeholder="blur"
-            blurDataURL={handShake.blurDataURL}
-            width={1920}
-            height={1080}
           />
         </div>
         <div className={styles.slide}>
@@ -32,32 +27,29 @@ const Hero = () => {
             src={graph}
             alt="Document design"
             className={styles.slideImage}
-            sizes="(max-width: 640px) 640px, (max-width: 1080px) 1080px, 1920px"
-            quality={75}
-            placeholder="blur"
-            blurDataURL={graph.blurDataURL}
-            width={1920}
-            height={1080}
+            sizes="(max-width: 768px) 640px, (max-width: 1200px) 1080px, 1920px"
+            priority
           />
         </div>
       </div>
 
-      {/* Decorative images can load lazy */}
       <Image
         src={shapeLeft}
-        alt=""
+        alt="shape icon"
         className={`${styles.shape} ${styles.shapeLeft}`}
         width={378}
         height={371}
-        quality={60}
+        quality={70}
+        priority
       />
       <Image
         src={shapeRight}
-        alt=""
+        alt="shape icon"
         className={`${styles.shape} ${styles.shapeRight}`}
         width={327}
         height={317.5}
-        quality={60}
+        quality={70}
+        priority
       />
 
       <div className={styles.content}>
@@ -73,9 +65,7 @@ const Hero = () => {
           </div>
         </div>
         <h1>
-          Access
-          <br />
-          Experts
+          Access<br></br>Experts
         </h1>
         <Link href="/access-online" className="btn">
           Discover More

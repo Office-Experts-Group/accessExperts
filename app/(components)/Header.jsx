@@ -55,7 +55,6 @@ const Header = () => {
             width={300}
             height={130}
             className={styles.logoImg}
-            priority
           />
         </Link>
       </div>
