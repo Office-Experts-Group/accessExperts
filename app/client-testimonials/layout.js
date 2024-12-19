@@ -30,28 +30,29 @@ export const metadata = {
   // Additional metadata
   keywords: [
     // Review-focused keywords
-    "Access database consultant reviews",
-    "Microsoft Access developer testimonials",
-    "Database solution case studies",
-    "Access Experts client feedback",
+    "Access consultant reviews",
+    // "Access database consultant reviews",
+    // "Microsoft Access developer testimonials",
+    // "Database solution case studies",
+    // "Access Experts client feedback",
 
-    // Solution-specific reviews
-    "Custom database solution reviews",
-    "Access integration project testimonials",
-    "Database migration success stories",
-    "Access automation client feedback",
+    // // Solution-specific reviews
+    // "Custom database solution reviews",
+    // "Access integration project testimonials",
+    // "Database migration success stories",
+    // "Access automation client feedback",
 
-    // Location-specific testimonials
-    "Database consultant reviews Australia",
-    "Access developer testimonials Sydney",
-    "Database solution reviews Melbourne",
-    "Access Experts feedback Brisbane",
+    // // Location-specific testimonials
+    // "Database consultant reviews Australia",
+    // "Access developer testimonials Sydney",
+    // "Database solution reviews Melbourne",
+    // "Access Experts feedback Brisbane",
 
-    // Industry feedback
-    "Business database solution reviews",
-    "Enterprise Access database testimonials",
-    "Database consulting client stories",
-    "Access development project reviews",
+    // // Industry feedback
+    // "Business database solution reviews",
+    // "Enterprise Access database testimonials",
+    // "Database consulting client stories",
+    // "Access development project reviews",
   ],
 
   // Twitter Card
@@ -68,20 +69,6 @@ export const metadata = {
   // Additional tags
 
   canonical: "https://www.accessexperts.com.au/client-testimonials/",
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {

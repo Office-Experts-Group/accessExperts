@@ -29,47 +29,48 @@ export const metadata = {
 
   // Additional metadata
   keywords: [
+    "Access online solutions",
     // Core Access Online services
-    "Microsoft Access cloud database solutions",
-    "Access database Office 365 integration",
-    "SharePoint Access database hosting",
-    "Azure Access database migration",
+    // "Microsoft Access cloud database solutions",
+    // "Access database Office 365 integration",
+    // "SharePoint Access database hosting",
+    // "Azure Access database migration",
 
-    // Specific solutions
-    "multi-user Access database hosting",
-    "Access database mobile connectivity",
-    "iPad Access database solutions",
-    "iPhone database access setup",
+    // // Specific solutions
+    // "multi-user Access database hosting",
+    // "Access database mobile connectivity",
+    // "iPad Access database solutions",
+    // "iPhone database access setup",
 
-    // Integration specifics
-    "Access SharePoint data connection",
-    "Access Azure SQL integration",
-    "Office 365 Access web database",
-    "cloud-hosted Access applications",
+    // // Integration specifics
+    // "Access SharePoint data connection",
+    // "Access Azure SQL integration",
+    // "Office 365 Access web database",
+    // "cloud-hosted Access applications",
 
-    // Implementation focused
-    "Access database remote access setup",
-    "secure Access cloud migration",
-    "Access web database conversion",
-    "online Access form development",
+    // // Implementation focused
+    // "Access database remote access setup",
+    // "secure Access cloud migration",
+    // "Access web database conversion",
+    // "online Access form development",
 
-    // Cost and business specific
-    "affordable Access cloud hosting",
-    "Access database monthly hosting",
-    "business Access cloud solutions",
-    "enterprise Access hosting plans",
+    // // Cost and business specific
+    // "affordable Access cloud hosting",
+    // "Access database monthly hosting",
+    // "business Access cloud solutions",
+    // "enterprise Access hosting plans",
 
-    // Technical capabilities
-    "Access database synchronization",
-    "Access cloud backup solutions",
-    "Access multi-device deployment",
-    "Access web app development",
+    // // Technical capabilities
+    // "Access database synchronization",
+    // "Access cloud backup solutions",
+    // "Access multi-device deployment",
+    // "Access web app development",
 
-    // Location specific
-    "Access cloud solutions Australia",
-    "Sydney Access database hosting",
-    "Melbourne Access cloud services",
-    "Brisbane Access online solutions",
+    // // Location specific
+    // "Access cloud solutions Australia",
+    // "Sydney Access database hosting",
+    // "Melbourne Access cloud services",
+    // "Brisbane Access online solutions",
   ],
 
   // Twitter Card
@@ -87,20 +88,6 @@ export const metadata = {
   // Additional tags
 
   canonical: "https://www.accessexperts.com.au/access-online/",
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({ children }) {

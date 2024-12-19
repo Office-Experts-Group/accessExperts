@@ -9,9 +9,9 @@ import { navigationData } from "../../navigationData";
 import ServicesDropdown from "../../components/ServicesDropdown";
 import SocialLinks from "../../components/SocialLinks";
 import MobileNav from "../../components/MobileNavigation/MobileNav";
+import SearchInput from "../../components/SearchInput";
 
 import logo from "../../public/logo300x130.webp";
-import SearchInput from "../../components/SearchInput";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -55,6 +55,7 @@ const Header = () => {
             width={300}
             height={130}
             className={styles.logoImg}
+            priority
           />
         </Link>
       </div>

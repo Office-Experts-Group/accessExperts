@@ -1,22 +1,18 @@
 import React from "react";
 
-import dynamic from "next/dynamic";
-
 // Keep Hero static as it's above fold
 import Hero from "./(components)/Hero";
+import Services from "./(components)/Services"; // above fold on mobile
 
-// Dynamically import everything else
-const Services = dynamic(() => import("./(components)/Services"));
-const CTAMain = dynamic(() => import("./(components)/CTAMain"));
-const IsRight = dynamic(() => import("./(components)/IsRight"));
-const SolutionsCarousel = dynamic(() =>
-  import("./(components)/SolutionsCarousel")
-);
-const CTAFull = dynamic(() => import("./(components)/CTAFull"));
-const Testimonials = dynamic(() => import("./(components)/Testimonials"));
-const Brands = dynamic(() => import("../components/Brands"));
-const Promo = dynamic(() => import("../components/Promo"));
-const Contact = dynamic(() => import("../components/Contact"));
+// Import everything else as static imports
+import CTAMain from "./(components)/CTAMain";
+import IsRight from "./(components)/IsRight";
+import SolutionsCarousel from "./(components)/SolutionsCarousel";
+import CTAFull from "./(components)/CTAFull";
+import Testimonials from "./(components)/Testimonials";
+import Brands from "../components/Brands";
+import Promo from "../components/Promo";
+import Contact from "../components/Contact";
 
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 import { testimonials } from "../testimonials";
@@ -135,7 +131,7 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://www.accessexperts.com.au/logo.jpg",
+        "@id": "https://www.accessexperts.com.au/logo.webp",
         url: "/logo.jpg",
         contentUrl: "/logo.jpg",
         width: 1200,
@@ -143,7 +139,7 @@ const schema = {
         caption: "Office Experts Group",
       },
       image: {
-        "@id": "https://www.accessexperts.com.au/logo.jpg",
+        "@id": "https://www.accessexperts.com.au/logo.webp",
       },
       sameAs: ["https://www.facebook.com/MSOfficeExperts"],
     },
