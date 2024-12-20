@@ -1,11 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
 import ContactForm from "./ContactForm";
 const QuoteForm = dynamic(() => import("./QuoteForm"), {
   loading: () => <div>Loading...</div>,
   ssr: false,
 });
+
 import styles from "../styles/contact.module.css";
 
 const Contact = ({ isQuote }) => {
