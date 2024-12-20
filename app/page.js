@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 
 // Keep Hero static as it's above fold

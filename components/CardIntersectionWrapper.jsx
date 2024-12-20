@@ -6,34 +6,43 @@ export default function CardIntersectionWrapper({ children }) {
   const wrapperRef = useRef(null);
 
   useEffect(() => {
+    // Create observer only if IntersectionObserver is available
+    if (!("IntersectionObserver" in window)) return;
+
+    // Create observer once and reuse
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.target.classList) {
-            // Add/remove the CSS module class
-            entry.target.classList.toggle(styles.inView, entry.isIntersecting);
+        requestAnimationFrame(() => {
+          entries.forEach((entry) => {
+            if (!entry.target.classList) return;
 
-            // Find child elements using the CSS module classes
-            const cardImage = entry.target.querySelector(
-              `.${styles.cardImage}`
-            );
-            const cardContent = entry.target.querySelector(
-              `.${styles.cardContent}`
-            );
+            // Cache DOM queries
+            if (!entry.target.cardImage) {
+              entry.target.cardImage = entry.target.querySelector(
+                `.${styles.cardImage}`
+              );
+              entry.target.cardContent = entry.target.querySelector(
+                `.${styles.cardContent}`
+              );
+            }
 
-            if (cardImage) {
-              cardImage.classList.toggle(
+            // Batch classList changes
+            const isIntersecting = entry.isIntersecting;
+            entry.target.classList.toggle(styles.inView, isIntersecting);
+
+            if (entry.target.cardImage) {
+              entry.target.cardImage.classList.toggle(
                 styles.inViewImage,
-                entry.isIntersecting
+                isIntersecting
               );
             }
-            if (cardContent) {
-              cardContent.classList.toggle(
+            if (entry.target.cardContent) {
+              entry.target.cardContent.classList.toggle(
                 styles.inViewContent,
-                entry.isIntersecting
+                isIntersecting
               );
             }
-          }
+          });
         });
       },
       {
@@ -42,10 +51,13 @@ export default function CardIntersectionWrapper({ children }) {
       }
     );
 
+    // Cache card query
     const cards = wrapperRef.current?.querySelectorAll(
       `[class*="${styles.card}"]`
     );
-    cards?.forEach((card) => observer.observe(card));
+    if (cards) {
+      cards.forEach((card) => observer.observe(card));
+    }
 
     return () => observer.disconnect();
   }, []);

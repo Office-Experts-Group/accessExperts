@@ -13,92 +13,110 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     formats: ["image/webp"],
   },
+  // Disable source maps in production
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
+  // Enable compression
+  compress: true,
 
   webpack: (config, { dev, isServer }) => {
     if (!dev) {
-      // Consolidate framework chunks
+      // Production optimizations
       config.optimization = {
         ...config.optimization,
+        moduleIds: "deterministic",
+        runtimeChunk: "single",
+        flagIncludedChunks: true,
+        sideEffects: true,
+        usedExports: true,
+        providedExports: true,
+        mangleExports: true,
+        minimize: true,
         splitChunks: {
           chunks: "all",
+          maxInitialRequests: 20,
+          minSize: 20000,
+          maxSize: 60000, // Reduced from previous
           cacheGroups: {
-            default: false,
-            vendors: false,
-            // Combine React framework chunks
             framework: {
-              name: "framework",
-              chunks: "all",
               test: /[\\/]node_modules[\\/](react|react-dom|scheduler|next)[\\/]/,
+              name: "framework",
               priority: 40,
               enforce: true,
               reuseExistingChunk: true,
             },
-            // Group common code
-            commons: {
-              name: "commons",
-              minChunks: 2,
+            vendors: {
+              test: /[\\/]node_modules[\\/]/,
+              name(module) {
+                // Get the package name
+                const packageName = module.context.match(
+                  /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+                )[1];
+                return `npm.${packageName.replace("@", "")}`;
+              },
               priority: 20,
               reuseExistingChunk: true,
             },
-            // Vendor chunks
-            lib: {
-              test(module) {
-                return (
-                  module.size() > 80000 &&
-                  /node_modules[/\\]/.test(module.identifier())
-                );
-              },
-              name(module) {
-                const moduleFileName = module
-                  .identifier()
-                  .split(/[/\\]/)
-                  .reduceRight((item) => item);
-                return `vendor-${moduleFileName.replace(/\.[^/.]+$/, "")}`;
-              },
-              priority: 30,
-              minChunks: 1,
+            commons: {
+              minChunks: 2,
+              priority: 10,
               reuseExistingChunk: true,
+              enforce: true,
             },
           },
-          maxInitialRequests: 25,
-          minSize: 20000,
         },
       };
+
+      // Add terser configuration for better minification
+      config.optimization.minimizer = config.optimization.minimizer || [];
+      config.optimization.minimizer.push(
+        require("terser-webpack-plugin")({
+          terserOptions: {
+            compress: {
+              drop_console: true,
+              drop_debugger: true,
+              pure_funcs: [
+                "console.log",
+                "console.info",
+                "console.debug",
+                "console.warn",
+              ],
+            },
+            mangle: true,
+            toplevel: true,
+            keep_classnames: false,
+            keep_fnames: false,
+          },
+        })
+      );
     }
 
     return config;
   },
 
-  // Production only experimental features
-  experimental:
-    !process.env.NODE_ENV === "development"
-      ? {
-          // Enable modern JavaScript optimizations
-          optimizePackageImports: ["date-fns", "lodash"],
+  // Experimental features for production
+  experimental: {
+    // Optimize CSS
+    optimizeCss: true,
 
-          // Improve production performance
-          turbotrace: {
-            logLevel: "error",
-            contextDirectory: __dirname,
-            processCwd: __dirname,
+    // Optimize package imports
+    optimizePackageImports: ["react", "react-dom", "scheduler"],
+  },
+
+  // Headers to improve performance
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
-
-          // Optimize page load
-          optimizeCss: true,
-
-          // Reduce bundle size
-          modularizeImports: {
-            lodash: {
-              transform: "lodash/{{member}}",
-            },
-            "date-fns": {
-              transform: "date-fns/{{member}}",
-            },
-          },
-        }
-      : {},
+        ],
+      },
+    ];
+  },
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
