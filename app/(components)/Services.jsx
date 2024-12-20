@@ -1,8 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
 import ServicesCard from "../../components/ServicesCard";
 import AnimateOnScroll from "../../components/AnimateOnScroll";
-import CardIntersectionWrapper from "../../components/CardIntersectionWrapper";
+const CardIntersectionWrapper = dynamic(
+  () => import("../../components/CardIntersectionWrapper"),
+  {
+    ssr: false,
+  }
+);
 
 import styles from "../../styles/services.module.css";
 
