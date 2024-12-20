@@ -1,0 +1,13 @@
+// styles/content-visibility.scss
+.belowFold {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 5400px; // Mobile (our largest size)
+
+  @media (min-width: 768px) {
+    contain-intrinsic-size: 0 5000px; // Tablet
+  }
+
+  @media (min-width: 1024px) {
+    contain-intrinsic-size: 0 4200px; // Desktop
+  }
+}

@@ -1,0 +1,14 @@
+.belowFold {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 5400px;
+}
+@media (min-width: 768px) {
+  .belowFold {
+    contain-intrinsic-size: 0 5000px;
+  }
+}
+@media (min-width: 1024px) {
+  .belowFold {
+    contain-intrinsic-size: 0 4200px;
+  }
+}/*# sourceMappingURL=content-visibility.css.map */

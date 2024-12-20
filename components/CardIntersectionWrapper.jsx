@@ -6,7 +6,6 @@ export default function CardIntersectionWrapper({ children }) {
   const wrapperRef = useRef(null);
 
   useEffect(() => {
-    console.log("CardIntersectionWrapper mounted");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -27,7 +26,6 @@ export default function CardIntersectionWrapper({ children }) {
                 styles.inViewImage,
                 entry.isIntersecting
               );
-              console.log(entry.isIntersecting);
             }
             if (cardContent) {
               cardContent.classList.toggle(
