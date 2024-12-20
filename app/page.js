@@ -18,8 +18,6 @@ import Contact from "../components/Contact";
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 import { testimonials } from "../testimonials";
 
-import "../styles/content-visibility.css";
-
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -158,19 +156,17 @@ const Page = () => {
       />
       <Hero />
       <Services />
-      <div className="belowFold">
-        <CTAMain />
-        <IsRight />
-        <SolutionsCarousel />
-        <Testimonials testimonials={testimonials} />
-        <Brands />
-        <CTAFull />
-        <Promo
-          h2="We Deliver the Best Quality"
-          p="The Access experts specialist team is part of the Office experts Group, leaders in Microsoft technologies for over 25yrs"
-        />
-        <Contact />
-      </div>
+      <CTAMain />
+      <IsRight />
+      <SolutionsCarousel />
+      <Testimonials testimonials={testimonials} />
+      <Brands />
+      <CTAFull />
+      <Promo
+        h2="We Deliver the Best Quality"
+        p="The Access experts specialist team is part of the Office experts Group, leaders in Microsoft technologies for over 25yrs"
+      />
+      <Contact />
     </>
   );
 };

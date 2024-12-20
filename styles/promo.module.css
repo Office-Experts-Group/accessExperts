@@ -22,6 +22,7 @@
   .promo {
     margin: 6rem 1rem;
     flex-direction: column;
+    text-align: center;
   }
 }
 @media (min-width: 767px) and (max-width: 1024px) {

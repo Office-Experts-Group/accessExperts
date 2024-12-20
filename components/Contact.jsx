@@ -2,8 +2,10 @@
 import React, { useEffect, useState } from "react";
 
 import ContactForm from "./ContactForm";
-import QuoteForm from "./QuoteForm";
-
+const QuoteForm = dynamic(() => import("./QuoteForm"), {
+  loading: () => <div>Loading...</div>,
+  ssr: false,
+});
 import styles from "../styles/contact.module.css";
 
 const Contact = ({ isQuote }) => {

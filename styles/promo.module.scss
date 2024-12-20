@@ -21,6 +21,7 @@
   @include phoneLandscape {
     margin: 6rem 1rem;
     flex-direction: column;
+    text-align: center;
   }
 
   @include tablet {
