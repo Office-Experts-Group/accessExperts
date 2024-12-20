@@ -1,7 +1,3 @@
-// app/search/layout.js
-import { Suspense } from "react";
-import styles from "../styles/search.module.scss";
-
 export const metadata = {
   title: "Search | Access Experts",
   description:

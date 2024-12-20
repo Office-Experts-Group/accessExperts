@@ -32,16 +32,6 @@ const aptos = localFont({
       style: "normal",
     },
     {
-      path: "../public/fonts/aptos/Aptos-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/aptos/Aptos-SemiBold.ttf",
-      weight: "600",
-      style: "normal",
-    },
-    {
       path: "../public/fonts/aptos/Aptos-Bold.ttf",
       weight: "700",
       style: "normal",
@@ -49,11 +39,6 @@ const aptos = localFont({
     {
       path: "../public/fonts/aptos/Aptos-ExtraBold.ttf",
       weight: "800",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/aptos/Aptos-Black.ttf",
-      weight: "900",
       style: "normal",
     },
   ],
