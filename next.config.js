@@ -17,6 +17,7 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   poweredByHeader: false,
   compress: true,
+  cssChunking: true,
 
   webpack: (config, { dev, isServer }) => {
     if (!dev) {

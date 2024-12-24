@@ -8,6 +8,7 @@ import ExpertsAwait from "../../components/ExpertsAwait";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/3rd-party-product-integration.js";
+import faqSchema from "../../faqs/integrationSchema.js";
 
 import graphic from "../../public/pageHeros/graphic.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
@@ -172,6 +173,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title={"Third Party Product Integration"}

@@ -13,6 +13,10 @@ import Testimonials from "./(components)/Testimonials";
 import Brands from "../components/Brands";
 import Promo from "../components/Promo";
 import Contact from "../components/Contact";
+import FAQSection from "../components/FAQSection";
+
+import faqs from "../faqs/home";
+import faqSchema from "../faqs/homeSchema";
 
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 import { testimonials } from "../testimonials";
@@ -153,6 +157,10 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Hero />
       <Services />
       <CTAMain />
@@ -165,6 +173,7 @@ const Page = () => {
         h2="We Deliver the Best Quality"
         p="The Access experts specialist team is part of the Office experts Group, leaders in Microsoft technologies for over 25yrs"
       />
+      <FAQSection faqs={faqs} />
       <Contact />
     </>
   );

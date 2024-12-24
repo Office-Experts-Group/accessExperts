@@ -12,6 +12,10 @@ import PageSegment8 from "./(components)/PageSegment8";
 import Contact from "../../components/Contact";
 import Promo from "../../components/Promo";
 import Contents from "./(components)/Contents";
+import FAQSection from "../../components/FAQSection";
+
+import faqs from "../../faqs/cloud-solutions";
+import faqSchema from "../../faqs/cloudSolutionsSchema";
 
 import marker from "../../public/pageHeros/marker.webp";
 import codeMob from "../../public/pageHeros/mob/codeMob.webp";
@@ -80,6 +84,10 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Contents />
       <ServiceHero
         title="Azure Cloud Based Solutions"
@@ -100,6 +108,7 @@ const Page = () => {
         h2="Want Your Access Database in the Cloud?"
         p="Transform your existing Access database into a cloud-based solution accessible from anywhere. We can help migrate your data to Azure and create custom web solutions for your team."
       />
+      <FAQSection faqs={faqs} />
       <Contact />
     </>
   );
