@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "../../components/AnimateOnScroll";
 
@@ -107,7 +108,9 @@ const IsRight = () => {
             </svg>
             <p>Data reporting</p>
           </div>
-          <button className={`btn ${styles.btn}`}>Learn More</button>
+          <Link href={"/meet-the-team"} className={`btn ${styles.btn}`}>
+            Meet our Team
+          </Link>
         </div>
       </AnimateOnScroll>
     </div>

@@ -55,7 +55,7 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <ServiceHero
-        title="Meet The Team"
+        title="Meet Our Team"
         desktopImage={handShake}
         mobileImage={handShakeMob}
         altDesk={"Hand shaking"}
