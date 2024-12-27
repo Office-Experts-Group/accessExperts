@@ -53,36 +53,46 @@ export async function POST(req) {
       honeypot,
     } = body;
 
+    // Validate required fields
+    if (!name || !email) {
+      return Response.json(
+        { error: "Name and email are required" },
+        { status: 400 }
+      );
+    }
+
     if (honeypot) {
-      return new Response("Bot submission detected", { status: 400 });
+      return Response.json(
+        { error: "Bot submission detected" },
+        { status: 400 }
+      );
     }
 
-    // File validation
-    if (
-      file &&
-      (!VALID_FILE_TYPES.includes(type) ||
-        (typeof file === "string" &&
-          Buffer.byteLength(file, "base64") > MAX_FILE_SIZE))
-    ) {
-      return new Response("Invalid file type or size", { status: 400 });
+    // File validation (only if a file is provided)
+    let attachments = [];
+    if (file) {
+      if (!VALID_FILE_TYPES.includes(type)) {
+        return Response.json({ error: "Invalid file type" }, { status: 400 });
+      }
+
+      if (
+        typeof file.content === "string" &&
+        Buffer.byteLength(file.content, "base64") > MAX_FILE_SIZE
+      ) {
+        return Response.json(
+          { error: "File size exceeds limit" },
+          { status: 400 }
+        );
+      }
+
+      attachments = [
+        {
+          content: file.content,
+          filename: file.name,
+          type: file.type,
+        },
+      ];
     }
-
-    // Destructure file properties correctly
-    const {
-      file: { content: fileContent, name: fileName, type: fileType } = {},
-      ...rest
-    } = body;
-
-    // Create attachments array if file exists
-    const attachments = fileContent
-      ? [
-          {
-            content: fileContent,
-            filename: fileName,
-            type: fileType,
-          },
-        ]
-      : [];
 
     const { htmlSignature, textSignature } = getEmailSignature();
 
@@ -92,7 +102,7 @@ export async function POST(req) {
       Operating System: ${operatingSystem || "Not provided"}.
       Software Versions: ${softwareVersions || "Not provided"}.
       Website: ${website || "Not provided"}.
-      Message: ${message}
+      Message: ${message || "Not provided"}
 
       ${textSignature}
     `;
@@ -105,7 +115,7 @@ export async function POST(req) {
       Operating System: ${operatingSystem || "Not provided"}.
       Software Versions: ${softwareVersions || "Not provided"}.
       Website: ${website || "Not provided"}.
-      Message: ${message}
+      Message: ${message || "Not provided"}
 
       We'll get back to you soon!
 
@@ -123,7 +133,7 @@ export async function POST(req) {
       }</p>
       <p><strong>Website:</strong> ${website || "Not provided"}</p>
       <p><strong>Message:</strong></p>
-      <p>${message}</p>
+      <p>${message || "Not provided"}</p>
       ${htmlSignature}
     `;
 
@@ -138,43 +148,55 @@ export async function POST(req) {
       }</p>
       <p><strong>Website:</strong> ${website || "Not provided"}</p>
       <p><strong>Message:</strong></p>
-      <p>${message}</p>
+      <p>${message || "Not provided"}</p>
       <p>We'll get back to you soon!</p>
       ${htmlSignature}
     `;
 
-    // Send email consult@accessexperts.com.au
-    await sgMail.send({
-      from: "consult@officeexperts.com.au",
-      to: "consult@accessexperts.com.au",
-      subject: "New Quote Request Submission",
-      text: clientTextMessage,
-      html: clientHtmlMessage,
-      attachments,
-    });
+    try {
+      // Send email to business
+      await sgMail.send({
+        from: "consult@officeexperts.com.au",
+        to: "joshua@officeexperts.com.au",
+        subject: "New Quote Request Submission",
+        text: clientTextMessage,
+        html: clientHtmlMessage,
+        ...(attachments.length > 0 && { attachments }),
+        replyTo: email,
+      });
 
-    // Send email joshua@officeexperts.com.au
-    await sgMail.send({
-      from: "consult@officeexperts.com.au",
-      to: "joshua@officeexperts.com.au",
-      subject: "New Quote Request Submission",
-      text: clientTextMessage,
-      html: clientHtmlMessage,
-      attachments,
-    });
+      await sgMail.send({
+        from: "consult@officeexperts.com.au",
+        to: "consult@accessexperts.com.au",
+        subject: "New Quote Request Submission",
+        text: clientTextMessage,
+        html: clientHtmlMessage,
+        ...(attachments.length > 0 && { attachments }),
+        replyTo: email,
+      });
 
-    // Send confirmation email to the customer
-    await sgMail.send({
-      from: "consult@accessexperts.com.au",
-      to: email,
-      subject: "Thank you for your quote request!",
-      text: customerTextMessage,
-      html: customerHtmlMessage,
-    });
+      // Send email to customer
+      await sgMail.send({
+        from: "consult@officeexperts.com.au",
+        to: email,
+        subject: "Thank you for your quote request!",
+        text: customerTextMessage,
+        html: customerHtmlMessage,
+      });
 
-    return new Response("Email sent successfully", { status: 200 });
+      return Response.json(
+        { message: "Quote request submitted successfully" },
+        { status: 200 }
+      );
+    } catch (emailError) {
+      console.error(
+        "SendGrid error:",
+        emailError?.response?.body || emailError
+      );
+      return Response.json({ error: "Failed to send email" }, { status: 500 });
+    }
   } catch (error) {
-    console.error(error);
-    return new Response("Error sending email", { status: 500 });
+    console.error("Server error:", error);
+    return Response.json({ error: "Internal server error" }, { status: 500 });
   }
 }
