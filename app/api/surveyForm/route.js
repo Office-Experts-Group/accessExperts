@@ -29,7 +29,7 @@ export async function POST(req) {
 
     await sgMail.send({
       from: "consult@accessexperts.com.au",
-      to: "dan@officeexperts.com.au",
+      to: "joshua@officeexperts.com.au",
       subject: "New Survey Form Submission",
       text: clientTextMessage,
       replyTo: email,
