@@ -3,14 +3,38 @@ import Link from "next/link";
 import React, { useState, useRef } from "react";
 
 import styles from "../styles/contact.module.css";
+import SurveyForm from "./SurveyForm";
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 MB
 const VALID_FILE_TYPES = [
+  // Documents
   "application/pdf",
   "application/msword",
   "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "application/vnd.oasis.opendocument.text",
+  "application/rtf",
   "text/plain",
+  "text/csv",
+  "text/html",
+  "text/markdown",
+
+  // Images
+  "image/jpeg",
+  "image/png",
+  "image/gif",
+  "image/bmp",
+  "image/webp",
+  "image/svg+xml",
+  "image/tiff",
+
+  // Archives (if needed)
   "application/zip",
+  "application/x-rar-compressed",
+
+  // Spreadsheets
+  "application/vnd.ms-excel",
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "application/vnd.oasis.opendocument.spreadsheet",
 ];
 
 const QuoteForm = () => {
@@ -28,6 +52,10 @@ const QuoteForm = () => {
     acceptTerms: false,
     honeypot: "",
   });
+
+  // states to hand to SurveyForm
+  const [surveyName, setSurveyName] = useState("");
+  const [surveyEmail, setSurveyEmail] = useState("");
 
   // Create refs for form fields that might need focus
   const nameRef = useRef(null);
@@ -51,6 +79,7 @@ const QuoteForm = () => {
     }
   };
 
+  // In QuoteForm.jsx
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (!file) return;
@@ -64,24 +93,21 @@ const QuoteForm = () => {
     }
 
     if (!VALID_FILE_TYPES.includes(file.type)) {
-      setError((prev) => ({
-        ...prev,
-        file: "Invalid file type. Please upload a PDF, Word document, text file, or ZIP file.",
-      }));
+      setError((prev) => ({ ...prev, file: "Invalid file type" }));
       return;
     }
 
     const reader = new FileReader();
     reader.onload = () => {
+      const base64String = reader.result.split(",")[1];
       setFormData((prev) => ({
         ...prev,
         file: {
-          content: reader.result.split(",")[1],
+          content: base64String,
           name: file.name,
           type: file.type,
         },
       }));
-      setError((prev) => ({ ...prev, file: "" }));
     };
     reader.readAsDataURL(file);
   };
@@ -99,6 +125,9 @@ const QuoteForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError({});
+
+    setSurveyName(formData.name);
+    setSurveyEmail(formData.email);
 
     if (formData.honeypot) return;
 
@@ -137,7 +166,11 @@ const QuoteForm = () => {
       const res = await fetch("/api/quoteForm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          filename: formData.file?.name,
+          type: formData.file?.type,
+        }),
       });
 
       if (res.ok) {
@@ -164,9 +197,8 @@ const QuoteForm = () => {
 
   if (success) {
     return (
-      <div role="alert" aria-live="polite">
-        <h2>Thank you {formData.name} for your quote request!</h2>
-        <p>One of our team will contact you shortly</p>
+      <div className={styles.successMessage} role="alert" aria-live="polite">
+        <SurveyForm name={surveyName} email={surveyEmail} />
       </div>
     );
   }
