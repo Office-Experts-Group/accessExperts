@@ -7,7 +7,6 @@ import AnimateOnScroll from "./AnimateOnScroll";
 import styles from "../styles/promo.module.css";
 
 import computer from "../public/icons/computer.webp";
-import promo from "../public/promo.webp";
 
 const Promo = ({ h2, p }) => {
   return (
@@ -21,18 +20,6 @@ const Promo = ({ h2, p }) => {
             <h2>{h2}</h2>
             <p>{p}</p>
           </div>
-        </div>
-      </AnimateOnScroll>
-
-      <AnimateOnScroll animation="scale-up" duration={1} delay={0.3}>
-        <div className={styles.img}>
-          <div className={styles.bar}></div>
-          <Image
-            src={promo}
-            alt="person at a computer"
-            width={130}
-            height={60}
-          />
         </div>
       </AnimateOnScroll>
     </section>

@@ -1,7 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
+
 import styles from "../styles/contact.module.css";
-import SurveyForm from "./SurveyForm";
+
+const SurveyForm = dynamic(() => import("./SurveyForm"), {
+  ssr: false,
+});
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
