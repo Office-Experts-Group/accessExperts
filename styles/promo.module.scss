@@ -5,6 +5,7 @@
   margin: 6rem 8rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   a {
     color: $theme;
     font-weight: 700;
@@ -21,7 +22,6 @@
   @include phoneLandscape {
     margin: 6rem 1rem;
     flex-direction: column;
-    text-align: center;
   }
 
   @include tablet {
@@ -204,6 +204,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10vw;
 
   @include phone {
     margin: 0;

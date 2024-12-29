@@ -119,7 +119,7 @@
 .content h1 {
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: clamp(5rem, 10vw, 10rem);
+  font-size: clamp(5rem, 9vw, 9rem);
   line-height: clamp(4rem, 8vw, 8rem);
   margin-bottom: 4rem;
   font-family: var(--font-aptos) !important;

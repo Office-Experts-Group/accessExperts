@@ -3,6 +3,7 @@
   margin: 6rem 8rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .promo a {
   color: #046999;
@@ -22,7 +23,6 @@
   .promo {
     margin: 6rem 1rem;
     flex-direction: column;
-    text-align: center;
   }
 }
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -215,6 +215,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10vw;
 }
 @media (max-width: 449px) {
   .container {
