@@ -64,7 +64,7 @@ export const metadata = {
     title:
       "Access Experts | Microsoft Access Database Consulting & Development",
     description:
-      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. Specialized in data management, reporting, and system optimization.",
+      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. specialised in data management, reporting, and system optimization.",
     url: "https://www.accessexperts.com.au/",
     siteName: "Access Experts",
     images: [
@@ -102,7 +102,7 @@ export const metadata = {
     // "Access VBA macro development",
     // "Access database corruption repair",
 
-    // // Specialized Features
+    // // specialised Features
     // "Access multi-user database setup",
     // "Access cloud-based solutions",
     // "Access database performance optimization",
@@ -137,7 +137,7 @@ export const metadata = {
     title:
       "Access Experts | Microsoft Access Database Consulting & Development",
     description:
-      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. Specialized in data management, reporting, and system optimization.",
+      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. specialised in data management, reporting, and system optimization.",
     images: ["https://www.accessexperts.com.au/logo.webp"],
   },
 

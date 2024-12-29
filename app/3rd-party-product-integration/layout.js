@@ -6,7 +6,7 @@ export const metadata = {
   title:
     "3rd Party Product Integration – Access Experts – Microsoft Access Database Design, Development and Consulting",
   description:
-    "Specialized Microsoft Access database integration services for connecting Access with CRMs, accounting packages, and other third-party applications. Expert consultants providing viable integration solutions with competitive pricing.",
+    "specialised Microsoft Access database integration services for connecting Access with CRMs, accounting packages, and other third-party applications. Expert consultants providing viable integration solutions with competitive pricing.",
 
   // OpenGraph
   openGraph: {

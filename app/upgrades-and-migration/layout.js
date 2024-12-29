@@ -5,7 +5,7 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Database Upgrades and Migration - Access Experts",
   description:
-    "Expert Microsoft Access database upgrade and migration services. Our specialists ensure smooth transitions, resolve compatibility issues, and optimize database performance with minimal disruption.",
+    "Expert Microsoft Access database upgrade and migration services. Our specialists ensure smooth transitions, resolve compatibility issues, and optimise database performance with minimal disruption.",
 
   // OpenGraph
   openGraph: {

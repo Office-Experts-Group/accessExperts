@@ -13,7 +13,7 @@ const sizes = {
   mobile: { width: 450, height: 700 },
 };
 
-async function optimizeImage(inputPath, outputDir, baseName) {
+async function optimiseImage(inputPath, outputDir, baseName) {
   try {
     // Create output directory if it doesn't exist
     await fs.mkdir(outputDir, { recursive: true }).catch(() => {});
@@ -59,7 +59,7 @@ async function processHeroImages() {
   ];
 
   for (const image of images) {
-    await optimizeImage(image.input, image.output, image.baseName);
+    await optimiseImage(image.input, image.output, image.baseName);
   }
 }
 

@@ -6,7 +6,7 @@ export const metadata = {
   title:
     "Access Online | Microsoft Access Cloud Database Solutions & Integration",
   description:
-    "Specialized Microsoft Access online database solutions with Azure and SharePoint integration. Expert consultants delivering cloud-based Access database development, Office 365 integration, and mobile access solutions across Australia.",
+    "specialised Microsoft Access online database solutions with Azure and SharePoint integration. Expert consultants delivering cloud-based Access database development, Office 365 integration, and mobile access solutions across Australia.",
 
   // OpenGraph
   openGraph: {

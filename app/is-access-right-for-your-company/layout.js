@@ -6,7 +6,7 @@ export const metadata = {
   title:
     "Is Access Right for your Company? | Microsoft Access Database Consulting",
   description:
-    "Expert guidance on whether Microsoft Access is the right database solution for your business needs. Specialized in data management, structuring, multi-user systems, and reporting solutions.",
+    "Expert guidance on whether Microsoft Access is the right database solution for your business needs. specialised in data management, structuring, multi-user systems, and reporting solutions.",
 
   // OpenGraph
   openGraph: {
