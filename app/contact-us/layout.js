@@ -3,22 +3,20 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title:
-    "Contact Us – Access Experts – Microsoft Access Database Design, Development and Consulting",
+  title: "Contact Us | Access Experts ",
   description:
     "Contact our Microsoft Access database experts for consulting, development, and support services. Available for projects across Australia with competitive pricing and prompt service.",
 
   // OpenGraph
   openGraph: {
-    title:
-      "Contact Access Experts – Microsoft Access Database Consulting & Development",
+    title: "Contact Us | Access Experts ",
     description:
       "Get in touch with our Microsoft Access database specialists for custom development, integration, support, and consulting services across Australia.",
     url: "https://www.accessexperts.com.au/contact-us/",
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.accessexperts.com.au/logo.webp",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -79,14 +77,17 @@ export const metadata = {
       "Contact Access Experts – Microsoft Access Database Consulting & Development",
     description:
       "Get in touch with our Microsoft Access database specialists for custom development, integration, support, and consulting services across Australia.",
-    images: [
-      "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+    images: ["https://www.accessexperts.com.au/logo.webp"],
   },
 
   // Additional tags
-
-  canonical: "https://www.accessexperts.com.au/contact-us/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/contact-us/",
+    languages: {
+      "en-AU": "/contact-us/",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

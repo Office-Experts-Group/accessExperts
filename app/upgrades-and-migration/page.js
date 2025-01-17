@@ -14,9 +14,16 @@ import Contents from "./(components)/Contents";
 import graphic from "../../public/pageHeros/tableGraph.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://accessexperts.com.au/upgrades-and-migration/",

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title: "Microsoft Access Database Upgrades and Migration - Access Experts",
+  title: "Microsoft Access Database Upgrades and Migration | Access Experts",
   description:
     "Expert Microsoft Access database upgrade and migration services. Our specialists ensure smooth transitions, resolve compatibility issues, and optimise database performance with minimal disruption.",
 
@@ -12,7 +12,7 @@ export const metadata = {
     title:
       "Microsoft Access Database Upgrades & Migration Services | Access Experts",
     description:
-      "Professional Microsoft Access database upgrade and migration services. Specializing in version upgrades, SQL Server migrations, cloud transitions, and performance optimization.",
+      "Expert Microsoft Access database upgrade and migration services. Our specialists ensure smooth transitions, resolve compatibility issues, and optimise database performance with minimal disruption.",
     url: "https://www.accessexperts.com.au/upgrades-and-migration/",
   },
 
@@ -68,12 +68,17 @@ export const metadata = {
     title:
       "Microsoft Access Database Upgrades & Migration Services | Access Experts",
     description:
-      "Professional Microsoft Access database upgrade and migration services. Specializing in version upgrades, SQL Server migrations, cloud transitions, and performance optimization.",
+      "Professional Microsoft Access database upgrade and migration services. Specialising in version upgrades, SQL Server migrations, cloud transitions, and performance optimization.",
   },
 
   // Additional tags
-
-  canonical: "https://www.accessexperts.com.au/upgrades-and-migration/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/upgrades-and-migration/",
+    languages: {
+      "en-AU": "/upgrades-and-migration/",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

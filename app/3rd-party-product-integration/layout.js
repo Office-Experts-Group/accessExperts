@@ -3,11 +3,9 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title:
-    "3rd Party Product Integration – Access Experts – Microsoft Access Database Design, Development and Consulting",
+  title: "3rd Party Product Integration | Access Experts",
   description:
-    "specialised Microsoft Access database integration services for connecting Access with CRMs, accounting packages, and other third-party applications. Expert consultants providing viable integration solutions with competitive pricing.",
-
+    "Professional Microsoft Access integration services connecting your databases with CRMs, accounting software, and third-party applications. Competitive pricing and expert consultation.",
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Integration Solutions | Access Experts Australia",
@@ -17,7 +15,7 @@ export const metadata = {
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.webp",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -82,8 +80,13 @@ export const metadata = {
   },
 
   // Additional tags
-
-  canonical: "https://www.accessexperts.com.au/3rd-party-product-integration/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/3rd-party-product-integration/",
+    languages: {
+      "en-AU": "/3rd-party-product-integration/",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

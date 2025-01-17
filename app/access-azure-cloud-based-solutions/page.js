@@ -20,9 +20,16 @@ import faqSchema from "../../faqs/cloudSolutionsSchema";
 import marker from "../../public/pageHeros/marker.webp";
 import codeMob from "../../public/pageHeros/mob/codeMob.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/access-azure-cloud-solutions/",

@@ -3,21 +3,19 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title:
-    "Microsoft Access: Help and Training – Access Experts – Database Solutions",
+  title: "Microsoft Access Support and Training | Access Experts ",
   description:
     "Expert Microsoft Access database consultants providing remote and onsite support, troubleshooting, training, and maintenance services. Available Australia-wide with competitive rates.",
-
   // OpenGraph
   openGraph: {
-    title: "Microsoft Access Help & Training | Access Database Experts",
+    title: "Microsoft Access Support and Training | Access Experts ",
     description:
-      "Professional Microsoft Access database support and training services. Remote or onsite assistance for database issues, custom training, and expert consultancy.",
+      "Expert Microsoft Access database consultants providing remote and onsite support, troubleshooting, training, and maintenance services. Available Australia-wide with competitive rates.",
     url: "https://www.accessexperts.com.au/access-support/",
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.accessexperts.com.au/logo.webp",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -77,12 +75,16 @@ export const metadata = {
     title: "Microsoft Access Help & Training | Access Database Experts",
     description:
       "Professional Microsoft Access database support and training services. Remote or onsite assistance for database issues, custom training, and expert consultancy.",
-    images: [
-      "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+    images: ["https://www.accessexperts.com.au/logo.webp"],
   },
 
-  canonical: "https://www.accessexperts.com.au/access-support/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/access-support",
+    languages: {
+      "en-AU": "/access-support",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

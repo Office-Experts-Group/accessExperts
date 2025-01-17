@@ -3,22 +3,20 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title:
-    "Access/Azure Cloud Based Database Solutions | Microsoft Access Database Integration",
+  title: "Access and Azure Cloud Based Database Solutions |  Access Experts",
   description:
     "Expert Microsoft Access and Azure integration services for cloud-based database solutions. Custom Access database development with Azure SQL Server hosting for secure, scalable, and accessible data management.",
 
   // OpenGraph
   openGraph: {
-    title:
-      "Access/Azure Cloud Database Solutions | Microsoft Access Integration Experts",
+    title: "Access and Azure Cloud Based Database Solutions |  Access Experts",
     description:
-      "Professional Microsoft Access and Azure cloud database integration services. Custom development, database migration, and web app connectivity solutions for business efficiency.",
+      "Expert Microsoft Access and Azure integration services for cloud-based database solutions. Custom Access database development with Azure SQL Server hosting for secure, scalable, and accessible data management.",
     url: "https://www.accessexperts.com.au/access-azure-cloud-based-solutions/",
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.accessexperts.com.au/logo.webp",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -80,15 +78,15 @@ export const metadata = {
       "Access/Azure Cloud Database Solutions | Microsoft Access Integration Experts",
     description:
       "Professional Microsoft Access and Azure cloud database integration services. Custom development, database migration, and web app connectivity solutions for business efficiency.",
-    images: [
-      "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+    images: ["https://www.accessexperts.com.au/logo.webp"],
   },
-
-  // Additional tags
-
-  canonical:
-    "https://www.accessexperts.com.au/access-azure-cloud-based-solutions/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/access-azure-cloud-based-solutions",
+    languages: {
+      "en-AU": "/access-azure-cloud-based-solutions",
+    },
+  },
   robots: {
     index: true,
     follow: true,

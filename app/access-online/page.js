@@ -14,9 +14,16 @@ import faqs from "../../faqs/access-online.js";
 import pen from "../../public/pageHeros/pen.webp";
 import seatMob from "../../public/pageHeros/mob/seatMob.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://accessexperts.com.au/access-online/",

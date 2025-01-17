@@ -3,21 +3,20 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title:
-    "Client Testimonials | Access Experts - Microsoft Access Database Solutions",
+  title: "Client Testimonials | Access Experts",
   description:
-    "Read what our clients say about their experience with Access Experts. Discover how our database solutions have helped businesses across Australia improve their data management and efficiency.",
+    "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
 
   // OpenGraph
   openGraph: {
-    title: "Client Testimonials | Access Experts - Database Solutions",
+    title: "Client Testimonials | Access Experts",
     description:
       "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
     url: "https://www.accessexperts.com.au/client-testimonials/",
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.accessexperts.com.au/logo.webp",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -30,7 +29,7 @@ export const metadata = {
   // Additional metadata
   keywords: [
     // Review-focused keywords
-    "Access consultant reviews",
+    "Microsoft Access consultant reviews",
     // "Access database consultant reviews",
     // "Microsoft Access developer testimonials",
     // "Database solution case studies",
@@ -58,17 +57,20 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Client Testimonials | Access Experts - Database Solutions",
+    title: "Client Testimonials | Access Experts",
     description:
       "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
-    images: [
-      "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+    images: ["https://www.accessexperts.com.au/logo.webp"],
   },
 
   // Additional tags
-
-  canonical: "https://www.accessexperts.com.au/client-testimonials/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/client-testimonials",
+    languages: {
+      "en-AU": "/client-testimonials",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

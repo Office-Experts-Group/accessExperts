@@ -14,9 +14,16 @@ import faqs from "../../faqs/is-access-right-for-you";
 import desk from "../../public/pageHeros/desk.webp";
 import codeScreen from "../../public/pageHeros/mob/codeScreenMob.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://accessexperts.com.au/is-access-right-for-your-company/",

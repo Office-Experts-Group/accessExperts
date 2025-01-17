@@ -14,9 +14,16 @@ import faqs from "../../faqs/access-support";
 import twoComputers from "../../public/pageHeros/twoComputers.webp";
 import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://accessexperts.com.au/access-support/",

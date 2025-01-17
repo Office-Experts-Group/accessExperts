@@ -3,15 +3,15 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title: "Meet Our Microsoft Access Experts | Access Database Specialists",
+  title: "Meet the Team | Access Experts",
   description:
     "Meet our team of certified Microsoft Access developers, consultants, and trainers. Experts in database development, integration, and business solutions across Australia.",
 
   // OpenGraph
   openGraph: {
-    title: "Meet Our Expert Access Database Team | Access Experts Australia",
+    title: "Meet the Team | Access Experts",
     description:
-      "Connect with our skilled team of Microsoft Access specialists. Experts in database development, SQL Server integration, SharePoint, and Azure solutions.",
+      "Meet our team of certified Microsoft Access developers, consultants, and trainers. Experts in database development, integration, and business solutions across Australia.",
     url: "https://www.accessexperts.com.au/meet-the-team/",
   },
 
@@ -63,8 +63,13 @@ export const metadata = {
   },
 
   // Additional tags
-
-  canonical: "https://www.accessexperts.com.au/meet-the-team/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/meet-the-team/",
+    languages: {
+      "en-AU": "/meet-the-team/",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

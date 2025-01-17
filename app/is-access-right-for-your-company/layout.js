@@ -3,15 +3,13 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title:
-    "Is Access Right for your Company? | Microsoft Access Database Consulting",
+  title: "Is Access Right for your Company? | Access Experts",
   description:
-    "Expert guidance on whether Microsoft Access is the right database solution for your business needs. specialised in data management, structuring, multi-user systems, and reporting solutions.",
+    "Professional consultation on Microsoft Access database solutions for business. Expert analysis of data management needs, user requirements, and system compatibility.",
 
   // OpenGraph
   openGraph: {
-    title:
-      "Is Microsoft Access Right for Your Business? | Access Database Solutions",
+    title: "Is Access Right for your Company? | Access Experts",
     description:
       "Professional consultation on Microsoft Access database solutions for business. Expert analysis of data management needs, user requirements, and system compatibility.",
     url: "https://www.accessexperts.com.au/is-access-right-for-your-company/",
@@ -55,8 +53,13 @@ export const metadata = {
     // "Access CRM database solutions",
     // "Access workflow automation systems",
   ],
-  canonical:
-    "https://www.accessexperts.com.au/is-access-right-for-your-company/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/is-access-right-for-your-company/",
+    languages: {
+      "en-AU": "/is-access-right-for-your-company/",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

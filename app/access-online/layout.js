@@ -3,11 +3,9 @@ import PropTypes from "prop-types";
 
 export const metadata = {
   // Basic metadata
-  title:
-    "Access Online | Microsoft Access Cloud Database Solutions & Integration",
+  title: "Microsoft Access Online | Access Experts",
   description:
-    "specialised Microsoft Access online database solutions with Azure and SharePoint integration. Expert consultants delivering cloud-based Access database development, Office 365 integration, and mobile access solutions across Australia.",
-
+    "Professional Microsoft Access cloud database solutions, including Office 365 integration, SharePoint connectivity, and Azure hosting. Expert consultants for online database development and mobile access solutions.",
   // OpenGraph
   openGraph: {
     title: "Access Online | Cloud-Based Microsoft Access Database Solutions",
@@ -17,7 +15,7 @@ export const metadata = {
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "https://www.accessexperts.com.au/logo.webp",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -80,14 +78,18 @@ export const metadata = {
     title: "Access Online | Cloud-Based Microsoft Access Database Solutions",
     description:
       "Professional Microsoft Access cloud database solutions, including Office 365 integration, SharePoint connectivity, and Azure hosting. Expert consultants for online database development and mobile access solutions.",
-    images: [
-      "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+    images: ["https://www.accessexperts.com.au/logo.webp"],
   },
 
   // Additional tags
 
-  canonical: "https://www.accessexperts.com.au/access-online/",
+  metadataBase: new URL("https://www.accessexperts.com.au"),
+  alternates: {
+    canonical: "/access-online",
+    languages: {
+      "en-AU": "/access-online",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

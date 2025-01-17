@@ -13,9 +13,16 @@ import faqSchema from "../../faqs/integrationSchema.js";
 import graphic from "../../public/pageHeros/graphic.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://accessexperts.com.au/3rd-party-product-integration",
@@ -60,9 +67,6 @@ const schema = {
       inLanguage: "en-AU",
     },
     {
-      "@type": "Organization",
-      description:
-        "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs, our experts excel in Microsoft technology services from database creation to maintenance, troubleshooting, integration, data manipulation, programming, conversions, upgrades, training and support.",
       brand: {
         "@type": "Thing",
         name: [

@@ -57,21 +57,21 @@ export const metadata = {
   title:
     "Access Experts – Microsoft Access Database Design, Development and Consulting",
   description:
-    "Our Australia-wide, cross-industry Access database consultants deliver prompt, quality service with competitive pricing. Specializing in database design, development, integration, support, data manipulation and reporting solutions.",
+    "Our Australia-wide, cross-industry Access database consultants deliver prompt, quality service with competitive pricing. Specialising in database design, development, integration, support, data manipulation and reporting solutions.",
 
   // OpenGraph
   openGraph: {
     title:
       "Access Experts | Microsoft Access Database Consulting & Development",
     description:
-      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. specialised in data management, reporting, and system optimization.",
+      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. specialised in data management, reporting, and system optimisation.",
     url: "https://www.accessexperts.com.au/",
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/logo.jpg",
+        url: "https://www.accessexperts.com.au/logo.webp",
         width: 1200,
-        height: 630,
+        height: 620,
         alt: "Access Experts Logo",
       },
     ],
