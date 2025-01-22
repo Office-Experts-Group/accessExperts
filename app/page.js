@@ -23,7 +23,7 @@ import { testimonials } from "../testimonials";
 import {
   generateOrganizationSchema,
   generateProfessionalServiceSchema,
-} from "../utils/SchemaGenerators";
+} from "../utils/schemaGenerators";
 
 const schema = {
   "@context": "https://schema.org",
