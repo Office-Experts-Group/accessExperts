@@ -11,15 +11,30 @@ import emailSlide from "../public/icons/emailSlideBlue.webp";
 const HeadTop = () => {
   return (
     <div className={styles.headTop}>
-      <p>Welcome to the Office Experts Group</p>
+      <p>
+        Your Microsoft Technology Development and Consulting Experts -{" "}
+        <strong>Operating since 2000</strong>
+      </p>
 
       <div className={styles.topContacts}>
         <div>
           <Image src={maps} alt="Location" width={12} height={12} priority />
-          <span>Australia Wide</span>
+          <div className={styles.locationWrapper}>
+            <span className={styles.loc1}>Australia Wide</span>
+            <span className={styles.loc2}>Sydney, NSW</span>
+            <span className={styles.loc3}>Melbourne, Vic</span>
+            <span className={styles.loc4}>Brisbane, Qld</span>
+            <span className={styles.loc5}>Perth, WA</span>
+            <span className={styles.loc6}>Adelaide, SA</span>
+            <span className={styles.loc7}>Canberra, ACT</span>
+            <span className={styles.loc8}>Northern Rivers, NSW</span>
+            <span className={styles.loc9}>Woolongong, NSW</span>
+            <span className={styles.loc10}>Richmond, Vic</span>
+            <span className={styles.loc11}>Darwin, NT</span>
+          </div>
         </div>
         <div>
-          <Link href="mailto:consult@wordexperts.com.au">
+          <Link href="mailto:consult@officeexperts.com.au">
             <Image
               src={emailSlide}
               alt="email"
@@ -27,14 +42,14 @@ const HeadTop = () => {
               height={9}
               priority
             />
-            consult@accessexperts.com.au
+            consult@officeexperts.com.au
           </Link>
         </div>
 
         <div>
-          <Link href="tel:+61-1300-12-20-38">
+          <Link href="tel:+61-1300-102-810">
             <Image src={msg} alt="email" width={12} height={12} priority />
-            1300 122 038
+            1300 102 810
           </Link>
         </div>
       </div>

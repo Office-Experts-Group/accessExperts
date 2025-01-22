@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import dynamic from "next/dynamic";
 
 import localFont from "next/font/local";
@@ -175,7 +174,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-RootLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-};

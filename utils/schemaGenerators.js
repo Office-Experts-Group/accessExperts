@@ -7,11 +7,19 @@ export const generateProfessionalServiceSchema = () => ({
   description: "Professional Microsoft Access consulting and support services",
   priceRange: "$$",
   serviceType: "Microsoft Access Consulting",
-  availableService: {
-    "@type": "Service",
-    name: "Remote Consulting",
-    description: "Australia-wide remote Microsoft Access consulting services",
-  },
+  availableService: [
+    {
+      "@type": "Service",
+      name: "Remote Consulting",
+      description: "Australia-wide remote Microsoft Access consulting services",
+    },
+    {
+      "@type": "Service",
+      name: "On-site Consulting",
+      description:
+        "In-house Microsoft Access consulting services available in major metropolitan areas",
+    },
+  ],
   areaServed: [
     {
       "@type": "Country",
@@ -249,7 +257,7 @@ export const generateProfessionalServiceSchema = () => ({
     "@type": "Organization",
     "@id": `https://www.accessexperts.com.au/#organization`,
   },
-  telephone: "1300 122 038",
+  telephone: "1300 102 810",
   email: "consult@officeexperts.com.au",
 });
 
@@ -258,14 +266,14 @@ export const generateOrganizationSchema = () => ({
   "@id": "https://www.accessexperts.com.au/#organization",
   name: "Office Experts Group",
   url: "https://www.accessexperts.com.au/",
-  telephone: "1300 122 038",
+  telephone: "1300 102 810",
   email: "consult@officeexperts.com.au",
   // Enhanced contact point information
   contactPoint: [
     {
       "@type": "ContactPoint",
       contactType: "customer service",
-      telephone: "1300 122 038",
+      telephone: "1300 102 810",
       email: "consult@officeexperts.com.au",
       availableLanguage: ["en", "en-AU"],
       contactOption: "TollFree",
@@ -275,15 +283,55 @@ export const generateOrganizationSchema = () => ({
   // Remote service availability
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Services",
+    name: "Access Database Services",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Remote Microsoft Access Consulting",
+          name: "Azure Cloud Integration",
+          description: "Access database integration with Azure cloud services",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Online Access Solutions",
+          description: "Web-enabled Microsoft Access application development",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Third-party Integration",
           description:
-            "Australia-wide remote Microsoft Access consulting and support",
+            "Integration of Access with external systems and applications",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Technical Support",
+          description: "Comprehensive Access database support and maintenance",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Database Migration",
+          description: "Access database upgrades and data migration services",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Custom Solutions",
+          description: "Bespoke Access database design and development",
         },
       },
     ],
