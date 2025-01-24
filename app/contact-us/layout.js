@@ -15,7 +15,7 @@ export const metadata = {
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/logo.webp",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -76,7 +76,7 @@ export const metadata = {
       "Contact Access Experts – Microsoft Access Database Consulting & Development",
     description:
       "Get in touch with our Microsoft Access database specialists for custom development, integration, support, and consulting services across Australia.",
-    images: ["https://www.accessexperts.com.au/logo.webp"],
+    images: ["/logo.png"],
   },
 
   // Additional tags

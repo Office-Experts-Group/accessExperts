@@ -31,7 +31,7 @@ const Services = () => {
               <span> for Microsoft Access</span>
             </p>
           </div>
-          <h2>Access Experts Consulting Services</h2>
+          <h2>Microsoft Access Consulting Services</h2>
           <p>
             Our Australia-wide, cross-industry Access database consultants each
             have over 15 years experience and deliver a prompt, quality service

@@ -6,6 +6,12 @@
   height: 499px;
   width: 100%;
 }
+@media (max-width: 449px) {
+  .serviceHero {
+    height: 320px;
+    margin-bottom: -2rem;
+  }
+}
 
 .imageContainer {
   position: absolute;

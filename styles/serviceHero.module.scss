@@ -7,6 +7,10 @@
   justify-content: center;
   height: 499px;
   width: 100%;
+  @include phone {
+    height: 320px;
+    margin-bottom: -2rem;
+  }
 }
 
 .imageContainer {

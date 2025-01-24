@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/logo.webp",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -74,7 +74,7 @@ export const metadata = {
     title: "Microsoft Access Help & Training | Access Database Experts",
     description:
       "Professional Microsoft Access database support and training services. Remote or onsite assistance for database issues, custom training, and expert consultancy.",
-    images: ["https://www.accessexperts.com.au/logo.webp"],
+    images: ["/logo.png"],
   },
 
   metadataBase: new URL("https://www.accessexperts.com.au"),

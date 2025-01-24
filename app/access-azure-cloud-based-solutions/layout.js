@@ -15,7 +15,7 @@ export const metadata = {
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/logo.webp",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -77,7 +77,7 @@ export const metadata = {
       "Access/Azure Cloud Database Solutions | Microsoft Access Integration Experts",
     description:
       "Professional Microsoft Access and Azure cloud database integration services. Custom development, database migration, and web app connectivity solutions for business efficiency.",
-    images: ["https://www.accessexperts.com.au/logo.webp"],
+    images: ["/logo.png"],
   },
   metadataBase: new URL("https://www.accessexperts.com.au"),
   alternates: {

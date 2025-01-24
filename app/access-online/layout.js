@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/logo.webp",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -77,7 +77,7 @@ export const metadata = {
     title: "Access Online | Cloud-Based Microsoft Access Database Solutions",
     description:
       "Professional Microsoft Access cloud database solutions, including Office 365 integration, SharePoint connectivity, and Azure hosting. Expert consultants for online database development and mobile access solutions.",
-    images: ["https://www.accessexperts.com.au/logo.webp"],
+    images: ["/logo.png"],
   },
 
   // Additional tags
