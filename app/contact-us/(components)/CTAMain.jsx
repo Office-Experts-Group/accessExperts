@@ -53,8 +53,8 @@ const CTAMain = () => {
             </div>
           </div>
           <div className={styles.email}>
-            <Link href="mailto:consult@accessexperts.com.au">
-              <p>consult@accessexperts.com.au</p>
+            <Link href="mailto:consult@officeexperts.com.au">
+              <p>consult@officeexperts.com.au</p>
             </Link>
           </div>
         </div>

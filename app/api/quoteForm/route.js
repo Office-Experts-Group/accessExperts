@@ -167,7 +167,7 @@ export async function POST(req) {
 
       await sgMail.send({
         from: "consult@officeexperts.com.au",
-        to: "consult@accessexperts.com.au",
+        to: "consult@officeexperts.com.au",
         subject: "New Quote Request Submission",
         text: clientTextMessage,
         html: clientHtmlMessage,

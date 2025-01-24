@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+
 import styles from "../styles/footerLocations.module.scss";
 
 const locationsByState = {
@@ -36,6 +37,9 @@ const locationsByState = {
     Darwin:
       "https://officeexperts.com.au/office-excel-access-and-365-experts-darwin/",
   },
+  "South Australia": {
+    Adelaide: "/",
+  },
 };
 
 export default function FooterLocationsSection() {
@@ -44,11 +48,27 @@ export default function FooterLocationsSection() {
 
   useEffect(() => {
     setIsTouchDevice("ontouchstart" in window);
+
+    // Add click event listener to handle clicking outside
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(`.${styles.stateDropdown}`)) {
+        setActiveState(null);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
   }, []);
 
   const handleStateClick = (state, e) => {
-    e.preventDefault();
-    setActiveState(activeState === state ? null : state);
+    if (isTouchDevice) {
+      e.preventDefault();
+      e.stopPropagation();
+      setActiveState(activeState === state ? null : state);
+    }
   };
 
   return (
@@ -72,15 +92,20 @@ export default function FooterLocationsSection() {
               className={stateClasses}
               onClick={(e) => handleStateClick(state, e)}
             >
-              <p className={styles.stateHeader}>{state}</p>
+              <p className={styles.stateHeader}>
+                <span>{state}</span>
+              </p>
               <div className={dropdownClasses}>
-                {Object.entries(locations).map(([city, url]) => (
-                  <div key={city} className={styles.cityItem}>
-                    <Link href={url} className={styles.cityLink}>
-                      {city}
-                    </Link>
-                  </div>
-                ))}
+                <div className={styles.dropdownBackground}></div>
+                <div className={styles.dropdownContent}>
+                  {Object.entries(locations).map(([city, url]) => (
+                    <div key={city} className={styles.cityItem}>
+                      <Link href={url} className={styles.cityLink}>
+                        {city}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           );

@@ -92,7 +92,7 @@ const SolutionsCarousel = () => {
                   </div>
                   <div className={styles.popIn}>
                     <h3>
-                      <span>Word Experts</span>
+                      <span>Microsoft Access</span>
                       <br />
                       {solution.title}
                     </h3>

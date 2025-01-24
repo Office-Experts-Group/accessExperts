@@ -20,9 +20,9 @@ const FooterLogoSection = () => {
           <Image src={msg} alt="msg" width={18} height={18} />
           1300 10 28 10
         </Link>
-        <Link href={"mailto:consult@accessexperts.com.au"}>
+        <Link href={"mailto:consult@officeexperts.com.au"}>
           <Image src={emailSlide} alt="msg" width={22} height={13} />
-          consult@accessexperts.com.au
+          consult@officeexperts.com.au
         </Link>
       </div>
 
