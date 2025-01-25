@@ -28,7 +28,7 @@ import {
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    ...getHomePageSchema(testimonials)["@graph"],
+    ...getHomePageSchema(testimonials, "access")["@graph"],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
     {
