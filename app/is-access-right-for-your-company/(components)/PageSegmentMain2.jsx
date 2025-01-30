@@ -4,6 +4,7 @@ import React from "react";
 import styles from "../../../styles/pageSegment2.module.css";
 
 import office from "../../../public/office770x430.webp";
+import Link from "next/link";
 
 const PageSegmentMain2 = () => {
   return (
@@ -33,7 +34,9 @@ const PageSegmentMain2 = () => {
         </div>
 
         <div className={styles.buttonWrapper}>
-          <button className={`${styles.contactBtn} btn`}>Contact Us</button>
+          <Link href="/contact-us" className={`${styles.contactBtn} btn`}>
+            Contact Us
+          </Link>
         </div>
       </div>
 
