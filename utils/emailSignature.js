@@ -1,7 +1,7 @@
 export const getEmailSignature = () => {
-  const baseUrl = "https://access-experts.vercel.app/";
+  const baseUrl = "https://accessexperts.com.au";
   const fallbackUrls = {
-    logo: "/logo.webp",
+    logo: "/logo.png",
     email: `${baseUrl}icons/email.png`,
     phone: `${baseUrl}icons/phone.png`,
     maps: `${baseUrl}icons/goog.png`,
