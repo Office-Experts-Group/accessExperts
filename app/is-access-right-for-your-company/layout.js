@@ -54,9 +54,9 @@ export const metadata = {
   ],
   metadataBase: new URL("https://www.accessexperts.com.au"),
   alternates: {
-    canonical: "/is-access-right-for-your-company/",
+    canonical: "/is-access-right-for-your-company",
     languages: {
-      "en-AU": "/is-access-right-for-your-company/",
+      "en-AU": "/is-access-right-for-your-company",
     },
   },
 };

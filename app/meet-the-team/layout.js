@@ -64,9 +64,9 @@ export const metadata = {
   // Additional tags
   metadataBase: new URL("https://www.accessexperts.com.au"),
   alternates: {
-    canonical: "/meet-the-team/",
+    canonical: "/meet-the-team",
     languages: {
-      "en-AU": "/meet-the-team/",
+      "en-AU": "/meet-the-team",
     },
   },
 };
