@@ -12,7 +12,7 @@ export const metadata = {
       "Microsoft Access Database Upgrades & Migration Services | Access Experts",
     description:
       "Expert Microsoft Access database upgrade and migration services. Our specialists ensure smooth transitions, resolve compatibility issues, and optimise database performance with minimal disruption.",
-    url: "https://www.accessexperts.com.au/upgrades-and-migration/",
+    url: "https://www.accessexperts.com.au/upgrades-and-migration",
   },
 
   // Additional metadata
@@ -68,15 +68,6 @@ export const metadata = {
       "Microsoft Access Database Upgrades & Migration Services | Access Experts",
     description:
       "Professional Microsoft Access database upgrade and migration services. Specialising in version upgrades, SQL Server migrations, cloud transitions, and performance optimization.",
-  },
-
-  // Additional tags
-  metadataBase: new URL("https://www.accessexperts.com.au"),
-  alternates: {
-    canonical: "/upgrades-and-migration",
-    languages: {
-      "en-AU": "/upgrades-and-migration",
-    },
   },
 };
 

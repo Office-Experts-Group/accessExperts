@@ -11,7 +11,7 @@ export const metadata = {
     title: "Is Access Right for your Company? | Access Experts",
     description:
       "Professional consultation on Microsoft Access database solutions for business. Expert analysis of data management needs, user requirements, and system compatibility.",
-    url: "https://www.accessexperts.com.au/is-access-right-for-your-company/",
+    url: "https://www.accessexperts.com.au/is-access-right-for-your-company",
   },
 
   // Additional metadata
@@ -52,13 +52,6 @@ export const metadata = {
     // "Access CRM database solutions",
     // "Access workflow automation systems",
   ],
-  metadataBase: new URL("https://www.accessexperts.com.au"),
-  alternates: {
-    canonical: "/is-access-right-for-your-company",
-    languages: {
-      "en-AU": "/is-access-right-for-your-company",
-    },
-  },
 };
 
 export default function RootLayout({ children }) {

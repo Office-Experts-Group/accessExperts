@@ -255,7 +255,7 @@ export const generateProfessionalServiceSchema = () => ({
   },
   provider: {
     "@type": "Organization",
-    "@id": `https://www.accessexperts.com.au/#organization`,
+    "@id": `https://www.accessexperts.com.au#organization`,
   },
   telephone: "1300 102 810",
   email: "consult@officeexperts.com.au",
@@ -263,7 +263,7 @@ export const generateProfessionalServiceSchema = () => ({
 
 export const generateOrganizationSchema = () => ({
   "@type": "Organization",
-  "@id": "https://www.accessexperts.com.au/#organization",
+  "@id": "https://www.accessexperts.com.au#organization",
   name: "Office Experts Group",
   url: "https://www.accessexperts.com.au/",
   telephone: "1300 102 810",

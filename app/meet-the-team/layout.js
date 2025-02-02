@@ -11,7 +11,7 @@ export const metadata = {
     title: "Meet the Team | Access Experts",
     description:
       "Meet our team of certified Microsoft Access developers, consultants, and trainers. Experts in database development, integration, and business solutions across Australia.",
-    url: "https://www.accessexperts.com.au/meet-the-team/",
+    url: "https://www.accessexperts.com.au/meet-the-team",
   },
 
   // Additional metadata

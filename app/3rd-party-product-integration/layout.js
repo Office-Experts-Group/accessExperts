@@ -10,11 +10,11 @@ export const metadata = {
     title: "Microsoft Access Integration Solutions | Access Experts Australia",
     description:
       "Professional Microsoft Access integration services connecting your databases with CRMs, accounting software, and third-party applications. Competitive pricing and expert consultation.",
-    url: "https://www.accessexperts.com.au/3rd-party-product-integration/",
+    url: "https://www.accessexperts.com.au/3rd-party-product-integration",
     siteName: "Access Experts",
     images: [
       {
-        url: "https://www.accessexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.webp",
+        url: "https://www.accessexperts.com.au/logo.png",
         width: 1200,
         height: 630,
         alt: "Access Experts Logo",
@@ -76,15 +76,6 @@ export const metadata = {
     description:
       "Professional Microsoft Access integration services connecting your databases with CRMs, accounting software, and third-party applications. Competitive pricing and expert consultation.",
     images: ["/logo.png"],
-  },
-
-  // Additional tags
-  metadataBase: new URL("https://www.accessexperts.com.au"),
-  alternates: {
-    canonical: "/3rd-party-product-integration/",
-    languages: {
-      "en-AU": "/3rd-party-product-integration/",
-    },
   },
 };
 

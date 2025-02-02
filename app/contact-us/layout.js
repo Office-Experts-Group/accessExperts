@@ -11,7 +11,7 @@ export const metadata = {
     title: "Contact Us | Access Experts ",
     description:
       "Get in touch with our Microsoft Access database specialists for custom development, integration, support, and consulting services across Australia.",
-    url: "https://www.accessexperts.com.au/contact-us/",
+    url: "https://www.accessexperts.com.au/contact-us",
     siteName: "Access Experts",
     images: [
       {

@@ -11,7 +11,7 @@ export const metadata = {
     title: "Client Testimonials | Access Experts",
     description:
       "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
-    url: "https://www.accessexperts.com.au/client-testimonials/",
+    url: "https://www.accessexperts.com.au/client-testimonials",
     siteName: "Access Experts",
     images: [
       {
@@ -60,15 +60,6 @@ export const metadata = {
     description:
       "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
     images: ["/logo.png"],
-  },
-
-  // Additional tags
-  metadataBase: new URL("https://www.accessexperts.com.au"),
-  alternates: {
-    canonical: "/client-testimonials",
-    languages: {
-      "en-AU": "/client-testimonials",
-    },
   },
 };
 

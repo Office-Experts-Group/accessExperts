@@ -10,7 +10,7 @@ export const metadata = {
     title: "Microsoft Access Support and Training | Access Experts ",
     description:
       "Expert Microsoft Access database consultants providing remote and onsite support, troubleshooting, training, and maintenance services. Available Australia-wide with competitive rates.",
-    url: "https://www.accessexperts.com.au/access-support/",
+    url: "https://www.accessexperts.com.au/access-support",
     siteName: "Access Experts",
     images: [
       {
@@ -75,14 +75,6 @@ export const metadata = {
     description:
       "Professional Microsoft Access database support and training services. Remote or onsite assistance for database issues, custom training, and expert consultancy.",
     images: ["/logo.png"],
-  },
-
-  metadataBase: new URL("https://www.accessexperts.com.au"),
-  alternates: {
-    canonical: "/access-support",
-    languages: {
-      "en-AU": "/access-support",
-    },
   },
 };
 

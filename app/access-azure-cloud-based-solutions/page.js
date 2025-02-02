@@ -32,11 +32,11 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.accessexperts.com.au/access-azure-cloud-solutions/",
-      url: "https://www.accessexperts.com.au/access-azure-cloud-solutions/",
+      "@id": "https://www.accessexperts.com.au/access-azure-cloud-solutions",
+      url: "https://www.accessexperts.com.au/access-azure-cloud-solutions",
       name: "Microsoft Access Azure Cloud Solutions & Integration Services",
       isPartOf: {
-        "@id": "https://www.accessexperts.com.au/#website",
+        "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -44,42 +44,15 @@ const schema = {
         "Professional Microsoft Access Azure cloud integration services. Our experts deliver seamless database migration, cloud optimization, and Azure integration solutions.",
       breadcrumb: {
         "@id":
-          "https://www.accessexperts.com.au/access-azure-cloud-solutions/#breadcrumb",
+          "https://www.accessexperts.com.au/access-azure-cloud-solutions#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.accessexperts.com.au/azure-cloud-solutions/"],
+          target: ["https://www.accessexperts.com.au/azure-cloud-solutions"],
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.accessexperts.com.au/#website",
-      url: "https://www.accessexperts.com.au/",
-      name: "Access Experts: Azure Cloud Integration Services",
-      description:
-        "Expert Microsoft Access and Azure Cloud Integration Solutions",
-      publisher: {
-        "@id": "https://www.accessexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.accessexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

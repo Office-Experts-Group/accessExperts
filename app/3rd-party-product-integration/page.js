@@ -29,41 +29,15 @@ const schema = {
       url: "https://accessexperts.com.au/3rd-party-product-integration",
       name: "Access Experts: For All Your Microsoft Technology Development and Consulting Services",
       isPartOf: {
-        "@id": "https://accessexperts.com.au/#website",
+        "@id": "https://accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
         "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs, our experts excel in Microsoft technology services from database creation to maintenance, troubleshooting, integration, data manipulation, programming, conversions, upgrades, training and support.",
       breadcrumb: {
-        "@id": "https://accessexperts.com.au/#breadcrumb",
+        "@id": "https://accessexperts.com.au#breadcrumb",
       },
-      inLanguage: "en-AU",
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://accessexperts.com.au/#website",
-      url: "https://accessexperts.com.au/3rd-party-product-integration",
-      name: "Access Experts: Microsoft Access Development and Consulting Services",
-      description:
-        "Your Microsoft Access Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://accessexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: "https://accessexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
       inLanguage: "en-AU",
     },
     {

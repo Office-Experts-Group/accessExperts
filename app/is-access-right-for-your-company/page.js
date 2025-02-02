@@ -26,11 +26,11 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://accessexperts.com.au/is-access-right-for-your-company/",
-      url: "https://accessexperts.com.au/is-access-right-for-your-company/",
+      "@id": "https://accessexperts.com.au/is-access-right-for-your-company",
+      url: "https://accessexperts.com.au/is-access-right-for-your-company",
       name: "Is Microsoft Access Right for Your Company? - Access Experts",
       isPartOf: {
-        "@id": "https://accessexperts.com.au/#website",
+        "@id": "https://accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -38,14 +38,14 @@ const schema = {
         "Discover if Microsoft Access is the right database solution for your business. Expert analysis and consultation to determine the best database strategy for your needs.",
       breadcrumb: {
         "@id":
-          "https://accessexperts.com.au/is-access-right-for-your-company/#breadcrumb",
+          "https://accessexperts.com.au/is-access-right-for-your-company#breadcrumb",
       },
       inLanguage: "en-AU",
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://accessexperts.com.au/is-access-right-for-your-company/#breadcrumb",
+        "https://accessexperts.com.au/is-access-right-for-your-company#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",

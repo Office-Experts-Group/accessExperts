@@ -11,7 +11,7 @@ export const metadata = {
     title: "Access and Azure Cloud Based Database Solutions |  Access Experts",
     description:
       "Expert Microsoft Access and Azure integration services for cloud-based database solutions. Custom Access database development with Azure SQL Server hosting for secure, scalable, and accessible data management.",
-    url: "https://www.accessexperts.com.au/access-azure-cloud-based-solutions/",
+    url: "https://www.accessexperts.com.au/access-azure-cloud-based-solutions",
     siteName: "Access Experts",
     images: [
       {
@@ -78,13 +78,6 @@ export const metadata = {
     description:
       "Professional Microsoft Access and Azure cloud database integration services. Custom development, database migration, and web app connectivity solutions for business efficiency.",
     images: ["/logo.png"],
-  },
-  metadataBase: new URL("https://www.accessexperts.com.au"),
-  alternates: {
-    canonical: "/access-azure-cloud-based-solutions",
-    languages: {
-      "en-AU": "/access-azure-cloud-based-solutions",
-    },
   },
   robots: {
     index: true,

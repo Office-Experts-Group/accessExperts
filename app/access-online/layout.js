@@ -10,7 +10,7 @@ export const metadata = {
     title: "Access Online | Cloud-Based Microsoft Access Database Solutions",
     description:
       "Professional Microsoft Access cloud database solutions, including Office 365 integration, SharePoint connectivity, and Azure hosting. Expert consultants for online database development and mobile access solutions.",
-    url: "https://www.accessexperts.com.au/access-online/",
+    url: "https://www.accessexperts.com.au/access-online",
     siteName: "Access Experts",
     images: [
       {
@@ -78,16 +78,6 @@ export const metadata = {
     description:
       "Professional Microsoft Access cloud database solutions, including Office 365 integration, SharePoint connectivity, and Azure hosting. Expert consultants for online database development and mobile access solutions.",
     images: ["/logo.png"],
-  },
-
-  // Additional tags
-
-  metadataBase: new URL("https://www.accessexperts.com.au"),
-  alternates: {
-    canonical: "/access-online",
-    languages: {
-      "en-AU": "/access-online",
-    },
   },
 };
 

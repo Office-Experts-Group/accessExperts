@@ -14,6 +14,20 @@ const nextConfig = {
     minimumCacheTTL: 31536000,
   },
 
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "index, follow",
+          },
+        ],
+      },
+    ];
+  },
+
   webpack: (config, { dev, isServer }) => {
     // Add CSS minification in production builds
     if (!dev && !isServer) {

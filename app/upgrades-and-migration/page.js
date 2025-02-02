@@ -30,7 +30,7 @@ const schema = {
       url: "https://accessexperts.com.au/upgrades-and-migration/",
       name: "Microsoft Access Database Upgrades & Migration Services",
       isPartOf: {
-        "@id": "https://accessexperts.com.au/#website",
+        "@id": "https://accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -40,7 +40,7 @@ const schema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://accessexperts.com.au/upgrades-and-migration/#breadcrumb",
+      "@id": "https://accessexperts.com.au/upgrades-and-migration#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",

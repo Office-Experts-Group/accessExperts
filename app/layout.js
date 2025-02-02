@@ -141,13 +141,6 @@ export const metadata = {
     images: ["/logo.png"],
   },
 
-  metadataBase: new URL("https://www.accessexperts.com.au"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-AU": "/",
-    },
-  },
   robots: {
     index: true,
     follow: true,
@@ -162,6 +155,12 @@ export const metadata = {
     shortcut: "/favicon-32x32.png",
     apple: "/apple-touch-icon.png",
   },
+
+  metadataBase: new URL(
+    process.env.NODE_ENV === "production"
+      ? "https://www.accessexperts.com.au"
+      : "http://localhost:3000"
+  ),
 };
 
 export default function RootLayout({ children }) {
