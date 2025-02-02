@@ -1,5 +1,4 @@
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compress: true,

@@ -1,6 +1,21 @@
 import { NextResponse } from "next/server";
+import { goneUrls } from "./utils/goneUrls";
 
 export function middleware(request) {
+  // Normalize path by removing trailing slash if it exists
+  const path = request.nextUrl.pathname.replace(/\/$/, "").toLowerCase();
+
+  // Check if the requested path is in our goneUrls list
+  if (goneUrls.includes(path)) {
+    return new NextResponse(null, {
+      status: 410,
+      statusText: "Gone",
+      headers: {
+        "X-Robots-Tag": "noindex",
+      },
+    });
+  }
+
   const response = NextResponse.next();
 
   // Security headers
