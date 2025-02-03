@@ -48,10 +48,6 @@ export const navigationData = {
             href: `/is-access-right-for-your-company`,
           },
           {
-            label: "Upgrade your existing Database",
-            href: `/upgrades-and-migration`,
-          },
-          {
             label: "3rd Party Product Integration",
             href: `/3rd-party-product-integration`,
           },
