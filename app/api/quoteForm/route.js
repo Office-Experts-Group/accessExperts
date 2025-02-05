@@ -51,6 +51,7 @@ export async function POST(req) {
       softwareVersions,
       website,
       honeypot,
+      company,
     } = body;
 
     // Validate required fields
@@ -94,19 +95,32 @@ export async function POST(req) {
       ];
     }
 
+    // Format current time in AEST
+    const timeFormatter = new Intl.DateTimeFormat("en-AU", {
+      timeZone: "Australia/Sydney",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: true,
+    });
+
+    const currentTimeAEST = timeFormatter.format(new Date());
+
     const { htmlSignature, textSignature } = getEmailSignature();
 
     const clientTextMessage = `
       You have received a new quote request from ${name} (${email}).
       Phone: ${phone || "Not provided"}.
+      Company: ${company || "Not provided"}.
       Operating System: ${operatingSystem || "Not provided"}.
       Software Versions: ${softwareVersions || "Not provided"}.
       Website: ${website || "Not provided"}.
       Message: ${message || "Not provided"}
 
-      This form was filled out on the website: https://accessexperts.com.au @ ${new Date().toLocaleString()}
-
-      ${textSignature}
+      This form was filled out on the website: https://accessexperts.com.au @ ${currentTimeAEST}
     `;
 
     const customerTextMessage = `
@@ -122,6 +136,7 @@ export async function POST(req) {
     const clientHtmlMessage = `
       <p>You have received a new quote request from <strong>${name}</strong> (${email}).</p>
       <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+      <p><strong>Company:</strong> ${company || "Not provided"}</p>
       <p><strong>Operating System:</strong> ${
         operatingSystem || "Not provided"
       }</p>
@@ -131,8 +146,7 @@ export async function POST(req) {
       <p><strong>Website:</strong> ${website || "Not provided"}</p>
       <p><strong>Message:</strong></p>
       <p>${message || "Not provided"}</p>
-      <em>This form was filled out on the website: https://accessexperts.com.au @ ${new Date().toLocaleString()}</em>
-      ${htmlSignature}
+      <em>This form was filled out on the website: https://accessexperts.com.au @ ${currentTimeAEST}</em>
     `;
 
     const customerHtmlMessage = `
@@ -144,16 +158,6 @@ export async function POST(req) {
 
     try {
       // Send email to business
-      await sgMail.send({
-        from: "consult@officeexperts.com.au",
-        to: "joshua@officeexperts.com.au",
-        subject: "New Quote Request Submission",
-        text: clientTextMessage,
-        html: clientHtmlMessage,
-        ...(attachments.length > 0 && { attachments }),
-        replyTo: email,
-      });
-
       await sgMail.send({
         from: "consult@officeexperts.com.au",
         to: "consult@officeexperts.com.au",
