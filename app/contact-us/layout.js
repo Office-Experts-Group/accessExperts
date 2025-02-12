@@ -80,12 +80,8 @@ export const metadata = {
   },
 
   // Additional tags
-  metadataBase: new URL("https://www.accessexperts.com.au"),
   alternates: {
-    canonical: "/contact-us",
-    languages: {
-      "en-AU": "/contact-us",
-    },
+    canonical: "https://accessexperts.com.au/contact-us",
   },
 };
 

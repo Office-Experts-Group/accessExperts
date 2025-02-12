@@ -3,7 +3,10 @@ import styles from "../../../styles/faqSection.module.scss";
 
 const ContentsSection = () => {
   return (
-    <section className={`${styles.faqSection} ${styles.contentsSection}`}>
+    <section
+      className={`${styles.faqSection} ${styles.contentsSection}`}
+      id="requirements"
+    >
       <div>
         <h2>Access/Azure Requirements</h2>
         <div className={styles.faqContainer}>

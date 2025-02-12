@@ -79,19 +79,20 @@ export const metadata = {
       "Professional Microsoft Access and Azure cloud database integration services. Custom development, database migration, and web app connectivity solutions for business efficiency.",
     images: ["/logo.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
-
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
+  alternates: {
+    canonical:
+      "https://accessexperts.com.au/access-azure-cloud-based-solutions",
+    languages: {
+      en: "https://accessexperts.com.au/access-azure-cloud-based-solutions",
+    },
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-access/access-azure-cloud-based-solutions",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-access/access-azure-cloud-based-solutions",
+      },
+    ],
   },
 };
 

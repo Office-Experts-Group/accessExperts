@@ -1,0 +1,122 @@
+[
+  {
+    "path": "/(components)",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/3rd-party-product-integration",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/3rd-party-product-integration/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/access-azure-cloud-based-solutions",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/access-azure-cloud-based-solutions/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/access-online",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/access-online/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/access-support",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/access-support/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/api/contactForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api/quoteForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api/surveyForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/client-testimonials",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/client-testimonials/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us/request-a-quote",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/is-access-right-for-your-company",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/is-access-right-for-your-company/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/meet-the-team",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/meet-the-team/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/upgrades-and-migration",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/upgrades-and-migration/(components)",
+    "depth": 1,
+    "type": "directory"
+  }
+]

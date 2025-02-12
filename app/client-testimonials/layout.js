@@ -61,6 +61,9 @@ export const metadata = {
       "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
     images: ["/logo.png"],
   },
+  alternatives: {
+    canonical: "https://accessexperts.com.au/client-testimonials",
+  },
 };
 
 export default function RootLayout({ children }) {

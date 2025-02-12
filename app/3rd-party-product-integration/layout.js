@@ -77,6 +77,21 @@ export const metadata = {
       "Professional Microsoft Access integration services connecting your databases with CRMs, accounting software, and third-party applications. Competitive pricing and expert consultation.",
     images: ["/logo.png"],
   },
+
+  alternates: {
+    canonical: "https://accessexperts.com.au/3rd-party-product-integration",
+    languages: {
+      en: "https://accessexperts.com.au/3rd-party-product-integration",
+    },
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-access/3rd-party-product-integration",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-access/3rd-party-product-integration",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

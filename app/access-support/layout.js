@@ -76,6 +76,20 @@ export const metadata = {
       "Professional Microsoft Access database support and training services. Remote or onsite assistance for database issues, custom training, and expert consultancy.",
     images: ["/logo.png"],
   },
+  alternates: {
+    canonical: "https://accessexperts.com.au/access-support",
+    languages: {
+      en: "https://accessexperts.com.au/access-support",
+    },
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-access/access-support",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-access/access-support",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

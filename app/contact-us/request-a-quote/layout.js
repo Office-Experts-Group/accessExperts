@@ -43,6 +43,9 @@ export const metadata = {
     description:
       "Get a customised quote for your Microsoft Access database needs. From development and integration to troubleshooting and upgrades - our experts deliver tailored solutions with competitive pricing.",
   },
+  alternatives: {
+    canonical: "https://accessexperts.com.au/contact-us/request-a-quote",
+  },
 };
 
 export default function RootLayout({ children }) {

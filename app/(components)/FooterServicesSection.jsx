@@ -89,9 +89,9 @@ const FooterServicesSection = () => {
             <Link href="https://www.officeexperts.com.au/services/microsoft-office">
               Microsoft Office
             </Link>
-            <Link href="https://www.excelexperts.com.au/">Microsoft Excel</Link>
+            <Link href="https://www.excelexperts.com.au">Microsoft Excel</Link>
             <Link href="/">Microsoft Access</Link>
-            <Link href="https://www.wordexperts.com.au/">Microsoft Word</Link>
+            <Link href="https://www.wordexperts.com.au">Microsoft Word</Link>
             <Link href="https://www.officeexperts.com.au/services/microsoft-powerpoint">
               Microsoft PowerPoint
             </Link>
