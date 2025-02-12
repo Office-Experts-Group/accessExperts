@@ -37,13 +37,24 @@ export function middleware(request) {
   response.headers.set(
     "Content-Security-Policy",
     "default-src 'self'; " +
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' *.vimeo.com; " +
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' " +
+      "*.vimeo.com *.googletagmanager.com *.google-analytics.com " +
+      "*.gstatic.com *.google.com *.doubleclick.net " +
+      "*.googleadservices.com *.facebook.net " +
+      "*.google.com.vn *.google.com.au; " +
       "style-src 'self' 'unsafe-inline'; " +
-      "img-src 'self' data: https: *.vimeocdn.com; " +
-      "font-src 'self'; " +
-      "frame-src 'self' *.vimeo.com player.vimeo.com; " +
+      "img-src 'self' data: https: *.vimeocdn.com *.google-analytics.com " +
+      "*.googletagmanager.com *.google.com " +
+      "*.gstatic.com *.doubleclick.net; " +
+      "font-src 'self' data:; " +
+      "frame-src 'self' *.vimeo.com player.vimeo.com *.googletagmanager.com " +
+      "*.google.com *.doubleclick.net *.facebook.com; " +
       "media-src 'self' *.vimeo.com *.vimeocdn.com; " +
-      "connect-src 'self' *.vimeo.com *.vimeocdn.com;"
+      "connect-src 'self' *.vimeo.com *.vimeocdn.com *.google-analytics.com " +
+      "*.googletagmanager.com *.officeexperts.com.au *.google.com " +
+      "*.doubleclick.net *.gstatic.com " +
+      "*.googleadservices.com *.facebook.com " +
+      "*.google.com.vn *.google.com.au"
   );
 
   // Handle Next.js system paths

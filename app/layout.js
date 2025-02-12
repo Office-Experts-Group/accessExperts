@@ -79,6 +79,11 @@ export const metadata = {
     type: "website",
   },
 
+  // Google Search Console
+  verification: {
+    google: "NncXxsP6RdHFQ2RWy6ekT_WtaDPOk8DF5XZCYNPH_ww",
+  },
+
   // Additional metadata
   keywords: [
     "Microsoft Access database consulting",
