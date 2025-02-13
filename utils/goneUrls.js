@@ -81,4 +81,7 @@ export const goneUrls = [
   "/testimonials/persal-and-co",
   "/testimonials/mbp-consulting-pty-ltd-trading-as-horizon2technologies",
   "/hyundaicelogo",
+  "/access-database-solutions-finding-the-best-one",
+  "/microsoft-access-consultants-in-wollongong",
+  "/access-consultant-services-in-canberra",
 ].map((url) => url.toLowerCase());
