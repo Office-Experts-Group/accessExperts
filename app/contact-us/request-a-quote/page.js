@@ -19,11 +19,11 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://accessexperts.com.au/contact-us/request-a-quote",
-      url: "https://accessexperts.com.au/contact-us/request-a-quote",
+      "@id": "https://www.accessexperts.com.au/contact-us/request-a-quote",
+      url: "https://www.accessexperts.com.au/contact-us/request-a-quote",
       name: "Request a Quote - Access Experts Database Services",
       isPartOf: {
-        "@id": "https://accessexperts.com.au#website",
+        "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -31,26 +31,26 @@ const schema = {
         "Request a quote for professional Microsoft Access database services. Get competitive pricing for your database development, support, and consulting needs.",
       breadcrumb: {
         "@id":
-          "https://accessexperts.com.au/contact-us/request-a-quote#breadcrumb",
+          "https://www.accessexperts.com.au/contact-us/request-a-quote#breadcrumb",
       },
       inLanguage: "en-AU",
     },
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://accessexperts.com.au/contact-us/request-a-quote#breadcrumb",
+        "https://www.accessexperts.com.au/contact-us/request-a-quote#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://accessexperts.com.au",
+          item: "https://www.accessexperts.com.au",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Contact Us",
-          item: "https://accessexperts.com.au/contact-us",
+          item: "https://www.accessexperts.com.au/contact-us",
         },
         {
           "@type": "ListItem",
@@ -61,7 +61,7 @@ const schema = {
     },
     {
       "@type": "Organization",
-      "@id": "https://accessexperts.com.au#organization",
+      "@id": "https://www.accessexperts.com.au#organization",
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Microsoft Access Design, Development and Consulting Services",

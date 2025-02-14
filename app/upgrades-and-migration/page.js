@@ -26,11 +26,11 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://accessexperts.com.au/upgrades-and-migration/",
-      url: "https://accessexperts.com.au/upgrades-and-migration/",
+      "@id": "https://www.accessexperts.com.au/upgrades-and-migration/",
+      url: "https://www.accessexperts.com.au/upgrades-and-migration/",
       name: "Microsoft Access Database Upgrades & Migration Services",
       isPartOf: {
-        "@id": "https://accessexperts.com.au#website",
+        "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
@@ -40,13 +40,14 @@ const schema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://accessexperts.com.au/upgrades-and-migration#breadcrumb",
+      "@id":
+        "https://www.accessexperts.com.au/upgrades-and-migration#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://accessexperts.com.au/",
+          item: "https://www.accessexperts.com.au/",
         },
         {
           "@type": "ListItem",

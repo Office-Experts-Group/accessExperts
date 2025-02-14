@@ -83,10 +83,10 @@ export const metadata = {
     canonical: "/access-online",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-access/access-online",
+        url: "https://www.officeexperts.com.au/services/microsoft-access/access-online",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-access/access-online",
+        url: "https://www.excelexperts.com.au/services/microsoft-access/access-online",
       },
     ],
   },

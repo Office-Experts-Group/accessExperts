@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://accessexperts.com.au
+Host: https://www.accessexperts.com.au
 
 # Sitemaps
-Sitemap: https://accessexperts.com.au/sitemap.xml
+Sitemap: https://www.accessexperts.com.au/sitemap.xml

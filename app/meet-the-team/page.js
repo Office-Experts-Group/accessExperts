@@ -19,30 +19,30 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://accessexperts.com.au/meet-the-team",
-      url: "https://accessexperts.com.au/meet-the-team",
+      "@id": "https://www.accessexperts.com.au/meet-the-team",
+      url: "https://www.accessexperts.com.au/meet-the-team",
       name: "Meet Our Microsoft Access Database Experts",
       isPartOf: {
-        "@id": "https://accessexperts.com.au#website",
+        "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
         "Meet our team of experienced Microsoft Access database consultants. Expert developers and consultants dedicated to delivering quality database solutions.",
       breadcrumb: {
-        "@id": "https://accessexperts.com.au/meet-the-team#breadcrumb",
+        "@id": "https://www.accessexperts.com.au/meet-the-team#breadcrumb",
       },
       inLanguage: "en-AU",
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://accessexperts.com.au/meet-the-team#breadcrumb",
+      "@id": "https://www.accessexperts.com.au/meet-the-team#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://accessexperts.com.au",
+          item: "https://www.accessexperts.com.au",
         },
         {
           "@type": "ListItem",

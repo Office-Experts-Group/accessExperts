@@ -83,10 +83,10 @@ export const metadata = {
     canonical: "/access-azure-cloud-based-solutions",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-access/access-azure-cloud-based-solutions",
+        url: "https://www.officeexperts.com.au/services/microsoft-access/access-azure-cloud-based-solutions",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-access/access-azure-cloud-based-solutions",
+        url: "https://www.excelexperts.com.au/services/microsoft-access/access-azure-cloud-based-solutions",
       },
     ],
   },

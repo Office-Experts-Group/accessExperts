@@ -26,30 +26,30 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://accessexperts.com.au/access-support",
-      url: "https://accessexperts.com.au/access-support",
+      "@id": "https://www.accessexperts.com.au/access-support",
+      url: "https://www.accessexperts.com.au/access-support",
       name: "Microsoft Access Database Support & Maintenance Services",
       isPartOf: {
-        "@id": "https://accessexperts.com.au#website",
+        "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
         "Expert Microsoft Access database support services including maintenance, troubleshooting, upgrades, and ongoing technical assistance.",
       breadcrumb: {
-        "@id": "https://accessexperts.com.au/access-support#breadcrumb",
+        "@id": "https://www.accessexperts.com.au/access-support#breadcrumb",
       },
       inLanguage: "en-AU",
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://accessexperts.com.au/access-support#breadcrumb",
+      "@id": "https://www.accessexperts.com.au/access-support#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://accessexperts.com.au",
+          item: "https://www.accessexperts.com.au",
         },
         {
           "@type": "ListItem",

@@ -27,30 +27,31 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://accessexperts.com.au/client-testimonials",
-      url: "https://accessexperts.com.au/client-testimonials",
+      "@id": "https://www.accessexperts.com.au/client-testimonials",
+      url: "https://www.accessexperts.com.au/client-testimonials",
       name: "Client Testimonials - Access Experts Success Stories",
       isPartOf: {
-        "@id": "https://accessexperts.com.au#website",
+        "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
         "Read what our clients say about our Microsoft Access database solutions. Real testimonials from satisfied customers across Australia.",
       breadcrumb: {
-        "@id": "https://accessexperts.com.au/client-testimonials#breadcrumb",
+        "@id":
+          "https://www.accessexperts.com.au/client-testimonials#breadcrumb",
       },
       inLanguage: "en-AU",
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://accessexperts.com.au/client-testimonials#breadcrumb",
+      "@id": "https://www.accessexperts.com.au/client-testimonials#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://accessexperts.com.au",
+          item: "https://www.accessexperts.com.au",
         },
         {
           "@type": "ListItem",

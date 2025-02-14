@@ -19,30 +19,30 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://accessexperts.com.au/contact-us",
-      url: "https://accessexperts.com.au/contact-us",
+      "@id": "https://www.accessexperts.com.au/contact-us",
+      url: "https://www.accessexperts.com.au/contact-us",
       name: "Contact Access Experts - Microsoft Access Database Consulting",
       isPartOf: {
-        "@id": "https://accessexperts.com.au#website",
+        "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
         "Contact our Australia-wide Microsoft Access database consultants for prompt, quality service with competitive pricing. Expert database creation, maintenance, troubleshooting, and support.",
       breadcrumb: {
-        "@id": "https://accessexperts.com.au/contact-us#breadcrumb",
+        "@id": "https://www.accessexperts.com.au/contact-us#breadcrumb",
       },
       inLanguage: "en-AU",
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://accessexperts.com.au/contact-us#breadcrumb",
+      "@id": "https://www.accessexperts.com.au/contact-us#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://accessexperts.com.au",
+          item: "https://www.accessexperts.com.au",
         },
         {
           "@type": "ListItem",

@@ -26,36 +26,36 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://accessexperts.com.au/access-online",
-      url: "https://accessexperts.com.au/access-online",
+      "@id": "https://www.accessexperts.com.au/access-online",
+      url: "https://www.accessexperts.com.au/access-online",
       name: "Online Microsoft Access Solutions & Remote Database Services",
       isPartOf: {
-        "@id": "https://accessexperts.com.au#website",
+        "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
         "Professional online Microsoft Access database services. Remote consulting, development, and support for all your database needs.",
       breadcrumb: {
-        "@id": "https://accessexperts.com.au/access-online#breadcrumb",
+        "@id": "https://www.accessexperts.com.au/access-online#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://accessexperts.com.au/access-online"],
+          target: ["https://www.accessexperts.com.au/access-online"],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://accessexperts.com.au/access-online#breadcrumb",
+      "@id": "https://www.accessexperts.com.au/access-online#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://accessexperts.com.au",
+          item: "https://www.accessexperts.com.au",
         },
         {
           "@type": "ListItem",

@@ -18,22 +18,6 @@ export const metadata = {
   keywords: [
     // Core Services
     "Microsoft Access custom database quote",
-
-    // // Specific Solutions
-    // "Access SQL Server integration quote",
-    // "Access database migration estimate",
-    // "Access Azure cloud integration cost",
-    // "VBA macro development pricing",
-
-    // // Service-specific long tail
-    // "Access database upgrade consultation",
-    // "Legacy Access database migration quote",
-    // "Multi-user Access database setup",
-    // "Access SharePoint integration pricing",
-
-    // // Support Services
-    // "Access database maintenance quote",
-    // "Database backup solution pricing",
   ],
 
   // Twitter Card

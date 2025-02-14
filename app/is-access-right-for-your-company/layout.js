@@ -56,10 +56,10 @@ export const metadata = {
     canonical: "/is-access-right-for-your-company",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-access/is-access-right-for-your-company",
+        url: "https://www.officeexperts.com.au/services/microsoft-access/is-access-right-for-your-company",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-access/is-access-right-for-your-company",
+        url: "https://www.excelexperts.com.au/services/microsoft-access/is-access-right-for-your-company",
       },
     ],
   },

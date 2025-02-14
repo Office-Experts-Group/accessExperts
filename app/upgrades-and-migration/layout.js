@@ -73,10 +73,10 @@ export const metadata = {
     canonical: "/upgrades-and-migration",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-access/upgrades-and-migration",
+        url: "https://www.officeexperts.com.au/services/microsoft-access/upgrades-and-migration",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-access/upgrades-and-migration",
+        url: "https://www.excelexperts.com.au/services/microsoft-access/upgrades-and-migration",
       },
     ],
   },

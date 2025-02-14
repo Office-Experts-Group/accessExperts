@@ -82,10 +82,10 @@ export const metadata = {
     canonical: "/3rd-party-product-integration",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-access/3rd-party-product-integration",
+        url: "https://www.officeexperts.com.au/services/microsoft-access/3rd-party-product-integration",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-access/3rd-party-product-integration",
+        url: "https://www.excelexperts.com.au/services/microsoft-access/3rd-party-product-integration",
       },
     ],
   },

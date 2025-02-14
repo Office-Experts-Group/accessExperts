@@ -80,10 +80,10 @@ export const metadata = {
     canonical: "/access-support",
     alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-access/access-support",
+        url: "https://www.officeexperts.com.au/services/microsoft-access/access-support",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-access/access-support",
+        url: "https://www.excelexperts.com.au/services/microsoft-access/access-support",
       },
     ],
   },
