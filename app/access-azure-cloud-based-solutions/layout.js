@@ -80,12 +80,8 @@ export const metadata = {
     images: ["/logo.png"],
   },
   alternates: {
-    canonical:
-      "https://accessexperts.com.au/access-azure-cloud-based-solutions",
-    languages: {
-      en: "https://accessexperts.com.au/access-azure-cloud-based-solutions",
-    },
-    alternates: [
+    canonical: "/access-azure-cloud-based-solutions",
+    alternate: [
       {
         url: "https://officeexperts.com.au/services/microsoft-access/access-azure-cloud-based-solutions",
       },

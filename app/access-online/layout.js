@@ -80,11 +80,8 @@ export const metadata = {
     images: ["/logo.png"],
   },
   alternates: {
-    canonical: "https://accessexperts.com.au/access-online",
-    languages: {
-      en: "https://accessexperts.com.au/access-online",
-    },
-    alternates: [
+    canonical: "/access-online",
+    alternate: [
       {
         url: "https://officeexperts.com.au/services/microsoft-access/access-online",
       },

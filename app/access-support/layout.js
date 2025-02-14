@@ -77,11 +77,8 @@ export const metadata = {
     images: ["/logo.png"],
   },
   alternates: {
-    canonical: "https://accessexperts.com.au/access-support",
-    languages: {
-      en: "https://accessexperts.com.au/access-support",
-    },
-    alternates: [
+    canonical: "/access-support",
+    alternate: [
       {
         url: "https://officeexperts.com.au/services/microsoft-access/access-support",
       },

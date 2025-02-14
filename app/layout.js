@@ -58,7 +58,9 @@ export const metadata = {
     "Access Experts – Microsoft Access Database Design, Development and Consulting",
   description:
     "Our Australia-wide, cross-industry Access database consultants deliver prompt, quality service with competitive pricing. Specialising in database design, development, integration, support, data manipulation and reporting solutions.",
-
+  alternates: {
+    canonical: "https://www.accessexperts.com.au",
+  },
   // OpenGraph
   openGraph: {
     title:

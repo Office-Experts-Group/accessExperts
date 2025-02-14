@@ -81,7 +81,7 @@ export const metadata = {
 
   // Additional tags
   alternates: {
-    canonical: "https://accessexperts.com.au/contact-us",
+    canonical: "/contact-us",
   },
 };
 

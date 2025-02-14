@@ -79,11 +79,8 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "https://accessexperts.com.au/3rd-party-product-integration",
-    languages: {
-      en: "https://accessexperts.com.au/3rd-party-product-integration",
-    },
-    alternates: [
+    canonical: "/3rd-party-product-integration",
+    alternate: [
       {
         url: "https://officeexperts.com.au/services/microsoft-access/3rd-party-product-integration",
       },

@@ -70,11 +70,8 @@ export const metadata = {
       "Professional Microsoft Access database upgrade and migration services. Specialising in version upgrades, SQL Server migrations, cloud transitions, and performance optimization.",
   },
   alternates: {
-    canonical: "https://accessexperts.com.au/upgrades-and-migration",
-    languages: {
-      en: "https://accessexperts.com.au/upgrades-and-migration",
-    },
-    alternates: [
+    canonical: "/upgrades-and-migration",
+    alternate: [
       {
         url: "https://officeexperts.com.au/services/microsoft-access/upgrades-and-migration",
       },

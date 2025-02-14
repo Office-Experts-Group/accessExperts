@@ -62,7 +62,7 @@ export const metadata = {
     images: ["/logo.png"],
   },
   alternatives: {
-    canonical: "https://accessexperts.com.au/client-testimonials",
+    canonical: "/client-testimonials",
   },
 };
 
