@@ -53,7 +53,6 @@ export const goneUrls = [
   "/access-upgrades-and-conversions",
   "/metrotrains",
   "/transgrid",
-  "/about-us",
   "/blog",
   "/chillit",
   "/testimonials/facade-resolutions-pty-ltd",

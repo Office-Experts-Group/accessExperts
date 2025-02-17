@@ -13,6 +13,23 @@ const nextConfig = {
     minimumCacheTTL: 31536000,
   },
 
+  async rewrites() {
+    return [
+      {
+        source: "/about-us",
+        destination: "https://www.officeexperts.com.au/about-us",
+      },
+      {
+        source: "/services",
+        destination: "/",
+      },
+      {
+        source: "/privacy-policy",
+        destination: "https://www.officeexperts.com.au/privacy-policy",
+      },
+    ];
+  },
+
   async headers() {
     return [
       {
