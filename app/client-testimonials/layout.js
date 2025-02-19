@@ -28,7 +28,7 @@ export const metadata = {
   // Additional metadata
   keywords: [
     // Review-focused keywords
-    "Microsoft Access consultant reviews",
+    "Microsoft Access client testimonials",
   ],
 
   // Twitter Card
