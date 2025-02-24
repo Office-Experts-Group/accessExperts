@@ -1,9 +1,11 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import Script from "next/script";
 
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
 
+import AhrefsAnalytics from "../components/AhrefsAnalytics";
 import HeadTop from "../components/HeadTop";
 import Header from "./(components)/Header";
 
@@ -133,6 +135,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-AU">
       <body className={`${aptos.variable} ${garamond.variable}`}>
+        <AhrefsAnalytics />
         <HeadTop />
         <Header />
         {children}

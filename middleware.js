@@ -41,7 +41,8 @@ export function middleware(request) {
       "*.vimeo.com *.googletagmanager.com *.google-analytics.com " +
       "*.gstatic.com *.google.com *.doubleclick.net " +
       "*.googleadservices.com *.facebook.net " +
-      "*.google.com.vn *.google.com.au; " +
+      "*.google.com.vn *.google.com.au " +
+      "analytics.ahrefs.com; " +
       "style-src 'self' 'unsafe-inline'; " +
       "img-src 'self' data: https: *.vimeocdn.com *.google-analytics.com " +
       "*.googletagmanager.com *.google.com " +
@@ -54,7 +55,8 @@ export function middleware(request) {
       "*.googletagmanager.com *.officeexperts.com.au *.google.com " +
       "*.doubleclick.net *.gstatic.com " +
       "*.googleadservices.com *.facebook.com " +
-      "*.google.com.vn *.google.com.au"
+      "*.google.com.vn *.google.com.au " +
+      "analytics.ahrefs.com" // Added Ahrefs
   );
 
   // Handle Next.js system paths
