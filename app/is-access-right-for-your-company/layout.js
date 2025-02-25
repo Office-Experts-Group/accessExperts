@@ -12,46 +12,21 @@ export const metadata = {
     description:
       "Professional consultation on Microsoft Access database solutions for business. Expert analysis of data management needs, user requirements, and system compatibility.",
     url: "https://www.accessexperts.com.au/is-access-right-for-your-company",
+    siteName: "Access Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Access Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "article",
   },
 
   // Additional metadata
-  keywords: [
-    "Custom Access database development",
-    // Core Access database services
-    // "Microsoft Access database consultation",
-    // "Access database compatibility assessment",
-    // "Multi-user Access database solutions",
-
-    // // Specific solution keywords
-    // "Access data management systems",
-    // "Access database structure optimization",
-    // "Microsoft Access reporting tools",
-    // "Access database user management",
-
-    // // Integration-focused
-    // "Access SQL Server integration solutions",
-    // "Access SharePoint connectivity",
-    // "Access Azure cloud integration",
-    // "Access Office 365 integration",
-
-    // // Business-specific long tail
-    // "Access database migration assessment",
-    // "Access business process automation",
-    // "Access inventory management systems",
-    // "Access customer database solutions",
-
-    // // Technical specifics
-    // "Access VBA development consulting",
-    // "Access database performance optimization",
-    // "Access multi-location data access",
-    // "Access database security solutions",
-
-    // // Industry-focused
-    // "Access financial reporting systems",
-    // "Access project management databases",
-    // "Access CRM database solutions",
-    // "Access workflow automation systems",
-  ],
+  keywords: ["Custom Access database development"],
   alternates: {
     canonical: "/is-access-right-for-your-company",
     alternate: [

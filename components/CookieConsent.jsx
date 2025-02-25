@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import Script from "next/script";
 import styles from "../styles/cookieConsent.module.css";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+// Google Analytics ID
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-GKYN9LY1NF";
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isClient, setIsClient] = useState(false);
-  const [showGA, setShowGA] = useState(false);
+  const [showAnalytics, setShowAnalytics] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -16,23 +18,37 @@ const CookieConsent = () => {
     // Check if consent already exists
     const consentChoice = localStorage.getItem("cookieConsent");
     if (consentChoice === "accepted") {
-      setShowGA(true);
+      setShowAnalytics(true);
       return;
     }
 
-    // Show consent after slight delay if no choice made
+    // Add scroll listener for better UX
+    const handleScroll = () => {
+      if (!hasScrolled && window.scrollY > 100) {
+        setHasScrolled(true);
+        setIsVisible(true);
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Show consent after slight delay if no choice made and no scroll yet
     const timer = setTimeout(() => {
-      if (!localStorage.getItem("cookieConsent")) {
+      if (!localStorage.getItem("cookieConsent") && !hasScrolled) {
         setIsVisible(true);
       }
     }, 2000);
 
-    return () => clearTimeout(timer);
-  }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timer);
+    };
+  }, [hasScrolled]);
 
   const handleAccept = () => {
     localStorage.setItem("cookieConsent", "accepted");
-    setShowGA(true);
+    setShowAnalytics(true);
     setIsVisible(false);
   };
 
@@ -43,13 +59,14 @@ const CookieConsent = () => {
 
   return (
     <>
-      {showGA && (
+      {showAnalytics && (
         <>
+          {/* Google Analytics script - gtag.js */}
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-            strategy="lazyOnload"
+            strategy="afterInteractive"
           />
-          <Script id="google-analytics" strategy="lazyOnload">
+          <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}

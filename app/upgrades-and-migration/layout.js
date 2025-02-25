@@ -12,6 +12,17 @@ export const metadata = {
     description:
       "Expert Microsoft Access database upgrade and migration services. Our specialists ensure smooth transitions, resolve compatibility issues, and optimise database performance with minimal disruption.",
     url: "https://www.accessexperts.com.au/upgrades-and-migration",
+    siteName: "Access Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Access Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "article",
   },
 
   // Additional metadata

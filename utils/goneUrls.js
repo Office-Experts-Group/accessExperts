@@ -59,7 +59,6 @@ export const goneUrls = [
   "/testimonials/windowline",
   "/accessazure-cloud-based-solutions",
   "/upgrade-your-existing-database",
-  "/3rd-party-product-integration",
   "/services/database-development-and-solutions",
   "/testimonials/shadforth-financial-group-limited",
   "/testimonials/van-zeller-communications",

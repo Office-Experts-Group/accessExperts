@@ -27,7 +27,7 @@ export const metadata = {
     description:
       "Get a customised quote for your Microsoft Access database needs. From development and integration to troubleshooting and upgrades - our experts deliver tailored solutions with competitive pricing.",
   },
-  alternatives: {
+  alternates: {
     canonical: "/contact-us/request-a-quote",
   },
 };
