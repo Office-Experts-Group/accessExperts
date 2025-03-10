@@ -1,15 +1,8 @@
 import React from "react";
-import Image from "next/image";
-import dynamic from "next/dynamic";
 
 import ServicesCard from "../../components/ServicesCard";
 import AnimateOnScroll from "../../components/AnimateOnScroll";
-const CardIntersectionWrapper = dynamic(
-  () => import("../../components/CardIntersectionWrapper"),
-  {
-    ssr: false,
-  }
-);
+import CardIntersectionWrapper from "../../components/CardIntersectionWrapper";
 
 import styles from "../../styles/services.module.css";
 
@@ -18,39 +11,38 @@ import azure from "../../public/microsoft/azureNoBG.webp";
 import integrate from "../../public/microsoft/integrateNoBG.webp";
 import upgrades from "../../public/microsoft/upgradesNoBG.webp";
 
-import scott from "../../public/scott.webp";
-import signature from "../../public/signature.webp";
-
-const Services = () => {
+const ServicesLocation = ({ location }) => {
   return (
     <section className={styles.services}>
       <AnimateOnScroll animation="slide-left" delay={0} duration={1.5}>
         <div className={styles.content}>
           <div className={styles.subBox}>
             <p>
-              Database Analysis, Design and Development
-              <span> for Microsoft Access</span>
+              Design, Development and Consulting
+              <span> for Microsoft Access Solutions</span>
             </p>
           </div>
-          <h2>Microsoft Access Consulting Services</h2>
+          <h2>Microsoft Access Services - {location}</h2>
           <p>
-            Our Australia-wide, cross-industry Access database consultants each
-            have over 15 years experience and deliver a prompt, quality service
-            with innovative solutions and competitive pricing. We excel in
-            design, development, database work, integration, support, data
-            manipulation and reporting solutions.
+            Our reputation is built on delivering outstanding database
+            solutions, sophisticated application development, and reliable
+            Access support. With a growing list of satisfied clients, we take
+            pride in offering expert troubleshooting, customised database
+            automation, and hands-on guidance to meet diverse data management
+            needs. Whether it's business applications, complex queries, cloud
+            migration, or advanced reporting solutions you're after, our 25yrs
+            of Access expertise ensures tailored, effective solutions that
+            streamline your operations and enhance your data capabilities.
           </p>
-          <div className={styles.signature}>
-            <div>
-              <Image src={scott} alt="Scott Robinson" width={30} height={30} />
-            </div>
-            <Image
-              src={signature}
-              alt="Scott signature"
-              width={200}
-              height={50}
-            />
-          </div>
+          <p>
+            Working with a local Access consultant brings the added advantage of
+            a thorough understanding of regional business data requirements,
+            faster response times and direct, face-to-face support when needed.
+            Based in {location}, we are well-positioned to provide both remote
+            and onsite assistance, ensuring businesses receive timely,
+            professional database services from specialists who understand their
+            unique data management challenges and compliance requirements.
+          </p>
         </div>
       </AnimateOnScroll>
 
@@ -116,4 +108,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesLocation;

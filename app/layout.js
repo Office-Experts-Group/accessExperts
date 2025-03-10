@@ -61,6 +61,9 @@ export const metadata = {
     "Our Australia-wide, cross-industry Access database consultants deliver prompt, quality service with competitive pricing. Specialising in database design, development, integration, support, data manipulation and reporting solutions.",
   alternates: {
     canonical: "https://www.accessexperts.com.au",
+    alternate: [
+      { url: "https://www.officeexperts.com.au/services/microsoft-access" },
+    ],
   },
   // OpenGraph
   openGraph: {
