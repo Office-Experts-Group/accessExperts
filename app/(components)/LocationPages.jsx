@@ -25,20 +25,20 @@ const LocationPages = ({ location }) => {
       <div className={styles.contentWrapper}>
         <AnimateOnScroll animation="fade-up" duration={1} delay={0.3}>
           <div className={styles.content}>
-            <p>Microsoft Office consultants</p>
+            <p>Microsoft Access database consultants</p>
             <h2>{location}</h2>
             <p>
-              Our Microsoft Office consultants at Office Experts Group{" "}
-              {location} specialise in custom development across the entire
-              suite of Office products. We are second to none in databases,
-              custom coding, document design, dashboards and reporting
-              solutions.
+              Our Microsoft Access consultants at Access Experts {location}{" "}
+              specialise in custom database development and data management
+              solutions. We excel in database design, cloud integration,
+              business process automation, and advanced reporting systems.
             </p>
             <p>
-              Through our extensive and growing customer base, our highly
-              trained Microsoft Office consulting team is known for efficiency,
-              excellent customer service, innovative solutions, tailored
-              education, expert troubleshooting and reliable support.
+              Through our extensive and growing customer base, and 25 years of
+              reliable service, our highly qualified Microsoft Access consulting
+              team is recognised for technical expertise, responsive service,
+              innovative database solutions, personalised training, and reliable
+              ongoing support.
             </p>
           </div>
           <a href="#contact" className={`${styles.btn} ${styles.locationBtn}`}>
