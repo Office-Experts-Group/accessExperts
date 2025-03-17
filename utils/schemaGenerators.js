@@ -249,10 +249,6 @@ export const generateProfessionalServiceSchema = () => ({
       },
     },
   ],
-  virtualLocation: {
-    "@type": "VirtualLocation",
-    name: "Remote Service Available Australia-wide",
-  },
   provider: {
     "@type": "Organization",
     "@id": `https://www.accessexperts.com.au#organization`,
@@ -285,6 +281,36 @@ export const generateOrganizationSchema = () => ({
     "@type": "OfferCatalog",
     name: "Access Database Services",
     itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Excel Dashboard Creation",
+          description:
+            "Creation of interactive and appealing Excel dashboards to provide real-time insights in your business.",
+        },
+        businessFunction: "http://purl.org/goodrelations/v1#ProvideService",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Financial Modeling and Forecasting",
+          description:
+            "Creation of tools for financial models and forecasting using Excel for planning and strategy.",
+        },
+        businessFunction: "http://purl.org/goodrelations/v1#ProvideService",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Power Pivot & Power Query",
+          description:
+            "Development of advanced data modelling, analytics, transformations and reporting using Power Pivot & Power Query.",
+        },
+        businessFunction: "http://purl.org/goodrelations/v1#ProvideService",
+      },
       {
         "@type": "Offer",
         itemOffered: {
@@ -527,10 +553,6 @@ export const generateOrganizationSchema = () => ({
       },
     },
   ],
-  virtualLocation: {
-    "@type": "VirtualLocation",
-    name: "Remote Service Available Australia-wide",
-  },
   logo: {
     "@type": "ImageObject",
     inLanguage: "en-AU",
