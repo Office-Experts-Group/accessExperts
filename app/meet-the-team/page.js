@@ -26,7 +26,7 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2024-10-27T00:00:00+00:00",
+      dateModified: "2025-03-27T00:00:00+00:00",
       description:
         "Meet our team of experienced Microsoft Access database consultants. Expert developers and consultants dedicated to delivering quality database solutions.",
       breadcrumb: {
@@ -48,6 +48,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Meet the Team",
+          item: "https://www.accessexperts.com.au/meet-the-team",
         },
       ],
     },

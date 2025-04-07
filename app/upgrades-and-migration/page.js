@@ -33,9 +33,9 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2024-10-27T00:00:00+00:00",
+      dateModified: "2025-03-27T00:00:00+00:00",
       description:
-        "Professional Microsoft Access database upgrade and migration services. Expert assistance in modernizing your database systems and ensuring smooth transitions.",
+        "Professional Microsoft Access database upgrade and migration services. Expert assistance in modernising your database systems and ensuring smooth transitions.",
       inLanguage: "en-AU",
     },
     {
@@ -53,6 +53,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Upgrades and Migration",
+          item: "https://www.accessexperts.com.au/upgrades-and-migration",
         },
       ],
     },

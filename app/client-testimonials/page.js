@@ -34,7 +34,7 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2024-10-27T00:00:00+00:00",
+      dateModified: "2025-03-27T00:00:00+00:00",
       description:
         "Read what our clients say about our Microsoft Access database solutions. Real testimonials from satisfied customers across Australia.",
       breadcrumb: {
@@ -57,6 +57,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Client Testimonials",
+          item: "https://www.accessexperts.com.au/client-testimonials",
         },
       ],
     },
