@@ -16,8 +16,10 @@
     line-height: 2rem;
   }
 
-  @include tablet {
-  }
+a {
+  color: $theme !important;
+  font-weight: 700 !important;
+}
 
   @include phoneLandscape {
     flex-direction: column;

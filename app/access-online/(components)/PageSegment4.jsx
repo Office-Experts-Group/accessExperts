@@ -17,12 +17,12 @@ const PageSegment4 = () => {
         <AnimateOnScroll animation="slide-right" duration={1} delay={0.2}>
           <div className={styles.content}>
             <div className={styles.underline}>
-              <h2>Native Access/Cloud Database</h2>
+              <h2 style={{ fontSize: "2rem", fontWeight: "700", color: "#1e1e1e" }}>Native Access/Cloud Database</h2>
             </div>
             <p>
               We can host your database with Microsoft and use native Access to
               link to your online data. By installing native Access on your
-              Windows based laptops, PC&apos;s, tablets and mobile devices you
+              Windows based laptops, PC's, tablets and mobile devices you
               can access your data in the cloud. This solution is very cost
               effective with storage starting from as little as $420 per annum
               with no other ongoing costs. Given that databases can be rapidly
@@ -37,8 +37,8 @@ const PageSegment4 = () => {
             <Image
               src={cloudSolution}
               alt="person clicking a computer mouse"
-              width={600}
-              height={400}
+              width={450}
+              height={300}
             />
           </div>
         </AnimateOnScroll>
