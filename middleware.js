@@ -53,17 +53,22 @@ export function middleware(request) {
       "*.doubleclick.net " +
       "googleads.g.doubleclick.net " +
       "www.google.com " +
+      "google.com " +
       "www.gstatic.com " +
       "*.ahrefs.com " +
       "analytics.ahrefs.com; " +
-    // Style sources
-    "style-src 'self' 'unsafe-inline' fonts.googleapis.com; " +
+    // Style sources - added googletagmanager.com for debug badge
+    "style-src 'self' 'unsafe-inline' " +
+      "fonts.googleapis.com " +
+      "*.googletagmanager.com " +
+      "www.googletagmanager.com; " +
     // Image sources
     "img-src 'self' data: https: " +
       "*.vimeocdn.com " +
       "*.google-analytics.com " +
       "*.googletagmanager.com " +
       "www.google.com " +
+      "google.com " +
       "www.google.com.au " +
       "www.googleadservices.com " +
       "*.doubleclick.net " +
@@ -77,13 +82,14 @@ export function middleware(request) {
       "player.vimeo.com " +
       "*.googletagmanager.com " +
       "www.google.com " +
+      "google.com " +
       "*.doubleclick.net " +
       "td.doubleclick.net " +
       "bid.g.doubleclick.net " +
       "www.youtube.com; " +
     // Media sources
     "media-src 'self' *.vimeo.com *.vimeocdn.com; " +
-    // Connect sources - crucial for analytics tracking
+    // Connect sources - crucial for analytics tracking, added missing google.com domains
     "connect-src 'self' " +
       "*.vimeo.com " +
       "*.vimeocdn.com " +
@@ -93,6 +99,8 @@ export function middleware(request) {
       "*.doubleclick.net " +
       "*.googletagmanager.com " +
       "www.google.com " +
+      "google.com " +
+      "www.googleadservices.com " +
       "*.officeexperts.com.au " +
       "*.ahrefs.com " +
       "analytics.ahrefs.com; " +
@@ -101,6 +109,7 @@ export function middleware(request) {
     // Form action sources
     "form-action 'self' " +
       "*.google.com " +
+      "google.com " +
       "*.doubleclick.net; " +
     // Base URI restriction
     "base-uri 'self';"
