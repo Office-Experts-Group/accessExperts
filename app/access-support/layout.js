@@ -2,13 +2,13 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Microsoft Access Support and Training | Access Experts ",
+  title: "Microsoft Access Support and Training | Microsoft Access ",
   description:
     "Microsoft Access support specialists offering remote and onsite help, troubleshooting, training, and maintenance Australia-wide.",
 
   // OpenGraph
   openGraph: {
-    title: "Microsoft Access Support and Training | Access Experts ",
+    title: "Microsoft Access Support and Training | Microsoft Access ",
     description:
       "Microsoft Access support specialists offering remote and onsite help, troubleshooting, training, and maintenance Australia-wide.",
     url: "https://www.accessexperts.com.au/access-support",
@@ -32,7 +32,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@AccessExperts",
-    title: "Microsoft Access Help & Training | Access Database Experts",
+    title: "Microsoft Access Support and Training | Microsoft Access ",
     description:
       "Microsoft Access support specialists offering remote and onsite help, troubleshooting, training, and maintenance Australia-wide.",
     images: ["/logo.png"],

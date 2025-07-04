@@ -4,13 +4,12 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Melbourne",
   description:
-    "Expert Microsoft Access consultants in Melbourne specialising in development, integration and support. Access Experts have provided custom solutions for over 25yrs",
-
+    "Microsoft Access consultants in Melbourne with 25+ years' experience. Custom database development, integration, and support services.",
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Melbourne",
     description:
-      "Expert Microsoft Access consultants in Melbourne specialising in development, integration and support. Access Experts have provided custom solutions for over 25yrs",
+      "Microsoft Access consultants in Melbourne with 25+ years' experience. Custom database development, integration, and support services.",
     url: "https://www.accessexperts.com.au/access-consultants-melbourne",
     siteName: "Access Experts",
     images: [
@@ -37,7 +36,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Melbourne",
     description:
-      "Expert Microsoft Access consultants in Melbourne specialising in development, integration and support. Access Experts have provided custom solutions for over 25yrs",
+      "Microsoft Access consultants in Melbourne with 25+ years' experience. Custom database development, integration, and support services.",
     images: ["/logo.png"],
   },
 

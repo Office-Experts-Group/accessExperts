@@ -33,6 +33,8 @@ const schema = {
       "@id": "https://www.accessexperts.com.au/access-consultants-melbourne",
       url: "https://www.accessexperts.com.au/access-consultants-melbourne",
       name: "Microsoft Access Consultants Melbourne",
+      description:
+        "Microsoft Access consultants in Melbourne with 25+ years' experience. Custom database development, integration, and support services.",
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },

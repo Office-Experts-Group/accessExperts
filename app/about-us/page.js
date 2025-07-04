@@ -37,7 +37,7 @@ const schema = {
       datePublished: "2024-10-26T00:00:00+00:00",
       dateModified: "2025-07-04T00:00:00+00:00",
       description:
-        "Australia's leading Microsoft Access consultants, Access Experts design efficient, custom databases that simplify workflows, improve productivity, and support business growth.",
+        "Learn about Australia's leading Microsoft Access consultants delivering custom databases that streamline workflows and boost business productivity.",
       breadcrumb: {
         "@id": "https://www.accessexperts.com.au/about-us#breadcrumb",
       },

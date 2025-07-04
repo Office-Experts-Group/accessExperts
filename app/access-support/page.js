@@ -28,7 +28,7 @@ const schema = {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/access-support",
       url: "https://www.accessexperts.com.au/access-support",
-      name: "Microsoft Access Database Support & Maintenance Services",
+      name: "Microsoft Access Support and Training | Microsoft Access ",
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },

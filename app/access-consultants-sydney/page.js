@@ -33,11 +33,13 @@ const schema = {
       "@id": "https://www.accessexperts.com.au/access-consultants-sydney",
       url: "https://www.accessexperts.com.au/access-consultants-sydney",
       name: "Microsoft Access Consultants Sydney",
+      description:
+        "Microsoft Access consultants in Sydney with 25+ years' experience. Custom database development, integration, and support services.",
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2025-07-04T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-sydney#breadcrumb",

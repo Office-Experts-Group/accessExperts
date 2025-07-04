@@ -34,6 +34,8 @@ const schema = {
         "https://www.accessexperts.com.au/access-consultants-northern-rivers-nsw",
       url: "https://www.accessexperts.com.au/access-consultants-northern-rivers-nsw",
       name: "Microsoft Access Consultants Northern Rivers, NSW",
+      description:
+        "Microsoft Access consultants on the Northern Rivers with 25+ years' experience. Custom database development, integration, and support services.",
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },

@@ -3,11 +3,11 @@ import React from "react";
 export const metadata = {
   title: "About Us | Access Experts",
   description:
-    "Australia's leading Microsoft Access consultants, Access Experts design efficient, custom databases that simplify workflows, improve productivity, and support business growth.",
+    "Learn about Australia's leading Microsoft Access consultants delivering custom databases that streamline workflows and boost business productivity.",
   openGraph: {
     title: "About Us | Access Experts",
     description:
-      "Australia's leading Microsoft Access consultants, Access Experts design efficient, custom databases that simplify workflows, improve productivity, and support business growth.",
+      "Learn about Australia's leading Microsoft Access consultants delivering custom databases that streamline workflows and boost business productivity.",
     url: "https://www.accessexperts.com.au/about-us",
     siteName: "Access Experts",
     images: [
@@ -29,7 +29,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "About Us | Access Experts",
     description:
-      "Australia's leading Microsoft Access consultants, Access Experts design efficient, custom databases that simplify workflows, improve productivity, and support business growth.",
+      "Learn about Australia's leading Microsoft Access consultants delivering custom databases that streamline workflows and boost business productivity.",
     images: ["/logo.png"],
   },
   alternates: {

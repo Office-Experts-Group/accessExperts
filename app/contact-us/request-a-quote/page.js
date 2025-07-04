@@ -26,9 +26,9 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2025-03-27T00:00:00+00:00",
+      dateModified: "2025-07-04T00:00:00+00:00",
       description:
-        "Request a quote for professional Microsoft Access database services. Get competitive pricing for your database development, support, and consulting needs.",
+        "Get a detailed quote for your Microsoft Access project. We offer custom development, integration, and professional consulting.",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/contact-us/request-a-quote#breadcrumb",
