@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Contact Us | Access Expert Consulting ",
   description:
-    "Contact our Microsoft Access database experts for consulting, development, and support services. Available for projects across Australia with competitive pricing and prompt service.",
+    "Speak with Access database consultants for expert development, support, and integration. Prompt service Australia-wide at competitive rates.",
 
   // OpenGraph
   openGraph: {
     title: "Contact Us | Access Expert Consulting ",
     description:
-      "Get in touch with our Microsoft Access database specialists for custom development, integration, support, and consulting services across Australia.",
+      "Speak with Access database consultants for expert development, support, and integration. Prompt service Australia-wide at competitive rates.",
     url: "https://www.accessexperts.com.au/contact-us",
     siteName: "Access Experts",
     images: [
@@ -38,7 +38,7 @@ export const metadata = {
     title:
       "Contact Access Experts – Microsoft Access Database Consulting & Development",
     description:
-      "Get in touch with our Microsoft Access database specialists for custom development, integration, support, and consulting services across Australia.",
+      "Speak with Access database consultants for expert development, support, and integration. Prompt service Australia-wide at competitive rates.",
     images: ["/logo.png"],
   },
 

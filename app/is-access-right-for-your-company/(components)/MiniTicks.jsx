@@ -28,11 +28,11 @@ const MiniTicks = () => {
     },
     {
       text: "SharePoint",
-      link: "https://www.officeexperts.com.au/services/by-business-solution/online-solutions",
+      link: "/access-online",
     },
     {
       text: "Azure",
-      link: "https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure",
+      link: "/access-azure-cloud-based-solutions",
     },
   ];
 

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Is Access Right for your Company? | Access Experts",
   description:
-    "Professional consultation on Microsoft Access database solutions for business. Expert analysis of data management needs, user requirements, and system compatibility.",
+    "Not sure if Microsoft Access is right for your business? We offer expert analysis of data needs, users, and system compatibility.",
 
   // OpenGraph
   openGraph: {
     title: "Is Access Right for your Company? | Access Experts",
     description:
-      "Professional consultation on Microsoft Access database solutions for business. Expert analysis of data management needs, user requirements, and system compatibility.",
+      "Not sure if Microsoft Access is right for your business? We offer expert analysis of data needs, users, and system compatibility.",
     url: "https://www.accessexperts.com.au/is-access-right-for-your-company",
     siteName: "Access Experts",
     images: [
@@ -22,7 +22,7 @@ export const metadata = {
       },
     ],
     locale: "en-AU",
-    type: "article",
+    type: "website",
   },
 
   // Additional metadata

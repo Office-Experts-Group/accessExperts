@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Meet the Team | Access Experts",
   description:
-    "Meet our team of certified Microsoft Access developers, consultants, and trainers. Experts in database development, integration, and business solutions across Australia.",
+    "Meet our expert Microsoft Access developers and consultants. Specialists in database design, integration, and business solutions Australia-wide.",
 
   // OpenGraph
   openGraph: {
     title: "Meet the Team | Access Experts",
     description:
-      "Meet our team of certified Microsoft Access developers, consultants, and trainers. Experts in database development, integration, and business solutions across Australia.",
+      "Meet our expert Microsoft Access developers and consultants. Specialists in database design, integration, and business solutions Australia-wide.",
     url: "https://www.accessexperts.com.au/meet-the-team",
     siteName: "Access Experts",
     images: [
@@ -22,7 +22,7 @@ export const metadata = {
       },
     ],
     locale: "en-AU",
-    type: "article",
+    type: "website",
   },
 
   // Additional metadata
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Meet Our Expert Access Database Team | Access Experts Australia",
     description:
-      "Connect with our skilled team of Microsoft Access specialists. Experts in database development, SQL Server integration, SharePoint, and Azure solutions.",
+      "Meet our expert Microsoft Access developers and consultants. Specialists in database design, integration, and business solutions Australia-wide.",
   },
 
   // Additional tags

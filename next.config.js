@@ -15,18 +15,14 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: '**.officeexperts.com.au'
-      }
+        protocol: "https",
+        hostname: "**.officeexperts.com.au",
+      },
     ],
   },
 
   async rewrites() {
     return [
-      {
-        source: "/about-us",
-        destination: "https://www.officeexperts.com.au/about-us",
-      },
       {
         source: "/services",
         destination: "/",

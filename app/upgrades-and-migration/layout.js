@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Database Upgrades and Migration",
   description:
-    "Expert Microsoft Access database upgrade and migration services. Our specialists ensure smooth transitions, resolve compatibility issues, and optimise database performance with minimal disruption.",
+    "Access database upgrades and migrations made easy. Fix compatibility issues, modernise your system, and improve performance with minimal downtime.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Database Upgrades & Migration Services",
     description:
-      "Expert Microsoft Access database upgrade and migration services. Our specialists ensure smooth transitions, resolve compatibility issues, and optimise database performance with minimal disruption.",
+      "Access database upgrades and migrations made easy. Fix compatibility issues, modernise your system, and improve performance with minimal downtime.",
     url: "https://www.accessexperts.com.au/upgrades-and-migration",
     siteName: "Access Experts",
     images: [
@@ -22,14 +22,11 @@ export const metadata = {
       },
     ],
     locale: "en-AU",
-    type: "article",
+    type: "website",
   },
 
   // Additional metadata
-  keywords: [
-    "Microsoft Access database migration",
-    "Microsoft Access upgrade help",
-  ],
+  keywords: ["Microsoft Access database migration"],
 
   // Twitter Card
   twitter: {
@@ -37,7 +34,7 @@ export const metadata = {
     title:
       "Microsoft Access Database Upgrades & Migration Services | Access Experts",
     description:
-      "Professional Microsoft Access database upgrade and migration services. Specialising in version upgrades, SQL Server migrations, cloud transitions, and performance optimization.",
+      "Access database upgrades and migrations made easy. Fix compatibility issues, modernise your system, and improve performance with minimal downtime.",
   },
   alternates: {
     canonical: "/upgrades-and-migration",

@@ -2,14 +2,14 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Microsoft Access Online | Access Experts",
+  title: "Microsoft Access Online - Access Experts",
   description:
-    "Professional Microsoft Access cloud database solutions, including Office 365 integration, SharePoint connectivity, and Azure hosting. Expert consultants for online database development and mobile access solutions.",
+    "Microsoft Access cloud database solutions with Office 365, SharePoint, and Azure. Online Access development and mobile-ready support.",
   // OpenGraph
   openGraph: {
-    title: "Access Online | Cloud-Based Microsoft Access Database Solutions",
+    title: "Microsoft Access Online - Access Experts",
     description:
-      "Professional Microsoft Access cloud database solutions, including Office 365 integration, SharePoint connectivity, and Azure hosting. Expert consultants for online database development and mobile access solutions.",
+      "Microsoft Access cloud database solutions with Office 365, SharePoint, and Azure. Online Access development and mobile-ready support.",
     url: "https://www.accessexperts.com.au/access-online",
     siteName: "Access Experts",
     images: [
@@ -21,7 +21,7 @@ export const metadata = {
       },
     ],
     locale: "en-AU",
-    type: "article",
+    type: "website",
   },
 
   // Additional metadata
@@ -31,9 +31,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@MSOfficeExperts",
-    title: "Access Online | Cloud-Based Microsoft Access Database Solutions",
+    title: "Microsoft Access Online - Access Experts",
     description:
-      "Professional Microsoft Access cloud database solutions, including Office 365 integration, SharePoint connectivity, and Azure hosting. Expert consultants for online database development and mobile access solutions.",
+      "Microsoft Access cloud database solutions with Office 365, SharePoint, and Azure. Online Access development and mobile-ready support.",
     images: ["/logo.png"],
   },
   alternates: {

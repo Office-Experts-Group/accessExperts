@@ -58,7 +58,7 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Database Design, Development and Consulting",
   description:
-    "Our Australia-wide, cross-industry Access database consultants deliver prompt, quality service with competitive pricing. Specialising in database design, development, integration, support, data manipulation and reporting solutions.",
+    "Access database consultants Australia-wide. Experts in design, development, support, integration, reporting & data solutions.",
   alternates: {
     canonical: "https://www.accessexperts.com.au",
     alternate: [
@@ -70,7 +70,7 @@ export const metadata = {
     title:
       "Access Experts | Microsoft Access Database Consulting & Development",
     description:
-      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. specialised in data management, reporting, and system optimisation.",
+      "Access database consultants Australia-wide. Experts in design, development, support, integration, reporting & data solutions.",
     url: "https://www.accessexperts.com.au",
     siteName: "Access Experts",
     images: [
@@ -91,9 +91,7 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "Microsoft Access database consulting",
-  ],
+  keywords: ["Microsoft Access database consulting"],
 
   // Twitter Card
   twitter: {
@@ -101,7 +99,7 @@ export const metadata = {
     title:
       "Access Experts | Microsoft Access Database Consulting & Development",
     description:
-      "Expert Microsoft Access database consultants delivering custom database solutions, integration services, and support across Australia. specialised in data management, reporting, and system optimization.",
+      "Access database consultants Australia-wide. Experts in design, development, support, integration, reporting & data solutions.",
     images: ["/logo.png"],
   },
 

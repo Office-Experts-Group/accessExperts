@@ -33,9 +33,9 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2025-03-27T00:00:00+00:00",
+      dateModified: "2025-07-04T00:00:00+00:00",
       description:
-        "Professional online Microsoft Access database services. Remote consulting, development, and support for all your database needs.",
+        "Microsoft Access cloud database solutions with Office 365, SharePoint, and Azure. Online Access development and mobile-ready support.",
       breadcrumb: {
         "@id": "https://www.accessexperts.com.au/access-online#breadcrumb",
       },

@@ -26,9 +26,9 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2025-03-27T00:00:00+00:00",
+      dateModified: "2025-07-04T00:00:00+00:00",
       description:
-        "Contact our Australia-wide Microsoft Access database consultants for prompt, quality service with competitive pricing. Expert database creation, maintenance, troubleshooting, and support.",
+        "Speak with Access database consultants for expert development, support, and integration. Prompt service Australia-wide at competitive rates.",
       breadcrumb: {
         "@id": "https://www.accessexperts.com.au/contact-us#breadcrumb",
       },

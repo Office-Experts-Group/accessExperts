@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Access and Azure Cloud Based Database Solutions |  Access Experts",
   description:
-    "Expert Microsoft Access and Azure integration services for cloud-based database solutions. Custom Access database development with Azure SQL Server hosting for secure, scalable, and accessible data management.",
+    "Access and Azure integration services for cloud-hosted databases. We build secure, scalable solutions with Azure SQL Server and Access.",
 
   // OpenGraph
   openGraph: {
     title: "Access and Azure Cloud Based Database Solutions |  Access Experts",
     description:
-      "Expert Microsoft Access and Azure integration services for cloud-based database solutions. Custom Access database development with Azure SQL Server hosting for secure, scalable, and accessible data management.",
+      "Access and Azure integration services for cloud-hosted databases. We build secure, scalable solutions with Azure SQL Server and Access.",
     url: "https://www.accessexperts.com.au/access-azure-cloud-based-solutions",
     siteName: "Access Experts",
     images: [
@@ -34,7 +34,7 @@ export const metadata = {
     title:
       "Access/Azure Cloud Database Solutions | Microsoft Access Integration Experts",
     description:
-      "Professional Microsoft Access and Azure cloud database integration services. Custom development, database migration, and web app connectivity solutions for business efficiency.",
+      "Access and Azure integration services for cloud-hosted databases. We build secure, scalable solutions with Azure SQL Server and Access.",
     images: ["/logo.png"],
   },
   alternates: {

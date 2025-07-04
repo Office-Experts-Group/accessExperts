@@ -39,9 +39,9 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2025-03-27T00:00:00+00:00",
+      dateModified: "2025-07-04T00:00:00+00:00",
       description:
-        "Professional Microsoft Access Azure cloud integration services. Our experts deliver seamless database migration, cloud optimization, and Azure integration solutions.",
+        "Access and Azure integration services for cloud-hosted databases. We build secure, scalable solutions with Azure SQL Server and Access.",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/access-azure-cloud-solutions#breadcrumb",
@@ -50,13 +50,16 @@ const schema = {
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.accessexperts.com.au/access-azure-cloud-based-solutions"],
+          target: [
+            "https://www.accessexperts.com.au/access-azure-cloud-based-solutions",
+          ],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.accessexperts.com.au/access-azure-cloud-based-solutions#breadcrumb",
+      "@id":
+        "https://www.accessexperts.com.au/access-azure-cloud-based-solutions#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",

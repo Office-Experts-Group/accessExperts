@@ -87,7 +87,6 @@ export const goneUrls = [
   "https://www.accessexperts.com.au/services/microsoft-powerpoint",
   "https://www.accessexperts.com.au/services/microsoft-office-365",
   "https://www.accessexperts.com.au/services/microsoft-office",
-  "https://www.accessexperts.com.au/3rd-party-product-integration/",
   "https://www.accessexperts.com.au/office-excel-access-and-365-experts-brisbane",
   "https://www.accessexperts.com.au/word-and-powerpoint-experts-canberra",
   "https://www.accessexperts.com.au/looking-for-a-job",

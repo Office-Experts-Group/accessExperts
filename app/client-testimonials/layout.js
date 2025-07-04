@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Client Testimonials | Access Experts",
   description:
-    "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
+    "Discover how clients rate our Microsoft Access database services, from custom development to integration and support across a variety of industries.",
 
   // OpenGraph
   openGraph: {
     title: "Client Testimonials | Access Experts",
     description:
-      "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
+      "Discover how clients rate our Microsoft Access database services, from custom development to integration and support across a variety of industries.",
     url: "https://www.accessexperts.com.au/client-testimonials",
     siteName: "Access Experts",
     images: [
@@ -36,7 +36,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Client Testimonials | Access Experts",
     description:
-      "Read trusted reviews from businesses we've helped with Microsoft Access database solutions. Our clients share their experiences with custom database development, integration, and support services.",
+      "Discover how clients rate our Microsoft Access database services, from custom development to integration and support across a variety of industries.",
     images: ["/logo.png"],
   },
 

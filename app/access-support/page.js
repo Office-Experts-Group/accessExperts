@@ -33,9 +33,9 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2025-03-27T00:00:00+00:00",
+      dateModified: "2025-07-04T00:00:00+00:00",
       description:
-        "Expert Microsoft Access database support services including maintenance, troubleshooting, upgrades, and ongoing technical assistance.",
+        "Microsoft Access support specialists offering remote and onsite help, troubleshooting, training, and maintenance Australia-wide.",
       breadcrumb: {
         "@id": "https://www.accessexperts.com.au/access-support#breadcrumb",
       },
