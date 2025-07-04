@@ -68,7 +68,19 @@ import windowline150x from "./public/logos/window-line-150x45-150x45.webp";
 import facade from "./public/logos/facade150x64.webp";
 import advancescanning from "./public/logos/advance-scanning-services-1-150x150-150x150.webp";
 
+// new testimonials 22/05/2025
+import sacasting from "./public/logos/sa-casting187x131.webp";
+
 export const testimonials = [
+    {
+    content:
+      "We appreciated the professionalism, patience and expertise of Richard at Office Experts. He resolved a major issue we had with our Access database and we can begin the new year with less stress. We are happy to recommend Office Experts.",
+    name: "Ann Peters",
+    contact: "www.sacasting.com.au",
+    image: sacasting,
+    width: 187,
+    height: 131,
+  },
   {
     content:
       "James could not have been more helpful throughout our project. A complex project reviewed from the ground up, all broken down for our review and understanding including adding functionality. Will definitely engage with James and Office Experts Group for any future requirements.",

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
@@ -6,13 +7,14 @@ import styles from "../../../styles/pageSegmentSmall.module.css";
 
 const PageSegmentSmall = () => {
   return (
-    <section className={styles.pageSegmentSmall}>
+    <section className={styles.pageSegmentSmall}
+    style={{ margin: "2rem 0" }}>
       <AnimateOnScroll animation="slide-left">
         <div className={styles.titles}>
           <h2>Access Online Options</h2>
           <p>
-            Need a new or existing Access database setup to be used with Office
-            365 or SharePoint? There are a number of ways this can be achieved.
+            Need a new or existing Access database setup to be used with <Link style={{ fontWeight: "700", color: "#046999" }} href={"https://www.officeexperts.com.au/services/microsoft-office-365"}>Office
+            365</Link> or SharePoint? There are a number of ways this can be achieved.
           </p>
         </div>
       </AnimateOnScroll>

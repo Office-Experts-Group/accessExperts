@@ -32,7 +32,7 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2024-10-27T00:00:00+00:00",
+      dateModified: "2025-03-27T00:00:00+00:00",
       description:
         "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs, our experts excel in Microsoft technology services from database creation to maintenance, troubleshooting, integration, data manipulation, programming, conversions, upgrades, training and support.",
       breadcrumb: {
@@ -41,21 +41,28 @@ const schema = {
       inLanguage: "en-AU",
     },
     {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.accessexperts.com.au/3rd-party-product-integration#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.accessexperts.com.au",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Microsoft Access 3rd Party Product Integration",
+          item: "https://www.accessexperts.com.au/3rd-party-product-integration",
+        },
+      ],
+    },
+    {
       brand: {
         "@type": "Thing",
         name: [
-          "Access Experts",
-          "Microsoft Access",
-          "Access consultant",
-          "Access training",
-          "Microsoft Access expert",
-          "Microsoft Access consultant",
-          "Microsoft Access training",
-          "Microsoft Access consulting",
-          "Access expert",
-          "Microsoft Excel",
-          "Microsoft Power BI",
-          "Microsoft Office 365",
+          "Microsoft Access 3rd Party Product Integration",
         ],
       },
       hasOfferCatalog: {

@@ -133,6 +133,14 @@ export const navigationData = {
             label: "Training and User Support",
             href: `${WORD_EXPERTS_URL}/training`,
           },
+          {
+            label: "Document Rebranding",
+            href: `${WORD_EXPERTS_URL}/document-rebranding-services`,
+          },
+          {
+            label: "Brand Templates",
+            href: `${WORD_EXPERTS_URL}/brand-templates`,
+          },
         ],
       },
       {
@@ -174,6 +182,14 @@ export const navigationData = {
           {
             label: "VBScript",
             href: `${OFFICE_EXPERTS_URL}/services/microsoft-vbscript`,
+          },
+          {
+            label: "Add-in Creation",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/add-in-creation`,
+          },
+          {
+            label: "Support & Training",
+            href: "https://www.officeexperts.com.au/microsoft-support-and-training-australia",
           },
         ],
       },
@@ -228,10 +244,6 @@ export const navigationData = {
           {
             label: "Office Integration with Excel",
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
-          },
-          {
-            label: "Add-in Creation",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/add-in-creation`,
           },
         ],
       },
@@ -342,7 +354,7 @@ export const navigationData = {
     },
     {
       label: "About Us",
-      href: `${OFFICE_EXPERTS_URL}/about-us`,
+      href: `/about-us`,
     },
     {
       label: "Meet Our Team",

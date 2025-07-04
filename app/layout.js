@@ -93,13 +93,6 @@ export const metadata = {
   // Additional metadata
   keywords: [
     "Microsoft Access database consulting",
-    "Microsoft Access development",
-    "Access consulting",
-    "Access professionals",
-    "Access consultants",
-    "Access database experts",
-    "Microsoft Access developers",
-    "Access database consultants",
   ],
 
   // Twitter Card
