@@ -212,6 +212,9 @@
   @include phone {
     flex-direction: column-reverse;
   }
+  @include phoneLandscape {
+    flex-direction: column-reverse;
+  }
 }
 
 .authorImage {
@@ -257,7 +260,7 @@
 }
 
 .mainImage {
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 90vw;
   height: auto;
 }
@@ -687,4 +690,11 @@
 
 .strategy h3 {
   margin: 1.5rem 0 0.5rem 0;
+}
+
+//  power platform for access databases
+.powerDatabase {
+  h3 {
+    margin-bottom: 0.5rem;
+  }
 }

@@ -215,6 +215,11 @@
     flex-direction: column-reverse;
   }
 }
+@media (min-width: 450px) and (max-width: 766px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+}
 
 .authorImage {
   display: flex;
@@ -261,7 +266,7 @@
 }
 
 .mainImage {
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 90vw;
   height: auto;
 }
@@ -693,4 +698,8 @@
 
 .strategy h3 {
   margin: 1.5rem 0 0.5rem 0;
+}
+
+.powerDatabase h3 {
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=blogPost.module.css.map */

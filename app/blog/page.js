@@ -29,6 +29,21 @@ const BlogPage = () => {
       youtubeId: null,
       imagePath: "/blog/cloud-strategy/plane.webp",
     },
+    {
+      id: 2,
+      title:
+        "Hybrid Access Solutions: Connect to Power Apps Without Losing What Works",
+      description:
+        "Learn how to modernise your Microsoft Access database with Power Platform without losing your existing forms, reports, and VBA code. Discover hybrid solutions that connect Access to Dataverse and Power Apps.",
+      slug: "using-power-platform-with-access-database",
+      date: "July 30, 2025",
+      author: "Access Experts Team",
+      readingTime: "14 min",
+      category: "Dataverse",
+      featured: false,
+      youtubeId: null,
+      imagePath: "/blog/platform-database/resuscitate.webp",
+    },
   ];
 
   // Extract unique categories
