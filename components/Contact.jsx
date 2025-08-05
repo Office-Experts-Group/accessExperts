@@ -42,17 +42,11 @@ const Contact = ({ isQuote }) => {
             <div className={styles.description}>
               <p>
                 Get in touch with our team for general inquiries and support.
-                We&apos;re here to help with any questions you might have about
-                our services.
+                We're here to help with any questions you might have about our
+                services.
               </p>
             </div>
           </div>
-
-          {/* <div className={styles.divider}>
-            <div className={styles.circle}>
-              <span>OR</span>
-            </div>
-          </div> */}
 
           <div
             className={`${styles.option} ${styles.quoteOption} ${
@@ -61,15 +55,12 @@ const Contact = ({ isQuote }) => {
             onClick={() => handleFormSwitch("quote")}
             role="button"
             tabIndex={0}
-            onKeyPress={(e) => {
-              if (e.key === "Enter") handleFormSwitch("quote");
-            }}
           >
             <h2>Request a Quote</h2>
             <div className={styles.description}>
               <p>
                 Need pricing for a specific project? Fill out our quote form and
-                we&apos;ll provide you with a detailed estimate tailored to your
+                we'll provide you with a detailed estimate tailored to your
                 needs.
               </p>
             </div>
