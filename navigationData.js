@@ -60,7 +60,7 @@ export const navigationData = {
             href: `/upgrades-and-migration`,
           },
           {
-            label: "Cloud-based and Online Database Solutions",
+            label: "Cloud-based Solutions",
             href: `/access-online`,
           },
         ],

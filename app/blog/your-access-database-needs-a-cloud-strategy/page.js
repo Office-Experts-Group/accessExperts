@@ -6,7 +6,7 @@ import Contact from "../../../components/Contact";
 
 import styles from "../../../styles/blogPost.module.scss";
 
-import dan from "../../../public/blog/dan.webp";
+import scott from "../../../public/blog/scott.webp";
 import plane from "../../../public/blog/cloud-strategy/plane.webp";
 import strategy from "../../../public/blog/cloud-strategy/strategy.webp";
 import cloud from "../../../public/blog/cloud-strategy/cloud.webp";
@@ -25,12 +25,12 @@ const AccessCloudStrategyBlogPost = () => {
       "Your Access Database Isn't Dead — It Just Needs a Cloud Strategy",
     alternativeHeadline: "Modernize Microsoft Access with Cloud Technologies",
     description:
-      "Don't abandon your Microsoft Access database. Learn how to modernize it with cloud technologies like Azure SQL, SharePoint, and Power Platform while keeping your existing forms, reports, and business logic intact.",
+      "Don't abandon your Microsoft Access database. Learn how to modernise it with cloud technologies like Azure SQL, SharePoint, and Power Platform while keeping your existing forms, reports, and business logic intact.",
 
     // Author information
     author: {
       "@type": "Person",
-      name: "Daniel Thomas",
+      name: "Scott Robinson",
     },
 
     // Publisher information
@@ -176,7 +176,7 @@ const AccessCloudStrategyBlogPost = () => {
               {" "}
               Power Apps
             </Link>
-            , and{" "}
+            , ASP and{" "}
             <Link
               href={
                 "https://www.officeexperts.com.au/services/microsoft-office-365/office-365-implementation"
@@ -229,9 +229,9 @@ const AccessCloudStrategyBlogPost = () => {
           </p>
           <div className={styles.quote}>
             <p>
-              Many government departments and law offices still rely on Access
-              to manage sensitive documents and structured workflows that don't
-              require full enterprise systems.
+              Many government departments still rely on Access to manage
+              sensitive documents and structured workflows that don't require
+              full enterprise systems.
             </p>
           </div>
           <p>
@@ -297,8 +297,8 @@ const AccessCloudStrategyBlogPost = () => {
               className={styles.scale}
             />
             <h3>
-              1. Move the Backend to a Cloud Database (e.g., Azure SQL or SQL
-              Server)
+              1. Move the Backend to a Cloud Database (e.g., Azure SQL Server or
+              Dataverse)
             </h3>
             <p>
               One of the most powerful upgrades is linking your Access front end
@@ -310,17 +310,6 @@ const AccessCloudStrategyBlogPost = () => {
                 <strong>Azure SQL Database:</strong> Microsoft's fully managed
                 cloud database service
               </li>
-              <li>
-                <strong>SQL Server on Azure:</strong> Ideal for businesses
-                already using SQL Server on-premises
-              </li>
-            </ul>
-            <p>
-              With this simple setup, you can retain your familiar Access
-              interface, do-away with the headaches of a full database migration
-              and still gain:
-            </p>
-            <ul>
               <li>
                 Greater <strong>scalability</strong> (no more 2GB size limit)
               </li>
@@ -334,43 +323,12 @@ const AccessCloudStrategyBlogPost = () => {
             </ul>
           </div>
 
-          <h3>
-            2. Integrate with SharePoint or OneDrive for Remote File Access
-          </h3>
-          <p>
-            For businesses with remote teams, satellite offices, or hybrid work
-            environments, Access databases often run into limitations when
-            stored locally or on shared drives. That's where integrating with
-            SharePoint or OneDrive for Business becomes a game-changer.
-          </p>
-          <p>
-            By storing your Access front-end files (.accdb or .accde) in
-            SharePoint or OneDrive, users can securely access and open the
-            database from anywhere with an internet connection. This setup not
-            only supports mobility, but also ensures that all team members are
-            working from the most current version of the file, reducing version
-            conflicts and outdated data errors.
-          </p>
-          <p>
-            SharePoint and OneDrive also offer built-in version control,
-            automatic backups, and integration with Microsoft 365 security
-            protocols like multifactor authentication and conditional access.
-            This means your files are accessible, safe, auditable, and compliant
-            with modern IT governance standards.
-          </p>
-          <p>
-            This approach is especially helpful for teams that collaborate on
-            Access templates or reports, allowing users to co-manage and update
-            Access front ends while keeping the backend linked to a central SQL
-            Server or Azure database. It's a simple way to extend Access into
-            the cloud without overhauling your infrastructure.
-          </p>
-
           <h3>3. Introduce Power Platform for Automation and Mobility</h3>
           <p>Once your data lives in a central SQL database, you can:</p>
           <ul>
             <li>
-              Use Power Apps to create mobile- and browser-friendly interfaces
+              Use Power Apps to create internal mobile- and browser-friendly
+              interfaces
             </li>
             <li>
               Set up{" "}
@@ -383,6 +341,8 @@ const AccessCloudStrategyBlogPost = () => {
               Connect Access to <strong>Microsoft Teams</strong> or
               <strong> Outlook</strong> for integrated experiences
             </li>
+            <li>Use Power Pages for client facing portals</li>
+            <li>Use Power BI to report on your data</li>
           </ul>
           <p>
             This means your Access database doesn't just live in a desktop app —
@@ -453,13 +413,13 @@ const AccessCloudStrategyBlogPost = () => {
           <h3>1. Scalability Without Rebuilding</h3>
           <p>
             Cloud-hosted databases like Azure SQL Database or SQL Server on
-            Azure are built to handle millions of records, complex queries, and
-            dozens (or even hundreds) of simultaneous users — far surpassing the
-            technical limitations of a traditional Access backend. By shifting
-            your data storage to the cloud, you eliminate concerns around
-            Access's 2GB size limit, frequent file corruption due to multiple
-            concurrent users, and the fragility of relying on shared network
-            drives.
+            Azure Virtual Machines are built to handle millions of records,
+            complex queries, and dozens (or even hundreds) of simultaneous users
+            — far surpassing the technical limitations of a traditional Access
+            backend. By shifting your data storage to the cloud, you eliminate
+            concerns around Access's 2GB size limit, frequent file corruption
+            due to multiple concurrent users, and the fragility of relying on
+            shared network drives.
           </p>
 
           <p>
@@ -488,7 +448,7 @@ const AccessCloudStrategyBlogPost = () => {
             <p>This is especially useful in:</p>
             <ul>
               <li>Post-COVID hybrid workplaces</li>
-              <li>Legal practices with multiple offices</li>
+              <li>Businesses with multiple offices</li>
               <li>Teams spread across regional or international locations</li>
             </ul>
           </div>
@@ -530,6 +490,7 @@ const AccessCloudStrategyBlogPost = () => {
               <strong>Power Automate</strong> for workflow triggers, approvals,
               and alerts
             </li>
+            <li>Power Pages for client facing portals to your data</li>
           </ul>
           <p>
             These tools connect natively with Access-linked cloud databases,
@@ -586,13 +547,18 @@ const AccessCloudStrategyBlogPost = () => {
             <div>
               <h4>About the Author</h4>
               <p>
-                Daniel is a developer at Access Experts, a curious mind into the
-                world of programming, design and SEO. If you have any questions,
-                please feel free to get in contact via the form below.
+                <h4>About the Author</h4>
+                <p>
+                  Scott founded Office Experts Group in 2000 and has since
+                  established himself as one of Australia’s foremost authorities
+                  on Microsoft technologies. With decades of experience in
+                  design, programming, and consulting, he continues to help
+                  businesses unlock the full potential of Microsoft solutions.
+                </p>
               </p>
             </div>
             <div className={styles.authorImage}>
-              <Image src={dan} alt="Daniel Thomas" width={80} height={80} />
+              <Image src={scott} alt="Scott Robinson" width={80} height={80} />
             </div>
           </div>
         </div>

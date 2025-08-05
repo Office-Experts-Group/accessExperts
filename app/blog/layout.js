@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Access Experts Blog",
   description:
-    "Expert tutorials, tips, and best practices for Microsoft Access database development and modernisation. Learn how to build robust databases, integrate with cloud technologies, and transform your Access systems for the modern workplace.",
+    "Learn from the experts with tutorials, tips, and best practices for Microsoft Access database development, integration and modernisation.",
 
   // OpenGraph
   openGraph: {
     title: "Access Experts Blog",
     description:
-      "Expert tutorials, tips, and best practices for Microsoft Access database development and modernisation. Learn how to build robust databases, integrate with cloud technologies, and transform your Access systems for the modern workplace.",
+      "Learn from the experts with tutorials, tips, and best practices for Microsoft Access database development, integration and modernisation.",
     url: "https://www.accessexperts.com.au/blog",
     siteName: "Access Experts",
     images: [
@@ -34,7 +34,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Access Experts Blog",
     description:
-      "Expert tutorials, tips, and best practices for Microsoft Access database development and modernisation. Learn how to build robust databases, integrate with cloud technologies, and transform your Access systems for the modern workplace.",
+      "Learn from the experts with tutorials, tips, and best practices for Microsoft Access database development, integration and modernisation.",
     images: ["/logo.png"],
   },
 

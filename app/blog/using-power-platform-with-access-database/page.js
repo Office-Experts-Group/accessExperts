@@ -5,7 +5,7 @@ import Contact from "../../../components/Contact";
 
 import styles from "../../../styles/blogPost.module.scss";
 
-import dan from "../../../public/blog/dan.webp";
+import scott from "../../../public/blog/scott.webp";
 import worlds from "../../../public/blog/platform-database/worlds.webp";
 import hybrid from "../../../public/blog/platform-database/hybrid.webp";
 import cloudConnect from "../../../public/blog/platform-database/cloudConnect.webp";
@@ -689,13 +689,15 @@ const HybridAccessBlogPost = () => {
             <div>
               <h4>About the Author</h4>
               <p>
-                Daniel is a developer at Excel Experts, a curious mind into the
-                world of programming, design and SEO. If you have any questions,
-                please feel free to get in contact via the form below.
+                Scott founded Office Experts Group in 2000 and has since
+                established himself as one of Australia’s foremost authorities
+                on Microsoft technologies. With decades of experience in design,
+                programming, and consulting, he continues to help businesses
+                unlock the full potential of Microsoft solutions.
               </p>
             </div>
             <div className={styles.authorImage}>
-              <Image src={dan} alt="Daniel Thomas" width={80} height={80} />
+              <Image src={scott} alt="Scott Robinson" width={80} height={80} />
             </div>
           </div>
         </div>

@@ -9,42 +9,91 @@ import CTAMain from "../(components)/CTAMain";
 
 import styles from "../../styles/blog.module.scss";
 
+import { blogPosts } from "./blogPosts";
+
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
+    {
+      "@type": "WebPage",
+      "@id": "https://www.accessexperts.com.au/blog",
+      url: "https://www.accessexperts.com.au/blog",
+      name: "Access Experts Australia Blog",
+      isPartOf: {
+        "@id": "https://www.accessexperts.com.au#website",
+      },
+      datePublished: "2024-10-26T00:00:00+00:00",
+      dateModified: "2025-07-30T00:00:00+00:00",
+      description:
+        "Learn from the experts with tutorials, tips, and best practices for Microsoft Access database development, integration and modernisation.",
+      breadcrumb: {
+        "@id": "https://www.accessexperts.com.au/blog#breadcrumb",
+      },
+      inLanguage: "en-AU",
+      potentialAction: [
+        {
+          "@type": "ReadAction",
+          target: ["https://www.accessexperts.com.au/blog"],
+        },
+      ],
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.accessexperts.com.au/blog#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.accessexperts.com.au",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+        },
+      ],
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://www.accessexperts.com.au/blog#blog",
+      url: "https://www.accessexperts.com.au/blog",
+      name: "Access Experts Australia Blog",
+      description:
+        "Expert tutorials, tips, and best practices for Microsoft Access",
+      inLanguage: "en-AU",
+      publisher: {
+        "@type": "Organization",
+        name: "Access Experts Australia",
+        url: "https://www.accessexperts.com.au",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.accessexperts.com.au/logo.png",
+        },
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.accessexperts.com.au#website",
+      url: "https://www.accessexperts.com.au",
+      name: "Access Experts Australia",
+      description:
+        "Learn from the experts with tutorials, tips, and best practices for Microsoft Access database development, integration and modernisation.",
+      inLanguage: "en-AU",
+    },
+  ],
+};
+
 const BlogPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-
-  // Blog post data
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Your Access Database Isn't Dead — It Just Needs a Cloud Strategy",
-      description:
-        "Don't abandon your Microsoft Access database. Learn how to modernise it with cloud technologies like Azure SQL, SharePoint, and Power Platform while keeping your existing forms, reports, and business logic intact.",
-      slug: "your-access-database-needs-a-cloud-strategy",
-      date: "July 28, 2025",
-      author: "Daniel Thomas",
-      readingTime: "8 min",
-      category: "Cloud Migration",
-      featured: true,
-      youtubeId: null,
-      imagePath: "/blog/cloud-strategy/plane.webp",
-    },
-    {
-      id: 2,
-      title:
-        "Hybrid Access Solutions: Connect to Power Apps Without Losing What Works",
-      description:
-        "Learn how to modernise your Microsoft Access database with Power Platform without losing your existing forms, reports, and VBA code. Discover hybrid solutions that connect Access to Dataverse and Power Apps.",
-      slug: "using-power-platform-with-access-database",
-      date: "July 30, 2025",
-      author: "Access Experts Team",
-      readingTime: "14 min",
-      category: "Dataverse",
-      featured: false,
-      youtubeId: null,
-      imagePath: "/blog/platform-database/resuscitate.webp",
-    },
-  ];
 
   // Extract unique categories
   const categories = [
@@ -107,6 +156,10 @@ const BlogPage = () => {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <div className={styles.headFiller}></div>
       <div className={styles.blogHeader}>
         <div className={styles.headerContent}>
