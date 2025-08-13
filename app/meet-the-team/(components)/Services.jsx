@@ -16,12 +16,12 @@ const Services = ({ meetStyles, teamMembers }) => {
       <AnimateOnScroll animation="slide-left" delay={0} duration={1.5}>
         <div className={styles.content}>
           <div className={styles.subBox}>
-            <p>Innovators in</p>
+            <p>Innovators in -</p>
           </div>
           <h2>Custom Microsoft Development</h2>
           <p>
             Meet the experts driving innovation in Microsoft development,
-            programming, and analysis. Our team of over 20 professionals works
+            programming, and analysis. Our team of over 25 professionals works
             remotely or onsite to deliver the custom solutions your business
             deserves. Learn more about what makes us tick on the{" "}
             <Link href={"/about-us"}>About Us</Link> page.

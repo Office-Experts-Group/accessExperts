@@ -3,6 +3,7 @@ import React from "react";
 import ServiceHero from "../../components/ServiceHero";
 import MeetTheTeam from "../../components/MeetTheTeam";
 import Contact from "../../components/Contact";
+import Services from "./(components)/Services";
 
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
@@ -26,7 +27,7 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2025-07-04T00:00:00+00:00",
+      dateModified: "2025-08-13T00:00:00+00:00",
       description:
         "Meet our expert Microsoft Access developers and consultants. Specialists in database design, integration, and business solutions Australia-wide.",
       breadcrumb: {
@@ -69,6 +70,7 @@ const Page = () => {
         altDesk={"Hand shaking"}
         altMob={"Hand shaking"}
       />
+      <Services />
       <MeetTheTeam />
       <Contact />
     </>
