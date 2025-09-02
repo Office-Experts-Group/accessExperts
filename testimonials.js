@@ -70,9 +70,13 @@ import advancescanning from "./public/logos/advance-scanning-services-1-150x150-
 
 // new testimonials 22/05/2025
 import sacasting from "./public/logos/sa-casting187x131.webp";
+// new testimonials 2/9/2025
+import cem from "./public/logos/cem.webp";
+import tsubaki from "./public/logos/tsubaki.webp";
+import rcs from "./public/logos/rcs.webp";
 
 export const testimonials = [
-    {
+  {
     content:
       "We appreciated the professionalism, patience and expertise of Richard at Office Experts. He resolved a major issue we had with our Access database and we can begin the new year with less stress. We are happy to recommend Office Experts.",
     name: "Ann Peters",
@@ -110,6 +114,15 @@ export const testimonials = [
   },
   {
     content:
+      "James provided an amazing service. He helped us resolve our MS Access program issues quickly and effectively, explaining each step clearly and ensuring everything was working perfectly before finishing. His professionalism and expertise made the whole process smooth and stress-free.",
+    name: "Artur Wiedmann",
+    contact: "Tsubaki Australia PTY LTD",
+    image: tsubaki,
+    width: 200,
+    height: 50,
+  },
+  {
+    content:
       "Thank you Jason Ellinopoullos. The service and after care we received was amazing. The automatic emailing training matrix and equipment register you created for me exceeded my expectations. Not only does it save me time but it is a very simple to use and amazing looking program. I look forward to using you on my next project.",
     name: "Bradley Lanciano, Operations Manager",
     contact: "www.advancescanning.com.au",
@@ -128,12 +141,27 @@ export const testimonials = [
   },
   {
     content:
+      "James was fantastic to work with - he was very patient and tenacious in sorting our issue for us (MYOB API Key) and kept a sense of humour in the most frustrating of issues....working with MYOB Tech Support! He was open to suggestions and seeking further assistance to resolve the issue and his communication was prompt, professional and sometimes very entertaining which was greatly appreciated when our software stopped working and my stress levels were going through the roof! I would 100% work with James again - in fact, he is now our company point of contact for support with our inhouse management program which was designed by a company who no longer supports the program and left us quite vulnerable should the system stop working. James took the time to learn our program so he could assist us with any future developments and updates which is critical to reducing our business IT risk. I can't rate James highly enough and I'm so glad to have found Office Experts!",
+    name: "Christina Matthews",
+    contact: "C.E.M. Alliance Pty Ltd",
+    image: cem,
+    width: 200,
+    height: 50,
+  },
+  {
+    content:
       "I have been working with Office Experts for a number of years on projects and cannot recommend them highly enough. If you have a project you want brought to life, Office Experts are guns when it comes to capability, innovation and customer service.",
     name: "Stuart Clark",
     contact: "www.duluxgroup.com.au",
     image: dulux,
     width: 150,
     height: 38,
+  },
+  {
+    content:
+      "Thank you for your help and expertise. Your knowledge and efficiency in the Office suite and ACCESS in particular has been so helpful. Your explanations were clear and the work was exactly as I asked for. I would be very happy to recommend Office Experts and James in particular.",
+    name: "Lara O'Donnell",
+    contact: "OneTribe Textiles Pty Ltd",
   },
   {
     content:
@@ -196,6 +224,15 @@ export const testimonials = [
     image: eastglobalfinance,
     width: 118,
     height: 122,
+  },
+  {
+    content:
+      "Martin from Office Experts worked with us on automating our project reporting dashboards to increase accuracy and efficiency in our reporting process. Martin was a pleasure to deal with and an expert in his field. He quickly understood the brief, delivered the functionality as required and worked with us to ensure a smooth rollout. ",
+    name: "Richard Keals-Smith",
+    contact: "Rail Control Systems Australia",
+    image: rcs,
+    width: 150,
+    height: 50,
   },
   {
     content:
