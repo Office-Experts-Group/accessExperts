@@ -694,15 +694,6 @@ export const testimonials = [
   },
   {
     content:
-      "Scott has provided exceptional service and support. He has an excellent knowledge of Access Databases and manufacturing procedures. He is fast and effective.",
-    name: "Peter Norwood",
-    contact: "www.astau.co",
-    image: ast,
-    width: 150,
-    height: 41,
-  },
-  {
-    content:
       "Stephen was fantastic. He was very skilled and great with communication.",
     name: "Cameron Taylor",
     contact: "www.privatewealthpartners.com.au",
