@@ -1,12 +1,15 @@
-// TestimonialPage.jsx
 import React from "react";
 
 import TestimonialCard from "../../../components/TestimonialCard";
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
-import styles from "../../../styles/testimonialPage.module.css";
+import { filterAndSortTestimonials } from "../../../utils/filterTestimonials";
+
+import styles from "../../../styles/testimonialPage.module.scss";
 
 const TestimonialPage = ({ testimonials }) => {
+  const validTestimonials = filterAndSortTestimonials(testimonials, "access");
+
   return (
     <section className={styles.testimonialPage}>
       <h2 className={styles.padded}>
@@ -15,11 +18,14 @@ const TestimonialPage = ({ testimonials }) => {
         and feedback for our consultants and our services.
       </h2>
       <div className={styles.testimonialGrid}>
-        {testimonials.map((testimonial, index) => {
+        {validTestimonials.map((testimonial, index) => {
+          // Create a unique key using multiple properties
+          const uniqueKey = `testimonial-${index}`;
+
           // Show first 3 testimonials without animation
           if (index < 3) {
             return (
-              <div key={testimonial.contact}>
+              <div key={uniqueKey} className={styles.testimonialWrapper}>
                 <TestimonialCard
                   content={testimonial.content}
                   name={testimonial.name}
@@ -32,7 +38,11 @@ const TestimonialPage = ({ testimonials }) => {
 
           // Animate remaining testimonials
           return (
-            <AnimateOnScroll key={testimonial.contact} animation="fade-up">
+            <AnimateOnScroll
+              key={uniqueKey}
+              animation="fade-up"
+              className={styles.testimonialWrapper}
+            >
               <TestimonialCard
                 content={testimonial.content}
                 name={testimonial.name}
