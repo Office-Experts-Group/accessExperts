@@ -267,6 +267,14 @@ export const navigationData = {
             label: "Simple, Scalable Websites with Power Pages",
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-pages`,
           },
+          {
+            label: "Data Integration",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/power-bi-data-integration`,
+          },
+          {
+            label: "Excel to Power BI Migration",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/excel-to-power-bi-migration`,
+          },
         ],
       },
       {
