@@ -275,46 +275,50 @@ export const navigationData = {
             label: "Excel to Power BI Migration",
             href: `${POWER_PLATFORM_EXPERTS_URL}/excel-to-power-bi-migration`,
           },
-        ],
-      },
-      {
-        label: "Office 365",
-        href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365`,
-        items: [
           {
-            label: "365 Implementation",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/office-365-implementation`,
-          },
-          {
-            label: "365 Migration",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/office-365-migration`,
-          },
-          {
-            label: "Business Process Automation",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/business-process-automation`,
-          },
-          {
-            label: "Remote Data Gathering",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/remote-data-gathering-from-any-device`,
-          },
-          {
-            label: "Exchange Setup & Assistance",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/exchange-online-setup-and-support`,
-          },
-          {
-            label: "Help & Managed Services",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/support-and-managed-services`,
-          },
-          {
-            label: "Cloud Backup with OneDrive",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/cloud-backup-with-onedrive`,
-          },
-          {
-            label: "App & Custom Development",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/app-and-custom-development`,
+            label: "Microsoft Fabric",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/microsoft-fabric`,
           },
         ],
       },
+      // {
+      //   label: "Office 365",
+      //   href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365`,
+      //   items: [
+      //     {
+      //       label: "365 Implementation",
+      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/office-365-implementation`,
+      //     },
+      //     {
+      //       label: "365 Migration",
+      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/office-365-migration`,
+      //     },
+      //     {
+      //       label: "Business Process Automation",
+      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/business-process-automation`,
+      //     },
+      //     {
+      //       label: "Remote Data Gathering",
+      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/remote-data-gathering-from-any-device`,
+      //     },
+      //     {
+      //       label: "Exchange Setup & Assistance",
+      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/exchange-online-setup-and-support`,
+      //     },
+      //     {
+      //       label: "Help & Managed Services",
+      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/support-and-managed-services`,
+      //     },
+      //     {
+      //       label: "Cloud Backup with OneDrive",
+      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/cloud-backup-with-onedrive`,
+      //     },
+      //     {
+      //       label: "App & Custom Development",
+      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/app-and-custom-development`,
+      //     },
+      //   ],
+      // },
       {
         label: "Other Services",
         href: `${OFFICE_EXPERTS_URL}/services/by-business-solution`,
