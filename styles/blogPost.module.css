@@ -236,7 +236,8 @@
 
 .quote {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 1rem;
   align-items: center;
   max-width: 80%;
   margin: 4rem auto;

@@ -28,4 +28,18 @@ export const blogPosts = [
     youtubeId: null,
     imagePath: "/blog/platform-database/resuscitate.webp",
   },
+  {
+    id: 3,
+    title: "Microsoft Access vs. Excel: When to Use Which for Your Business",
+    description:
+      "Discover when to use Microsoft Access versus Excel for your Australian business data management. Learn the key differences, benefits, and how to leverage both tools together for optimal efficiency.",
+    slug: "access-vs-excel",
+    date: "October 23, 2025",
+    author: "Daniel Thomas",
+    readingTime: "12 min",
+    category: "Excel",
+    featured: false,
+    youtubeId: null,
+    imagePath: "/blog/access-excel/access-vs-excel.webp",
+  },
 ];

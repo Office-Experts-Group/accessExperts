@@ -63,6 +63,10 @@ export const navigationData = {
             label: "Cloud-based Solutions",
             href: `/access-online`,
           },
+          {
+            label: "Power BI Integration",
+            href: `/integrate-access-with-power-bi`,
+          },
         ],
       },
       {

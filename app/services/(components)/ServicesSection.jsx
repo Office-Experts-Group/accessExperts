@@ -40,7 +40,7 @@ const ServicesSection = () => {
     {
       title: "Third-Party Integration",
       description:
-        "Maximise your database investment by connecting Access with the business applications you already use. Our integration experts link Access databases to CRM systems like Dynamics and Salesforce, accounting packages including MYOB, Xero and QuickBooks, and other Microsoft Office applications. We build automated data flows that eliminate manual re-entry, ensure data consistency across platforms, and create unified reporting dashboards.",
+        "Maximise your database investment by connecting Access with the business applications you already use. Our integration experts link Access databases to CRM systems like Dynamics and Salesforce, accounting packages including MYOB, Xero and QuickBooks, and many other applications. We build automated data flows that eliminate manual re-entry, ensure data consistency across platforms, and create unified reporting dashboards.",
       links: [
         {
           href: "/3rd-party-product-integration",
@@ -62,7 +62,7 @@ const ServicesSection = () => {
     {
       title: "Support & Maintenance",
       description:
-        "Keep your Access databases running at peak performance with our proactive support and maintenance services. We provide rapid troubleshooting for urgent issues, performance optimisation to improve speed and reliability, and regular health checks to prevent problems before they occur. We offer flexible arrangements from ad-hoc assistance to comprehensive maintenance contracts.",
+        "Keep your Access databases running at peak performance with our responsive support and optimisation services. We provide rapid troubleshooting for urgent issues, performance tuning to improve speed and reliability, and optional health checks to prevent problems before they occur. Our flexible approach means you can access expert help when you need it, without the commitment of ongoing contracts.",
       links: [
         {
           href: "/access-support",
