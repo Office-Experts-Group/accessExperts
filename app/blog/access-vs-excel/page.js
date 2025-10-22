@@ -340,25 +340,25 @@ const AccessVsExcelBlogPost = () => {
           <p>Access is the smarter choice when you need:</p>
           <ul>
             <li>
-              <strong>To manage large or complex datasets</strong> -- Access
+              <strong>To manage large or complex datasets</strong> - Access
               handles significantly more data than Excel with less performance
               issues.
             </li>
             <li>
-              <strong>Relational data structures</strong> -- Create links
-              between tables (e.g. customers and their transactions) to maintain
+              <strong>Relational data structures</strong> - Create links between
+              tables (e.g. customers and their transactions) to maintain
               consistency.
             </li>
             <li>
-              <strong>Multi-user access</strong> -- Allow multiple staff to view
+              <strong>Multi-user access</strong> - Allow multiple staff to view
               and update records simultaneously.
             </li>
             <li>
-              <strong>Data validation and integrity</strong> -- Enforce rules to
+              <strong>Data validation and integrity</strong> - Enforce rules to
               ensure information remains accurate and consistent.
             </li>
             <li>
-              <strong>Integration and scalability</strong> -- Connect with SQL
+              <strong>Integration and scalability</strong> - Connect with SQL
               Server, SharePoint, or Power Apps for more advanced business
               systems.
             </li>
@@ -513,9 +513,10 @@ const AccessVsExcelBlogPost = () => {
             <div>
               <h4>About the Author</h4>
               <p>
-                Daniel is a developer at Excel Experts, a curious mind into the
-                world of programming, design and SEO. If you have any questions,
-                please feel free to get in contact via the form below.
+                Daniel is a developer at the Office Experts Group, a curious
+                mind into the world of programming, design and SEO. If you have
+                any questions, please feel free to get in contact via the form
+                below.
               </p>
             </div>
             <div className={styles.authorImage}>
