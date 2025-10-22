@@ -501,3 +501,16 @@
     top: 0rem;
   }
 }
+
+.splitWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.splitImage {
+  max-width: 300px !important;
+  height: 150px !important;
+  @include phone {
+    display: none;
+  }
+}

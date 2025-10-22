@@ -1,0 +1,208 @@
+.conclusionSection {
+  padding: 5rem 0;
+  position: relative;
+}
+.conclusionSection .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.conclusionSection .content .tagline {
+  color: #046999;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-aptos), sans-serif;
+  text-align: center;
+}
+.conclusionSection .content h2 {
+  font-size: 2.5rem;
+  color: #1e1e1e;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.3;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .conclusionSection .content h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .conclusionSection .content h2 {
+    font-size: 1.75rem;
+  }
+}
+.conclusionSection .content .mainText {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #777a7e;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+@media (max-width: 449px) {
+  .conclusionSection .content .mainText {
+    font-size: 1.05rem;
+    text-align: left;
+  }
+}
+.conclusionSection .content .warningBox {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5rem;
+  border-left: 5px solid #046999;
+}
+@media (max-width: 449px) {
+  .conclusionSection .content .warningBox {
+    padding: 1.5rem;
+  }
+}
+.conclusionSection .content .warningBox h3 {
+  font-size: 1.5rem;
+  color: #1e1e1e;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+@media (max-width: 449px) {
+  .conclusionSection .content .warningBox h3 {
+    font-size: 1.3rem;
+  }
+}
+.conclusionSection .content .warningBox .warningText {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #777a7e;
+  margin-bottom: 1.5rem;
+}
+.conclusionSection .content .warningBox .warningList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 449px) {
+  .conclusionSection .content .warningBox .warningList {
+    grid-template-columns: 1fr;
+  }
+}
+.conclusionSection .content .warningBox .warningList .warningItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: rgba(4, 105, 153, 0.05);
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+}
+.conclusionSection .content .warningBox .warningList .warningItem:hover {
+  background-color: rgba(4, 105, 153, 0.1);
+  transform: translateX(5px);
+}
+.conclusionSection .content .warningBox .warningList .warningItem svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: rgba(255, 0, 0, 0.716);
+  margin-top: 0.2rem;
+}
+.conclusionSection .content .warningBox .warningList .warningItem span {
+  font-size: 0.95rem;
+  color: #777a7e;
+  line-height: 1.6;
+}
+.conclusionSection .content .warningBox .impactText {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #777a7e;
+  font-style: italic;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(119, 122, 126, 0.1);
+}
+.conclusionSection .content .warningBox .impactText strong {
+  color: #046999;
+  font-weight: 600;
+  font-style: normal;
+}
+.conclusionSection .content .ctaBox {
+  background: linear-gradient(135deg, #046999 0%, rgb(2.7006369427, 70.8917197452, 103.2993630573) 100%);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(4, 105, 153, 0.3);
+}
+@media (max-width: 449px) {
+  .conclusionSection .content .ctaBox {
+    padding: 2rem 1.5rem;
+  }
+}
+.conclusionSection .content .ctaBox h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+@media (max-width: 449px) {
+  .conclusionSection .content .ctaBox h3 {
+    font-size: 1.5rem;
+  }
+}
+.conclusionSection .content .ctaBox p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+@media (max-width: 449px) {
+  .conclusionSection .content .ctaBox p {
+    font-size: 1rem;
+  }
+}
+.conclusionSection .content .ctaBox .ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.conclusionSection .content .ctaBox .ctaButtons .primaryBtn,
+.conclusionSection .content .ctaBox .ctaButtons .secondaryBtn {
+  padding: 1rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+@media (max-width: 449px) {
+  .conclusionSection .content .ctaBox .ctaButtons .primaryBtn,
+  .conclusionSection .content .ctaBox .ctaButtons .secondaryBtn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+.conclusionSection .content .ctaBox .ctaButtons .primaryBtn {
+  background-color: white;
+  color: #046999;
+  border: 2px solid white;
+}
+.conclusionSection .content .ctaBox .ctaButtons .primaryBtn:hover {
+  background-color: transparent;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.conclusionSection .content .ctaBox .ctaButtons .secondaryBtn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.conclusionSection .content .ctaBox .ctaButtons .secondaryBtn:hover {
+  background-color: white;
+  color: #046999;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=conclusionSection.module.css.map */

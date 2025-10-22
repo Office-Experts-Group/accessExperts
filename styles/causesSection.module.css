@@ -1,0 +1,161 @@
+@charset "UTF-8";
+.causesSection {
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+  position: relative;
+}
+.causesSection .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.causesSection .sectionHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.causesSection .sectionHeader .tagline {
+  color: #046999;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-aptos), sans-serif;
+}
+.causesSection .sectionHeader h2 {
+  font-size: 2.5rem;
+  color: #1e1e1e;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .causesSection .sectionHeader h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .causesSection .sectionHeader h2 {
+    font-size: 1.75rem;
+  }
+}
+.causesSection .sectionHeader .subtitle {
+  font-size: 1.15rem;
+  color: #777a7e;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+@media (max-width: 449px) {
+  .causesSection .sectionHeader .subtitle {
+    font-size: 1.05rem;
+  }
+}
+.causesSection .causesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .causesSection .causesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .causesSection .causesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+.causesSection .causeCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+.causesSection .causeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-left-color: #046999;
+}
+.causesSection .causeCard .iconWrapper {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(4, 105, 153, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.causesSection .causeCard .iconWrapper svg {
+  width: 30px;
+  height: 30px;
+  stroke: #046999;
+  fill: none;
+}
+.causesSection .causeCard h3 {
+  font-size: 1.4rem;
+  color: #1e1e1e;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+@media (max-width: 449px) {
+  .causesSection .causeCard h3 {
+    font-size: 1.25rem;
+  }
+}
+.causesSection .causeCard p {
+  color: #777a7e;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+.causesSection .causeCard .symptoms {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(119, 122, 126, 0.1);
+}
+.causesSection .causeCard .symptoms .symptomsTitle {
+  font-weight: 600;
+  color: #046999;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.causesSection .causeCard .symptoms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.causesSection .causeCard .symptoms ul li {
+  color: #777a7e;
+  font-size: 0.95rem;
+  padding-left: 1.2rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+.causesSection .causeCard .symptoms ul li:before {
+  content: "▸";
+  color: #046999;
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.absImage {
+  position: absolute;
+  top: -5rem;
+  right: 3vw;
+  rotate: -15deg;
+}
+@media (max-width: 449px) {
+  .absImage {
+    opacity: 0.7;
+  }
+}/*# sourceMappingURL=causesSection.module.css.map */

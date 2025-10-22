@@ -535,4 +535,19 @@
     height: 200px;
     top: 0rem;
   }
+}
+
+.splitWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.splitImage {
+  max-width: 300px !important;
+  height: 150px !important;
+}
+@media (max-width: 449px) {
+  .splitImage {
+    display: none;
+  }
 }/*# sourceMappingURL=pageSegment4.module.css.map */
