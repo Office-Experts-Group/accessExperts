@@ -2,9 +2,12 @@ import React from "react";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import Promo from "../../components/Promo";
 import ExpertsAwait from "../../components/ExpertsAwait";
 import Contact from "../../components/Contact";
+import IntroSection from "./(components)/IntroSection";
+import CausesSection from "./(components)/CausesSection";
+import OptimisationServices from "./(components)/OptimisationServices";
+import ConclusionSection from "./(components)/ConclusionSection";
 
 import repair from "../../public/pageHeros/repair.webp";
 import repairMob from "../../public/pageHeros/mob/repairMob.webp";
@@ -13,10 +16,6 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
-import IntroSection from "./(components)/IntroSection";
-import CausesSection from "./(components)/CausesSection";
-import OptimisationServices from "./(components)/OptimisationServices";
-import ConclusionSection from "./(components)/ConclusionSection";
 
 const schema = {
   "@context": "https://schema.org",
@@ -157,10 +156,6 @@ const Page = () => {
       <OptimisationServices />
       <CausesSection />
       <ExpertsAwait />
-      {/* <Promo
-        h2="Restore Your Database Performance"
-        p="Our database specialists can diagnose and resolve performance issues, repair corruption, and optimise your Access databases for peak efficiency. Contact us today for a comprehensive database health check."
-      /> */}
       <ConclusionSection />
       <Contact />
     </>

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .pageSegment {
+  position: relative;
   scroll-margin-top: 100px;
   padding: 0 10vw 2rem 10vw;
   display: flex;
@@ -531,6 +532,22 @@
 }
 @media (max-width: 449px) {
   .absImage {
+    width: 200px;
+    height: 200px;
+    top: 0rem;
+  }
+}
+
+.absImage2 {
+  position: absolute;
+  top: 8rem;
+  right: 5vw;
+  z-index: 1;
+  opacity: 0.4;
+  transform: rotate(-15deg);
+}
+@media (max-width: 449px) {
+  .absImage2 {
     width: 200px;
     height: 200px;
     top: 0rem;

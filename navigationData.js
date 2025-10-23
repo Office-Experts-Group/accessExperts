@@ -67,6 +67,10 @@ export const navigationData = {
             label: "Power BI Integration",
             href: `/integrate-access-with-power-bi`,
           },
+          {
+            label: "Database Optimisation and Repair",
+            href: `/access-database-optimisation-and-repair`,
+          },
         ],
       },
       {
