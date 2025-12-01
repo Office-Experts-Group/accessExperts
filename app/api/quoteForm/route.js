@@ -159,8 +159,8 @@ export async function POST(req) {
     try {
       // Send email to business
       await sgMail.send({
-        from: "consult@officeexperts.com.au",
-        to: "consult@officeexperts.com.au",
+        from: "consult@accessexperts.com.au",
+        to: "consult@accessexperts.com.au",
         subject: "New Quote Request Submission",
         text: clientTextMessage,
         html: clientHtmlMessage,
@@ -170,7 +170,7 @@ export async function POST(req) {
 
       // Send email to customer
       await sgMail.send({
-        from: "consult@officeexperts.com.au",
+        from: "consult@accessexperts.com.au",
         to: email,
         subject: "Thank you for your quote request!",
         text: customerTextMessage,
