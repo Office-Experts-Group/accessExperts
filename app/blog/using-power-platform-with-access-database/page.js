@@ -32,7 +32,7 @@ const HybridAccessBlogPost = () => {
     // Author information
     author: {
       "@type": "Person",
-      name: "Access Experts Team",
+      name: "Scott Robinson",
     },
 
     // Publisher information
@@ -43,8 +43,8 @@ const HybridAccessBlogPost = () => {
       logo: {
         "@type": "ImageObject",
         url: "https://www.accessexperts.com.au/logo.png",
-        width: 400,
-        height: 400,
+        width: 1200,
+        height: 630,
       },
     },
 

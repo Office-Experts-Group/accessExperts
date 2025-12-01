@@ -88,7 +88,7 @@ export async function POST(req) {
         subject: "New Contact Form Submission",
         text: clientTextMessage,
         html: clientHtmlMessage,
-        replyTo: email, // Add reply-to header
+        replyTo: email,
       });
 
       // Send confirmation to customer
