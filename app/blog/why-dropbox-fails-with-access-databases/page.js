@@ -285,7 +285,7 @@ const DropboxAccessBlogPost = () => {
             <p>
               For very simple systems or small tables, Microsoft's cloud platforms
               work well. They integrate seamlessly with Microsoft 365, provide an
-              easy future path to <Link href={"https://www.powerplatformexperts.com.au/services/powerplatform/power-apps"}>Power Apps</Link>, and are good for basic apps and
+              easy future path to <Link href={"https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps"}>Power Apps</Link>, and are good for basic apps and
               lists.
             </p>
           </div>
