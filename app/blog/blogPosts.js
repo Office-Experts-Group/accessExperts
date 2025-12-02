@@ -42,4 +42,18 @@ export const blogPosts = [
     youtubeId: null,
     imagePath: "/blog/access-excel/access-vs-excel.webp",
   },
+  {
+  id: 4,
+  title: "Why Dropbox Fails with Access Databases: Better Cloud Solutions",
+  description:
+    "Storing Microsoft Access databases in Dropbox leads to corruption, data loss, and conflicts. Learn why this approach fails and discover reliable alternatives like SQL Server and Azure SQL for secure multi-user access.",
+  slug: "why-dropbox-fails-with-access-databases",
+  date: "January 29, 2025",
+  author: "Scott Robinson",
+  readingTime: "7 min",
+  category: "Access",
+  featured: false,
+  youtubeId: null,
+  imagePath: "/blog/dropbox/access-to-dropbox.webp",
+},
 ];
