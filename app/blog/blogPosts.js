@@ -69,5 +69,19 @@ export const blogPosts = [
   featured: true,
   youtubeId: null,
   imagePath: "/blog/2gb/stop.webp",
-},
+  },
+{
+  id: 6,
+  title: "Access Database Running Slow? 7 Performance Killers (and How to Fix Them)",
+  description:
+    "Is your Access database painfully slow? Discover the 7 most common performance killers and learn quick fixes that can restore speed in minutes. Expert solutions for Australian businesses.",
+  slug: "access-database-slow-performance",
+  date: "January 30, 2025",
+  author: "Scott Robinson",
+  readingTime: "14 min",
+  category: "Database",
+  featured: false,
+  youtubeId: null,
+  imagePath: "/blog/slow/performance.webp",
+}
 ];

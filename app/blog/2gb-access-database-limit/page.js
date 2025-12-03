@@ -7,7 +7,6 @@ import Contact from "../../../components/Contact";
 import styles from "../../../styles/blogPost.module.scss";
 
 import scott from "../../../public/team/scott.webp";
-import placeholder from "../../../public/placeholder.webp";
 import stop from "../../../public/blog/2gb/stop.webp";
 import triage from "../../../public/blog/2gb/triage.webp";
 import sql from "../../../public/blog/2gb/sql.webp";
