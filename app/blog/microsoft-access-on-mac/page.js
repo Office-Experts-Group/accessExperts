@@ -11,6 +11,7 @@ import filemaker from "../../../public/blog/mac/filemaker.webp";
 import airtable from "../../../public/blog/mac/airtable.webp";
 import ninox from "../../../public/blog/mac/ninox.webp";
 import unsure from "../../../public/blog/mac/unsure.webp";
+import solutions from "../../../public/blog/mac/solutions.webp";
 import scott from "../../../public/team/scott.webp";
 
 const AccessOnMacBlogPost = () => {
@@ -44,7 +45,7 @@ const AccessOnMacBlogPost = () => {
     },
 
     datePublished: "2025-12-17T09:00:00+10:00",
-    dateModified: "2025-12-17T09:00:00+10:00",
+    dateModified: "2025-12-25T09:00:00+10:00",
 
     articleSection: "Microsoft Access",
     articleBody:
@@ -158,10 +159,14 @@ const AccessOnMacBlogPost = () => {
               {" "}
               Power Apps
             </Link>
-            , Dataverse, and Azure SQL, rather than desktop databases. Investing
-            resources to port an application to a competitors platform (macOS)
-            doesn't align with their cloud-first roadmap nor their business
-            priorities.
+            , Dataverse, and{" "}
+            <Link href="/sql-server-backend-business-solutions">
+              {" "}
+              Azure SQL, rather than desktop databases
+            </Link>
+            . Investing resources to port an application to a competitors
+            platform (macOS) doesn't align with their cloud-first roadmap nor
+            their business priorities.
           </p>
 
           <h3>Limited Mac Market Share in Enterprise</h3>
@@ -197,6 +202,53 @@ const AccessOnMacBlogPost = () => {
             </cite>
           </div>
 
+          <h2>Before We Start... Have You Heard About Access Free Runtime?</h2>
+
+          <p>
+            Microsoft Access Runtime is a free version of Access that allows you
+            to run existing Access databases without purchasing a Microsoft 365
+            subscription or standalone Access licence.
+          </p>
+
+          <p>
+            Access Runtime includes the main functionality high-level end users
+            need, such as viewing and editing data, running queries, using forms
+            and reports, and
+            <Link
+              href={"https://wwww.excelexperts.com.au/vba-macro-development"}
+            >
+              {" "}
+              executing macros
+            </Link>
+            . The limitations? You cannot modify the database design (tables,
+            queries, forms, or reports).
+          </p>
+
+          <p>
+            Since Access Runtime is still a Windows application, you'll need to
+            use it within one of the Windows environments described in the
+            solutions below (Parallels, Boot Camp, or cloud hosting). However,
+            instead of paying for Microsoft 365 with Access or a standalone
+            Access licence (typically $239/year or $369 one-time), you can
+            download Runtime for free from{" "}
+            <Link
+              href="https://support.microsoft.com/en-us/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Microsoft's website
+            </Link>
+            .
+          </p>
+
+          <Image
+            src={solutions}
+            alt="Solutions text"
+            width={600}
+            height={400}
+            className={styles.mainImage}
+          />
+
           <h2>Solution 1: Parallels Desktop (Recommended for Most Users)</h2>
 
           <p>
@@ -212,11 +264,18 @@ const AccessOnMacBlogPost = () => {
 
           <h3>What Is Parallels?</h3>
           <p>
-            Parallels Desktop is virtualisation software that runs Windows
-            inside macOS. Unlike Boot Camp (which requires rebooting), Parallels
-            lets you run Windows applications alongside Mac apps simultaneously.
-            You can copy-paste between operating systems, drag files between
-            Windows and Mac, and even add Windows applications to your Mac dock.
+            <Link
+              href="https://www.parallels.com/products/desktop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Parallels Desktop
+            </Link>{" "}
+            is virtualisation software that runs Windows inside macOS. Unlike
+            Boot Camp (which requires rebooting), Parallels lets you run Windows
+            applications alongside Mac apps simultaneously. You can copy-paste
+            between operating systems, drag files between Windows and Mac, and
+            even add Windows applications to your Mac dock.
           </p>
 
           <p>
@@ -233,8 +292,9 @@ const AccessOnMacBlogPost = () => {
               by Parallels)
             </li>
             <li>
-              Install Microsoft 365 with Access (or standalone Access) in
-              Windows
+              Install Microsoft Access (or standalone Access) in Windows.
+              Alternatively, you can use the free Access Runtime if you only
+              need to run existing databases.
             </li>
             <li>Run Access as if you were on a Windows PC</li>
           </ol>
@@ -366,12 +426,18 @@ const AccessOnMacBlogPost = () => {
 
           <h3>How Cloud Hosting Works</h3>
           <p>
-            Rather than running Access on your Mac, you connect to a Windows
-            server in the cloud where Access is installed. You interact with
-            Access through a remote desktop connection, either via a web browser
-            or dedicated remote desktop app. The Access application actually
-            runs on a server in a data center; your Mac is just displaying the
-            interface.
+            Rather than running Access on your Mac, you
+            <Link href={"/access-azure-cloud-based-solutions"}>
+              {" "}
+              connect to a Windows server in the cloud
+            </Link>{" "}
+            where Access is installed. You interact with{" "}
+            <Link href={"/access-online"}>
+              Access through a remote desktop connection
+            </Link>
+            , either via a web browser or dedicated remote desktop app. The
+            Access application actually runs on a server in a data center; your
+            Mac is just displaying the interface.
           </p>
 
           <h3>Popular Cloud Hosting Providers</h3>
@@ -508,11 +574,18 @@ const AccessOnMacBlogPost = () => {
 
           <h3>What Is Boot Camp?</h3>
           <p>
-            Boot Camp is Apple's built-in utility for Intel-based Macs that
-            creates a separate Windows partition on your hard drive. When you
-            start your Mac, you choose whether to boot into macOS or Windows.
-            Once in Windows, your Mac is functionally a Windows PC—full hardware
-            access, native performance, no virtualisation overhead.
+            <Link
+              href={"https://support.apple.com/en-us/102622"}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              Boot Camp
+            </Link>{" "}
+            is Apple's built-in utility for Intel-based Macs that creates a
+            separate Windows partition on your hard drive. When you start your
+            Mac, you choose whether to boot into macOS or Windows. Once in
+            Windows, your Mac is functionally a Windows PC—full hardware access,
+            native performance, no virtualisation overhead.
           </p>
 
           <h3>Critical Limitation... Not Available on Apple Silicon</h3>
@@ -644,7 +717,9 @@ const AccessOnMacBlogPost = () => {
             </li>
             <li>
               <strong>Actual ODBC Driver for Access</strong> (by Actual
-              Technologies) - Connects Excel/FileMaker to Access databases
+              Technologies) - Connects{" "}
+              <Link href={"/blog/access-vs-excel"}>Excel</Link>/FileMaker to
+              Access databases
             </li>
             <li>
               <strong>LibreOffice Base</strong> - Free, but complex and limited
@@ -665,6 +740,11 @@ const AccessOnMacBlogPost = () => {
             <li>Limited or no write capability</li>
             <li>Cannot run Access applications, can only view raw data</li>
             <li>Password-protected databases often not supported</li>
+            <li>
+              <Link href={"/blog/2gb-access-database-limit"}>
+                The 2GB limit to Access Databases
+              </Link>
+            </li>
           </ul>
 
           <div className={styles.comparisonTable}>
@@ -1176,18 +1256,20 @@ const AccessOnMacBlogPost = () => {
           <h2>Need Help Deciding?</h2>
 
           <p>
-            Choosing the right Access solution for your Mac environment depends
-            on numerous factors. From your database complexity, team size,
-            budget, technical expertise, to financial decisions considering your
-            long-term business strategy.
+            <Link href="/is-access-right-for-your-company">
+              Choosing the right Access solution
+            </Link>{" "}
+            for your Mac environment depends on numerous factors. From your
+            database complexity, team size, budget, technical expertise, to
+            financial decisions considering your long-term business strategy.
           </p>
 
           <p>
             At Access Experts, we've helped hundreds of organisations navigate
-            this exact challenge. Whether you need help setting up Parallels,
-            migrating to a Mac-friendly alternative, or optimising your existing
-            Access databases, our team of certified consultants can guide you
-            through the process.
+            these challenges. Whether you need help migrating your Access
+            databases to Azure, rewriting them in Power Apps, ASP, or web-based
+            solutions, our team of certified consultants can guide you through
+            the process.
           </p>
 
           <p>
