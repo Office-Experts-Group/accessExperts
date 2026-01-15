@@ -290,11 +290,6 @@ export default function MicrosoftAccessAlternatives() {
             cost-conscious organisations.
           </p>
 
-          <p>
-            <strong>Typical Investment:</strong> $7,500-$45,000 AUD depending on
-            complexity and chosen solution.
-          </p>
-
           <h3>"IT Department Says We Must"</h3>
 
           <p>
@@ -312,11 +307,6 @@ export default function MicrosoftAccessAlternatives() {
             with Dataverse, or cloud-hosted Access as an interim solution.
           </p>
 
-          <p>
-            <strong>Typical Investment:</strong> $15,000-$75,000 AUD plus
-            ongoing cloud subscription costs.
-          </p>
-
           <h3>"We Want Something More Modern"</h3>
 
           <p>
@@ -332,11 +322,6 @@ export default function MicrosoftAccessAlternatives() {
           <p>
             <strong>Best Alternatives:</strong> Power Platform, modern web
             applications, or Access with Power BI integration for reporting.
-          </p>
-
-          <p>
-            <strong>Typical Investment:</strong> $12,000-$60,000 AUD for
-            interface modernisation; potentially less if keeping Access backend.
           </p>
 
           <h3>"Access Keeps Breaking"</h3>
