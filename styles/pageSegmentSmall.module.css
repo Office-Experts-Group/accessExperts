@@ -12,6 +12,10 @@
   color: #777a7e;
   line-height: 2rem;
 }
+.pageSegmentSmall a {
+  color: #046999 !important;
+  font-weight: 700 !important;
+}
 @media (min-width: 450px) and (max-width: 766px) {
   .pageSegmentSmall {
     flex-direction: column;

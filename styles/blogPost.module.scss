@@ -96,6 +96,7 @@
 .blogContent {
   display: flex;
   flex-direction: column;
+
   h2 {
     font-size: 1.8rem;
     margin-top: 2rem;
@@ -105,8 +106,12 @@
 
   h3 {
     font-size: 1.4rem;
-    margin: 1.5rem 0 .5rem 0;
+    margin: 1.5rem 0 1rem 0;
     color: $theme;
+  }
+
+  h4 {
+    margin-bottom: 0.5rem;
   }
 
   p {
@@ -126,6 +131,7 @@
   a {
     color: $theme;
     font-weight: 700;
+    cursor: pointer;
   }
 
   .codeBlock {
@@ -140,6 +146,10 @@
       font-size: 0.9rem;
       line-height: 1.4;
     }
+  }
+
+  [id] {
+    scroll-margin-top: 150px;
   }
 }
 
@@ -264,6 +274,10 @@
   margin: 2rem auto;
   max-width: 90vw;
   height: auto;
+}
+
+.noDotList {
+  list-style-type: none;
 }
 
 // Keyboard Shortcuts blog
@@ -399,6 +413,7 @@
 
 .BgImageContainer {
   position: relative;
+  z-index: -1;
 }
 
 .paste {
@@ -413,6 +428,7 @@
   opacity: 0.07;
   top: -4rem;
   right: 0;
+  z-index: -1;
 }
 
 .scale {
@@ -702,9 +718,10 @@
 
 .centered {
   margin: 0 auto;
-  h2, p {
-  text-align: left;
-}
+  h2,
+  p {
+    text-align: left;
+  }
 }
 
 // Simple Comparison Table Styles
@@ -714,11 +731,13 @@
   border-radius: 8px;
   overflow: hidden;
   background: white;
+  z-index: 5;
 
   table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.95rem;
+    z-index: 5;
   }
 
   thead {
@@ -854,7 +873,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .disclaimer {
   margin: 2rem auto 0 auto;

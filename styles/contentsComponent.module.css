@@ -39,6 +39,93 @@
   transform: scale(1.1);
 }
 
+.blogContents {
+  position: fixed;
+  top: 25vh;
+  top: 25dvh;
+  right: -3.7rem;
+  z-index: 1500;
+  transition: right 0.5s ease;
+}
+.blogContents > button {
+  background-color: #333;
+  opacity: 0.7;
+  color: #f8f8f8;
+  transform: rotate(270deg);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 1rem 2rem 0.5rem 2rem;
+  border-radius: 0.2rem;
+  transition: opacity 0.5s ease;
+}
+.blogContents > button:hover {
+  opacity: 0.9;
+}
+
+.blogContentsPanel {
+  position: relative;
+  background-color: #f2f3f5;
+  padding: 2rem;
+  border-radius: 0.1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 250px;
+  box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: translateX(200%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.blogContentsPanel.blogPanelVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.blogContentsPanel h3 {
+  color: #1e1e1e;
+  margin: 1rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.blogContentsPanel svg {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 105;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.blogContentsPanel svg:hover {
+  transform: scale(1.1);
+}
+.blogContentsPanel .contentLink {
+  padding: 0;
+}
+.blogContentsPanel .contentLink a,
+.blogContentsPanel .contentLink p {
+  color: #777a7e;
+  transition: all 0.5s ease;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.blogContentsPanel .contentLink a::after,
+.blogContentsPanel .contentLink p::after {
+  content: "→";
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  opacity: 0;
+  color: #046999;
+  transition: opacity 0.5s ease;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  .blogContentsPanel .contentLink a::after,
+  .blogContentsPanel .contentLink p::after {
+    display: none;
+  }
+}
+
 .contents {
   position: relative;
   grid-row: span 2;
