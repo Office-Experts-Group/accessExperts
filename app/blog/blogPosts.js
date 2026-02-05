@@ -100,19 +100,19 @@ export const blogPosts = [
     youtubeId: null,
     imagePath: "/blog/mac/alternates.webp",
   },
-  {
-    id: 8,
-    title:
-      "Microsoft Access Alternatives 2026: Choosing the Right Database Solution",
-    description:
-      "Considering alternatives to Microsoft Access? Our experts help you choose the RIGHT solution - SQL Server, Azure, Power Platform, or staying with Access. Honest comparison with real costs for Australian businesses.",
-    slug: "https://www.accessexperts.com.au/blog/microsoft-access-alternatives-guide",
-    date: "January 15, 2026",
-    author: "Daniel Thomas",
-    readingTime: "12 min",
-    category: "Database",
-    featured: true,
-    youtubeId: null,
-    imagePath: "/blog/alternatives/access-alternatives.webp",
-  },
+  // {
+  //   id: 8,
+  //   title:
+  //     "Microsoft Access Alternatives 2026: Choosing the Right Database Solution",
+  //   description:
+  //     "Considering alternatives to Microsoft Access? Our experts help you choose the RIGHT solution - SQL Server, Azure, Power Platform, or staying with Access. Honest comparison with real costs for Australian businesses.",
+  //   slug: "https://www.accessexperts.com.au/blog/microsoft-access-alternatives-guide",
+  //   date: "January 15, 2026",
+  //   author: "Daniel Thomas",
+  //   readingTime: "12 min",
+  //   category: "Database",
+  //   featured: true,
+  //   youtubeId: null,
+  //   imagePath: "/blog/alternatives/access-alternatives.webp",
+  // },
 ];

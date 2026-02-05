@@ -49,6 +49,11 @@ export const metadata = {
   authors: [{ name: "Office Experts Group" }],
   publishedTime: "2026-01-15T00:00:00.000Z",
   modifiedTime: "2026-01-15T00:00:00.000Z",
+
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function BlogLayout({ children }) {
