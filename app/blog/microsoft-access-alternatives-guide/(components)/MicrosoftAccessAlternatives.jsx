@@ -128,7 +128,7 @@ export default function MicrosoftAccessAlternatives() {
             performance dramatically. We've seen databases that took 30 seconds
             to load a form reduced to under 2 seconds simply through proper
             indexing and query optimisation. Before committing to a migration,
-            consider whether professional optimisation could solve the problem —
+            consider whether professional optimisation could solve the problem -
             it often can, at a fraction of the cost.
           </p>
 
@@ -139,7 +139,7 @@ export default function MicrosoftAccessAlternatives() {
             capable of handling 10–15 concurrent users with a proper
             front-end/back-end split and sensible network configuration. If
             you're hitting conflicts with fewer users than that, the problem is
-            almost certainly your database architecture — not Access itself.
+            almost certainly your database architecture - not Access itself.
           </p>
 
           <p>
@@ -149,7 +149,7 @@ export default function MicrosoftAccessAlternatives() {
             </Link>{" "}
             can support far greater numbers of concurrent users whilst keeping
             the interface your team already knows. This hybrid approach costs
-            considerably less than a complete rebuild — and your staff won't
+            considerably less than a complete rebuild - and your staff won't
             need retraining.
           </p>
 
@@ -157,7 +157,7 @@ export default function MicrosoftAccessAlternatives() {
 
           <p>
             True, you can't simply open an Access database over the internet
-            like a web app — but this doesn't mean you need to rebuild
+            like a web app - but this doesn't mean you need to rebuild
             everything from scratch. The most effective solution for most
             businesses is migrating the <em>back-end data</em> to{" "}
             <Link href="https://www.accessexperts.com.au/access-azure-cloud-based-solutions">
@@ -170,7 +170,7 @@ export default function MicrosoftAccessAlternatives() {
 
           <p>
             Azure Virtual Desktop and Terminal Server are also options worth
-            knowing about — they can deliver excellent performance, especially
+            knowing about - they can deliver excellent performance, especially
             when the database and virtual machine are hosted on the same Azure
             server. That said, they do carry ongoing running costs, so weigh
             them up against the Azure SQL approach before committing.
@@ -183,7 +183,7 @@ export default function MicrosoftAccessAlternatives() {
               Power Apps
             </Link>
             , build web interfaces, create mobile apps, or connect to Power BI
-            dashboards — all talking to the same database. It's a genuine
+            dashboards - all talking to the same database. It's a genuine
             modernisation pathway, not just a band-aid fix.
           </p>
 
@@ -210,12 +210,12 @@ export default function MicrosoftAccessAlternatives() {
             <p>
               "Despite declaring the removal of Access from Office 365,
               Microsoft quietly changed its mind. Updates continued to
-              appear—the latest version of Access in Office 365 was released in
+              appear-the latest version of Access in Office 365 was released in
               September 2020, with continued support and integration
               improvements."
             </p>
             <p style={{ fontSize: "0.9rem", fontStyle: "normal" }}>
-              —{" "}
+              -{" "}
               <a
                 href="https://www.comparitech.com/net-admin/microsoft-access/"
                 target="_blank"
@@ -393,7 +393,7 @@ export default function MicrosoftAccessAlternatives() {
               dealing with large datasets that exceed the storage capacity."
             </p>
             <p style={{ fontSize: "0.9rem", fontStyle: "normal" }}>
-              —{" "}
+              -{" "}
               <a
                 href="https://www.theknowledgeacademy.com/blog/microsoft-access-database-limitations/"
                 target="_blank"
@@ -629,7 +629,7 @@ export default function MicrosoftAccessAlternatives() {
               in the cloud."
             </p>
             <p style={{ fontSize: "0.9rem", fontStyle: "normal" }}>
-              —{" "}
+              -{" "}
               <a
                 href="https://www.computerweekly.com/feature/Trends-in-the-cloud-database-market"
                 target="_blank"
@@ -869,7 +869,7 @@ export default function MicrosoftAccessAlternatives() {
               {/* REVIEW: Consider adding a note that pricing changes frequently and to check each platform's site directly */}
               <p style={{ fontSize: "0.85rem", marginTop: "0.5rem" }}>
                 <em>
-                  Pricing changes frequently — always check each platform's
+                  Pricing changes frequently - always check each platform's
                   website for current AUD rates before making a decision.
                 </em>
               </p>
@@ -912,12 +912,12 @@ export default function MicrosoftAccessAlternatives() {
           <div className={styles.quote}>
             <p>
               "At first glance, Airtable's paid plans appear
-              straightforward—choose a pricing plan, add your users, and start
+              straightforward-choose a pricing plan, add your users, and start
               building. Yet behind the clear tiers lie record caps, automation
               limits, and integration costs that can make scaling expensive."
             </p>
             <p style={{ fontSize: "0.9rem", fontStyle: "normal" }}>
-              —{" "}
+              -{" "}
               <a
                 href="https://baserow.io/blog/airtable-pricing"
                 target="_blank"
@@ -1102,10 +1102,9 @@ export default function MicrosoftAccessAlternatives() {
 
           <Image
             src={frustration}
-            alt=""
-            person
+            alt="person
             showing
-            frustration
+            frustration"
             className={styles.mainImage}
             width={600}
             height={400}
@@ -1162,7 +1161,7 @@ export default function MicrosoftAccessAlternatives() {
               solves this without a full platform change)
             </li>
             <li>
-              Require native mobile apps or a true web front-end — not just
+              Require native mobile apps or a true web front-end - not just
               remote access
             </li>
             <li>IT mandate or compliance requirements demand change</li>
@@ -1226,7 +1225,7 @@ export default function MicrosoftAccessAlternatives() {
           </p>
 
           <p>
-            For most businesses, the answer isn't to replace Access — it's to
+            For most businesses, the answer isn't to replace Access - it's to
             modernise it. Moving your data to a{" "}
             <Link href="https://www.accessexperts.com.au/sql-server-backend-business-solutions">
               SQL Server back-end
@@ -1234,14 +1233,14 @@ export default function MicrosoftAccessAlternatives() {
             (whether hosted on your own infrastructure or in Azure) often costs
             far less than a full migration, and your team keeps the interface
             they already know. From there, the door is open to add web
-            interfaces, Power Apps, mobile access, and more — all on your own
+            interfaces, Power Apps, mobile access, and more - all on your own
             timeline.
           </p>
 
           <p>
             When migration genuinely is the right answer, we'll tell you
             honestly. But we've found that most people simply need a
-            professional eye on the problem — and a clear, practical path
+            professional eye on the problem - and a clear, practical path
             forward.
           </p>
 
@@ -1250,7 +1249,7 @@ export default function MicrosoftAccessAlternatives() {
           <ul>
             <li>
               <strong>Don't rush...</strong> Many "Access problems" aren't
-              Access problems at all — they're configuration or design issues
+              Access problems at all - they're configuration or design issues
               that can be resolved without migrating to a new platform.
             </li>
             <li>
@@ -1261,18 +1260,18 @@ export default function MicrosoftAccessAlternatives() {
             <li>
               <strong>Plan for training...</strong> User adoption determines
               success. The less your interface changes, the easier the
-              transition — which is one reason the Access front-end + SQL
+              transition - which is one reason the Access front-end + SQL
               back-end approach is so popular.
             </li>
             <li>
               <strong>Consider hybrid approaches...</strong> A SQL Server
-              back-end with an Access front-end — especially on Azure — often
+              back-end with an Access front-end - especially on Azure - often
               provides the best balance of capability, cost, and continuity.
             </li>
             <li>
               <strong>Think long-term...</strong> Migrating to Azure SQL now
               means you can add Power Apps, web interfaces, and mobile apps
-              later — without starting from scratch again.
+              later - without starting from scratch again.
             </li>
           </ul>
 
@@ -1281,7 +1280,7 @@ export default function MicrosoftAccessAlternatives() {
               After 25+ years specialising in Access databases across Australia,
               we've learned that the best migration is sometimes no migration at
               all. Other times, it's a complete rebuild. The key is making an
-              informed decision based on your specific situation — not industry
+              informed decision based on your specific situation - not industry
               hype or vendor pressure.
             </p>
           </div>
