@@ -13,7 +13,7 @@ export default function Page() {
       "Comprehensive guide to Microsoft Access alternatives including SQL Server, Power Platform, and custom solutions. Expert advice on choosing the right database migration path.",
     image: "https://www.accessexperts.com.au/logo.png",
     datePublished: "2026-01-15T00:00:00.000Z",
-    dateModified: "2026-01-15T00:00:00.000Z",
+    dateModified: "2026-02-26T00:00:00.000Z",
     author: {
       "@type": "Person",
       name: "Daniel Thomas",
@@ -155,3 +155,9 @@ export default function Page() {
     </>
   );
 }
+
+// Remove all costs
+// we cant access remotely - push to azure
+// Azure virtual desktop can be fast
+// push towards keeping an access frontend
+// remove first 2  "when does access need replacing"

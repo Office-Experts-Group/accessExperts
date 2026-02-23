@@ -127,46 +127,64 @@ export default function MicrosoftAccessAlternatives() {
             <strong>Solution -</strong> Database optimisation can restore
             performance dramatically. We've seen databases that took 30 seconds
             to load a form reduced to under 2 seconds simply through proper
-            indexing and query optimisation. Before spending $20,000 on a
-            migration, consider investing some time (or money) focusing on
-            optimising your current database.
+            indexing and query optimisation. Before committing to a migration,
+            consider whether professional optimisation could solve the problem —
+            it often can, at a fraction of the cost.
           </p>
 
           <h4 id="problem-users">"Access Can't Handle Multiple Users"</h4>
 
           <p>
-            This is a half-truth. Access <em>can</em> handle 10-15 concurrent
-            users with proper front-end/back-end splitting and network
-            configuration. If you're experiencing conflicts with just 5 users,
-            the problem is likely your database architecture, not Access's
-            capabilities.
+            This one catches a lot of people out. Access <em>is</em> perfectly
+            capable of handling 10–15 concurrent users with a proper
+            front-end/back-end split and sensible network configuration. If
+            you're hitting conflicts with fewer users than that, the problem is
+            almost certainly your database architecture — not Access itself.
           </p>
 
           <p>
             <strong>Solution -</strong> A{" "}
             <Link href="https://www.accessexperts.com.au/sql-server-backend-business-solutions">
-              SQL Server backend with Access frontend
+              SQL Server back-end with your existing Access front-end
             </Link>{" "}
-            can support 50+ users whilst keeping your familiar interface. This
-            hybrid approach costs far less than a complete rebuild.
+            can support far greater numbers of concurrent users whilst keeping
+            the interface your team already knows. This hybrid approach costs
+            considerably less than a complete rebuild — and your staff won't
+            need retraining.
           </p>
 
           <h4 id="problem-remote">"We Can't Access It Remotely"</h4>
 
           <p>
-            True, you can't just open an Access database over the internet like
-            a web app. But cloud-hosted Access via Terminal Server or Azure
-            Virtual Desktop works perfectly fine for remote teams.
+            True, you can't simply open an Access database over the internet
+            like a web app — but this doesn't mean you need to rebuild
+            everything from scratch. The most effective solution for most
+            businesses is migrating the <em>back-end data</em> to{" "}
+            <Link href="https://www.accessexperts.com.au/access-azure-cloud-based-solutions">
+              Azure SQL in the cloud
+            </Link>
+            , whilst keeping your familiar Access front-end exactly as it is.
+            Your data lives securely in the cloud; your staff continue using the
+            same forms and reports they already know.
           </p>
 
           <p>
-            <strong>Solution -</strong>{" "}
-            <Link href="https://www.accessexperts.com.au/access-azure-cloud-based-solutions">
-              Cloud deployment
-            </Link>{" "}
-            of your Access database provides secure remote access without
-            rebuilding your entire system. Many businesses in 2026 can run
-            Access databases used by staff across Australia and internationally.
+            Azure Virtual Desktop and Terminal Server are also options worth
+            knowing about — they can deliver excellent performance, especially
+            when the database and virtual machine are hosted on the same Azure
+            server. That said, they do carry ongoing running costs, so weigh
+            them up against the Azure SQL approach before committing.
+          </p>
+
+          <p>
+            <strong>The big bonus?</strong> Once your data is in the cloud on
+            Azure SQL, you're not locked into Access forever. You can layer on{" "}
+            <Link href="https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps">
+              Power Apps
+            </Link>
+            , build web interfaces, create mobile apps, or connect to Power BI
+            dashboards — all talking to the same database. It's a genuine
+            modernisation pathway, not just a band-aid fix.
           </p>
 
           <h4 id="problem-modern">"Access Isn't Modern"</h4>
@@ -208,34 +226,45 @@ export default function MicrosoftAccessAlternatives() {
             </p>
           </div>
 
-          <h3>When Access Really Does Need Replacing</h3>
+          <h3>Does Access Really Need Replacing... Or Just Modernising?</h3>
 
           <p>
-            That said, there are legitimate scenarios where Access truly isn't
-            the right tool anymore...
+            Honestly, the vast majority of businesses that come to us thinking
+            they need to replace Access actually don't. What they need is a
+            smarter way to run it. That might mean moving the back-end data to
+            SQL Server, hosting it in the cloud, or adding modern reporting
+            through Power BI. None of that means throwing away the Access
+            front-end your team has used for years.
+          </p>
+
+          <p>
+            That said, there are genuine situations where Access truly isn't the
+            right tool anymore...
           </p>
 
           <ul>
             <li>
               <strong>Hitting the 2GB limit consistently:</strong> If you're
-              regularly bumping against Access's hard 2GB database size limit,
-              you genuinely need more capacity.{" "}
+              regularly reaching Access's 2GB database size limit{" "}
               <a
                 href="https://support.microsoft.com/en-us/office/access-specifications-0cf3c66f-9cf2-4e32-9568-98c1025bb47c"
                 target="_blank"
                 rel="nofollow noreferrer"
               >
-                Microsoft's documentation confirms
+                Microsoft's documentation
               </a>{" "}
-              there's no official workaround for this limitation.{" "}
+              confirms there's no official workaround for this limitation.{" "}
+              <em> *Hint* move to a SQL Server or Azure SQL back-end!</em>{" "}
               <Link href="/blog/2gb-access-database-limit">
-                (click here for some alternate solutions!)
+                (Read more on the 2GB limit and your options.)
               </Link>
             </li>
             <li>
-              <strong>Need true web/mobile access:</strong> If staff need to use
-              the database on phones, tablets, or through a web browser (not
-              Terminal Server), Access isn't designed for this.
+              <strong>Need true web or mobile access:</strong> If staff need to
+              use the database on phones, tablets, or through a standard web
+              browser, Access alone won't do it. However, once your data is on
+              Azure SQL, adding a web interface or Power App becomes much more
+              straightforward.
             </li>
             <li>
               <strong>IT department mandate:</strong> Compliance requirements,
@@ -243,19 +272,23 @@ export default function MicrosoftAccessAlternatives() {
               regardless of Access's technical capabilities.
             </li>
             <li>
-              <strong>Scalability beyond 20+ concurrent users:</strong> While
-              possible, Access becomes increasingly difficult to manage with
-              large user bases.
+              <strong>Scalability beyond 20+ concurrent users:</strong>{" "}
+              Upgrading the back-end to SQL Server (either on-premises or Azure)
+              overcomes this limitation whilst preserving your Access front-end.
             </li>
             <li>
               <strong>Complex reporting and analytics needs:</strong> If you
-              need real-time dashboards, advanced analytics, or data warehouse
-              capabilities, modern BI tools are better suited.
+              need real-time dashboards and advanced analytics, connecting your
+              database to{" "}
+              <Link href="https://www.accessexperts.com.au/integrate-access-with-power-bi">
+                Power BI
+              </Link>{" "}
+              is often the answer... Not a full migration.
             </li>
             <li>
               <strong>Integration with enterprise systems:</strong> Connecting
-              Access to ERP, CRM, or other enterprise applications can be
-              challenging compared to modern platforms.
+              Access to ERP, CRM, or other enterprise applications becomes
+              significantly simpler once your data is hosted in Azure SQL.S
             </li>
           </ul>
 
@@ -268,9 +301,7 @@ export default function MicrosoftAccessAlternatives() {
             />
           </div>
 
-          <h2 id="migration-motivation">
-            Understanding Your Migration Motivation
-          </h2>
+          <h2 id="migration-motivation">Understanding Your Situation</h2>
 
           <h3 style={{ marginTop: "0" }}>"We've Outgrown Access"</h3>
 
@@ -285,9 +316,11 @@ export default function MicrosoftAccessAlternatives() {
           </ul>
 
           <p>
-            <strong>Best Alternatives:</strong> SQL Server (on-premises or Azure
-            SQL), Power Platform with Dataverse, or PostgreSQL for
-            cost-conscious organisations.
+            <strong>Best Starting Point:</strong> Azure SQL (cloud) or SQL
+            Server (on-premises) as the back-end, keeping your Access front-end.
+            This resolves most "outgrown" issues without a full rebuild. From
+            there, you can progressively add web interfaces or Power Apps if and
+            when you need them.
           </p>
 
           <h3>"IT Department Says We Must"</h3>
@@ -343,9 +376,13 @@ export default function MicrosoftAccessAlternatives() {
           </p>
 
           <p>
-            <strong>Recommended First Step:</strong> Professional database
-            assessment ($750-$2,250 AUD) to identify the root cause before
-            committing to expensive migration.
+            <strong>Recommended First Step:</strong>{" "}
+            <Link href="/access-database-optimisation-and-repair">
+              A professional database assessment
+            </Link>{" "}
+            to identify the root cause before committing to migration. This
+            upfront investment frequently prevents far more costly decisions
+            down the track.
           </p>
 
           <div className={styles.quote}>
@@ -380,15 +417,27 @@ export default function MicrosoftAccessAlternatives() {
               className={styles.BgImage}
               style={{ top: "10rem" }}
             />
-            `
             <h3 style={{ marginTop: "0" }} id="alt-sql-server">
-              SQL Server with Custom Front-End
+              SQL Server Back-End With Your Current Access Front-End
             </h3>
             <p>
-              This is the most common migration path for businesses outgrowing
-              Access. You migrate your data to SQL Server (on-premises or Azure
-              SQL) whilst either keeping Access as your front-end or rebuilding
-              with modern technology.
+              This is the most popular modernisation path for Australian
+              businesses, and for good reason. You move your data to SQL Server
+              (on-premises or{" "}
+              <Link href="https://www.accessexperts.com.au/access-azure-cloud-based-solutions">
+                Azure SQL in the cloud
+              </Link>
+              ) whilst keeping your existing Access forms and reports exactly as
+              they are. You and your staff will notice that things run better
+              and smoother, but your front end can remain identical.
+            </p>
+            <p>
+              Once your data is on Azure SQL, you also unlock a whole ecosystem
+              of modern capabilities. Power Apps for web or mobile access, Power
+              BI for real-time dashboards, and custom web interfaces that
+              connect directly to the same database. You don't have to use any
+              of these immediately, but now the option is there when you need
+              it.
             </p>
             <h4>What It Is</h4>
             <ul>
@@ -432,14 +481,6 @@ export default function MicrosoftAccessAlternatives() {
                   <td>Medium to High</td>
                 </tr>
                 <tr>
-                  <td>Cost Range (AUD)</td>
-                  <td>$7,500 - $45,000+</td>
-                </tr>
-                <tr>
-                  <td>Timeline</td>
-                  <td>4-12 weeks</td>
-                </tr>
-                <tr>
                   <td>User Retraining</td>
                   <td>Minimal (if keeping Access frontend)</td>
                 </tr>
@@ -467,8 +508,8 @@ export default function MicrosoftAccessAlternatives() {
 
           <ul className={styles.noDotList}>
             <li>
-              ❌ SQL Server licensing can be expensive ($15,000+ for Standard
-              Edition)
+              ❌ SQL Server licensing adds to overall cost depending on edition
+              and deployment model
             </li>
             <li>❌ Requires IT infrastructure or Azure subscription</li>
             <li>
@@ -537,20 +578,15 @@ export default function MicrosoftAccessAlternatives() {
                   <td>Medium to High</td>
                 </tr>
                 <tr>
-                  <td>Cost Range (AUD)</td>
-                  <td>$15,000 - $75,000+</td>
-                </tr>
-                <tr>
-                  <td>Timeline</td>
-                  <td>8-16 weeks</td>
-                </tr>
-                <tr>
                   <td>User Retraining</td>
                   <td>Significant (new interface)</td>
                 </tr>
                 <tr>
                   <td>Ongoing Costs</td>
-                  <td>$30-$60 per user/month (licensing)</td>
+                  <td>
+                    Per-user Microsoft licensing (check current Microsoft
+                    pricing)
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -573,7 +609,10 @@ export default function MicrosoftAccessAlternatives() {
           <h4>Cons</h4>
 
           <ul className={styles.noDotList}>
-            <li>❌ Expensive licensing ($30-$60 per user per month AUD)</li>
+            <li>
+              ❌ Ongoing per-user Microsoft licensing costs (check current
+              pricing)
+            </li>
             <li>❌ Less flexibility than custom coding</li>
             <li>❌ Dataverse has storage and API call limits</li>
             <li>❌ Not suitable for complex VBA logic migration</li>
@@ -666,20 +705,12 @@ export default function MicrosoftAccessAlternatives() {
                     <td>High</td>
                   </tr>
                   <tr>
-                    <td>Cost Range (AUD)</td>
-                    <td>$45,000 - $225,000+</td>
-                  </tr>
-                  <tr>
-                    <td>Timeline</td>
-                    <td>3-12 months</td>
-                  </tr>
-                  <tr>
                     <td>User Retraining</td>
                     <td>Extensive</td>
                   </tr>
                   <tr>
                     <td>Ongoing Costs</td>
-                    <td>Hosting + maintenance ($1,500-$7,500/month)</td>
+                    <td>Hosting + maintenance (varies by infrastructure)</td>
                   </tr>
                 </tbody>
               </table>
@@ -699,7 +730,7 @@ export default function MicrosoftAccessAlternatives() {
             <h4>Cons</h4>
 
             <ul className={styles.noDotList}>
-              <li>❌ Expensive ($45,000 - $225,000+ AUD)</li>
+              <li>❌ Significant upfront investment required</li>
               <li>❌ Long timeline (3-12 months typically)</li>
               <li>❌ Requires ongoing maintenance and support</li>
               <li>❌ Complete user retraining necessary</li>
@@ -808,24 +839,24 @@ export default function MicrosoftAccessAlternatives() {
                 <thead>
                   <tr>
                     <th>Platform</th>
-                    <th>Starting Price (AUD/user/month)</th>
+                    <th>Pricing Model</th>
                     <th>Best For</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>Airtable</td>
-                    <td>$30 (Team plan)</td>
+                    <td>Subscription per user/month</td>
                     <td>Visual project management</td>
                   </tr>
                   <tr>
                     <td>Knack</td>
-                    <td>$59 (Starter)</td>
+                    <td>Subscription per plan tier</td>
                     <td>Custom business apps</td>
                   </tr>
                   <tr>
                     <td>Caspio</td>
-                    <td>$75 (Professional)</td>
+                    <td>Subscription per plan tier</td>
                     <td>Workflow applications</td>
                   </tr>
                   <tr>
@@ -835,6 +866,13 @@ export default function MicrosoftAccessAlternatives() {
                   </tr>
                 </tbody>
               </table>
+              {/* REVIEW: Consider adding a note that pricing changes frequently and to check each platform's site directly */}
+              <p style={{ fontSize: "0.85rem", marginTop: "0.5rem" }}>
+                <em>
+                  Pricing changes frequently — always check each platform's
+                  website for current AUD rates before making a decision.
+                </em>
+              </p>
             </div>
 
             <h4>Pros</h4>
@@ -999,9 +1037,10 @@ export default function MicrosoftAccessAlternatives() {
           </p>
 
           <p>
-            <strong>The Solution:</strong> Invest in professional database
-            assessment first ($750-$2,250 AUD). This upfront investment prevents
-            expensive mistakes and provides a clear roadmap.
+            <strong>The Solution:</strong> Invest in a professional database
+            assessment first. This upfront investment prevents expensive
+            mistakes, provides a clear roadmap, and often reveals that migration
+            isn't necessary at all.
           </p>
 
           <h3>Underestimating User Training</h3>
@@ -1094,28 +1133,40 @@ export default function MicrosoftAccessAlternatives() {
             <li>How disruptive can the migration be to operations?</li>
           </ul>
 
-          <h3>Step 2: Determine If Migration Is Necessary</h3>
+          <h3>Step 2: Determine If Modernisation or Migration Is Needed</h3>
 
           <p>
-            <strong>Stay with Access if...</strong>
+            <strong>
+              Stay with Access (optimise or modernise the back-end) if...
+            </strong>
           </p>
           <ul>
-            <li>Under 15 concurrent users</li>
+            <li>Under 15 concurrent users on the current Access back-end</li>
             <li>Database under 1.5GB (with room to grow)</li>
-            <li>Problems can be solved through optimisation</li>
-            <li>Terminal Server/RDP access is acceptable</li>
-            <li>Budget is limited</li>
+            <li>Performance problems can be solved through optimisation</li>
+            <li>
+              Remote access via Azure Virtual Desktop or Terminal Server is
+              acceptable, or you're moving to Azure SQL back-end for cloud
+              access
+            </li>
+            <li>Budget for a full platform rebuild is limited</li>
           </ul>
 
           <p>
-            <strong>Consider migration if...</strong>
+            <strong>Consider a broader platform change if...</strong>
           </p>
           <ul>
-            <li>Consistently hitting 2GB limit</li>
-            <li>Need 20+ concurrent users</li>
-            <li>Require true web/mobile access</li>
-            <li>IT mandate requires change</li>
-            <li>Integration needs are complex</li>
+            <li>Consistently hitting the 2GB Access limit</li>
+            <li>
+              Need 20+ concurrent users (though an Azure SQL back-end often
+              solves this without a full platform change)
+            </li>
+            <li>
+              Require native mobile apps or a true web front-end — not just
+              remote access
+            </li>
+            <li>IT mandate or compliance requirements demand change</li>
+            <li>Integration needs are genuinely enterprise-scale</li>
           </ul>
 
           <h3>Step 3: Match Requirements to Solutions</h3>
@@ -1159,7 +1210,7 @@ export default function MicrosoftAccessAlternatives() {
             </table>
           </div>
 
-          {/* REVIEW: Add CTA for database assessment */}
+          {/* REVIEW: Add CTA button for database assessment or free consultation */}
 
           <h2 id="conclusion">
             The Bottom Line on Microsoft Access Alternatives
@@ -1169,22 +1220,29 @@ export default function MicrosoftAccessAlternatives() {
             <Link href={"/blog/your-access-database-needs-a-cloud-strategy"}>
               Microsoft Access isn't dead
             </Link>
-            , but it's not always the right solution in 2026. The "best"
+            , but it's not always running the way it should. The "best"
             alternative depends entirely on your specific business needs,
-            budget, timeline, technical expertise, and long-term strategic
-            goals.
+            budget, timeline, technical expertise, and long-term goals.
           </p>
 
           <p>
-            Sometimes the best move is to modernise Access rather than replace
-            it. A $5,000 investment in optimisation and cloud deployment might
-            solve your problems better than a $50,000 migration.
+            For most businesses, the answer isn't to replace Access — it's to
+            modernise it. Moving your data to a{" "}
+            <Link href="https://www.accessexperts.com.au/sql-server-backend-business-solutions">
+              SQL Server back-end
+            </Link>{" "}
+            (whether hosted on your own infrastructure or in Azure) often costs
+            far less than a full migration, and your team keeps the interface
+            they already know. From there, the door is open to add web
+            interfaces, Power Apps, mobile access, and more — all on your own
+            timeline.
           </p>
 
           <p>
-            Other times, migration genuinely is the right answer. When you've
-            truly outgrown Access's capabilities, the investment in an alternate
-            solution may well best suit your path moving forward.
+            When migration genuinely is the right answer, we'll tell you
+            honestly. But we've found that most people simply need a
+            professional eye on the problem — and a clear, practical path
+            forward.
           </p>
 
           <h3>Key Takeaways</h3>
@@ -1192,28 +1250,29 @@ export default function MicrosoftAccessAlternatives() {
           <ul>
             <li>
               <strong>Don't rush...</strong> Many "Access problems" aren't
-              Access problems at all—they're configuration or design issues that
-              can be fixed for a fraction of migration cost.
+              Access problems at all — they're configuration or design issues
+              that can be resolved without migrating to a new platform.
             </li>
             <li>
-              <strong>Assess first...</strong> Professional database assessment
-              is the best money you'll spend. It prevents costly mistakes and
-              provides clear direction.
+              <strong>Assess first...</strong> A professional database
+              assessment prevents costly mistakes and gives you a clear,
+              evidence-based roadmap.
             </li>
             <li>
               <strong>Plan for training...</strong> User adoption determines
-              success. Budget 10-20 hours of training per user for significant
-              changes.
+              success. The less your interface changes, the easier the
+              transition — which is one reason the Access front-end + SQL
+              back-end approach is so popular.
             </li>
             <li>
-              <strong>Consider hybrid approaches...</strong> SQL Server backend
-              with Access frontend often provides the best balance of
-              capability, cost, and user experience.
+              <strong>Consider hybrid approaches...</strong> A SQL Server
+              back-end with an Access front-end — especially on Azure — often
+              provides the best balance of capability, cost, and continuity.
             </li>
             <li>
-              <strong>Think long-term...</strong> Choose a solution that will
-              serve you for 5-10 years, not just solve today's immediate
-              problem.
+              <strong>Think long-term...</strong> Migrating to Azure SQL now
+              means you can add Power Apps, web interfaces, and mobile apps
+              later — without starting from scratch again.
             </li>
           </ul>
 
@@ -1222,7 +1281,7 @@ export default function MicrosoftAccessAlternatives() {
               After 25+ years specialising in Access databases across Australia,
               we've learned that the best migration is sometimes no migration at
               all. Other times, it's a complete rebuild. The key is making an
-              informed decision based on your specific situation, not industry
+              informed decision based on your specific situation — not industry
               hype or vendor pressure.
             </p>
           </div>
