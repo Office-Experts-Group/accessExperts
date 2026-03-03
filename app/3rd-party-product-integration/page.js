@@ -1,11 +1,12 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import PageSegmentMain from "./(components)/PageSegmentMain";
 import ServiceHero from "../../components/ServiceHero";
-import Promo from "../../components/Promo";
-import Contact from "../../components/Contact";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import FAQSection from "../../components/FAQSection";
+const Promo = dynamic(() => import("../../components/Promo"));
+const Contact = dynamic(() => import("../../components/Contact"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
 import faqs from "../../faqs/3rd-party-product-integration.js";
 import faqSchema from "../../faqs/integrationSchema.js";
@@ -16,6 +17,7 @@ import graph from "../../public/pageHeros/mob/graph.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -23,6 +25,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/3rd-party-product-integration",
@@ -32,9 +39,9 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2025-07-04T00:00:00+00:00",
+      dateModified: "2026-03-02T00:00:00+00:00",
       description:
-        "Professional Access integration with CRMs, accounting software, and third-party apps. Expert advice and affordable pricing.",
+        "Professional 3rd-party product integration for Microsoft Access. Incorporate your database throughout your business workflows with expert advice and affordable pricing.",
       breadcrumb: {
         "@id": "https://www.accessexperts.com.au#breadcrumb",
       },

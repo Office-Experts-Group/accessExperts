@@ -1,26 +1,32 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Contact from "../../components/Contact";
-import Promo from "../../components/Promo";
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Contact = dynamic(() => import("../../components/Contact"));
+const Promo = dynamic(() => import("../../components/Promo"));
+const WhyIntegrate = dynamic(() => import("./(components)/WhyIntegrate"));
 
 import integration from "../../public/pageHeros/integration.webp";
 import integrationMob from "../../public/pageHeros/mob/integrationMob.webp";
 
-// Schema markup for SEO
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
-import WhyIntegrate from "./(components)/WhyIntegrate";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/integrate-access-with-power-bi",

@@ -1,19 +1,23 @@
 import React from "react";
 
-// Keep Hero static as it's above fold
+// Static imports — above the fold on desktop and mobile
 import Hero from "./(components)/Hero";
-import Services from "./(components)/Services"; // above fold on mobile
+import Services from "./(components)/Services";
 
-// Import everything else as static imports
-import CTAMain from "./(components)/CTAMain";
-import IsRight from "./(components)/IsRight";
-import SolutionsCarousel from "./(components)/SolutionsCarousel";
-import CTAFull from "./(components)/CTAFull";
-import Testimonials from "./(components)/Testimonials";
-import Brands from "../components/Brands";
-import Promo from "../components/Promo";
-import Contact from "../components/Contact";
-import FAQSection from "../components/FAQSection";
+// Dynamic imports — defers JS hydration for below-fold components
+import dynamic from "next/dynamic";
+
+const CTAMain = dynamic(() => import("./(components)/CTAMain"));
+const IsRight = dynamic(() => import("./(components)/IsRight"));
+const SolutionsCarousel = dynamic(
+  () => import("./(components)/SolutionsCarousel"),
+);
+const CTAFull = dynamic(() => import("./(components)/CTAFull"));
+const Testimonials = dynamic(() => import("./(components)/Testimonials"));
+const Brands = dynamic(() => import("../components/Brands"));
+const Promo = dynamic(() => import("../components/Promo"));
+const FAQSection = dynamic(() => import("../components/FAQSection"));
+const Contact = dynamic(() => import("../components/Contact"));
 
 import faqs from "../faqs/home";
 import faqSchema from "../faqs/homeSchema";
@@ -23,6 +27,7 @@ import { testimonials } from "../testimonials";
 import {
   generateOrganizationSchema,
   generateProfessionalServiceSchema,
+  generateWebSiteSchema,
 } from "../utils/schemaGenerators";
 
 const schema = {
@@ -31,6 +36,11 @@ const schema = {
     ...getHomePageSchema(testimonials, "access")["@graph"],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au",
@@ -40,7 +50,7 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
-      dateModified: "2025-03-27T00:00:00+00:00",
+      dateModified: "2026-03-02T00:00:00+00:00",
       description:
         "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs.",
       breadcrumb: {
@@ -53,33 +63,6 @@ const schema = {
           target: ["https://www.accessexperts.com.au"],
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.accessexperts.com.au#website",
-      url: "https://www.accessexperts.com.au/",
-      name: "Access Experts: Microsoft Access Development and Consulting Services",
-      description:
-        "Our Australia-wide, cross-industry Microsoft Access database consultants deliver prompt, quality service with competitive pricing. Fulfilling all of your Microsoft Access consulting needs.",
-      publisher: {
-        "@id": "https://www.accessexperts.com.au#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.accessexperts.com.au?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
     {
       "@type": "BreadcrumbList",

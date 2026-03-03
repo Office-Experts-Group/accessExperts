@@ -1,18 +1,20 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain2 from "./(components)/PageSegmentMain2";
-import PageSegment3 from "./(components)/PageSegment3";
-import PageSegment4New from "./(components)/PageSegment4New";
-import PageSegment5 from "./(components)/PageSegment5";
-import PageSegment6 from "./(components)/PageSegment6";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import PageSegment7 from "./(components)/PageSegment7";
-import PageSegment8 from "./(components)/PageSegment8";
-import Contact from "../../components/Contact";
-import Promo from "../../components/Promo";
-import Contents from "./(components)/Contents";
-import FAQSection from "../../components/FAQSection";
+
+const PageSegment3 = dynamic(() => import("./(components)/PageSegment3"));
+const PageSegment4New = dynamic(() => import("./(components)/PageSegment4New"));
+const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
+const PageSegment6 = dynamic(() => import("./(components)/PageSegment6"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const PageSegment7 = dynamic(() => import("./(components)/PageSegment7"));
+const PageSegment8 = dynamic(() => import("./(components)/PageSegment8"));
+const Contact = dynamic(() => import("../../components/Contact"));
+const Promo = dynamic(() => import("../../components/Promo"));
+const Contents = dynamic(() => import("./(components)/Contents"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
 import faqs from "../../faqs/cloud-solutions";
 import faqSchema from "../../faqs/cloudSolutionsSchema";
@@ -23,6 +25,7 @@ import codeMob from "../../public/pageHeros/mob/codeMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -30,6 +33,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/access-azure-cloud-solutions",

@@ -1,9 +1,10 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import MeetTheTeam from "../../components/MeetTheTeam";
-import Contact from "../../components/Contact";
-import Services from "./(components)/Services";
+const Contact = dynamic(() => import("../../components/Contact"));
+const Services = dynamic(() => import("./(components)/Services"));
 
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
@@ -11,6 +12,7 @@ import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -18,6 +20,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/meet-the-team",

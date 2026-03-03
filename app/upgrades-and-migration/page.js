@@ -1,22 +1,23 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import ServicePageCards from "./(components)/ServicePageCards";
-import Contact from "../../components/Contact";
-import PageSegment4 from "./(components)/PageSegment4";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import BlackSegment from "./(components)/BlackSegment";
-import Promo from "./(components)/Promo";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Contents from "./(components)/Contents";
-
+const Contact = dynamic(() => import("../../components/Contact"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
+const Promo = dynamic(() => import("./(components)/Promo"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Contents = dynamic(() => import("./(components)/Contents"));
 import graphic from "../../public/pageHeros/tableGraph.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
 
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -24,6 +25,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/upgrades-and-migration/",

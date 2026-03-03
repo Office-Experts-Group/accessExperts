@@ -1,13 +1,19 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Contact from "../../components/Contact";
-import IntroSection from "./(components)/IntroSection";
-import CausesSection from "./(components)/CausesSection";
-import OptimisationServices from "./(components)/OptimisationServices";
-import ConclusionSection from "./(components)/ConclusionSection";
+
+const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Contact = dynamic(() => import("../../components/Contact"));
+const IntroSection = dynamic(() => import("./(components)/IntroSection"));
+const CausesSection = dynamic(() => import("./(components)/CausesSection"));
+const OptimisationServices = dynamic(
+  () => import("./(components)/OptimisationServices"),
+);
+const ConclusionSection = dynamic(
+  () => import("./(components)/ConclusionSection"),
+);
 
 import repair from "../../public/pageHeros/repair.webp";
 import repairMob from "../../public/pageHeros/mob/repairMob.webp";
@@ -15,6 +21,7 @@ import repairMob from "../../public/pageHeros/mob/repairMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -22,6 +29,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id":

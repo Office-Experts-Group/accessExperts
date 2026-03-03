@@ -4,12 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "3rd Party Product Integration | Access Experts",
   description:
-    "Professional Access integration with CRMs, accounting software, and third-party apps. Expert advice and affordable pricing.",
+    "Professional 3rd-party product integration for Microsoft Access. Incorporate your database throughout your business workflows with expert advice and affordable pricing.",
+
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Integration Solutions | Access Experts Australia",
     description:
-      "Professional Access integration with CRMs, accounting software, and third-party apps. Expert advice and affordable pricing.",
+      "Professional 3rd-party product integration for Microsoft Access. Incorporate your database throughout your business workflows with expert advice and affordable pricing.",
     url: "https://www.accessexperts.com.au/3rd-party-product-integration",
     siteName: "Access Experts",
     images: [
@@ -33,20 +34,12 @@ export const metadata = {
     site: "@MSOfficeExperts",
     title: "Microsoft Access Integration Solutions | Access Experts Australia",
     description:
-      "Professional Access integration with CRMs, accounting software, and third-party apps. Expert advice and affordable pricing.",
+      "Professional 3rd-party product integration for Microsoft Access. Incorporate your database throughout your business workflows with expert advice and affordable pricing.",
     images: ["/logo.png"],
   },
 
   alternates: {
     canonical: "/3rd-party-product-integration",
-    alternate: [
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-access/3rd-party-product-integration",
-      },
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-access/3rd-party-product-integration",
-      },
-    ],
   },
 };
 

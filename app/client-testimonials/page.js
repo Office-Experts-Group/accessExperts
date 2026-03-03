@@ -1,8 +1,9 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
-import Contact from "../../components/Contact";
-import TestimonialPage from "./(components)/TestimonialPage";
 import ServiceHero from "../../components/ServiceHero";
+const Contact = dynamic(() => import("../../components/Contact"));
+const TestimonialPage = dynamic(() => import("./(components)/TestimonialPage"));
 
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../testimonials";
@@ -17,6 +18,7 @@ import testimonialsMob from "../../public/pageHeros/mob/testimonialsMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -25,6 +27,11 @@ const schema = {
     ...getTestimonialsPageSchema(serviceTestimonials, "access")["@graph"],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/client-testimonials",

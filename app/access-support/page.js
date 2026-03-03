@@ -1,13 +1,16 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import PageSegment4 from "./(components)/PageSegment4";
-import PageSegmentCenter from "./(components)/PageSegmentCenter";
-import MiniTicks from "./(components)/MiniTicks";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import FAQSection from "../../components/FAQSection";
-import Contact from "../../components/Contact";
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const PageSegmentCenter = dynamic(
+  () => import("./(components)/PageSegmentCenter"),
+);
+const MiniTicks = dynamic(() => import("./(components)/MiniTicks"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
+const Contact = dynamic(() => import("../../components/Contact"));
 
 import faqs from "../../faqs/access-support";
 
@@ -17,6 +20,7 @@ import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -24,6 +28,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/access-support",

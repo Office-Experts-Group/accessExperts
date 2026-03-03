@@ -24,10 +24,6 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/services",
-        destination: "/",
-      },
-      {
         source: "/privacy-policy",
         destination: "https://www.officeexperts.com.au/privacy-policy",
       },

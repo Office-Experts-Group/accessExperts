@@ -1,8 +1,9 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
-import Contact from "../../components/Contact";
 import ServiceHero from "../../components/ServiceHero";
-import CTAMain from "./(components)/CTAMain";
+const Contact = dynamic(() => import("../../components/Contact"));
+const CTAMain = dynamic(() => import("./(components)/CTAMain"));
 
 import contactUs from "../../public/pageHeros/contactUs.webp";
 import contactUsMob from "../../public/pageHeros/mob/contactUsMob.webp";
@@ -10,6 +11,7 @@ import contactUsMob from "../../public/pageHeros/mob/contactUsMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -17,6 +19,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/contact-us",

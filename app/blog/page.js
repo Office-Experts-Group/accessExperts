@@ -3,9 +3,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import Contact from "../../components/Contact";
-import CTAMain from "../(components)/CTAMain";
+const Contact = dynamic(() => import("../../components/Contact"));
+const CTAMain = dynamic(() => import("../(components)/CTAMain"));
 
 import styles from "../../styles/blog.module.scss";
 
@@ -14,6 +15,7 @@ import { blogPosts } from "./blogPosts";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -21,6 +23,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.accessexperts.com.au",
+      "Access Experts",
+      "Australia-wide Microsoft Access Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.accessexperts.com.au/blog",
@@ -78,15 +85,6 @@ const schema = {
           url: "https://www.accessexperts.com.au/logo.png",
         },
       },
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.accessexperts.com.au#website",
-      url: "https://www.accessexperts.com.au",
-      name: "Access Experts Australia",
-      description:
-        "Learn from the experts with tutorials, tips, and best practices for Microsoft Access database development, integration and modernisation.",
-      inLanguage: "en-AU",
     },
   ],
 };
