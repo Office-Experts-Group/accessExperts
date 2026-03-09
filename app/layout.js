@@ -1,6 +1,5 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import Script from "next/script";
 
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
@@ -121,7 +120,7 @@ export const metadata = {
   metadataBase: new URL(
     process.env.NODE_ENV === "production"
       ? "https://www.accessexperts.com.au"
-      : "http://localhost:3000"
+      : "http://localhost:3000",
   ),
 };
 
