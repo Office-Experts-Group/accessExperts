@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Northern Rivers, NSW",
   description:
-    "Microsoft Access consultants on the Northern Rivers with 25+ years' experience. Custom database development, integration, and support services.",
+    "Professional Microsoft Access database solutions. Custom development, integration, and remote support from Australia's leading Access specialists.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Northern Rivers, NSW",
     description:
-      "Microsoft Access consultants on the Northern Rivers with 25+ years' experience. Custom database development, integration, and support services.",
+      "Professional Microsoft Access database solutions. Custom development, integration, and remote support from Australia's leading Access specialists.",
     url: "https://www.accessexperts.com.au/access-consultants-northern-rivers-nsw",
     siteName: "Access Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Northern Rivers, NSW",
     description:
-      "Microsoft Access consultants on the Northern Rivers with 25+ years' experience. Custom database development, integration, and support services.",
+      "Professional Microsoft Access database solutions. Custom development, integration, and remote support from Australia's leading Access specialists.",
     images: ["/logo.png"],
   },
 

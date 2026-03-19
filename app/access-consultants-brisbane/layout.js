@@ -4,12 +4,14 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Brisbane",
   description:
-    "Microsoft Access consultants in Brisbane with 25+ years' experience. Custom database development, integration, and support services.",
+    "Microsoft Access consultants in Brisbane with extensive cross-industry experience. From custom database builds to legacy system upgrades, we support Queensland businesses of all sizes.",
+
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Brisbane",
     description:
-      "Microsoft Access consultants in Brisbane with 25+ years' experience. Custom database development, integration, and support services.",
+      "Microsoft Access consultants in Brisbane with extensive cross-industry experience. From custom database builds to legacy system upgrades, we support Queensland businesses of all sizes.",
+
     url: "https://www.accessexperts.com.au/access-consultants-brisbane",
     siteName: "Access Experts",
     images: [
@@ -36,7 +38,8 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Brisbane",
     description:
-      "Microsoft Access consultants in Brisbane with 25+ years' experience. Custom database development, integration, and support services.",
+      "Microsoft Access consultants in Brisbane with extensive cross-industry experience. From custom database builds to legacy system upgrades, we support Queensland businesses of all sizes.",
+
     images: ["/logo.png"],
   },
 

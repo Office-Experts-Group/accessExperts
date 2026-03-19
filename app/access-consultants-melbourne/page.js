@@ -49,12 +49,13 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-melbourne",
       name: "Microsoft Access Consultants Melbourne",
       description:
-        "Microsoft Access consultants in Melbourne with 25+ years' experience. Custom database development, integration, and support services.",
+        "Melbourne's trusted Microsoft Access specialists with 25+ years' experience. We deliver tailored database solutions, VBA automation, and integration services for Victorian businesses.",
+
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-03-19T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-melbourne#breadcrumb",

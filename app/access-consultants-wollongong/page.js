@@ -48,13 +48,14 @@ const schema = {
       "@id": "https://www.accessexperts.com.au/access-consultants-wollongong",
       url: "https://www.accessexperts.com.au/access-consultants-wollongong",
       description:
-        "Microsoft Access consultants in Wollongong with 25+ years' experience. Custom database development, integration, and support services.",
+        "Trusted Microsoft Access consultants serving Wollongong and the Illawarra. Professional database design, VBA development, and data integration tailored to your business needs.",
+
       name: "Microsoft Access Consultants Wollongong",
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-07-04T00:00:00+00:00",
+      dateModified: "2026-03-19T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-wollongong#breadcrumb",

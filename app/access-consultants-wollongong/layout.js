@@ -4,13 +4,14 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Wollongong",
   description:
-    "Microsoft Access consultants in Wollongong with 25+ years' experience. Custom database development, integration, and support services.",
+    "Trusted Microsoft Access consultants serving Wollongong and the Illawarra. Professional database design, VBA development, and data integration tailored to your business needs.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Wollongong",
     description:
-      "Microsoft Access consultants in Wollongong with 25+ years' experience. Custom database development, integration, and support services.",
+      "Trusted Microsoft Access consultants serving Wollongong and the Illawarra. Professional database design, VBA development, and data integration tailored to your business needs.",
+
     url: "https://www.accessexperts.com.au/access-consultants-wollongong",
     siteName: "Access Experts",
     images: [
@@ -37,7 +38,8 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Wollongong",
     description:
-      "Microsoft Access consultants in Wollongong with 25+ years' experience. Custom database development, integration, and support services.",
+      "Trusted Microsoft Access consultants serving Wollongong and the Illawarra. Professional database design, VBA development, and data integration tailored to your business needs.",
+
     images: ["/logo.png"],
   },
 

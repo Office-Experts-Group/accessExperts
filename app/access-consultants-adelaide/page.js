@@ -49,12 +49,13 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-adelaide",
       name: "Microsoft Access Consultants Adelaide",
       description:
-        "Microsoft Access consultants in Adelaide with 25+ years' experience. Custom database development, integration, and support services.",
+        "Microsoft Access consultants in Adelaide with 25+ years' experience. Custom database development, integration, and support services for South Australian businesses.",
+
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-03-19T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-adelaide#breadcrumb",

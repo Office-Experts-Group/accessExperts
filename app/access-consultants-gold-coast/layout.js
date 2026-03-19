@@ -4,12 +4,14 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Gold Coast",
   description:
-    "Microsoft Access consultants on the Gold Coast with 25+ years' experience. Custom database development, integration, and support services.",
+    "Microsoft Access database experts servicing the Gold Coast region. We build and maintain custom Access solutions for local businesses, with remote support available Australia-wide.",
+
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Gold Coast",
     description:
-      "Microsoft Access consultants on the Gold Coast with 25+ years' experience. Custom database development, integration, and support services.",
+      "Microsoft Access database experts servicing the Gold Coast region. We build and maintain custom Access solutions for local businesses, with remote support available Australia-wide.",
+
     url: "https://www.accessexperts.com.au/access-consultants-gold-coast",
     siteName: "Access Experts",
     images: [
@@ -36,7 +38,8 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Gold Coast",
     description:
-      "Microsoft Access consultants on the Gold Coast with 25+ years' experience. Custom database development, integration, and support services.",
+      "Microsoft Access database experts servicing the Gold Coast region. We build and maintain custom Access solutions for local businesses, with remote support available Australia-wide.",
+
     images: ["/logo.png"],
   },
 

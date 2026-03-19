@@ -50,12 +50,13 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-central-coast-nsw",
       name: "Microsoft Access Consultants Central Coast, NSW",
       description:
-        "Microsoft Access consultants on the Central Coast with 25+ years' experience. Custom database development, integration, and support services.",
+        "Microsoft Access consulting for businesses on the Central Coast of NSW. Expert database development and support services, with remote access available across the region.",
+
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-03-19T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-central-coast-nsw#breadcrumb",

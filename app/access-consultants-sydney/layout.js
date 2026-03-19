@@ -4,13 +4,14 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Sydney",
   description:
-    "Microsoft Access consultants in Sydney with 25+ years' experience. Custom database development, integration, and support services.",
+    "Expert Microsoft Access consultants serving Sydney businesses since 2000. Custom database design, development, and ongoing support for organisations across the CBD and greater Sydney region.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Sydney",
     description:
-      "Microsoft Access consultants in Sydney with 25+ years' experience. Custom database development, integration, and support services.",
+      "Expert Microsoft Access consultants serving Sydney businesses since 2000. Custom database design, development, and ongoing support for organisations across the CBD and greater Sydney region.",
+
     url: "https://www.accessexperts.com.au/access-consultants-sydney",
     siteName: "Access Experts",
     images: [
@@ -37,7 +38,8 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Sydney",
     description:
-      "Microsoft Access consultants in Sydney with 25+ years' experience. Custom database development, integration, and support services.",
+      "Expert Microsoft Access consultants serving Sydney businesses since 2000. Custom database design, development, and ongoing support for organisations across the CBD and greater Sydney region.",
+
     images: ["/logo.png"],
   },
 

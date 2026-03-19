@@ -4,12 +4,14 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Richmond",
   description:
-    "Microsoft Access consultants in Richmond with 25+ years' experience. Custom database development, integration, and support services.",
+    "Microsoft Access database consultants available in Richmond, Victoria. Offering custom database builds, system upgrades, and expert support for local and regional businesses.",
+
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Richmond",
     description:
-      "Microsoft Access consultants in Richmond with 25+ years' experience. Custom database development, integration, and support services.",
+      "Microsoft Access database consultants available in Richmond, Victoria. Offering custom database builds, system upgrades, and expert support for local and regional businesses.",
+
     url: "https://www.accessexperts.com.au/access-consultants-richmond",
     siteName: "Access Experts",
     images: [
@@ -36,7 +38,8 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Richmond",
     description:
-      "Microsoft Access consultants in Richmond with 25+ years' experience. Custom database development, integration, and support services.",
+      "Microsoft Access database consultants available in Richmond, Victoria. Offering custom database builds, system upgrades, and expert support for local and regional businesses.",
+
     images: ["/logo.png"],
   },
 

@@ -4,13 +4,14 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Perth",
   description:
-    "Microsoft Access consultants in Perth with 25+ years' experience. Custom database development, integration, and support services.",
+    "Perth-based Microsoft Access consulting backed by 25+ years of national expertise. Specialising in database development, data migration, and Access to SQL Server integration for WA businesses.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Perth",
     description:
-      "Microsoft Access consultants in Perth with 25+ years' experience. Custom database development, integration, and support services.",
+      "Perth-based Microsoft Access consulting backed by 25+ years of national expertise. Specialising in database development, data migration, and Access to SQL Server integration for WA businesses.",
+
     url: "https://www.accessexperts.com.au/access-consultants-perth",
     siteName: "Access Experts",
     images: [
@@ -37,7 +38,8 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Perth",
     description:
-      "Microsoft Access consultants in Perth with 25+ years' experience. Custom database development, integration, and support services.",
+      "Perth-based Microsoft Access consulting backed by 25+ years of national expertise. Specialising in database development, data migration, and Access to SQL Server integration for WA businesses.",
+
     images: ["/logo.png"],
   },
 

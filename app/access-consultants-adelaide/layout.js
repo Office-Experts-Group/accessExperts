@@ -4,12 +4,14 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Adelaide",
   description:
-    "Microsoft Access consultants in Adelaide with 25+ years' experience. Custom database development, integration, and support services.",
+    "Microsoft Access consultants in Adelaide with 25+ years' experience. Custom database development, integration, and support services for South Australian businesses.",
+
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Adelaide",
     description:
-      "Microsoft Access consultants in Adelaide with 25+ years' experience. Custom database development, integration, and support services.",
+      "Microsoft Access consultants in Adelaide with 25+ years' experience. Custom database development, integration, and support services for South Australian businesses.",
+
     url: "https://www.accessexperts.com.au/access-consultants-adelaide",
     siteName: "Access Experts",
     images: [
@@ -36,7 +38,8 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Adelaide",
     description:
-      "Microsoft Access consultants in Adelaide with 25+ years' experience. Custom database development, integration, and support services.",
+      "Microsoft Access consultants in Adelaide with 25+ years' experience. Custom database development, integration, and support services for South Australian businesses.",
+
     images: ["/logo.png"],
   },
 
