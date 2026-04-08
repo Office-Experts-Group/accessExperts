@@ -16,9 +16,9 @@ const GoodToKnow = () => {
       <AnimateOnScroll animation="fade-up" delay={0} duration={1}>
         <p>
           Our Head Office is situated in northern New South Wales with
-          consultants in Sydney, Melbourne, Canberra, Brisbane and Perth. We
-          service the whole of Australia and New Zealand, with our clients
-          ranging from multi-national corporations to small businesses.
+          consultants located between Sydney, Melbourne, Canberra, Brisbane and
+          Perth. We service the whole of Australia and New Zealand, with our
+          clients ranging from multi-national corporations to small businesses.
         </p>
 
         <p>

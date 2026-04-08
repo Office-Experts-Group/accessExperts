@@ -1,8 +1,9 @@
+// app/(excelConsultants)/(components)/LocationSummary.jsx
 import React from "react";
 
 import styles from "../../styles/locationSummary.module.scss";
 
-const LocationSummary = ({ location, service }) => {
+const LocationSummary = ({ location, service, intro }) => {
   return (
     <div className={styles.summary}>
       <div>
@@ -12,16 +13,8 @@ const LocationSummary = ({ location, service }) => {
         </h2>
       </div>
 
-      <p>
-        The Access Experts team delivers custom database solutions for{" "}
-        {location} businesses. We provide database design, Azure cloud
-        migration, SQL Server integration, and VBA development. Our
-        Microsoft-certified specialists help organisations improve data
-        management through online solutions, automation, and integration with
-        Microsoft 365. From system upgrades to custom forms and reports, we
-        maximize your database efficiency with custom Microsoft Access
-        solutions.
-      </p>
+      {/* City-specific intro — unique per location to prevent SERP cannibalisation */}
+      {intro && <p className={styles.locationIntro}>{intro}</p>}
     </div>
   );
 };

@@ -7,14 +7,18 @@ import styles from "../../styles/pageSegment.module.css";
 
 import migrate from "../../public/migrate600x400.webp";
 
-const LocationPages = ({ location }) => {
+const LocationPages = ({ location, content, img }) => {
   return (
     <section className={styles.pageSegment}>
       <div className={styles.imgWrapper} style={{ height: "fit-content" }}>
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <Image
-            src={migrate}
-            alt="Image of a files leaving a computer"
+            src={img ? img : migrate}
+            alt={
+              img
+                ? `${location} Access Experts`
+                : "Image of a files leaving a computer"
+            }
             width={600}
             height={400}
             priority
@@ -27,19 +31,8 @@ const LocationPages = ({ location }) => {
           <div className={styles.content}>
             <p>Microsoft Access database consultants</p>
             <h2>{location}</h2>
-            <p>
-              Our Microsoft Access consultants at Access Experts {location}{" "}
-              specialise in custom database development and data management
-              solutions. We excel in database design, cloud integration,
-              business process automation, and advanced reporting systems.
-            </p>
-            <p>
-              Through our extensive and growing customer base, and 25 years of
-              reliable service, our highly qualified Microsoft Access consulting
-              team is recognised for technical expertise, responsive service,
-              innovative database solutions, personalised training, and reliable
-              ongoing support.
-            </p>
+            <p>{content?.p1}</p>
+            <p>{content?.p2}</p>
           </div>
           <a href="#contact" className={`${styles.btn} ${styles.locationBtn}`}>
             Contact Your Local {location} Experts

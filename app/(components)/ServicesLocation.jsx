@@ -11,7 +11,7 @@ import azure from "../../public/microsoft/azureNoBG.webp";
 import integrate from "../../public/microsoft/integrateNoBG.webp";
 import upgrades from "../../public/microsoft/upgradesNoBG.webp";
 
-const ServicesLocation = ({ location }) => {
+const ServicesLocation = ({ location, content }) => {
   return (
     <section className={styles.services}>
       <AnimateOnScroll animation="slide-left" delay={0} duration={1.5}>
@@ -23,26 +23,8 @@ const ServicesLocation = ({ location }) => {
             </p>
           </div>
           <h2>Microsoft Access Services - {location}</h2>
-          <p>
-            Our reputation is built on delivering outstanding database
-            solutions, sophisticated application development, and reliable
-            Access support. With a growing list of satisfied clients, we take
-            pride in offering expert troubleshooting, customised database
-            automation, and hands-on guidance to meet diverse data management
-            needs. Whether it's business applications, complex queries, cloud
-            migration, or advanced reporting solutions you're after, our 25yrs
-            of Access expertise ensures tailored, effective solutions that
-            streamline your operations and enhance your data capabilities.
-          </p>
-          <p>
-            Working with a local Access consultant brings the added advantage of
-            a thorough understanding of regional business data requirements,
-            faster response times and direct, face-to-face support when needed.
-            Based in {location}, we are well-positioned to provide both remote
-            and onsite assistance, ensuring businesses receive timely,
-            professional database services from specialists who understand their
-            unique data management challenges and compliance requirements.
-          </p>
+          <p>{content?.p1}</p>
+          <p style={{ marginTop: ".8rem" }}>{content?.p2}</p>
         </div>
       </AnimateOnScroll>
 

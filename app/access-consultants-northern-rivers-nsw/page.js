@@ -28,10 +28,16 @@ import {
   generateWebSiteSchema,
   generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
+import {
+  locationOpen,
+  locationMain,
+  locationIntros,
+} from "../../utils/locationContent";
 import { testimonials } from "../../testimonials";
 
 import northernRivers from "../../public/pageHeros/northernRivers.webp";
 import northernRiversMob from "../../public/pageHeros/mob/northernRiversMob.webp";
+import northernRiversMain from "../../public/locations/northernRivers.webp";
 
 const location = "Northern Rivers, NSW";
 
@@ -109,10 +115,18 @@ const Page = () => {
         altDesk="Coffs Harbour Jetty, Northern Rivers NSW"
         altMob="Jacaranda Tree, Northern Rivers NSW"
       />
-      <LocationSummary location={location} service="Microsoft Access" />
-      <LocationPages location={location} />
+      <LocationSummary
+        location={location}
+        service="Access"
+        intro={locationIntros[location]}
+      />
+      <LocationPages
+        location={location}
+        content={locationOpen[location]}
+        img={northernRiversMain}
+      />
       <CTAMainProps location={location} />
-      <ServicesLocation location={location} />
+      <ServicesLocation location={location} content={locationMain[location]} />
       <MeetTheTeamSlider />
       <GoodToKnow />
       <Testimonials testimonials={testimonials} />

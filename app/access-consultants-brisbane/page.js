@@ -29,9 +29,15 @@ import {
   generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
+import {
+  locationOpen,
+  locationMain,
+  locationIntros,
+} from "../../utils/locationContent";
 
 import brisbane from "../../public/pageHeros/brisbane.webp";
 import brisbaneMob from "../../public/pageHeros/mob/brisbaneMob.webp";
+import brisbaneMain from "../../public/locations/brisbane.webp";
 
 const location = "Brisbane";
 
@@ -106,13 +112,21 @@ const Page = () => {
         title={`Microsoft Access Consultants ${location}`}
         desktopImage={brisbane}
         mobileImage={brisbaneMob}
-        altDesk="Brisbane"
-        altMob="Brisbane"
+        altDesk={location}
+        altMob={location}
       />
-      <LocationSummary location={location} service="Microsoft Access" />
-      <LocationPages location={location} />
+      <LocationSummary
+        location={location}
+        service="Access"
+        intro={locationIntros[location]}
+      />
+      <LocationPages
+        location={location}
+        content={locationOpen[location]}
+        img={brisbaneMain}
+      />
       <CTAMainProps location={location} />
-      <ServicesLocation location={location} />
+      <ServicesLocation location={location} content={locationMain[location]} />
       <MeetTheTeamSlider />
       <GoodToKnow />
       <Testimonials testimonials={testimonials} />
