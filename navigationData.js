@@ -6,29 +6,64 @@ const POWER_PLATFORM_EXPERTS_URL = "https://www.powerplatformexperts.com.au";
 const ACCESS_EXPERTS_URL = "/";
 
 export const navigationData = {
-  home: {
-    label: "Home",
-    href: "/",
+  // navigationData.js
+  // Add this after the services block, before staticLinks:
+
+  locations: {
+    label: "Locations",
+    href: "/locations",
     items: [
       {
-        label: "Office Experts",
-        href: OFFICE_EXPERTS_URL,
+        label: "New South Wales",
+        href: "/locations",
+        items: [
+          { label: "Sydney", href: "/access-consultants-sydney" },
+          { label: "Wollongong", href: "/access-consultants-wollongong" },
+          {
+            label: "Central Coast",
+            href: "/access-consultants-central-coast-nsw",
+          },
+          {
+            label: "Northern Rivers",
+            href: "/access-consultants-northern-rivers-nsw",
+          },
+        ],
       },
       {
-        label: "Excel Experts",
-        href: EXCEL_EXPERTS_URL,
+        label: "Victoria",
+        href: "/locations",
+        items: [
+          { label: "Melbourne", href: "/access-consultants-melbourne" },
+          { label: "Richmond", href: "/access-consultants-richmond" },
+        ],
       },
       {
-        label: "Power Platform Experts",
-        href: POWER_PLATFORM_EXPERTS_URL,
+        label: "Queensland",
+        href: "/locations",
+        items: [
+          { label: "Brisbane", href: "/access-consultants-brisbane" },
+          { label: "Gold Coast", href: "/access-consultants-gold-coast" },
+        ],
       },
       {
-        label: "Access Experts",
-        href: "/",
+        label: "Western Australia",
+        href: "/locations",
+        items: [{ label: "Perth", href: "/access-consultants-perth" }],
       },
       {
-        label: "Word Experts",
-        href: WORD_EXPERTS_URL,
+        label: "ACT",
+        href: "/locations",
+        items: [{ label: "Canberra", href: "/access-consultants-canberra" }],
+      },
+      {
+        label: "Northern Territory",
+        href: "/locations",
+        items: [{ label: "Darwin", href: "/access-consultants-darwin" }],
+      },
+      {
+        label: "South Australia",
+        href: "/locations",
+        items: [{ label: "Adelaide", href: "/access-consultants-adelaide" }],
       },
     ],
   },
@@ -293,44 +328,6 @@ export const navigationData = {
           },
         ],
       },
-      // {
-      //   label: "Office 365",
-      //   href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365`,
-      //   items: [
-      //     {
-      //       label: "365 Implementation",
-      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/office-365-implementation`,
-      //     },
-      //     {
-      //       label: "365 Migration",
-      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/office-365-migration`,
-      //     },
-      //     {
-      //       label: "Business Process Automation",
-      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/business-process-automation`,
-      //     },
-      //     {
-      //       label: "Remote Data Gathering",
-      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/remote-data-gathering-from-any-device`,
-      //     },
-      //     {
-      //       label: "Exchange Setup & Assistance",
-      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/exchange-online-setup-and-support`,
-      //     },
-      //     {
-      //       label: "Help & Managed Services",
-      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/support-and-managed-services`,
-      //     },
-      //     {
-      //       label: "Cloud Backup with OneDrive",
-      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/cloud-backup-with-onedrive`,
-      //     },
-      //     {
-      //       label: "App & Custom Development",
-      //       href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/app-and-custom-development`,
-      //     },
-      //   ],
-      // },
       {
         label: "Other Services",
         href: `${OFFICE_EXPERTS_URL}/services/by-business-solution`,

@@ -13,7 +13,8 @@ const LocationSummary = ({ location, service }) => {
       </div>
 
       <p>
-        The Access Experts team delivers custom database solutions for Sydney
+        The Access Experts team delivers custom database solutions for{" "}
+        {location}
         businesses. We provide database design, Azure cloud migration, SQL
         Server integration, and VBA development. Our Microsoft-certified
         specialists help organisations improve data management through online

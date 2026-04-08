@@ -26,17 +26,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import wollongong from "../../public/pageHeros/wollongong.webp";
 import wollongongMob from "../../public/pageHeros/mob/wollongongMob.webp";
 
+const location = "Wollongong";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "access")["@graph"],
     generateWebSiteSchema(
       "https://www.accessexperts.com.au",
@@ -55,7 +59,7 @@ const schema = {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2026-03-19T00:00:00+00:00",
+      dateModified: "2026-04-06T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-wollongong#breadcrumb",
@@ -84,7 +88,7 @@ const schema = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Microsoft Word Consultants Wollongong",
+          name: "Microsoft Access Consultants Wollongong",
         },
       ],
     },
@@ -92,8 +96,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Wollongong";
-
   return (
     <>
       <script

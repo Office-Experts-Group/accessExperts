@@ -1,7 +1,74 @@
 // utils/schemaGenerators.js
-// Generates reusable Organization, ProfessionalService, and WebSite schemas for Access Experts
+// Generates reusable Organisation, LocalBusiness, and WebSite schemas for Access Experts
+// Part of the Office Experts Group network — accessexperts.com.au
 
-// Shared service areas used across both schema types
+// City metadata used by generateLocalBusinessSchema
+// Each entry maps a display location name to its address components and page slug
+// Keys must match the location prop passed from each page exactly
+const CITY_META = {
+  Adelaide: {
+    addressRegion: "SA",
+    postalCode: "5000",
+    slug: "access-consultants-adelaide",
+  },
+  Brisbane: {
+    addressRegion: "QLD",
+    postalCode: "4000",
+    slug: "access-consultants-brisbane",
+  },
+  Canberra: {
+    addressRegion: "ACT",
+    postalCode: "2600",
+    slug: "access-consultants-canberra",
+  },
+  "Central Coast, NSW": {
+    addressRegion: "NSW",
+    postalCode: "2250",
+    slug: "access-consultants-central-coast-nsw",
+  },
+  Darwin: {
+    addressRegion: "NT",
+    postalCode: "0800",
+    slug: "access-consultants-darwin",
+  },
+  "Gold Coast": {
+    addressRegion: "QLD",
+    postalCode: "4217",
+    slug: "access-consultants-gold-coast",
+  },
+  Melbourne: {
+    addressRegion: "VIC",
+    postalCode: "3000",
+    slug: "access-consultants-melbourne",
+  },
+  "Northern Rivers, NSW": {
+    addressRegion: "NSW",
+    postalCode: "2480",
+    slug: "access-consultants-northern-rivers-nsw",
+  },
+  Perth: {
+    addressRegion: "WA",
+    postalCode: "6000",
+    slug: "access-consultants-perth",
+  },
+  Richmond: {
+    addressRegion: "VIC",
+    postalCode: "3121",
+    slug: "access-consultants-richmond",
+  },
+  Sydney: {
+    addressRegion: "NSW",
+    postalCode: "2000",
+    slug: "access-consultants-sydney",
+  },
+  Wollongong: {
+    addressRegion: "NSW",
+    postalCode: "2500",
+    slug: "access-consultants-wollongong",
+  },
+};
+
+// Shared service areas used by Organisation and ProfessionalService schemas
 const SERVICE_AREAS = [
   { "@type": "Country", name: "Australia" },
   { "@type": "AdministrativeArea", name: "New South Wales" },
@@ -278,7 +345,7 @@ export const generateProfessionalServiceSchema = () => ({
   },
 });
 
-// Organization schema — shared company identity across all 5 Office Experts Group sites
+// Organisation schema — shared company identity across all 5 Office Experts Group sites
 export const generateOrganizationSchema = () => ({
   "@type": "Organization",
   "@id": "https://www.accessexperts.com.au#organization",
@@ -335,7 +402,7 @@ export const generateWebSiteSchema = (domain, name, description) => ({
   name,
   description,
   publisher: {
-    // References the Organization node in the same @graph — avoids repeating org data
+    // References the Organisation node in the same @graph — avoids repeating org data
     "@id": `${domain}#organization`,
   },
   potentialAction: [
@@ -351,3 +418,63 @@ export const generateWebSiteSchema = (domain, name, description) => ({
   ],
   inLanguage: "en-AU",
 });
+
+// Generates a city-specific LocalBusiness schema node for location pages.
+// This gives Google a machine-readable geographic signal independent of Google Business Profile,
+// helping prevent location page cannibalisation in SERPs.
+// Pass the location prop exactly as used in the page (e.g. "Perth", "Gold Coast", "Central Coast, NSW")
+export const generateLocalBusinessSchema = (location) => {
+  const domain = "https://www.accessexperts.com.au";
+  const city = CITY_META[location];
+
+  // Warn in development if an unmapped city is passed — falls back to safe defaults
+  if (!city) {
+    console.warn(
+      `generateLocalBusinessSchema: no CITY_META entry for "${location}". Add it to CITY_META in schemaGenerators.js`,
+    );
+  }
+
+  // Strip the state suffix from compound location names (e.g. "Central Coast, NSW" → "Central Coast")
+  const addressLocality = location.includes(",")
+    ? location.split(",")[0].trim()
+    : location;
+
+  const addressRegion = city?.addressRegion ?? "NSW";
+  const postalCode = city?.postalCode ?? "2000";
+  const slug =
+    city?.slug ??
+    `access-consultants-${location.toLowerCase().replace(/[\s,]+/g, "-")}`;
+  const pageUrl = `${domain}/${slug}`;
+
+  return {
+    "@type": "LocalBusiness",
+    "@id": `${pageUrl}#localbusiness`,
+    name: `Access Experts ${location}`,
+    url: pageUrl,
+    telephone: "1300 102 810",
+    email: "consult@officeexperts.com.au",
+    priceRange: "$$",
+    // City-specific address — the key geographic signal for this schema node
+    address: {
+      "@type": "PostalAddress",
+      addressLocality,
+      addressRegion,
+      postalCode,
+      addressCountry: "AU",
+    },
+    // Scoped to the specific city — deliberately narrower than the sitewide ProfessionalService node
+    areaServed: {
+      "@type": "City",
+      name: addressLocality,
+    },
+    // References the parent organisation without duplicating its full data
+    parentOrganization: {
+      "@id": `${domain}#organization`,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Microsoft Access Consulting Services — ${location}`,
+      itemListElement: buildOffers(),
+    },
+  };
+};

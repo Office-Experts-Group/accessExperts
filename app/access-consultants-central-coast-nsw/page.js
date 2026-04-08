@@ -26,17 +26,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import centralCoast from "../../public/pageHeros/centralCoast.webp";
 import centralCoastMob from "../../public/pageHeros/mob/centralCoastMob.webp";
 
+const location = "Central Coast, NSW";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "access")["@graph"],
     generateWebSiteSchema(
       "https://www.accessexperts.com.au",
@@ -85,7 +89,7 @@ const schema = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Microsoft Word Consultants Central Coast, NSW",
+          name: "Microsoft Access Consultants Central Coast, NSW",
         },
       ],
     },
@@ -93,8 +97,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Central Coast, NSW";
-
   return (
     <>
       <script

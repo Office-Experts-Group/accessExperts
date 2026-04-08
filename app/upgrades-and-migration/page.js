@@ -3,6 +3,8 @@ import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import ServicePageCards from "./(components)/ServicePageCards";
+import Contents from "./(components)/Contents";
+
 const Contact = dynamic(() => import("../../components/Contact"));
 const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
 const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
@@ -10,7 +12,7 @@ const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
 const Promo = dynamic(() => import("./(components)/Promo"));
 const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
-const Contents = dynamic(() => import("./(components)/Contents"));
+
 import graphic from "../../public/pageHeros/tableGraph.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
 
