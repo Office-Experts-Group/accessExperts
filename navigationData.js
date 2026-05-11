@@ -1,3 +1,5 @@
+// navigationData.js - accessexperts.com.au
+
 // Base URLs for different sites (change these for production)
 const WORD_EXPERTS_URL = "https://www.wordexperts.com.au";
 const OFFICE_EXPERTS_URL = "https://www.officeexperts.com.au";
@@ -6,9 +8,6 @@ const POWER_PLATFORM_EXPERTS_URL = "https://www.powerplatformexperts.com.au";
 const ACCESS_EXPERTS_URL = "/";
 
 export const navigationData = {
-  // navigationData.js
-  // Add this after the services block, before staticLinks:
-
   locations: {
     label: "Locations",
     href: "/locations",
@@ -72,12 +71,8 @@ export const navigationData = {
     items: [
       {
         label: "Microsoft Access",
-        href: "/",
+        href: `/`,
         items: [
-          {
-            label: "Database Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
-          },
           {
             label: "Is Access right for you company?",
             href: `/is-access-right-for-your-company`,
@@ -106,6 +101,60 @@ export const navigationData = {
             label: "Database Optimisation and Repair",
             href: `/access-database-optimisation-and-repair`,
           },
+          {
+            label: "SQL Server Backend Solutions",
+            href: `/sql-server-backend-business-solutions`,
+          },
+        ],
+      },
+      {
+        label: "Microsoft Office",
+        href: `${OFFICE_EXPERTS_URL}/services`,
+        items: [
+          {
+            label: "VBA & Macro Development",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/vba-macro-development`,
+          },
+          {
+            label: "Database Development Solutions",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
+          },
+          {
+            label: "3rd Party App or Office Integration",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
+          },
+          {
+            label: "Remote Data Access",
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/remote-data-gathering-from-any-device`,
+          },
+          {
+            label: "Online Solutions",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/online-solutions`,
+          },
+          {
+            label: "Upgrades and Migration",
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office/upgrades-and-migration`,
+          },
+          {
+            label: "VBScript",
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-vbscript`,
+          },
+          {
+            label: "Add-in Creation",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/add-in-creation`,
+          },
+          {
+            label: "Power Query",
+            href: `${OFFICE_EXPERTS_URL}/services/power-query`,
+          },
+          {
+            label: "Power Pivot",
+            href: `${OFFICE_EXPERTS_URL}/services/power-pivot`,
+          },
+          {
+            label: "Support & Training",
+            href: `${OFFICE_EXPERTS_URL}/microsoft-support-and-training-australia`,
+          },
         ],
       },
       {
@@ -133,7 +182,7 @@ export const navigationData = {
             href: `${WORD_EXPERTS_URL}/companies-and-organisations`,
           },
           {
-            label: "Remove Repitition, Increase Productivity",
+            label: "Remove Repetition, Increase Productivity",
             href: `${WORD_EXPERTS_URL}/remove-repetition-and-increase-productivity`,
           },
           {
@@ -153,15 +202,11 @@ export const navigationData = {
             href: `${WORD_EXPERTS_URL}/upgrades-and-migration`,
           },
           {
-            label: "Online Solutions",
-            href: `${WORD_EXPERTS_URL}/services/by-business-solution/online-solutions`,
-          },
-          {
             label: "Accessibility",
             href: `${WORD_EXPERTS_URL}/accessibility`,
           },
           {
-            label: "Convert Documents to Word",
+            label: "Converting to Word Documents",
             href: `${WORD_EXPERTS_URL}/word-template-conversions`,
           },
           {
@@ -195,52 +240,6 @@ export const navigationData = {
         ],
       },
       {
-        label: "Microsoft Office",
-        href: `${OFFICE_EXPERTS_URL}/services`,
-        items: [
-          {
-            label: "VBA & Macro Development",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/vba-macro-development`,
-          },
-          {
-            label: "Database Development Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
-          },
-          {
-            label: "3rd Party App or Office Integration",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
-          },
-          {
-            label: "SQL Server",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/office-and-sql-server-integration`,
-          },
-          {
-            label: "Online Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/online-solutions`,
-          },
-          {
-            label: "Cloud Based Solutions with Azure",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/cloud-based-solutions-with-azure`,
-          },
-          {
-            label: "Upgrades and Migration",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office/upgrades-and-migration`,
-          },
-          {
-            label: "VBScript",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-vbscript`,
-          },
-          {
-            label: "Add-in Creation",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/add-in-creation`,
-          },
-          {
-            label: "Support & Training",
-            href: "https://www.officeexperts.com.au/microsoft-support-and-training-australia",
-          },
-        ],
-      },
-      {
         label: "Microsoft Excel",
         href: EXCEL_EXPERTS_URL,
         items: [
@@ -269,14 +268,6 @@ export const navigationData = {
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/dashboards`,
           },
           {
-            label: "Online Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/online-solutions`,
-          },
-          {
-            label: "Office Integrations",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
-          },
-          {
             label: "Charting & Pivot Tables",
             href: `${EXCEL_EXPERTS_URL}/pivot-tables-charts-and-reporting-solutions`,
           },
@@ -287,10 +278,6 @@ export const navigationData = {
           {
             label: "Add-In Development",
             href: `${EXCEL_EXPERTS_URL}/add-in-development`,
-          },
-          {
-            label: "Office Integration with Excel",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
           },
         ],
       },
@@ -315,6 +302,14 @@ export const navigationData = {
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-pages`,
           },
           {
+            label: "Power Bi Support",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/power-bi-support`,
+          },
+          {
+            label: "Power Apps Support",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/power-apps-support`,
+          },
+          {
             label: "Data Integration",
             href: `${POWER_PLATFORM_EXPERTS_URL}/power-bi-data-integration`,
           },
@@ -322,47 +317,81 @@ export const navigationData = {
             label: "Excel to Power BI Migration",
             href: `${POWER_PLATFORM_EXPERTS_URL}/excel-to-power-bi-migration`,
           },
-          {
-            label: "Microsoft Fabric",
-            href: `${POWER_PLATFORM_EXPERTS_URL}/microsoft-fabric`,
-          },
         ],
       },
+      // {
+      //   label: "Office 365",
+      //   href: `/services/microsoft-office-365`,
+      //   items: [
+      //     {
+      // redirected to /services/microsoft-office-365
+      //       label: "365 Implementation",
+      //       href: `/services/microsoft-office-365/office-365-implementation`,
+      //     },
+      //     {
+      // redirected to /services/microsoft-office-365
+      //       label: "365 Migration",
+      //       href: `/services/microsoft-office-365/office-365-migration`,
+      //     },
+      //     {
+      // redirected to /microsoft-support-and-training-australia
+      //       label: "Exchange Setup & Assistance",
+      //       href: `/services/microsoft-office-365/exchange-online-setup-and-support`,
+      //     },
+      //     {
+      // redirected to /microsoft-support-and-training-australia
+      //       label: "Help & Managed Services",
+      //       href: `/services/microsoft-office-365/support-and-managed-services`,
+      //     },
+      //     {
+      //       label: "Cloud Backup with OneDrive",
+      //       href: `/services/microsoft-office-365/cloud-backup-with-onedrive`,
+      //     },
+      //     {
+      //       label: "App & Custom Development",
+      //       href: `/services/microsoft-office-365/app-and-custom-development`,
+      //     },
+      //   ],
+      // },
       {
         label: "Other Services",
-        href: `${OFFICE_EXPERTS_URL}/services/by-business-solution`,
+        href: `/services/by-business-solution`,
         items: [
           {
-            label: "SharePoint",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/online-solutions`,
+            label: "Office 365",
+            href: `/services/microsoft-office-365`,
           },
           {
-            label: "Azure",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/cloud-based-solutions-with-azure`,
+            label: "SharePoint",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/sharepoint-consulting-and-development`,
+          },
+          {
+            label: "Business Process Automation",
+            href: `/services/microsoft-office-365/business-process-automation`,
+          },
+          {
+            label: "Azure Cloud Solutions",
+            href: `/services/by-business-solution/cloud-based-solutions-with-azure`,
           },
           {
             label: "SQL Server",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/office-and-sql-server-integration`,
+            href: `/services/by-business-solution/office-and-sql-server-integration`,
           },
           {
             label: "PowerPoint",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-powerpoint`,
+            href: `/services/microsoft-powerpoint`,
           },
           {
             label: ".NET",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-dot-net`,
+            href: `/services/microsoft-dot-net`,
           },
           {
             label: "Outlook",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/custom-office-solutions`,
+            href: `/services/by-business-solution/custom-office-solutions`,
           },
           {
             label: "Publisher",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-publisher`,
-          },
-          {
-            label: "Microsoft Cloud Based Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/cloud-based-solutions-with-azure`,
+            href: `/services/microsoft-publisher`,
           },
         ],
       },
@@ -370,12 +399,12 @@ export const navigationData = {
   },
   staticLinks: [
     {
-      label: "Testimonials",
-      href: "/client-testimonials",
-    },
-    {
       label: "About Us",
       href: `/about-us`,
+    },
+    {
+      label: "Testimonials",
+      href: "/client-testimonials",
     },
     {
       label: "Meet Our Team",
