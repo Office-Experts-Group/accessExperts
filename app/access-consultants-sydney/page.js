@@ -59,13 +59,13 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-sydney",
       name: "Microsoft Access Consultants Sydney",
       description:
-        "Expert Microsoft Access consultants serving Sydney businesses since 2000. Custom database design, development, and ongoing support for organisations across the CBD and greater Sydney region.",
+        "Australia-wide Microsoft Access consulting team with Sydney-based consultants supporting the CBD and greater Sydney businesses. Custom database design, development, integration, and support for over 25+ years.",
 
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2026-04-07T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-sydney#breadcrumb",

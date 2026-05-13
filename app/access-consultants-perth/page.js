@@ -59,13 +59,13 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-perth",
       name: "Microsoft Access Consultants Perth",
       description:
-        "Perth-based Microsoft Access consulting backed by 25+ years of national expertise. Specialising in database development, data migration, and Access to SQL Server integration for WA businesses.",
+        "Australia-wide Microsoft Access consulting team with local consultants based in Perth. Over 25+ years of experience in database development, migration, and Access to SQL Server integration for WA businesses.",
 
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2026-04-08T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-perth#breadcrumb",

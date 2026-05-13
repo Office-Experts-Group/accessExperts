@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Central Coast NSW",
   description:
-    "Microsoft Access consulting for businesses on the Central Coast of NSW. Expert database development and support services, with remote access available across the region.",
+    "Australia-wide Microsoft Access consulting team with consultants servicing the Central Coast of NSW. Expert database development, integration, upgrades, and support delivered remotely or on-site across the region.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Central Coast NSW",
     description:
-      "Microsoft Access consulting for businesses on the Central Coast of NSW. Expert database development and support services, with remote access available across the region.",
+      "Australia-wide Microsoft Access consulting team with consultants servicing the Central Coast of NSW. Expert database development, integration, upgrades, and support delivered remotely or on-site across the region.",
 
     url: "https://www.accessexperts.com.au/access-consultants-central-coast-nsw",
     siteName: "Access Experts",
@@ -38,7 +38,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Central Coast NSW",
     description:
-      "Microsoft Access consulting for businesses on the Central Coast of NSW. Expert database development and support services, with remote access available across the region.",
+      "Australia-wide Microsoft Access consulting team with consultants servicing the Central Coast of NSW. Expert database development, integration, upgrades, and support delivered remotely or on-site across the region.",
 
     images: ["/logo.png"],
   },

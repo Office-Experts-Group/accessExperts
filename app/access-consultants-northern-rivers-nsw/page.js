@@ -60,12 +60,12 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-northern-rivers-nsw",
       name: "Microsoft Access Consultants Northern Rivers, NSW",
       description:
-        "Professional Microsoft Access database solutions. Custom development, integration, and remote support from Australia's leading Access specialists.",
+        "Australia-wide Microsoft Access team with consultants servicing the Northern Rivers region of NSW. Professional database development, integration, upgrades, and remote support backed by 25+ years of experience.",
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2026-04-08T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-northern-rivers-nsw#breadcrumb",

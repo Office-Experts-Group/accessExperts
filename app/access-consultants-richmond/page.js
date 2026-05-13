@@ -58,13 +58,13 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-richmond",
       name: "Microsoft Access Consultants Richmond",
       description:
-        "Microsoft Access database consultants available in Richmond, Victoria. Offering custom database builds, system upgrades, and expert support for local and regional businesses.",
+        "Australia-wide Microsoft Access consulting team with local developers based in Richmond. Custom database builds, upgrades, integration, and expert support with 25+ years’ experience.",
 
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2026-04-07T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-richmond#breadcrumb",

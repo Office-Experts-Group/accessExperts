@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Melbourne",
   description:
-    "Melbourne's trusted Microsoft Access specialists with 25+ years' experience. We deliver tailored database solutions, VBA automation, and integration services for Victorian businesses.",
+    "Australia-wide Microsoft Access consulting team with Melbourne-based consultants available for Victorian businesses. Tailored database development, VBA automation, integration, upgrades, and support backed by 25+ years’ experience.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Melbourne",
     description:
-      "Melbourne's trusted Microsoft Access specialists with 25+ years' experience. We deliver tailored database solutions, VBA automation, and integration services for Victorian businesses.",
+      "Australia-wide Microsoft Access consulting team with Melbourne-based consultants available for Victorian businesses. Tailored database development, VBA automation, integration, upgrades, and support backed by 25+ years’ experience.",
 
     url: "https://www.accessexperts.com.au/access-consultants-melbourne",
     siteName: "Access Experts",
@@ -38,7 +38,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Melbourne",
     description:
-      "Melbourne's trusted Microsoft Access specialists with 25+ years' experience. We deliver tailored database solutions, VBA automation, and integration services for Victorian businesses.",
+      "Australia-wide Microsoft Access consulting team with Melbourne-based consultants available for Victorian businesses. Tailored database development, VBA automation, integration, upgrades, and support backed by 25+ years’ experience.",
 
     images: ["/logo.png"],
   },

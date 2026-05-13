@@ -58,13 +58,13 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-canberra",
       name: "Microsoft Access Consultants Canberra",
       description:
-        "Specialist Microsoft Access consultants servicing Canberra and the ACT. Experienced in government and enterprise database solutions, reporting, and secure data management.",
+        "Australia-wide Microsoft Access consulting team with consultants servicing Canberra and the ACT. Experienced in government, enterprise, reporting, secure data management, database development, and system integration.",
 
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2026-04-07T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-canberra#breadcrumb",

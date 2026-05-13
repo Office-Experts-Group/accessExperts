@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Darwin",
   description:
-    "Microsoft Access consulting for Darwin and the Northern Territory. Experienced database developers delivering custom solutions and remote support for NT businesses.",
+    "Australia-wide Microsoft Access consulting team with consultants servicing Darwin and the Northern Territory. Custom database development, integration, upgrades, and remote support for NT businesses backed by 25+ years' experience.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Darwin",
     description:
-      "Microsoft Access consulting for Darwin and the Northern Territory. Experienced database developers delivering custom solutions and remote support for NT businesses.",
+      "Australia-wide Microsoft Access consulting team with consultants servicing Darwin and the Northern Territory. Custom database development, integration, upgrades, and remote support for NT businesses backed by 25+ years' experience.",
     url: "https://www.accessexperts.com.au/access-consultants-darwin",
     siteName: "Access Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Darwin",
     description:
-      "Microsoft Access consulting for Darwin and the Northern Territory. Experienced database developers delivering custom solutions and remote support for NT businesses.",
+      "Australia-wide Microsoft Access consulting team with consultants servicing Darwin and the Northern Territory. Custom database development, integration, upgrades, and remote support for NT businesses backed by 25+ years' experience.",
     images: ["/logo.png"],
   },
 

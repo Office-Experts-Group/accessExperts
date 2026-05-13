@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Access Consultants Canberra",
   description:
-    "Specialist Microsoft Access consultants servicing Canberra and the ACT. Experienced in government and enterprise database solutions, reporting, and secure data management.",
+    "Australia-wide Microsoft Access consulting team with consultants servicing Canberra and the ACT. Experienced in government, enterprise, reporting, secure data management, database development, and system integration.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Access Consultants Canberra",
     description:
-      "Specialist Microsoft Access consultants servicing Canberra and the ACT. Experienced in government and enterprise database solutions, reporting, and secure data management.",
+      "Australia-wide Microsoft Access consulting team with consultants servicing Canberra and the ACT. Experienced in government, enterprise, reporting, secure data management, database development, and system integration.",
 
     url: "https://www.accessexperts.com.au/access-consultants-canberra",
     siteName: "Access Experts",
@@ -38,7 +38,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Access Consultants Canberra",
     description:
-      "Specialist Microsoft Access consultants servicing Canberra and the ACT. Experienced in government and enterprise database solutions, reporting, and secure data management.",
+      "Australia-wide Microsoft Access consulting team with consultants servicing Canberra and the ACT. Experienced in government, enterprise, reporting, secure data management, database development, and system integration.",
 
     images: ["/logo.png"],
   },

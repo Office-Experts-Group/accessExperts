@@ -59,7 +59,7 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-gold-coast",
       name: "Microsoft Access Consultants Gold Coast",
       description:
-        "Microsoft Access database experts servicing the Gold Coast region. We build and maintain custom Access solutions for local businesses, with remote support available Australia-wide.",
+        "Australia-wide Microsoft Access consulting team with consultants servicing the Gold Coast region. Custom database development, maintenance, integration, upgrades, and remote support for Queensland businesses backed by 25+ years’ experience.",
 
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",

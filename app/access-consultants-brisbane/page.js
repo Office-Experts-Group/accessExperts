@@ -59,13 +59,13 @@ const schema = {
       url: "https://www.accessexperts.com.au/access-consultants-brisbane",
       name: "Microsoft Access Consultants Brisbane",
       description:
-        "Microsoft Access consultants in Brisbane with extensive cross-industry experience. From custom database builds to legacy system upgrades, we support Queensland businesses of all sizes.",
+        "Australia-wide Microsoft Access consulting team with Brisbane-based consultants available for Queensland businesses. Custom database development, integration, upgrades, and support backed by 25+ years' experience.",
 
       isPartOf: {
         "@id": "https://www.accessexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2026-04-07T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.accessexperts.com.au/word-consultants-brisbane#breadcrumb",
