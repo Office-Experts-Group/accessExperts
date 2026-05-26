@@ -290,19 +290,19 @@ export const navigationData = {
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-apps`,
           },
           {
-            label: "Workflow Automation with Power Automate",
+            label: "Automation with Power Automate",
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-automate`,
           },
           {
-            label: "Data Analytics with Power BI",
+            label: "Data Visualisation with Power BI",
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-bi`,
           },
           {
-            label: "Simple, Scalable Websites with Power Pages",
+            label: "Websites with Power Pages",
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-pages`,
           },
           {
-            label: "Microsoft Fabric",
+            label: "Data Analytics with Microsoft Fabric",
             href: `${POWER_PLATFORM_EXPERTS_URL}/microsoft-fabric`,
           },
           {
