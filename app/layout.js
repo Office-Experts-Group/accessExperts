@@ -87,6 +87,9 @@ export const metadata = {
   // Google Search Console
   verification: {
     google: "NncXxsP6RdHFQ2RWy6ekT_WtaDPOk8DF5XZCYNPH_ww",
+    other: {
+      "msvalidate.01": "4C995B7893493FB7A686B1F5CADBC4D5",
+    },
   },
 
   // Additional metadata
