@@ -1,115 +1,144 @@
+// styles/goodToKnow.module.scss
 @import "./globals.scss";
 
-.goodToKnow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 6px solid $theme;
-  position: relative;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  .triangleDiv {
-    z-index: 2;
-    background-color: $theme;
-    width: 300px; // Adjust this value to control overall width
-    text-align: center;
-
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
-    margin-bottom: 2rem; // Add some space below the triangle
-
-    h2 {
-      color: $offWhite;
-      font-size: 1.25rem;
-      padding: 0.6rem 1rem 1rem 1rem;
+// ── Pulse keyframe for map SVG rings ─────────────────────
+:global {
+  @keyframes gtk-pulse {
+    0% {
+      opacity: 0.8;
+      transform: scale(1);
     }
-
-    h3 {
-      color: $offWhite;
-      font-size: 1.5rem;
-      text-align: center;
-      padding: 2rem 15vw 1rem 15vw;
-      margin: 0;
-
-      @include phone {
-        padding: 2rem 1rem 1rem 1rem;
-        font-size: 1.3rem;
-      }
-    }
-  }
-
-  p {
-    padding: 2rem 15vw 0 15vw;
-    color: $offWhite;
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    &:last-of-type {
-      padding: 1rem 15vw 6rem 15vw;
-    }
-
-    @include phone {
-      padding: 2rem 1rem 0 1rem;
-      &:last-of-type {
-        padding: 2rem 1rem 6rem 1rem;
-      }
+    100% {
+      opacity: 0;
+      transform: scale(1.6);
     }
   }
 }
 
-// Styling for the service list
-.serviceListContainer {
-  margin: 0 auto;
-  width: fit-content;
+// ── Section shell ─────────────────────────────────────────
+.section {
+  background: $dark-bg;
+  padding: 8rem 8rem 4rem 8rem;
+
+  @include tablet {
+    padding: 6rem 4rem;
+  }
+  @include phoneLandscape {
+    padding: 5rem 1.5rem;
+  }
+  @include phone {
+    padding: 4.5rem 1.25rem;
+  }
 }
 
-.serviceList {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 1rem;
-  margin: 0 0 3rem 0;
-
-  li {
-    color: $darkGrayText;
-    font-size: 1.15rem;
-    line-height: 1.8rem;
-    padding: 0.5rem 0 0.5rem 2.5rem;
-    position: relative;
-    text-align: left;
-
-    // Custom bullet point using checkmark
-    &::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: $theme;
-      font-size: 1rem;
-      font-weight: bold;
-      background-color: $offWhite;
-      border-radius: 50%;
-      width: 1.5rem;
-      height: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-    }
-  }
+// ── Header ────────────────────────────────────────────────
+.header {
+  max-width: 600px;
+  margin-bottom: 4rem;
 
   @include phone {
-    padding: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
 
-    li {
-      font-size: 1.05rem;
-      padding: 0.4rem 0 0.4rem 2.2rem;
-    }
+.eyebrow {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  border: 1px solid $accent-border;
+  padding: 0.3rem 0.85rem;
+  border-radius: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.heading {
+  font-size: clamp(2rem, 3.4vw, 2.9rem);
+  font-weight: 900;
+  color: $white-88;
+  line-height: 1.15;
+  letter-spacing: -0.028em;
+}
+
+.headingAccent {
+  color: $accent;
+}
+
+// ── Two-column body layout ────────────────────────────────
+.body {
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  gap: 5rem;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+// ── Map panel ─────────────────────────────────────────────
+.mapPanel {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+  svg {
+    margin-top: -16rem;
+  }
+}
+
+// ── Content panel ─────────────────────────────────────────
+.contentPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.para {
+  font-size: 1rem;
+  color: $white-55;
+  line-height: 1.85;
+}
+
+// ── Remote service callout strip ──────────────────────────
+.remoteStrip {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(4, 105, 153, 0.08);
+  border: 1px solid $accent-border;
+  border-radius: 6px;
+  padding: 1.1rem 1.25rem;
+}
+
+.remoteIcon {
+  color: $accent;
+  margin: auto;
+}
+
+.remoteText {
+  font-size: 0.88rem;
+  color: $white-55;
+  line-height: 1.7;
+  margin: 0;
+
+  strong {
+    color: $white-88;
+    font-weight: 700;
   }
 }

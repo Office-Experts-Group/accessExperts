@@ -12,6 +12,8 @@ $darkGrayText: #777a7e;
 $cardBGC: #1a1c1e;
 $footerBGC: #252629;
 
+$dark-bg: #111820;
+
 // breakpoints
 @mixin smallPhone {
   @media (max-width: 359px) {
