@@ -46,7 +46,7 @@
   }
 
   a {
-    color: $theme;
+    color: $accent;
     font-weight: 700;
   }
 }
@@ -150,7 +150,7 @@
   }
 
   a {
-    color: $theme;
+    color: $accent;
     font-weight: 700;
   }
 }
@@ -168,7 +168,7 @@
   }
 
   a {
-    color: $theme;
+    color: $accent;
     font-weight: 700;
     &:hover {
       text-decoration: underline;
@@ -222,19 +222,19 @@
   height: 30px;
   width: 30px;
   min-width: 30px;
-  border: 1px solid $theme;
+  border: 1px solid $accent;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   transition: all 0.5s ease;
   svg {
-    stroke: $theme;
-    color: $theme;
+    stroke: $accent;
+    color: $accent;
   }
   &:hover {
     transition: all 0.5s ease;
-    background-color: $theme;
+    background-color: $accent;
     svg {
       stroke: $offWhite;
       color: $offWhite;
@@ -271,8 +271,8 @@
     transition: all 0.5s ease;
     background-color: $offWhite;
     svg {
-      stroke: $theme;
-      color: $theme;
+      stroke: $accent;
+      color: $accent;
     }
   }
   p {
@@ -358,7 +358,7 @@
   a {
     width: 160px;
     &:hover {
-      border: 1px solid $theme;
+      border: 1px solid $accent;
     }
   }
   @media screen and (max-width: 800px) {
@@ -444,7 +444,7 @@
   background: #fff;
   border: medium none;
   border-radius: 0.1rem;
-  border: 1px solid $theme;
+  border: 1px solid $accent;
   color: #046999;
   display: inline-block;
   font-weight: 700;

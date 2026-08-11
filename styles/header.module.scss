@@ -1,3 +1,4 @@
+// working header module
 @import "./globals.scss";
 
 // HeadTop component
@@ -385,7 +386,7 @@ $cycle-duration: 33s;
       left: 0;
       width: 100%;
       height: 2px;
-      background-color: $theme;
+      background-color: $accent;
       transform: scaleX(0);
       transform-origin: right;
       transition: transform 0.3s ease;
@@ -393,7 +394,7 @@ $cycle-duration: 33s;
   }
 
   &:hover {
-    color: $theme;
+    color: $accent;
 
     span::after {
       transform: scaleX(1);
@@ -409,7 +410,7 @@ $cycle-duration: 33s;
   left: 0;
   min-width: 250px;
   background-color: $offWhite;
-  border-top: 4px solid $theme;
+  border-top: 4px solid $accent;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   padding: 1rem 0.5rem;
   opacity: 0;
@@ -447,7 +448,7 @@ $cycle-duration: 33s;
           left: 0;
           width: 100%;
           height: 1px;
-          background-color: $theme;
+          background-color: $accent;
           transform: scaleX(0);
           transform-origin: right;
           transition: transform 0.3s ease;
@@ -455,7 +456,7 @@ $cycle-duration: 33s;
       }
 
       &:hover {
-        color: $theme;
+        color: $accent;
         font-weight: 700;
 
         span::after {
@@ -494,7 +495,7 @@ $cycle-duration: 33s;
   min-width: 350px;
   max-height: 80vh;
   background-color: $offWhite;
-  border-top: 4px solid $theme;
+  border-top: 4px solid $accent;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   padding: 1rem 0.5rem;
   opacity: 0;
@@ -514,7 +515,7 @@ $cycle-duration: 33s;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $theme;
+    background: $accent;
     border-radius: 4px;
   }
 
@@ -626,12 +627,13 @@ $cycle-duration: 33s;
     scale: 0.5;
   }
   margin-left: auto;
+  margin-right: 1rem;
 }
 
 .microLogoScrolled {
   filter: brightness(100%);
   scale: 0.7;
-  margin: 0 -1.2rem 0 auto;
+  margin: 0 1rem 0 auto;
   transition: all 0.5s ease;
   @include phone {
     scale: 0.5;

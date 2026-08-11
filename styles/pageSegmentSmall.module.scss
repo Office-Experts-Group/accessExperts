@@ -16,10 +16,10 @@
     line-height: 2rem;
   }
 
-a {
-  color: $theme !important;
-  font-weight: 700 !important;
-}
+  a {
+    color: $accent !important;
+    font-weight: 700 !important;
+  }
 
   @include phoneLandscape {
     flex-direction: column;

@@ -15,7 +15,7 @@
     text-align: center;
 
     .tagline {
-      color: $theme;
+      color: $accent;
       font-weight: 600;
       letter-spacing: 1px;
       font-size: 0.9rem;
@@ -56,10 +56,10 @@
     }
 
     .highlight {
-      background-color: rgba($theme, 0.08);
+      background-color: rgba($accent, 0.08);
       padding: 1.5rem;
       border-radius: 0.3rem;
-      border-left: 4px solid $theme;
+      border-left: 4px solid $accent;
       margin-top: 2rem;
 
       p {
@@ -69,7 +69,7 @@
         margin: 0;
 
         strong {
-          color: $theme;
+          color: $accent;
           font-weight: 600;
         }
       }

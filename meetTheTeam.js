@@ -28,6 +28,8 @@ import emma from "./public/team/emma.webp";
 import richard from "./public/team/richard.webp";
 import dylan from "./public/team/dylan.webp";
 import nick from "./public/team/nick.webp";
+import carl from "./public/team/carl.webp";
+
 
 export const teamMembers = [
   {
@@ -118,6 +120,20 @@ export const teamMembers = [
     location: "centralCoast",
     skills: ["Word", "PowerPoint", "Excel"],
     image: damien,
+  },
+    {
+    name: "Carl",
+    role: "SENIOR BUSINESS ANALYST",
+    location: "brisbane",
+    skills: [
+      "Agile",
+      "Scrum Master",
+      "UX",
+      "Power Apps",
+      "Dataverse",
+      "SharePoint",
+    ],
+    image: carl,
   },
   {
     name: "Stephen",
