@@ -1,0 +1,212 @@
+.section {
+  background: #111820;
+  padding: 7rem 8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 6rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(4, 105, 153, 0.9);
+  padding: 0.32rem 0.85rem;
+  border: 1px solid rgba(4, 105, 153, 0.3);
+  border-radius: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.accent {
+  color: #046999;
+}
+
+.body {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #046999;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: background 0.2s ease;
+}
+.cta:hover {
+  background: rgb(2.9605095541, 77.7133757962, 113.2394904459);
+}
+
+.stats {
+  display: flex;
+  gap: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+@media (max-width: 449px) {
+  .stats {
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+  }
+}
+
+.statValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #046999;
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 0.25rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.priceCard {
+  background: #18232e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 1.75rem;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.priceValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pricePeriod {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.priceDesc {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.priceNote {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.35);
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.linkRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #18232e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+.linkItem:hover {
+  border-color: rgba(4, 105, 153, 0.3);
+}
+
+.linkItemText {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.linkItemArrow {
+  color: #046999;
+  flex-shrink: 0;
+  display: flex;
+}/*# sourceMappingURL=azureProcess.module.css.map */

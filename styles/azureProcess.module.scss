@@ -1,0 +1,207 @@
+// styles/azureProcess.module.scss
+@import "./globals.scss";
+
+.section {
+  background: $dark-bg;
+  padding: 7rem 8rem;
+
+  @include tablet {
+    padding: 6rem 4rem;
+  }
+  @include phoneLandscape {
+    padding: 5rem 2rem;
+  }
+  @include phone {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+// ── Left column ─────────────────────────────────
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba($accent, 0.9);
+  padding: 0.32rem 0.85rem;
+  border: 1px solid $accent-border;
+  border-radius: 2rem;
+  width: fit-content;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: $white-88;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.accent {
+  color: $accent;
+}
+
+.body {
+  font-size: 0.95rem;
+  color: $white-55;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: $accent;
+  color: $white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: darken(#046999, 8%);
+  }
+}
+
+// Stats row beneath the CTA
+.stats {
+  display: flex;
+  gap: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $white-08;
+
+  @include phone {
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+  }
+}
+
+.statValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: $accent;
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: $white-55;
+  margin-top: 0.25rem;
+}
+
+// ── Right column: pricing + support cards ───────
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.priceCard {
+  background: $dark-surface;
+  border: 1px solid $white-08;
+  border-radius: 6px;
+  padding: 1.75rem;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.priceValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: $white-90;
+}
+
+.pricePeriod {
+  font-size: 0.85rem;
+  color: $white-55;
+}
+
+.priceDesc {
+  font-size: 0.85rem;
+  color: $white-55;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.priceNote {
+  font-size: 0.8rem;
+  color: $white-35;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid $white-08;
+}
+
+.linkRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: $dark-surface;
+  border: 1px solid $white-08;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: $accent-border;
+  }
+}
+
+.linkItemText {
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: $white-88;
+}
+
+.linkItemArrow {
+  color: $accent;
+  flex-shrink: 0;
+  display: flex;
+}

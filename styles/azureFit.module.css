@@ -1,0 +1,130 @@
+.section {
+  background: #f7f8f9;
+  padding: 6rem 8rem;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: 4rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 5rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 4rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 449px) {
+  .visual {
+    display: none;
+  }
+}
+.visual svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.heading {
+  font-size: clamp(1.7rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.body {
+  font-size: 0.94rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.body a {
+  color: #046999;
+  font-weight: 700;
+  text-decoration: none;
+}
+.body a:hover {
+  text-decoration: underline;
+}
+
+.note {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid #046999;
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  margin-top: 0.25rem;
+}
+
+.noteText {
+  font-size: 0.85rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0;
+}
+.noteText a {
+  color: #046999;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.noteText strong {
+  color: #0d1b2a;
+}/*# sourceMappingURL=azureFit.module.css.map */

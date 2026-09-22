@@ -1,0 +1,140 @@
+.section {
+  background: #ffffff;
+  padding: 6rem 8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 5rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 4rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .inner {
+    gap: 4rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    gap: 3.5rem;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rowReversed {
+    direction: rtl;
+  }
+  .rowReversed > * {
+    direction: ltr;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .rowReversed {
+    direction: rtl;
+  }
+  .rowReversed > * {
+    direction: ltr;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.heading {
+  font-size: clamp(1.7rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.body {
+  font-size: 0.94rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #046999;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0.25rem;
+  transition: gap 0.2s ease;
+}
+.link:hover {
+  gap: 0.7rem;
+}
+
+@media (max-width: 449px) {
+  .visual {
+    display: none;
+  }
+}
+.visual svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}/*# sourceMappingURL=azureCapabilities.module.css.map */

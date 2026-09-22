@@ -1,0 +1,132 @@
+// styles/azureCapabilities.module.scss
+@import "./globals.scss";
+
+.section {
+  background: $white;
+  padding: 6rem 8rem;
+
+  @include tablet {
+    padding: 5rem 4rem;
+  }
+  @include phoneLandscape {
+    padding: 4rem 2rem;
+  }
+  @include phone {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @include phoneLandscape {
+    gap: 4rem;
+  }
+  @include phone {
+    gap: 3.5rem;
+  }
+}
+
+// ── Row ──────────────────────────────────────────
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+// Alternate row direction so the visual sits left on the second row
+.rowReversed {
+  @include deskL {
+    direction: rtl;
+
+    > * {
+      direction: ltr;
+    }
+  }
+  @include desktop {
+    direction: rtl;
+
+    > * {
+      direction: ltr;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  width: fit-content;
+}
+
+.heading {
+  font-size: clamp(1.7rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  color: $text-primary;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.body {
+  font-size: 0.94rem;
+  color: $text-secondary;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: $accent;
+  text-decoration: none;
+  width: fit-content;
+  margin-top: 0.25rem;
+  transition: gap 0.2s ease;
+
+  &:hover {
+    gap: 0.7rem;
+  }
+}
+
+.visual {
+  @include phone {
+    display: none;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

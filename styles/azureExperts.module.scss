@@ -1,0 +1,108 @@
+// styles/azureExperts.module.scss
+@import "./globals.scss";
+
+.section {
+  background: $white;
+  padding: 6rem 8rem;
+
+  @include tablet {
+    padding: 5rem 4rem;
+  }
+  @include phoneLandscape {
+    padding: 4rem 2rem;
+  }
+  @include phone {
+    padding: 3.5rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  @include phoneLandscape {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  width: fit-content;
+}
+
+.heading {
+  font-size: clamp(1.7rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  color: $text-primary;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.body {
+  font-size: 0.94rem;
+  color: $text-secondary;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.linkChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: $accent;
+  background: $accent-light;
+  border-radius: 2rem;
+  padding: 0.55rem 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: darken(#e8f4fa, 4%);
+  }
+}
+
+.visual {
+  @include phone {
+    display: none;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
