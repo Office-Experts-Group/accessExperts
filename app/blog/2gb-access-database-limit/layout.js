@@ -15,20 +15,18 @@ export const metadata = {
     siteName: "Access Experts",
     images: [
       {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Office Experts Logo",
+        url: "/blog/2gb/stop.webp",
+        width: 600,
+        height: 400,
+        alt: "Your Access Database Just Hit 2GB... Now What? A Survival Guide",
       },
     ],
     locale: "en-AU",
-    type: "website",
+    type: "article",
   },
 
   // Additional metadata
-  keywords: [
-    "Access 2GB limit",
-  ],
+  keywords: ["Access 2GB limit"],
 
   // Twitter Card
   twitter: {
@@ -37,7 +35,7 @@ export const metadata = {
     title: "Your Access Database Just Hit 2GB... Now What?",
     description:
       "The 2GB limit crisis hits without warning. Learn why it happens, how to recognise the warning signs, and discover immediate fixes vs long-term solutions including migration paths to SQL Server and Azure.",
-    images: ["/logo.png"],
+    url: "/blog/2gb/stop.webp",
   },
 
   alternates: {
