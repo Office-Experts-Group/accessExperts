@@ -17,6 +17,7 @@ const AzureProcess = dynamic(() => import("./(components)/AzureProcess"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const AzureExperts = dynamic(() => import("./(components)/AzureExperts"));
 const Contact = dynamic(() => import("../../components/Contact"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
 import faqs from "../../faqs/cloud-solutions";
@@ -115,7 +116,40 @@ const Page = () => {
       <AzureRequirements />
       <ExpertsAwait />
       <AzureExperts />
-      <FAQSection faqs={faqs} />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Taking legacy Access databases to the cloud"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/film-crew-booking-system-access-nextjs-rebuild",
+            linkText: "Read the Azure SQL Server rebuild",
+            title:
+              "Migrating a VM-locked Access 2000 database to Azure with a 10x faster Next.js website",
+            description:
+              "A freelance crew agency ran its whole booking operation on a native Access 2000 database that only worked on a virtual machine, so its website could not connect to it. We rebuilt the front end on our Access framework with a cloud back end on Azure SQL Server, then rewrote the WordPress website in Next.js with a direct database connection. The new site loads 10x faster, and crew diaries, availability lists, emails and end of day processing now run automatically.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/film-crew-booking-system-rebuildLg.png",
+            imageAlt:
+              "Access 2000 booking database migrated to Azure SQL Server with a Next.js website",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/private-client-cashflow-forecasting-tool",
+            linkText: "See the privately hosted Azure tool",
+            title:
+              "Turning uneven investment income into one clear monthly figure to plan against",
+            description:
+              "A private client's investment and business income arrived in seasonal lumps while commitments fell steadily, and decisions were being made without a full forward view of cash flow. We built a private planning tool, hosted privately on Microsoft Azure, with a 12-month rolling cash flow forecast, a what-if sandbox and a calculation of the income needed each month before GST. It was delivered in 2 weeks, from brief to a working tool.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/private-client-cashflow-plannerLg.png",
+            imageAlt:
+              "Private cash flow planning tool hosted on Microsoft Azure",
+          },
+        ]}
+      />
+      <div style={{ marginTop: "6rem" }}>
+        <FAQSection faqs={faqs} />
+      </div>
       <Contact />
     </>
   );

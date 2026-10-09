@@ -10,6 +10,7 @@ const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 const Contact = dynamic(() => import("../../components/Contact"));
 const Contents = dynamic(() => import("./(components)/Contents"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import faqs from "../../faqs/is-access-right-for-you";
 
@@ -132,6 +133,37 @@ const Page = () => {
       />
       <MiniTicks />
       <ExpertsAwait />
+      <RelatedLinks
+        theme="light"
+        eyebrow="Case Studies"
+        heading="Access and spreadsheets in practice"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/research-organisation-access-kanban-planner",
+            linkText: "See what our team built inside Access",
+            title:
+              "Bringing a Kanban task planner inside the Access database the client already used",
+            description:
+              "A national research organisation was using Microsoft Planner for its tasks, which meant running a second planner outside its Access database. We built a Kanban planner inside Access with four status columns, drag and drop task management, a right-click menu, due date highlighting and a details form for each task.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/research-kanban-planner-boardLg.webp",
+            imageAlt:
+              "Four column Kanban planner board built inside a Microsoft Access database",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/community-services-excel-consolidation-rebuild",
+            linkText: "See when a spreadsheet outgrew itself",
+            title:
+              "Replacing a 400MB linked spreadsheet with a one-click Power Query refresh",
+            description:
+              "A four-location community services provider consolidated its records through direct workbook links, and the central file had grown past 400MB and thousands of columns wide. We rebuilt it as a row-based entry template consolidated with Power Query, migrated the historical data, and showed the team how to build new reporting breakdowns with pivot tables. Consolidating the four location workbooks is now a single refresh.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/community-services-excelLg.png",
+            imageAlt:
+              "Excel workbook rebuilt as a row-based dataset consolidated with Power Query",
+          },
+        ]}
+      />
       <div style={{ marginTop: "6rem" }}>
         <FAQSection faqs={faqs} />
       </div>

@@ -11,6 +11,7 @@ const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const Contact = dynamic(() => import("../../components/Contact"));
 const Promo = dynamic(() => import("../../components/Promo"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
 import faqs from "../../faqs/access-online.js";
@@ -100,7 +101,40 @@ const Page = () => {
         h2="iPad and iPhone Solutions"
         p="We often get asked, “What about iPads and iPhones?” …and yes, it is possible to create limited solutions using these and other platforms."
       />
-      <FAQSection faqs={faqs} />
+      <RelatedLinks
+        theme="light"
+        eyebrow="Case Studies"
+        heading="Business tools that run online"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/custom-quoting-tool",
+            linkText: "Integrate modern tools with legacy systems",
+            title:
+              "Replacing manual quote requests with an instant online tax depreciation calculator",
+            description:
+              "A tax depreciation specialist had no way for a prospective property investor to get an estimate without contacting the office, and every quote was worked out by hand. We built a custom React calculator, embedded in their WordPress site as a plugin, that emails an instant branded estimate to both the customer and the client's team. The client can update rates and building price index data themselves.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/custom-quoting-tool.png",
+            imageAlt:
+              "Custom React tax depreciation calculator embedded in a WordPress site",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/private-client-cashflow-forecasting-tool",
+            linkText: "See our private web planning tool",
+            title:
+              "Turning uneven investment income into one clear monthly figure to plan against",
+            description:
+              "A private client's investment and business income arrived in seasonal lumps while commitments fell steadily, and decisions were being made without a full forward view of cash flow. We built a private planning tool, hosted privately on Microsoft Azure, with a 12-month rolling cash flow forecast, a what-if sandbox and a calculation of the income needed each month before GST. It was delivered in 2 weeks, from brief to a working tool.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/private-client-cashflow-plannerLg.png",
+            imageAlt:
+              "Private cash flow planning tool hosted on Microsoft Azure",
+          },
+        ]}
+      />
+      <div style={{ marginTop: "6rem" }}>
+        <FAQSection faqs={faqs} />
+      </div>
       <Contact />
     </>
   );

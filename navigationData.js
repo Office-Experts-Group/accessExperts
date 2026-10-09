@@ -340,6 +340,10 @@ export const navigationData = {
             href: `${OFFICE_EXPERTS_URL}/services/ai-email-triage`,
           },
           {
+            label: "AI Agent Development",
+            href: `${OFFICE_EXPERTS_URL}/services/ai-agent-development`,
+          },
+          {
             label: "Power Platform AI Integrations",
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/ai-integrations`,
           },
