@@ -222,7 +222,7 @@ app/(components)/FooterServicesSection.jsx:
   https://www.officeexperts.com.au/services/microsoft-powerpoint
   https://www.officeexperts.com.au/services/microsoft-office-365
   https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure
-  https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration
+  https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration
   https://www.officeexperts.com.au/services/by-business-solution/online-solutions
   https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-dot-net
   https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions
@@ -239,7 +239,7 @@ app/(components)/IsRight.jsx:
   /meet-the-team
 
 app/access-azure-cloud-based-solutions/(components)/PageSegment5.jsx:
-  https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration/
+  https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration/
 
 app/is-access-right-for-your-company/(components)/Contents.jsx:
   /access-online
@@ -255,7 +255,7 @@ app/upgrades-and-migration/(components)/Promo.jsx:
   /access-azure-cloud-based-solutions
   https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure
   https://www.officeexperts.com.au/services/microsoft-dot-net
-  https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration
+  https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration
   https://www.officeexperts.com.au/services/by-business-solution/online-solutions
 
 app/upgrades-and-migration/(components)/Segment4Repeat.jsx:
@@ -309,14 +309,14 @@ https://www.wordexperts.com.au/
 https://www.officeexperts.com.au/services/microsoft-powerpoint
 https://www.officeexperts.com.au/services/microsoft-office-365
 https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure
-https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration
+https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration
 https://www.officeexperts.com.au/services/by-business-solution/online-solutions
 https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-dot-net
 https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions
 https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-publisher
 /access-online
 /3rd-party-product-integration
-https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration/
+https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration/
 /access-azure-cloud-based-solutions
 /access-support
 /contact-us/request-a-quote
@@ -360,14 +360,14 @@ CHECK RESULTS
 19/48: https://www.officeexperts.com.au/services/microsoft-powerpoint - Status: 200
 20/48: https://www.officeexperts.com.au/services/microsoft-office-365 - Status: 200
 21/48: https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure - Status: 200
-22/48: https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration - Status: 200
+22/48: https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration - Status: 200
 23/48: https://www.officeexperts.com.au/services/by-business-solution/online-solutions - Status: 200
 24/48: https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-dot-net - Status: 200
 25/48: https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions - Status: 200
 26/48: https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-publisher - Status: 200
 27/48: /access-online - Status: 200
 28/48: /3rd-party-product-integration - Status: 200
-29/48: https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration/ - Status: 200
+29/48: https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration/ - Status: 200
 30/48: /access-azure-cloud-based-solutions - Status: 200
 31/48: /access-support - Status: 200
 32/48: /contact-us/request-a-quote - Status: 200
