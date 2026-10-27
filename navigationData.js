@@ -113,27 +113,27 @@ export const navigationData = {
         items: [
           {
             label: "VBA & Macro Development",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/vba-macro-development`,
+            href: `${OFFICE_EXPERTS_URL}/services/vba-macro-development`,
           },
           {
             label: "Database Development Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
+            href: `${OFFICE_EXPERTS_URL}/services/database-development-and-solutions`,
           },
           {
             label: "3rd Party App Integration",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
+            href: `${OFFICE_EXPERTS_URL}/services/3rd-party-application-or-office-integration`,
           },
           {
             label: "Remote Data Access",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/remote-data-gathering-from-any-device`,
+            href: `${OFFICE_EXPERTS_URL}/services/remote-data-gathering-from-any-device`,
           },
           {
             label: "Online Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/online-solutions`,
+            href: `${OFFICE_EXPERTS_URL}/services/online-solutions`,
           },
           {
             label: "Upgrades and Migration",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office/upgrades-and-migration`,
+            href: `${OFFICE_EXPERTS_URL}/services/upgrades-and-migration`,
           },
           {
             label: "VBScript and ActiveX",
@@ -141,11 +141,11 @@ export const navigationData = {
           },
           {
             label: "Add-in Creation",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/add-in-creation`,
+            href: `${OFFICE_EXPERTS_URL}/services/add-in-creation`,
           },
           {
             label: "Apps and Custom Development",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/app-and-custom-development`,
+            href: `${OFFICE_EXPERTS_URL}/services/app-and-custom-development`,
           },
           {
             label: "Power Query",
@@ -269,7 +269,7 @@ export const navigationData = {
           },
           {
             label: "Dashboards",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/dashboards`,
+            href: `${OFFICE_EXPERTS_URL}/services/dashboards`,
           },
           {
             label: "Charting & Pivot Tables",
@@ -333,7 +333,7 @@ export const navigationData = {
       },
       {
         label: "Copilot and AI",
-        href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/copilot-and-ai`,
+        href: `${OFFICE_EXPERTS_URL}/services/copilot`,
         items: [
           {
             label: "Copilot in Office 365",
@@ -371,15 +371,15 @@ export const navigationData = {
           },
           {
             label: "Business Process Automation",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/business-process-automation`,
+            href: `${OFFICE_EXPERTS_URL}/services/business-process-automation`,
           },
           {
             label: "Azure Cloud Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/cloud-based-solutions-with-azure`,
+            href: `${OFFICE_EXPERTS_URL}/services/cloud-based-solutions-with-azure`,
           },
           {
             label: "SQL Server",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/sql-server-and-access-integration`,
+            href: `${OFFICE_EXPERTS_URL}/services/sql-server-and-access-integration`,
           },
           {
             label: "PowerPoint",
@@ -391,7 +391,7 @@ export const navigationData = {
           },
           {
             label: "Outlook",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/custom-office-solutions`,
+            href: `${OFFICE_EXPERTS_URL}/services/custom-office-solutions`,
           },
           {
             label: "Publisher",

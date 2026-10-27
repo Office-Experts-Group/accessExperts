@@ -162,7 +162,7 @@ const AccessCloudStrategyBlogPost = () => {
             <Link href={"/access-azure-cloud-based-solutions"}>Azure SQL</Link>,{" "}
             <Link
               href={
-                "https://www.officeexperts.com.au/services/by-business-solutions/online-solutions"
+                "https://www.officeexperts.com.au/services/online-solutions"
               }
             >
               SharePoint{" "}
@@ -179,7 +179,7 @@ const AccessCloudStrategyBlogPost = () => {
             , ASP and{" "}
             <Link
               href={
-                "https://www.officeexperts.com.au/services/microsoft-office-365/office-365-implementation"
+                "https://www.officeexperts.com.au/services/microsoft-office-365"
               }
             >
               Office 365
